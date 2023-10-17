@@ -2,12 +2,12 @@
 #### General
 ##
 #### Details
-▸ Size: 900K  
-▸ Arch: x86_64  
-▸ Vers: v01.01.01
+• Size: 900K  
+• Arch: x86_64  
+• Vers: v01.01.01
 #### Weblinks
-▸ Bat: https://github.com/sharkdp/bat  
-▸ Highlight: http://www.andre-simon.de/doku/highlight/highlight.html
+• Bat: https://github.com/sharkdp/bat  
+• Highlight: http://www.andre-simon.de/doku/highlight/highlight.html
 #### Description
 This is a curses based program designed to make managing helpfiles and cheatsheets related
 to different programs easier. Its also essentially just a wrapper for highlight and bat
@@ -19,9 +19,9 @@ and accessing the files where its stored which is what dummy provides.
 #### Installation
 ##
 #### Depends
-▸ make: GNU utility to maintain groups of programs  
-▸ bat: Cat clone with syntax highlighting and git integration  
-▸ highlight: Fast and flexible source code highlighter (cli version)  
+• make: GNU utility to maintain groups of programs  
+• bat: Cat clone with syntax highlighting and git integration  
+• highlight: Fast and flexible source code highlighter (cli version)  
 #### MacOS & Linux
 1. Open a terminal.
 2. Clone this repository:
