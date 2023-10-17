@@ -2,7 +2,7 @@
 #### General
 ##
 #### Details
-Size: 864K  
+Size: 900K  
 Arch: x86_64  
 Vers: v01.01.01
 #### Weblinks
@@ -67,7 +67,6 @@ Files are given the '.txt' extension when named but it isnt required when updati
 source arrays. The '.txt' extension as well as the 'h3lp/' section of the path are being
 handled from within 'b3tt3rh3lp.c'. The submenu source files also define a total count of
 the files to keep track of its size.
-
 ```shell
 cd 'helpfiles'
 ./'update_db.sh' <category>
