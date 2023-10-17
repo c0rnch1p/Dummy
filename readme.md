@@ -49,17 +49,17 @@ make clean
 dummy
 ```
 #### Writing Help Files
-A dummy help file is included to provide an example of the suggested formating for help
+A dummy help file is included to provide an example of the suggested formatting for help
 files. The 'lang.lua' and 'theme.lua' files are read by highlight and allow for the
 customization of things like header keywords, recognized syntax and color schemes.
 #### Adding Help Files
 Every submenu has its own source file which makes the process of referencing help files a
 lot easier. When a file is added, the file list in the category source file, the
-'all_h3lp.c' (comlpete list) source file and the readme are each updated with a new entry.
+'all_h3lp.c' (complete list) source file and the readme are each updated with a new entry.
 
 The 'helpfiles/update_db.sh' script will open the relevant files for a given category
 using the '$VISUAL' variable to specify a graphical text editor. The files need to be
-referenced with their location eg. 'category/file'. The subdirectory preceeding the file
+referenced with their location eg. 'category/file'. The subdirectory preceding the file
 gets clipped in the menu entry but its still needed for reference.
 
 Files are given the '.txt' extension when named but it isnt required when updating the
