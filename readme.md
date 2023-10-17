@@ -2,8 +2,8 @@
 #### General
 ##
 #### Details
-• Size: 900K  
 • Arch: x86_64  
+• Size: 900K  
 • Vers: v01.01.01
 #### Weblinks
 • Bat: https://github.com/sharkdp/bat  
@@ -19,9 +19,9 @@ and accessing the files where its stored which is what dummy provides.
 #### Installation
 ##
 #### Depends
-• make: GNU utility to maintain groups of programs  
 • bat: Cat clone with syntax highlighting and git integration  
 • highlight: Fast and flexible CLI source code highlighter  
+• make: GNU utility to maintain groups of programs
 #### MacOS & Linux
 Open a terminal and clone this repo:
 ```shell
