@@ -1,0 +1,53 @@
+
+	               _________  ____ ___  ______   ______ ____ ___ 
+	               \______  \|    |   \/      \ /      \__  |   \
+	                |    |   \    |   /   \ /  \   \ /  \(__    /
+	               /_________/_______/\____|___/____|___/______/
+
+	DESCRIPTION:
+	 This is a dummy help file for a program. Note the styling of this page,
+	 the text is indented because highlight is being used to modify the amount
+	 space characters in a tab to create a margin. The file is 80 cols by 52 lines 
+	 (minimum for bat) not counting the tab chars, a true feat of science. The idea
+	 behind formatting these files, is to maintain the readability of the various
+	 forms of information pertaining to different software.
+
+	COMMANDS:
+	 dummy # run dummy
+	 dummy --flag # run dummy with the flag
+	 dummy -f <file> # dummy with the flag on the file
+	 dummy -f '/path/file' # above command with full filepath
+
+	SHORTCUTS:
+	 'Ctrl+a' # select all dummy objects
+	 'Ctrl+b' # toggle dummy toolbar visibility
+	 'Ctrl+c' # copy dummy selection to clipboard
+	 'Ctrl+d' # duplicate dummy selection
+
+	DEPENDS ON:
+	 ▸ bat # cat clone with syntax highlighting
+	 ▸ highlight # cli source code highlighter
+
+	FILES:
+	 ▸ '/path/b3tt3rh3lp.c' # main source file
+	 ▸ '/path/dummy.txt' # dummy help file
+
+	BINARIES:
+	 ▸ '/bin/b3tt3rh3lp' # program to view help files
+
+	COMMON USAGE:
+	 > Edit # go to the edit tab in the menubar
+	   > Preferences # select the preferences option
+	     > Exit # search endlessly for an exit button
+	   # minor interjection on formatting 
+	 int='notaninteger' # a wild variable 
+	 echo '$int' >> injection.txt # a lowly command
+	 cat inj* | grep -o integ | sed 's/g/grate/g' # a wayward pipe
+
+	WEBLINKS:
+	 ▸ 'https://www.dummyhub.com' # nsfw dummy vids
+	 ▸ 'https://www.pacifiers.com' # pacifier addiction stories
+	 ▸ 'http://www.forpuppets.com' # unknown link
+	 ▸ 'https://www.coolgenerator.com/ascii-text-generator' # ascii titles
+
+

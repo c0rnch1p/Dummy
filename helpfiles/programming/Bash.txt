@@ -1,0 +1,263 @@
+
+	                  __________  _______  _________ ___ ___
+	                  \__   _   )/   _   \/   _____//   |   \
+	                   |   __   \   /_\   \_____   \    ~    \
+	                   |________/____|____/________/____|____/
+
+	DESCRIPTION
+	 The GNU Bourne Again Shell. Bash is a shell compatible command language
+	 interpreter that executes commands read from the standard input or from a
+	 file. Bash also incorporates useful features from the Korn and C shells. Bash
+	 is intended to be a conforming implementation of the Shell and Utilities
+	 portion of the IEEE (Institute of Electrical and Electronics Engineers) POSIX
+	 (Portable Operating System Interface) specification (IEEE Standard 1003.1).	 
+	 
+	COMMANDS
+	 sh # launch or refresh command line shell session
+	 sh -i # launch or refresh interactive shell session
+	 sh -l # launch or refresh login (root) shell session
+	 sh -r # launch or refresh restricted shell session 
+	 sh -c # launch a subshell to run commands in the background
+	 sh -x <script.sh> # enable debugging mode for bash scripts
+	 sh +x <script.sh> # enable reverse debugging mode for bash scripts
+
+	OPERATORS
+	 '$' # variable reference
+	 '+' # addition
+	 '/' # division
+	 '!' # logical not
+	 '%' # modulo (remainder)
+	 '*' # multiplication
+	 '-' # subtraction
+	 '==' # equal to
+	 '**' # exponentiation
+	 '!=' # not equal (strings)
+	 '-a' '&&' # logical and
+	 '-ef' # inode and device numbers
+	 '-eq' '=' # equal (strings)
+	 '-ge' '>=' # greater than or equal to
+	 '-gt' '>' # greater than
+	 '-le' '<=' # less than or equal to
+	 '-lt' '<' # less than
+	 '-ne' '!=' # not equal to
+	 '-nt' # newer than (files)
+	 '-o' '||' # logical or
+	 '-ot' # older than (files)
+	 '[[]]' # extended conditional
+	 '()' # group parameters
+	 '(())' # perform arithmetic
+	 '[]' # short conditional
+	 '{}' # structural data reference
+
+	BUILTINS
+	  # bash is pretty big, many of its builtin functions and commands have their
+	  # own flags and some also have a binary, every element in this list can
+	  # either be used on the command line or from a script, each builtin has a
+	  # manual page and help output explaining its usage and flag options
+	 alias # list or define new aliases
+	 bg # run jobs in the background
+	 bind # bind a name to a socket
+	 break # exit from a loop
+	 builtin # explicitly execute commands as a shell builtins
+	 caller # return the context of the current subroutine call
+	 case # define a case statement
+	 cd # change directory
+	 command # execute a simple command
+	 compgen # display possible completions depending on the options
+	 complete # specify how arguments are to be completed by readline
+	 compopt # modify or display completion options
+	 continue # continue a loop
+	 coproc # run a command in a subshell asynchronously
+	 declare # set variable values and attributes
+	 dirs # display directory stack
+	 disown # remove jobs from current shell
+	 echo # print line of text
+	   # echo recognises these escape sequences with the -e flag
+	  '\\' # backslash
+	  '\a' # alert
+	  '\b' # backspace
+	  '\c' # no further output
+	  '\e' # escape out
+	  '\f' # form feed
+	  '\n' # new line
+	  '\r' # carriage return
+	  '\t' # horizontal tab
+	  '\v' # vertical tab	
+	 enable # enable and disable shell builtins
+	 eval # construct command by concatenating arguments
+	 exec # execute commands and open, close, or copy file descriptors
+	 exit # cause the shell to exit
+	 export # set the export attribute for variables
+	 false # do nothing unsuccessfully
+	 fc # process the command history list
+	 fg # run jobs in the foreground
+	 for # initialize a for loop
+	 function # initialize a function
+	 getopts # parse utility options
+	 hash # remember or report utility locations
+	 help # display information about builtin commands
+	 history # show command history
+	 if # initialize an if statement
+	 jobs # isplay status of jobs in the current session
+	 kill # terminate a process
+	 let # evaluate arithmetic expressions
+	 local # define local variables
+	 logout # login, logout, utmp and wtmp entries
+	 mapfile # read lines from standard input into an array
+	 popd # remove directories from stack
+	 printf # format and print data
+	   # printf recognises these format specifiers
+	  '%a' # hexadecimal float
+	  '%c' # character
+	  '%d' # signed decimal integer
+	  '%e' # scientific notation
+	  '%f' # float
+	  '%g' # use shorter %e or %f format
+	  '%.nf' # float with n digits of precision
+	  '%o' # octal integer
+	  '%p' # pointer address (hexadecimal)
+	  '%s' # string
+	  '%u' # unsigned decimal integer
+	  '%x' # hexadecimal integer	 
+	 pushd # add directories to stack
+	 pwd # print name of current/working directory
+	 read # read from standard input into a variable
+	 readarray # read lines from a file into an array
+	 readonly # set the readonly attribute for variable
+	 return # return from a function or dot script
+	 select # synchronous i/o multiplexing
+	 set # set or unset options and positional parameters
+	 shift # shift positional parameters
+	 shopt # set and unset shell options
+	 source # execute commands from a file in the current shell
+	 suspend # suspend shell execution
+	 test # check file types and compare values
+	   # the test command uses the following options for the different types of
+	   # data it reads as well as the flag operators in the above section
+	  '-b' <file> # file is block special
+	  '-c' <file> # file is character special
+	  '-d' <file> # file is directory
+	  '-e' <file> # file exists
+	  '-f' <file> # regular file
+	  '-G' <file> # owned by effective group id
+	  '-g' <file> # set group id bit set
+	  '-h' '-L' <file> # symbolic link
+	  '-k' <file> # sticky bit set
+	  '-N' <file> # modified since last read
+	  '-n' <str> # string length is non zero
+	  '-O' <file> # owned by effective user id
+	  '-p' <file> # file is a named pipe
+	  '-r' <file> # file user has read access to
+	  '-s' <file> # filesize greater than zero
+	  '-S' <file> # file is a socket
+	  '-t' <fd> # file descriptor is opened in terminal
+	  '-u' <file> # file its set user id bit is set
+	  '-w' <file> # file user has write access to
+	  '-x' <file> # file user has execute access to
+	  '-z' <str> # string length is zero
+	 time # time a simple command or give resource usage
+	 times # write process times
+	 trap # trap signals
+	 true # do nothing, successfully
+	 type # write a description of command type
+	 typeset # set variable values and attributes
+	 ulimit # set or report file size limit
+	 umask # get or set the file mode creation mask
+	 unalias # remove alias definitions
+	 unset # unset values and attributes of variables and functions
+	 until # initialize an until loop
+	 wait # wait for job completion and return exit status
+	 while # initialize a while loop
+
+	SHORTCUTS
+	  # these are not the default shortcuts for the bash shell, the keybindings
+	  # can be modified in the readline configuration file which is located at
+	  # either /etc/inputrc, ~/.inputrc or $XDG_CONFIG_HOME/readline/inputrc
+	 'Del' # delete character
+	 'Esc+!' # complete command
+	 'Esc+/' # complete filename
+	 'Esc+~' # complete username
+	 'Esc+*' # insert completions
+	 'Esc+.' # insert last argument
+	 'Esc+#' # convert line to comment
+	 'Esc+&' # expand home directory
+	 'Esc+\ ' # delete whitespace at point
+	 '@...+Esc' # complete hostname
+	 '$...+Esc' # complate variable
+	 'Home' 'End' # beginning or end of line
+	 'PgUp' 'PgDn' # beginning or end of history
+	 'Rght' 'Left' # forward or backward character
+	 'Ctrl+_' # undo last action
+	 'Ctrl+a' # clear screen and display
+	 'Ctrl+c' # cancel process
+	 'Ctrl+i' 'Tab' # perform completion
+	 'Ctrl+l' # downcase word
+	 'Ctrl+m' 'Enter' # accept command
+	 'Ctrl+u' # upcase word
+	 'Ctrl+y' # downcase letter
+	 'Ctrl+x+g' 'Ctrl-z' # abort process
+	 'Ctrl+x+h' # fetch last history entry
+	 'Ctrl+x+i' # completions from history file
+	 'Ctrl+x+k' # kill line
+	 'Ctrl+x+r' # re read inputrc
+	 'Ctrl+x+v' # display shell version
+	 'Ctrl+Left'  # transpose words
+	 'Ctrl+Rght' 'Ctrl+Left' # forward or backward word
+	 'Ctrl+Shft+Left' # transpose characters
+	 'Ctrl+Up' 'Ctrl+Down' # previous or next in history
+	 'Ctrl+Shft+C' # copy selected text
+	 'Ctrl+Shft+U' # enter unicode character code
+	 'Ctrl+Shft+V' # paste selected text
+	 'Ctrl+h' 'Bkspc' # backward delete character
+	 'Shft+Home' 'Shft+End' # beginning or end terminal buffer
+	 'Shft+PgUp' 'Shft+PgDn' # page up or down terminal buffer	 
+
+	DEPENDS ON
+	 ▸ readline # gnu readline library
+	 ▸ glibc # gnu c library
+	 ▸ ncurses # system v curses emulation library
+
+	REQUIRED BY
+	 ▸ 9base # base utilities for plan 9
+	 ▸ acme.sh # acme client shell script
+	 ▸ aconfmgr-git # configuration manager for arch linux
+	 ▸ acpid # advanced configuration and power interface event daemon
+	 ▸ adljack # low-latency sound server
+	 ▸ afl # security-oriented fuzzer
+	 ▸ alpine-chroot-install # alpine linux chroot installer
+	 ▸ ammonite # the scala shell you always wanted
+	 ▸ ananicy # automatic cpu governor and io scheduler
+	 ▸ android-ndk # android native development kit (ndk)
+	 ▸ android-sdk-build-tools # android sdk build tools
+	 ▸ ankama-launcher # ankama launcher for dofus and other ankama games
+	 ▸ ant # java build tool
+	 ▸ antiword # free ms word reader
+	 ▸ antlr4 # another tool for language recognition
+	 ▸ anything-sync-daemon # symlink helper for anything file system (aufs)
+	 ▸ apparmor # linux application security framework
+	 ▸ arch-install-scripts # scripts to aid in installing arch linux
+	 ▸ arch-wiki-lite # lightweight offline arch wiki reader
+	 ▸ archivetools # cli utils for creating and extracting archive files
+
+	BINARIES
+	 ▸ '/bin/bash' # invoke the gnu bourne again shell
+	 ▸ '/bin/bashbug' # send mail to the bash maintainers
+	 ▸ '/bin/shellcheck' # static analysis tool for shell scripts
+	 ▸ '/bin/shfmt' # shell code formatter
+	 
+	FILES
+	 ▸ '$HOME/.bashrc' # user bash config file
+	 ▸ '$HOME/.profile' # user bash profile config file
+	 ▸ '/etc/bash.bashrc' # system bash config file
+	 ▸ '/etc/inputrc' # readline config file
+	 ▸ '/etc/profile' # system profile config file
+	 ▸ '/root/.bashrc' # root user bash config file
+
+	WEBLINKS
+	 ▸ 'https://devdocs.io/bash/' # user manual
+	 ▸ 'https://man.archlinux.org/man/readline.3' # readline manpage
+	 ▸ 'https://www.gnu.org/software/bash/bash.html' # official
+	 ▸ 'https://scriptim.github.io/bash-prompt-generator/' # shell prompt generator
+	 ▸ 'https://www.gnu.org/software/bash/manual/bash.html' # gnu manual
+	 ▸ 'https://docs.linux-code.com/software/bash/manual/bash.html' # ref manual
+
