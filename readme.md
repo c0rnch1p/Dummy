@@ -19,9 +19,9 @@ and accessing the files where its stored which is what dummy provides.
 #### Installation
 ##
 #### Depends
-▸ make: gnu utility to maintain groups of programs  
-▸ bat: cat clone with syntax highlighting and git integration  
-▸ highlight: fast and flexible source code highlighter (cli version)  
+▸ make: GNU utility to maintain groups of programs  
+▸ bat: Cat clone with syntax highlighting and git integration  
+▸ highlight: Fast and flexible source code highlighter (cli version)  
 #### MacOS & Linux
 1. Open a terminal.
 2. Clone this repository:
@@ -59,9 +59,9 @@ lot easier. When a file is added, the file list in the category source file, the
 'all_h3lp.c' (comlpete list) source file and the readme are each updated with a new entry.
 
 The 'h3lp/update_db.sh' script will open the relevant files for a given category using the
-'$VISUAL' variable to specify a graphical text editor. The files need to be referenced with their
-location eg. 'category/file'. The subdirectory preceeding the file gets clipped in the menu entry
-but its still needed for reference.
+'$VISUAL' variable to specify a graphical text editor. The files need to be referenced
+with their location eg. 'category/file'. The subdirectory preceeding the file gets clipped
+in the menu entry but its still needed for reference.
 
 Files are given the '.txt' extension when named but it isnt required when updating the
 source arrays. The '.txt' extension as well as the 'h3lp/' section of the path are being
