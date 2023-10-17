@@ -21,7 +21,7 @@ and accessing the files where its stored which is what dummy provides.
 #### Depends
 • make: GNU utility to maintain groups of programs  
 • bat: Cat clone with syntax highlighting and git integration  
-• highlight: Fast and flexible source code highlighter (cli version)  
+• highlight: Fast and flexible CLI source code highlighter  
 #### MacOS & Linux
 Open a terminal and clone this repo:
 ```shell
