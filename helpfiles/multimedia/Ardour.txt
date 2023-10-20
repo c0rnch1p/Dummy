@@ -15,7 +15,7 @@
 	 be automated and sample data is mixed and maintained internally in 32 bit 
 	 floating point format. Ardour can read most if not all media file formats and 
 	 has high grade export capability. While written in C, Ardour also has built in 
-	 compatibility with Lua, which is used to extend its functionality.s
+	 compatibility with Lua, which is used to extend its functionality.
 
 	COMMANDS
 	 ardour7 # run and select session
