@@ -226,7 +226,7 @@
 	 bot_add; bot_add; bot_add; bot_add # Add bots (8v8 is good for DM)
 	 bot_difficulty 3 # Higher bot difficulty
 	 custom_bot_difficulty 3 # Higher custom bot difficulty
-	 echo GAME SETTINGS LOADED! (BOT DIFFUCULTY=3) # Echo things
+	 echo SETTINGS LOADED! (BOT DIFFUCULTY=3) # Echo things
 	 mp_restartgame 1 # Restart the game to load the settings
 	   # Config scripts are saved in the CS2 config directory with a name eg. 
 	   # <practice.cfg>. To run the config, load into a game and open the dev
