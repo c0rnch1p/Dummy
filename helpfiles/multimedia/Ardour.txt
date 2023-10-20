@@ -153,7 +153,7 @@
 	 ▸ dbus # Freedesktop message bus system
 	 ▸ fftw # Library for computing the discrete fourier transform
 	REQUIRED BY
-	 ▸ adlplug-lv2 # LV2 fm synthesizer for ADLMIDI
+	 ▸ adlplug-lv2 # LV2 FM synthesizer for ADLMIDI
 	 ▸ adlplug-vst # ADLplug VST version
 	 ▸ aida-x-lv2 # LV2 AMP model player leveraging AI
 	 ▸ aida-x-vst # aida VST version
@@ -186,7 +186,7 @@
 
 	COMMON USAGE
 	MIDI SETTINGS
-	   # Its helpful to make sure that midi notes are sounded as they are selected
+	   # Its helpful to make sure that MIDI notes are sounded as they are selected
 	   # in the editor, they will also be sounded as they are created
 	 > Edit # Go to the edit menu tab
 	  > Preferences # Select the preferences option
