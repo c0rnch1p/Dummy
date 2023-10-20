@@ -14,105 +14,105 @@
 	 Gedit is only built with support for unix like systems.
 
 	COMMANDS
-	 gedit -s # run gedit --new-window in standalone mode
-	 gedit -V # show application version
-	 gedit -w # open files and block process (wait until files are closed)
-	 gedit --encoding=<value> # set character encoding format
-	 gedit --g-fatal-warnings # make all warnings fatal
-	 gedit --list-encodings # display list of supported encoding formats
-	 gedit --new-document # create a new document in an existing instance
-	 gedit --new-window # create a new top level window in existing instance
+	 gedit -s # Run gedit --new-window in standalone mode
+	 gedit -V # Show application version
+	 gedit -w # Open files and block process (wait until files are closed)
+	 gedit --encoding=<value> # Set character encoding format
+	 gedit --g-fatal-warnings # Make all warnings fatal
+	 gedit --list-encodings # Display list of supported encoding formats
+	 gedit --new-document # Create a new document in an existing instance
+	 gedit --new-window # Create a new top level window in existing instance
 
 	SHORTCUTS
-	 'F1' # show help
-	 'F7' # toggle cursor visibility
-	 'F9' # toggle side panel
-	 'F10' # toggle settings menu
-	 'F11' # toggle fullscreen
-	 'End' # go to end of current line
-	 'Home' # go to beginning of current line
-	 'Ins' # toggle insert/overwrite
-	 'Ctrl+a' # select all text
-	 'Ctrl+c' # copy selected text to clipboard
-	 'Ctrl+d' # delete current line
-	 'Ctrl+f' # text search
-	 'Ctrl+g' # find the next match
-	 'Ctrl+h' # search and replace dialog
-	 'Ctrl+i' # go to line
-	 'Ctrl+j' # condense text on selected lines
-	 'Ctrl+l' # convert selected text to lowercase
-	 'Ctrl+m' # comment out selected lines
-	 'Ctrl+n' # create a file in a new window
-	 'Ctrl+o' # open a file
-	 'Ctrl+p' # print the file
-	 'Ctrl+q' # quit the application
-	 'Ctrl+s' # save the file
-	 'Ctrl+t' # create a file in a new tab
-	 'Ctrl+u' # convert selected text to uppercase
-	 'Ctrl+v' # paste text from clipboard
-	 'Ctrl+w' # close the file
-	 'Ctrl+x' # cut selected text to clipboard
-	 'Ctrl+z' # undo last action
-	 'Ctrl+F9' # toggle bottom panel
-	 'Ctrl+BkSl' # deselect all text
-	 'Ctrl+End' # go to end of file
-	 'Ctrl+Home' # go to beginning of file
-	 'Ctrl+Alt+N' # create a file in a new tab group
-	 'Ctrl+Alt+PgDn' # switch to the next file
-	 'Ctrl+Alt+PgUp' # switch to the previous file
-	 'Ctrl+Left Ctrl+Rght' # move left and right through text
-	 'Ctrl+Up Ctrl+Down' # move up and down through text
-	 'Shft+F7' # check spelling dialog
-	 'Shft+Ctrl+A' # increment number at cursor
-	 'Shft+Ctrl+G' # find last match of string
-	 'Shft+Ctrl+J' # split line at margin crossover
-	 'Shft+Ctrl+K' # deselect highlight search matches
-	 'Shft+Ctrl+L' # save all the files
-	 'Shft+Ctrl+M' # uncomment selected lines
-	 'Shft+Ctrl+S' # rename or relocate the file
-	 'Shft+Ctrl+T' # reopen the most recently closed file
-	 'Shft+Ctrl+W' # close all the files
-	 'Shft+Ctrl+X' # decrement number at cursor
-	 'Shft+Ctrl+Z' # redo last action
-	 'Shft+Ctrl+~' # invert selected case
-	 'Shft+Ctrl+Down' # select text from cursor to end of next line
-	 'Shft+Ctrl+End' # select text from cursor to end of file
-	 'Shft+Ctrl+Home' # select text from cursor to beginning of file
-	 'Shft+Ctrl+Left' # select previous word or special character
-	 'Shft+Ctrl+Rght' # select next word or special character
-	 'Shft+Ctrl+Up' # select text from cursor to start of previous line
-	 'Shft+Left Shft+Rght' # select next character left or right
-	 'Shft+Up Shft+Down' # select text inline with cursor above or below
-	 'Shft+Alt+Down' # move viewport down
-	 'Shft+Alt+End' # move viewport to end of file
-	 'Shft+Alt+Home' # move viewport to beginning of file
-	 'Shft+Alt+Up' # move viewport up
-	 'Alt+Left Alt+Rght'  # move current word left or right
-	 'Alt+Up Alt+Down' # move current line up or down
-	 'Alt+1...9' # switch between files 1 to 9
+	 'F1' # Show help
+	 'F7' # Toggle cursor visibility
+	 'F9' # Toggle side panel
+	 'F10' # Toggle settings menu
+	 'F11' # Toggle fullscreen
+	 'End' # Go to end of current line
+	 'Home' # Go to beginning of current line
+	 'Ins' # Toggle insert/overwrite
+	 'Ctrl+a' # Select all text
+	 'Ctrl+c' # Copy selected text to clipboard
+	 'Ctrl+d' # Delete current line
+	 'Ctrl+f' # Text search
+	 'Ctrl+g' # Find the next match
+	 'Ctrl+h' # Search and replace dialog
+	 'Ctrl+i' # Go to line
+	 'Ctrl+j' # Condense text on selected lines
+	 'Ctrl+l' # Convert selected text to lowercase
+	 'Ctrl+m' # Comment out selected lines
+	 'Ctrl+n' # Create a file in a new window
+	 'Ctrl+o' # Open a file
+	 'Ctrl+p' # Print the file
+	 'Ctrl+q' # Quit the application
+	 'Ctrl+s' # Save the file
+	 'Ctrl+t' # Create a file in a new tab
+	 'Ctrl+u' # Convert selected text to uppercase
+	 'Ctrl+v' # Paste text from clipboard
+	 'Ctrl+w' # Close the file
+	 'Ctrl+x' # Cut selected text to clipboard
+	 'Ctrl+z' # Undo last action
+	 'Ctrl+F9' # Toggle bottom panel
+	 'Ctrl+BkSl' # Deselect all text
+	 'Ctrl+End' # Go to end of file
+	 'Ctrl+Home' # Go to beginning of file
+	 'Ctrl+Alt+N' # Create a file in a new tab group
+	 'Ctrl+Alt+PgDn' # Switch to the next file
+	 'Ctrl+Alt+PgUp' # Switch to the previous file
+	 'Ctrl+Left Ctrl+Rght' # Move left and right through text
+	 'Ctrl+Up Ctrl+Down' # Move up and down through text
+	 'Shft+F7' # Check spelling dialog
+	 'Shft+Ctrl+A' # Increment number at cursor
+	 'Shft+Ctrl+G' # Find last match of string
+	 'Shft+Ctrl+J' # Split line at margin crossover
+	 'Shft+Ctrl+K' # Deselect highlight search matches
+	 'Shft+Ctrl+L' # Save all the files
+	 'Shft+Ctrl+M' # Uncomment selected lines
+	 'Shft+Ctrl+S' # Rename or relocate the file
+	 'Shft+Ctrl+T' # Reopen the most recently closed file
+	 'Shft+Ctrl+W' # Close all the files
+	 'Shft+Ctrl+X' # Decrement number at cursor
+	 'Shft+Ctrl+Z' # Redo last action
+	 'Shft+Ctrl+~' # Invert selected case
+	 'Shft+Ctrl+Down' # Select text from cursor to end of next line
+	 'Shft+Ctrl+End' # Select text from cursor to end of file
+	 'Shft+Ctrl+Home' # Select text from cursor to beginning of file
+	 'Shft+Ctrl+Left' # Select previous word or special character
+	 'Shft+Ctrl+Rght' # Select next word or special character
+	 'Shft+Ctrl+Up' # Select text from cursor to start of previous line
+	 'Shft+Left Shft+Rght' # Select next character left or right
+	 'Shft+Up Shft+Down' # Select text inline with cursor above or below
+	 'Shft+Alt+Down' # Move viewport down
+	 'Shft+Alt+End' # Move viewport to end of file
+	 'Shft+Alt+Home' # Move viewport to beginning of file
+	 'Shft+Alt+Up' # Move viewport up
+	 'Alt+Left Alt+Rght'  # Move current word left or right
+	 'Alt+Up Alt+Down' # Move current line up or down
+	 'Alt+1...9' # Switch between files 1 to 9
 
 	DEPENDS ON
-	 ▸ amtk # devkit for gtk applications
-	 ▸ gsettings-desktop-schemas # gschemas for gnome desktop
-	 ▸ gspell # spell checking library for gtk applications
-	 ▸ libpeas # gobject plugins library
-	 ▸ python-gobject # python bindings for glib/gobject/gio/gtk
-	 ▸ tepl # development library for gtksourceview based editors
+	 ▸ amtk # Devkit for gtk applications
+	 ▸ gsettings-desktop-schemas # GSchemas for gnome desktop
+	 ▸ gspell # Spell checking library for gtk applications
+	 ▸ libpeas # GObject plugins library
+	 ▸ python-gobject # Python bindings for glib/gobject/gio/gtk
+	 ▸ tepl # Development library for gtksourceview based editors
 
 	REQUIRED BY
-	 ▸ gedit-plugin-markdown_preview # plugin for previewing markdown files
-	 ▸ gedit-plugins # collection of plugins
+	 ▸ gedit-plugin-markdown_preview # Plugin for markdown files
+	 ▸ gedit-plugins # Collection of plugins
 
 	BINARIES
-	 ▸ "/bin/gedit" # launch gedit
+	 ▸ '/bin/gedit' # Launch gedit
 
 	FILES
-	 ▸ "$HOME/.config/gedit/accels" # user keybindings file
-	 ▸ "/usr/share/gtksourceview-4/styles/<theme.xml>" # document theme xmls
+	 ▸ "$HOME/.config/gedit/accels" # User keybindings file
+	 ▸ '/usr/share/gtksourceview-4/styles/<theme.xml>' # Document theme XMLs
 
 	WEBLINKS
-	 ▸ "https://delightlylinux.wordpress.com/2015/03/25/gedit-themes/" # themes
-	 ▸ "https://github.com/gmate/gmate/tree/master/styles" # theme previews
-	 ▸ "https://github.com/johnfactotum/gedit-restore-minimap" # restore minimap
-	 ▸ "https://wiki.gnome.org/Apps/Gedit" # gnome wiki docs
+	 ▸ 'https://delightlylinux.wordpress.com/2015/03/25/gedit-themes/' # Themes
+	 ▸ 'https://github.com/gmate/gmate/tree/master/styles' # Theme previews
+	 ▸ 'https://github.com/johnfactotum/gedit-restore-minimap' # Restore minimap
+	 ▸ 'https://wiki.gnome.org/Apps/Gedit' # Gnome wiki
 
