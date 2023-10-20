@@ -208,7 +208,7 @@
 	   # duplications of notes while in edit mode, while meaning to be in grab mode
 
 	WEBLINKS
-	 ▸ 'https://Ardour.org' # Official
+	 ▸ 'https://ardour.org' # Official
 	 ▸ 'https://freesound.org' # Freesound samples
 	 ▸ 'https://calf-studio-gear.org' # Calf plugins
 	 ▸ 'https://www.looperman.com' # Looperman plugins
