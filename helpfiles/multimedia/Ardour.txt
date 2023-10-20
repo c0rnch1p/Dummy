@@ -177,12 +177,12 @@
 	 ▸ dpf-plugins-ladspa # collection of dpf based plugins
 
 	BINARIES
-	 ▸ '/bin/ardour7' # run ardour
-	 ▸ '/bin/ardour7-lua' # ardour lua cli
+	 ▸ '/bin/ardour8' # run ardour
+	 ▸ '/bin/ardour8-lua' # ardour lua cli
 	FREQUENT FILES
-	 ▸ '/etc/ardour7/ardour.keys' # system keybindings config file
-	 ▸ '/etc/ardour7/ardour.menus' # system menus config file
-	 ▸ '/etc/ardour7/default_ui_config' # system ui config files
+	 ▸ '/etc/ardour8/ardour.keys' # system keybindings config file
+	 ▸ '/etc/ardour8/ardour.menus' # system menus config file
+	 ▸ '/etc/ardour8/default_ui_config' # system ui config files
 
 	COMMON USAGE
 	  # the following settings are for midi usage
