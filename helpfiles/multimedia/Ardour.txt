@@ -93,7 +93,7 @@
 	 'Shft+R' # enable record for session
 	 'Shft+S' # show summary
 	 'Shft+:' # copy current take to new playlist on selected track
-	 'Shft+\"' # new playlist for selected tracks
+	 'Shft+"' # new playlist for selected tracks
 	 'Shft+?' # show playlist selector
 	 'Shft+=' # expand track height
 	 'Shft+>' # record with count in
@@ -107,7 +107,7 @@
 	 'Shft+Ctrl+R' # set range to selected regions
 	 'Shft+Ctrl+S' # quick snapshot session (stay on current)
 	 'Shft+Ctrl+:' # copy playlist for all tracks
-	 'Shft+Ctrl+\"' # new playlist for all tracks
+	 'Shft+Ctrl+"' # new playlist for all tracks
 	 'Shft+Ctrl+Spce' # play from edit point and return
 	 'Shft+Ctrl+Tab' # add previous note to selection
 	 'Shft+Ctrl+Up' 'Shft+Ctrl+Down' # increase or decrease note velocity
