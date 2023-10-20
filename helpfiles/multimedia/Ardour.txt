@@ -156,7 +156,7 @@
 	 ▸ adlplug-lv2 # LV2 FM synthesizer for ADLMIDI
 	 ▸ adlplug-vst # ADLPlug VST version
 	 ▸ aida-x-lv2 # LV2 AMP model player leveraging AI
-	 ▸ aida-x-vst # aida VST version
+	 ▸ aida-x-vst # AIDA VST version
 	 ▸ aida-x-vst3 # AIDA VST3 version
 	 ▸ ambix-lv2 # LV2 ambisonic plugins with variable order 
 	 ▸ ambix-vst # Ambix VST version
