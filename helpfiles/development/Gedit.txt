@@ -8,8 +8,8 @@
 	 Gedit is the official text editor of the Gnome desktop environment. It can be
 	 used to create and edit all kinds of text files. Gedit features a flexible
 	 plugin system which can be used to dynamically add features to itself. It has a
-	 clean and simple GUI consistent with the philosophy of the Gnome Project. It
-	 includes tools for editing source code and structured text such as markup
+	 clean and simple interface consistent with the philosophy of the Gnome Project.
+	 It sincludes tools for editing source code and structured text such as markup
 	 languages. It is free and open source software under the GPLv2, as of 2020
 	 Gedit is only built with support for unix like systems.
 
