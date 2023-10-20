@@ -18,59 +18,59 @@
 	 features of Source 2, with some maps receiving complete overhauls.
 
 	REQUIRED
-	 ▸ Vulkan Drivers # graphics drivers
-	 ▸ 8Gb RAM # random access memory
-	 ▸ 4 CPU Threads # processing power
-	 ▸ 85Gb Storage # available space
+	 ▸ Vulkan Drivers # Graphics drivers
+	 ▸ 8Gb RAM # Random access memory
+	 ▸ 4 CPU Threads # Processing power
+	 ▸ 85Gb Storage # Available space
 	 
 	SHORTCUTS
 	   # These are not the default shortcuts for CS2, the keybindings can be
 	   # modified in the keybinding section of the in game settings	
-	 'Mouse 1' # shoot
-	 'Mouse 2' # aim
-	 'Mouse 5' # next weapon
-	 'Mouse 4' # last weapon
-	 'Left Shft' # walk
-	 'Left Ctrl' # toggle crouch
-	 'Spce' # jump
-	 'a' # strafe left
-	 'b' # buy menu
-	 'c' # use mic
-	 'd' # strafe right
-	 'e' # inspect weapon
-	 'f' # use or interact
-	 'g' # graffiti menu
-	 'i' # display inventory
-	 'j' # radio message
-	 'k' # chat wheel 1
-	 'l' # chat wheel 2
-	 'm' # utility items
-	 'o' # choose team
-	 'p' # team equipment
-	 'q' # chat wheel 3
-	 'r' # reload
-	 's' # backward
-	 't' # drop weapon
-	 'u' # team message
-	 'v' # call vote
-	 'w' # forward
-	 'x' # healthshot
-	 'y' # chat message
-	 'z' # radio message
-	 '0' # molotov
-	 '1' # primary weapon
-	 '2' # secondary weapon
-	 '3' # melee weapon
-	 '4' # cycle equipment
-	 '5' # special items
-	 '6' # frag
-	 '7' # flash
-	 '8' # smoke
-	 '9' # zeus
-	 'F3' # autobuy
-	 'F4' # rebuy
-	 'Tab' # show scoreboard
-	 '`' # toggle console
+	 'Mouse 1' # Shoot
+	 'Mouse 2' # Aim
+	 'Mouse 5' # Next weapon
+	 'Mouse 4' # Last weapon
+	 'Left Shft' # Walk
+	 'Left Ctrl' # Toggle crouch
+	 'Spce' # Jump
+	 'a' # Strafe left
+	 'b' # Buy menu
+	 'c' # Use mic
+	 'd' # Strafe right
+	 'e' # Inspect weapon
+	 'f' # Use or interact
+	 'g' # Graffiti menu
+	 'i' # Display inventory
+	 'j' # Radio message
+	 'k' # Chat wheel 1
+	 'l' # Chat wheel 2
+	 'm' # Utility items
+	 'o' # Choose team
+	 'p' # Team equipment
+	 'q' # Chat wheel 3
+	 'r' # Reload
+	 's' # Backward
+	 't' # Drop weapon
+	 'u' # Team message
+	 'v' # Call vote
+	 'w' # Forward
+	 'x' # Healthshot
+	 'y' # Chat message
+	 'z' # Radio message
+	 '0' # Molotov
+	 '1' # Primary weapon
+	 '2' # Secondary weapon
+	 '3' # Melee weapon
+	 '4' # Cycle equipment
+	 '5' # Special items
+	 '6' # Frag
+	 '7' # Flash
+	 '8' # Smoke
+	 '9' # Zeus
+	 'F3' # Autobuy
+	 'F4' # Rebuy
+	 'Tab' # Show scoreboard
+	 '`' # Toggle console
 
 	GUI SPECS
 	   # These are not the default settings for CS2, they are custom settings for
@@ -190,10 +190,9 @@
 	   # essential for the optimal experience, below is a comprehensive training
 	   # layout for CS2 with guidelines for recording gameplay
 	CS2 CONFIG SCRIPT
-	   # Below is a config script to make practising easier, it enables infinite
-	   # round time, buy time and money among other things, it can be saved in the
-	   # CS2 config directory with a name <practice.cfg>. To run the config, load
-	   # into a game and open the dev console, then enter the following command
+	   # Config scripts are saved in the CS2 config directory with a name eg. 
+	   # <practice.cfg>. To run the config, load into a game and open the dev
+	   # console, then enter the following command
 	 exec <pracice> # The filename in the command doesnt need the extension 
 	TRAINING PATTERN
 	 ▸ DM 10min T:180min
