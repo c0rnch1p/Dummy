@@ -152,6 +152,7 @@
 	 ▸ curl # Command line tool for transferring data with URLs
 	 ▸ dbus # Freedesktop message bus system
 	 ▸ fftw # Library for computing the discrete fourier transform
+	 
 	REQUIRED BY
 	 ▸ adlplug-lv2 # LV2 FM synthesizer for ADLMIDI
 	 ▸ adlplug-vst # ADLPlug VST version
