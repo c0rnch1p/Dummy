@@ -185,24 +185,27 @@
 	 ▸ '/etc/ardour8/default_ui_config' # System UI config file
 
 	COMMON USAGE
-	   # The following settings are for MIDI usage
+	MIDI SETTINGS
+	   # Its helpful to make sure that midi notes are sounded as they are selected
+	   # in the editor, they will also be sounded as they are created
 	 > Edit # Go to the edit menu tab
 	  > Preferences # Select the preferences option
 	   > MIDI # Go to the MIDI tab
-	     > Sound MIDI notes as they are selected in the editor: 'on' # Enable the
-	   # setting to make sure playback of MIDI notes can be heard externally (upon 
-	   # selection) and not strictly during playback
+	     > Sound MIDI notes as they are selected in the editor: 'on' # Turn it on
+	   # Make sure that copied MIDI regions create a new file rather than modify the 
+	   # original file which can cause issues if that file is needed later. There
+	   # is also a setting to disable overlapping notes
 	 > Session # Go to the session menu tab
 	  > Properties # Select the properties option
 	   > Misc # Go to the misc tab
-	     > MIDI region copies are independent: 'on' # Enable the setting to make
-	   # sure that copied MIDI regions create a new file rather than modify the 
-	   # original file which can cause issues if needed later
+	     > MIDI region copies are independent: 'on' # Turn it on
 	     > Policy for handling overlapping notes on the same MIDI channel: 'Never
 	       allow them' # Set this policy to make sure that theres no overlapping 
 	   # notes on the same channel which are difficult to visually identify and can 
-	   # cause issues with velocity if not deleted
+	   # cause issues with gain and velocity if not removed
 	     > 'Use these settings as defaults' # Select to enable globally
+	   # If notes are still overlapping it may be due to making accidental
+	   # duplications of notes while in edit mode, while meaning to be in grab mode
 
 	WEBLINKS
 	 ▸ 'https://Ardour.org' # Official
