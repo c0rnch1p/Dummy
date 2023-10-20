@@ -154,7 +154,7 @@
 	 ▸ fftw # Library for computing the discrete fourier transform
 	REQUIRED BY
 	 ▸ adlplug-lv2 # LV2 FM synthesizer for ADLMIDI
-	 ▸ adlplug-vst # ADLplug VST version
+	 ▸ adlplug-vst # ADLPlug VST version
 	 ▸ aida-x-lv2 # LV2 AMP model player leveraging AI
 	 ▸ aida-x-vst # aida VST version
 	 ▸ aida-x-vst3 # AIDA VST3 version
