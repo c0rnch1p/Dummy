@@ -185,11 +185,49 @@
 	   # practice games and server hosting
 	
 	COMMON USAGE
+	PLAY TIPS
+	 1. Aim slightly higher to pop heads
+	 2. Always check 6 and corners
+	 3. Autoswitch when out of ammo
+	 4. Counterstrafe to stop movement
+	 5. Crouchcommit only when certain
+	 6. Crouchjump to extend jump length
+	 7. Finger off w in combat
+	 8. Forwardstrafe laders to climb faster
+	 9. Jigglepeek to subvert expectations
+	 10. Jigglespray to spray while moving
+	 12. Jumpstrafe peek for sure shots
+	 13. Knifejump switch for big jumpshots
+	 14. Knife or equipment out for speed
+   	 15. Set up loadouts for autobuys
+	 16. Shiftwalk for silent footsteps
+	 17. Stay ready at all times
+	 18. Strafe reload when have to reload
+	 19. Strafe when switching weapons
+	 20. Widepeek for the one tap	
 	GRINDING AND PRACTICE
 	   # Counterstrike is a terrible game to play with no skill so training is
 	   # essential for the optimal experience, below is a comprehensive training
 	   # layout for CS2 with guidelines for recording gameplay
 	CS2 CONFIG SCRIPT
+	   # Using a custom configs to define paramaters for games is necessary for
+	   # practice and hosting servers. In the file commands are entered in the same
+	   # format they would be entered into the dev console. Here are some useful
+	   # ones for a practice game
+	 mp_warmup_end # Disable warmup
+	 mp_buytime 9999 # Max buytime
+	 mp_maxmoney 60000 # Max money
+	 mp_startmoney 60000 # Max startmoney
+	 mp_buy_anywhere 1 # Buy anywhere
+	 mp_autoteambalance 1 # Auto team balance
+	 mp_roundtime 60.000 # Hour deathmatch rounds 
+	 mp_roundtime_defuse 60.000 # Hour causual rounds
+	 mp_roundtime_hostage 60.000 # Hour hostage rounds
+	 bot_add; bot_add; bot_add; bot_add # Add bots (8v8 is good for DM)
+	 bot_difficulty 3 # Higher bot difficulty
+	 custom_bot_difficulty 3 # Higher custom bot difficulty
+	 echo GAME SETTINGS LOADED! (BOT DIFFUCULTY=3) # Echo things
+	 mp_restartgame 1 # Restart the game to load the settings
 	   # Config scripts are saved in the CS2 config directory with a name eg. 
 	   # <practice.cfg>. To run the config, load into a game and open the dev
 	   # console, then enter the following command
@@ -212,26 +250,6 @@
 	    ▸ Office   HS  CT        ▸ Office   DM  T        ▸ Office   DM  CT
 	    ▸ Italy    DM  T         ▸ Italy    HS  CT       ▸ Italy    HS  T
 	   ####################################################################
-	PLAY TIPS
-	 1. Aim slightly higher to pop heads
-	 2. Always check 6 and corners
-	 3. Autoswitch when out of ammo
-	 4. Counterstrafe to stop movement
-	 5. Crouchcommit only when certain
-	 6. Crouchjump to extend jump length
-	 7. Finger off w in combat
-	 8. Forwardstrafe laders to climb faster
-	 9. Jigglepeek to subvert expectations
-	 10. Jigglespray to spray while moving
-	 12. Jumpstrafe peek for sure shots
-	 13. Knifejump switch for big jumpshots
-	 14. Knife or equipment out for speed
-   	 15. Set up loadouts for autobuys
-	 16. Shiftwalk for silent footsteps
-	 17. Stay ready at all times
-	 18. Strafe reload when have to reload
-	 19. Strafe when switching weapons
-	 20. Widepeek for the one tap
 	RECORDING WITH OBS
 	   # Make sure video capture source is using xcomposite then start music, setup
 	   # game and press record. Only play good dubs, put details in chat every spwan
