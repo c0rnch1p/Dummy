@@ -7,6 +7,8 @@ char *allh3lpFiles[TOTAL]={
 	"development/Gedit",
 	"gaming/CS2",
 	"multimedia/Ardour",
+	"multimedia/GIMP",
+	"multimedia/Kdenlive",
 	"programming/Bash",
 };
 

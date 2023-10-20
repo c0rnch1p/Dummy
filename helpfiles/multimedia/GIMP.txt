@@ -1,0 +1,151 @@
+                       ____________  _________________ 
+                      /  _____/    |/       \______   \ 
+                     /   \__---    |   \ /   \     ___/
+                     \______  /____|____|____/____|    
+                            )/
+DESCRIPTION
+ GIMP (GNU Image Manipulation Program) is used to edit and manipulate images. It
+ can load and save a variety of image formats and can be used to convert between
+ formats. It can also be used as an illustrator and features a set of drawing and
+ painting tools such as airbrush, clone, pencil, and paint brush which can be
+ applied to an image with a variety of different modes. GIMP also offers an
+ extensive array of selection tools like rectangle, ellipse, fuzzy select,
+ bezier select, intelligent scissors, and select by color and many plugins that
+ perform a variety of image manipulations. Examples include bumpmap, edge
+ detect, gaussian blur, and many others. In addition, GIMP has several scripting
+ extensions which allow for advanced non interactive processing and creation of
+ images. GIMP ships with a second binary called 'gimp-console' which make GIMP
+ behave as if it was called with the '--no-interface' command line option.
+ 
+COMMANDS
+ gimp -n # Start a new GIMP instance
+ gimp -a # Open images as new intance
+ gimp -s # Dont show a splash screen on startup
+ gimp --no-shm # Do not use shared memory between GIMP and plugins
+ gimp --no-CPU-accel # Do not use special CPU acceleration functions
+ gimp --session '/path/sessionrc' # Read from an alternate sessionrc file
+ gimp -g '/path/gimprc' # Read from an alternate user gimprc file
+ gimp --system-gimprc '/path/gimprc' # Use an alternate system gimprc file
+ gimp --debug-handlers # Enable nonfatal debugging signal handlers
+ gimp --dump-gimprc # Output a gimprc file with default settings
+ gimp --show-playground # Show a preferences page with experimental features
+ gimp --display <display> # X display to use
+ 
+SHORTCUTS
+ 'a' # Select airbrush tool
+ 'b' # Select path tool
+ 'c' # Select clone tool
+ 'd' # Select default colors tool 
+ 'e' # Use ellipse select tool
+ 'f' # Use free select tool
+ 'g' # Select gradient tool
+ 'i' # Select scissor tool
+ 'k' # Select ink tool
+ 'l' # Select blend tool
+ 'm' # Select move tool
+ 'n' # Select pencil tool
+ 'o' # Select color picker
+ 'p' # Select paintbrush tool
+ 'r' # Use rectangle select tool
+ 's' # Select smudge tool
+ 't' # Select text tool
+ 'x' # Select swap colors tool
+ 'z' # Use fuzzy select tool
+ 'F10' # Show and hide main menu
+ 'Tab' 'Shft+Tab' # Switch between image and panel modes
+ 'Del' # Remove selection
+ 'Spce' # Activate enabled action
+ 'Home' 'End' # Select between first and last layer
+ 'PgUp' 'Ctrl+Tab' # Select the layer above
+ 'PgDn' 'Shft+Ctrl+Tab' # Select the layer below
+ '/' # Search for function
+ '=' '-' # Zoom in and out on whole image
+ 'Ctrl+a' # Select all (focus dependant)
+ 'Ctrl+c' # Copy selection
+ 'Ctrl+d' # Duplicate selected image
+ 'Ctrl+e' # Export whole image 
+ 'Ctrl+g' # Focus gradients panel
+ 'Ctrl+h' # Anchor selected layers
+ 'Ctrl+i' # Invert selected image
+ 'Ctrl+j' # Centre whole image
+ 'Ctrl+l' # Focus layers panel
+ 'Ctrl+m' # Merge visible layers
+ 'Ctrl+n' # Open a new image template in GIMP
+ 'Ctrl+o' # Open a new image in GIMP
+ 'Ctrl+s' # Save save whole image
+ 'Ctrl+v' # Paste selection to clipboard
+ 'Ctrl+x' # Cut selection
+ 'Ctrl+y' # Redo action
+ 'Ctrl+z' # Undo action
+ 'Ctrl+,' # Fill image with fg color
+ 'Ctrl+.' # Fill image with bg color
+ 'Ctrl+;' # Fill image with pattern
+ 'Ctrl+1...9' # Open recent image by number
+ 'Ctrl+q' 'Alt+F4' 'Ctrl+W' # Quit GIMP
+ 'Ctrl+Alt+o' # Open image as new layer
+ 'Ctrl+Alt+PgUp / PgDn' # Navigate open image tabs 
+ 'Shft+B' # Bucket fill selected image
+ 'Shft+C' # Crop and resize selected image
+ 'Shft+D' # Select dodge and burn tool
+ 'Shft+E' # Select eraser tool
+ 'Shft+F' # Flip selected image
+ 'Shft+L' # Set a new location
+ 'Shft+O' # Create selection by color
+ 'Shft+P' # Change perspective for selected image
+ 'Shft+Q' # Toggle quickmask
+ 'Shft+R' # Rotate selected image
+ 'Shft+S' # Shear selected image
+ 'Shft+T' # Scale selected image
+ 'Shft+U' # Select blur and sharpen tool
+ 'Shft+V' # Path to selection
+ 'Shft+F1' # Enable context help
+ 'Shft+F10' # Show and hide context menu
+ 'Shft+Ctrl+A' # Deselect all (focus dependant)
+ 'Shft+Ctrl+A' # Deselect all selected image
+ 'Shft+Ctrl+B' # Focus brushes panel
+ 'Shft+Ctrl+L' # Float selected image
+ 'Shft+Ctrl+P' # Focus patterns panel
+ 'Shft+Ctrl+R' # Toggle visible rulers 
+ 'Shft+Ctrl+S' # Save save whole image as
+ 'Shft+Ctrl+T' # Toggle visible guides
+ 
+DEPENDS ON
+ ▸ babl # Dynamic pixel format conversion library
+ ▸ dbus-glib # GLib bindings for dbus
+ ▸ desktop-file-utils # Desktop entries command line utils
+ ▸ gegl # Graph based image processing framework
+ ▸ glib-networking # Network extensions for glib
+ ▸ openjpeg2 # Open source jpeg 2000 codec
+ ▸ lcms2 # Small footprint color management engine
+ ▸ libheif # HEIF file format decoder and encoder
+ ▸ libexif # Library to parse an exif file and read the data
+ ▸ libgudev # Object bindings for libudev
+ ▸ libjxl # JPEG XL image format reference implementation
+ ▸ libmng # Routines used to modify mng format graphics files
+ ▸ libmypaint # Library for making brushstrokes
+ ▸ librsvg # SVG rendering library
+ ▸ libwebp # Webp library and conversion tools
+ ▸ libwmf # Library for reading vector images in wmf format
+ ▸ libxmu # X11 miscellaneous micro utility library
+ ▸ libxpm # X11 pixmap library
+ ▸ mypaint-brushes1 # Brushes for libmypaint
+ ▸ openexr # High dynamic range image file format library
+ 
+REQUIRED BY
+ ▸ gimp-plugin-gmic # GIMP plugin for the GMIC framework
+ ▸ xsane-gimp # Xsane GIMP plugin 
+ 
+BINARIES
+ ▸ '/bin/gimp-2.10' # Run gimp
+ ▸ '/bin/gimp-console-2.10' # Run gimp console
+ ▸ '/bin/gimp-debug-tool-2.0' # Run gimp debug tool
+ ▸ '/bin/gimptool-2.0' # Script to perform various gimpy functions
+
+FILES
+ ▸ '/home/${USER}/.config/GIMP/*/gimprc' # GIMP user config file
+ ▸ '/usr/share/gimp/*/themes/Dark/gtkrc' # GIMP theme config file
+ 
+WEBLINKS
+ ▸ 'https://www.gimp.org' # Official
+ ▸ 'https://docs.gimp.org' # Official docs
+ ▸ 'https://www.gimp.org/tutorials/' # Official guides 

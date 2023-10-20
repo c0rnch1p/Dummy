@@ -3,7 +3,9 @@
 
 // file list
 char *multimediaFiles[TOTAL]={
-	"multimedia/Ardour"
+	"multimedia/Ardour",
+	"multimedia/GIMP",
+	"multimedia/Kdenlive",		
 };
 
 // initialize submenu

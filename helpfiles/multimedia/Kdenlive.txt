@@ -1,0 +1,80 @@
+DESCRIPTION  : Kdenlive acronym for KDE Non-Linear Video Editor is a free and open-source video editing software based
+  on the MLT Framework, KDE and Qt. The project was started by Jason Wood in 2002, and is now maintained by a small
+  team of developers. With the release of Kdenlive 15.04.0 in 2015 it became part of the official KDE Projects suite.
+  Kdenlive packages are freely available for Linux, FreeBSD, and Microsoft Windows. As a whole it is distributed under
+  the GPL-3.0-or-later license, while parts of the source code are available under different licenses such as GPL-2.0
+  or later and GPL-3.0-or-later. KDEs Kdenlive makes use of MLT, Frei0r effects, SoX and LADSPA libraries. Kdenlive
+  supports all of the formats supported by FFmpeg or libav (such as QuickTime, AVI, WMV, MPEG, and Flash Video, among
+  others), and also supports 4:3 and 16:9 aspect ratios for both PAL, NTSC and various HD standards, including HDV and
+  AVCHD. Video can also be exported to DV devices, or written to a DVD with chapters and a simple menu.
+PACKAGER     : Antonio Rojas <arojas@archlinux.org>
+VERSION      : 22.08.1
+ARCHITECTURE : x86_64
+DEPENDS      :
+• qt5-networkauth # network authentication module
+• knewstuff # support for downloading application assets from the network
+• knotifyconfig # configuration system for knotify
+• kfilemetadata # library for extracting file metadata
+• purpose # framework for providing abstractions to get the developers purposes fulfilled
+• mlt # open source multimedia framework
+• breeze-icons # breeze icon themes
+• frei0r-plugins # minimalistic plugin api for video effects
+• ffmpeg # complete solution to record, convert and stream audio and video
+• dvgrab # saves audio and video data from an ieee (firewire) digital source
+• recordmydesktop # produces a ogg encapsulated theora/vorbis recording of a desktop
+• opencv # open source computer vision library
+• plasma-desktop # kde plasma desktop
+• opentimelineio # open source api and interchange format for editorial timeline information
+• bigsh0t # collection of frei0r plugins for vr video, with support for shotcut
+• mediainfo # supplies technical and tag information about a video or audio file (cli interface)
+• noise-suppression-for-voice # real-time noise suppression plugin for voice
+CONFLICTS    : none
+WEBLINKS     :
+• https://apps.kde.org/kdenlive/ # official
+
+#--author                             Show author information.
+#--license                            Show license information.
+#--desktopfile <file name>            The base file name of the desktop entry for this application.
+#--config <config>                    Set a custom config file name
+#--mlt-path <mlt-path>                Set the path for MLT environment
+#--mlt-log <verbose/debug>            MLT log level
+#-i <clips>                           Comma separated list of clips to add
+#--qmljsdebugger <value>              Activates the QML/JS debugger with a specified port. The value must be of format
+#--platform <platformName[:options]>  QPA plugin. See QGuiApplication documentation for available options for each plug
+#--platformpluginpath <path>          Path to the platform plugins.
+#--platformtheme <theme>              Platform theme.
+#--plugin <plugin>                    Additional plugins to load, can be specified multiple times.
+#--qwindowgeometry <geometry>         Window geometry for the main window, using the X11-syntax, like 100x100+50+50.
+#--qwindowicon <icon>                 Default window icon.
+#--qwindowtitle <title>               Title of the first window.
+#--reverse                            Sets the applications layout direction to Qt::RightToLeft (debugging helper).
+#--session <session>                  Restores the application from an earlier session.
+#--display <display>                  Display name, overrides $DISPLAY.
+#--name <name>                        Instance name according to ICCCM 4.1.2.5.
+#--nograb                             Disable mouse grabbing (useful in debuggers).
+#--dograb                             Force mouse grabbing (even when running in a debugger).
+#--visual <id>                        ID of the X11 Visual to use.
+#--geometry <geometry>                Alias for --qwindowgeometry.
+#--icon <icon>                        Alias for --qwindowicon.
+#--title <title>                      Alias for --qwindowtitle.
+
+#kdenlive render
+#-erase: if that parameter is present, src file will be erased at the end
+#-kuiserver: if that parameter is present, use KDE job tracker
+#-locale:LOCALE : set a locale for rendering. For example, -locale:fr_FR.UTF-8 will use a french locale (comma as numer
+#in=pos: start rendering at frame pos
+#out=pos: end rendering at frame pos
+#render: path to MLT melt renderer
+#profile: the MLT video profile
+#rendermodule: the MLT consumer used for rendering, usually it is avformat
+#player: path to video player to play when rendering is over, use '-' to disable playing
+#src: source file (usually MLT XML)
+#dest: destination file
+#args: space separated libavformat arguments
+
+KDENLIVE BINARIES # important kdenlive binary files
+• /bin/kdenlive # non-linear video editor for linux using the mlt video framework
+• /bin/kdenlive_render # render program for kdenlive
+FREQUENTLY USED # important kdenlive files and directories
+• ~/.config/kdenliverc # location of kdenlive configuration file
+• ~/.config/kdenlive-layoutsrc # location of kdenlive layouts configuration file
