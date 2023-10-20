@@ -186,14 +186,14 @@
 	
 	COMMON USAGE
 	PLAY TIPS
-	 1. Aim slightly higher to pop heads
+	 1. Aim higher to pop heads
 	 2. Always check 6 and corners
 	 3. Autoswitch when out of ammo
 	 4. Counterstrafe to stop movement
-	 5. Crouchcommit only when certain
+	 5. Crouch commit only when certain
 	 6. Crouchjump to extend jump length
-	 7. Finger off w in combat
-	 8. Forwardstrafe laders to climb faster
+	 7. Finger off W in combat
+	 8. Forwardstrafe ladders to climb faster
 	 9. Jigglepeek to subvert expectations
 	 10. Jigglespray to spray while moving
 	 12. Jumpstrafe peek for sure shots
@@ -267,10 +267,9 @@
 	 -noaafonts # Remove font smoothing
 	  
 	WEBLINKS
-	 ▸ 'https://counterstrike.fandom.com/wiki/Counter-Strike_2' # fandom
-	 ▸ 'https://developer.valvesoftware.com/wiki/Counter-Strike_2' # valve wiki
-	 ▸ 'https://steamcharts.com/app/730' # steamcharts 
-	 ▸ 'https://store.steampowered.com/app/730/CounterStrike_2/' # steam store
-	 ▸ 'https://www.counter-strike.net/cs2' # official
-	 ▸ 'https://www.rockpapershotgun.com/counter-strike-2-console-commands' # dev
-
+	 ▸ 'https://counterstrike.fandom.com/wiki/Counter-Strike_2' # Fandom
+	 ▸ 'https://developer.valvesoftware.com/wiki/Counter-Strike_2' # Valve wiki
+	 ▸ 'https://steamcharts.com/app/730' # Steamcharts 
+	 ▸ 'https://store.steampowered.com/app/730/CounterStrike_2/' # Steam store
+	 ▸ 'https://www.counter-strike.net/cs2' # Official
+	 ▸ 'https://www.rockpapershotgun.com/counter-strike-2-console-commands' # Dev
