@@ -3,7 +3,7 @@
 
 // file list
 char *multimediaFiles[TOTAL]={
-	"multimedia/Inkscape"
+	"multimedia/Ardour"
 };
 
 // initialize submenu

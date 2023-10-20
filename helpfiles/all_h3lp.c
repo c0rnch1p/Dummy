@@ -6,7 +6,7 @@ char *allh3lpFiles[TOTAL]={
 	"00_dummy",
 	"development/Gedit",
 	"gaming/CS2",
-	"multimedia/Inkscape",
+	"multimedia/Ardour",
 	"programming/Bash",
 };
 
