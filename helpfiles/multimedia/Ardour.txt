@@ -162,12 +162,12 @@
 	 ▸ ambix-vst # Ambix VST version
 	 ▸ ams-lv2 # Port of the internal modules for ALSA modular synth
 	 ▸ artyfx # Plugin bundle of artistic realtime audio effects
-	 ▸ avldrums.lv2 # Simple drum sample player plugin for AVLinux kits
+	 ▸ avldrums.lv2 # Simple drum sample player plugin for AVLinux
 	 ▸ bchoppr # Audio stream chopping LV2 plugin
 	 ▸ blop.lv2 # Port of the blop LADSPA plugins 
-	 ▸ bsequencer # Multi channel LV2 MIDI step sequencer with variable matrix
+	 ▸ bsequencer # Multi channel LV2 MIDI step sequencer
 	 ▸ bshapr # Beat envelope shaper LV2 plugin
-	 ▸ bslizr # LV2 plugin for sequenced slicing of stereo audio input signals
+	 ▸ bslizr # LV2 plugin for sequenced slicing stereo input signals
 	 ▸ cardinal-lv2 # Virtual modular synthesizer
 	 ▸ cardinal-vst # Cardinal VST version
 	 ▸ cardinal-vst3 # Cardinal VST3 version
