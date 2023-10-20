@@ -189,7 +189,7 @@
 	 > Edit # go to the edit menu tab
 	  > Preferences # select preferences
 	   > MIDI # select the MIDI tab
-		> Sound MIDI notes as they are selected in the editor : 'on' # enable the
+	     > Sound MIDI notes as they are selected in the editor : 'on' # enable the
 	  # setting to make sure playback of midi notes can be heard externally (upon 
 	  # selection) and not strictly during playback
 	 > Session # go to the session menu tab
