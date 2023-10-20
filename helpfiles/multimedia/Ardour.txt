@@ -195,14 +195,14 @@
 	 > Session # go to the session menu tab
 	  > Properties # select properties
 	   > Misc # select the misc tab
-		> MIDI region copies are independent : 'on' # enable the setting to make
+	     > MIDI region copies are independent : 'on' # enable the setting to make
 	  # sure that copied midi regions create a new file rather than modify the 
 	  # original file which can cause issues if needed later
-		> Policy for handling overlapping notes on the same MIDI channel : 'Never
-		  allow them' # set this policy to make sure that theres no overlapping 
+	     > Policy for handling overlapping notes on the same MIDI channel : 'Never
+	       allow them' # set this policy to make sure that theres no overlapping 
 	  # notes on the same channel which are difficult to visually identify and can 
 	  # cause issues with velocity if not deleted
-		> 'Use these settings as defaults' # select to enable globally
+	     > 'Use these settings as defaults' # select to enable globally
 
 	WEBLINKS
 	 ▸ 'https://ardour.org' # official
