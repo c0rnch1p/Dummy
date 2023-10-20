@@ -185,26 +185,6 @@
 	   # practice games and server hosting
 	
 	COMMON USAGE
-	PLAY TIPS
-	 1. Aim higher to pop heads
-	 2. Always check 6 and corners
-	 3. Autoswitch when out of ammo
-	 4. Counterstrafe to stop movement
-	 5. Crouch commit only when certain
-	 6. Crouchjump to extend jump length
-	 7. Finger off W in combat
-	 8. Forwardstrafe ladders to climb faster
-	 9. Jigglepeek to subvert expectations
-	 10. Jigglespray to spray while moving
-	 12. Jumpstrafe peek for sure shots
-	 13. Knifejump switch for big jumpshots
-	 14. Knife or equipment out for speed
-   	 15. Set up loadouts for autobuys
-	 16. Shiftwalk for silent footsteps
-	 17. Stay ready at all times
-	 18. Strafe reload when have to reload
-	 19. Strafe when switching weapons
-	 20. Widepeek for the one tap	
 	GRINDING AND PRACTICE
 	   # Counterstrike is a terrible game to play with no skill so training is
 	   # essential for the optimal experience, below is a comprehensive training
@@ -254,6 +234,26 @@
 	   # Make sure video capture source is using xcomposite then start music, setup
 	   # game and press record. Only play good dubs, put details in chat every spwan
 	   # and drop comms from chat wheel in response to the commentator etc.
+	PLAY TIPS
+	 ▸ Headshots # Aim higher to pop heads
+	 ▸ Surroundings # Quickly check 6 and corners 
+	 ▸ Autoswitch # Autoswitch to secondary when out of ammo
+	 ▸ Counterstrafe # Counterstrafer to stop movement
+	 ▸ Crouching # Crouch commit only when certain
+	 ▸ Jumping # Crouchjump to extend jump length
+	 ▸ WKey # Finger off W in combat
+	 ▸ ladders # Forwardstrafe ladders to climb faster
+	 ▸ Peeking # Jigglepeek to subvert expectations
+	 ▸ Spraying # Jigglespray to spray while moving
+	 ▸ Information # Jumpstrafe peek to get more information
+	 ▸ Jumpshots # Knifejump switch for big jumpshots
+	 ▸ Speed # Knife or equipment out for speed
+   	 ▸ Loadouts # Set up loadouts for autobuys
+	 ▸ Footsteps # Shiftwalk for silent footsteps
+	 ▸ Awareness # Stay ready for a fight  at all times
+	 ▸ Reloading # Strafe reload when have to reload in combat
+	 ▸ Switching # Strafe when switching weapons in combat
+	 ▸ Intimidation # Widepeek for the one tap
 	STEAM LAUNCH OPTIONS
 	 > Library # Go to steam library
 	   > Home # Select the home option
