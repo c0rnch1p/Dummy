@@ -40,7 +40,7 @@
 	 'p' # Move playhead to cursor
 	 'r' # Select range tool
 	 's' # Cut region at cursor
-	 't' # Select time fx tool
+	 't' # Select time FX tool
 	 'x' # Align region sync relative
 	 'z' # Zoom to selection
 	 'q' # Quantize selected notes
@@ -102,7 +102,7 @@
 	 'Shft+Up' 'Shft+Down' # Transpose selected note up or down an octave
 	 'Shft+Tab' # Add next note to selection
 	 'Shft+Ctrl+E' # Select all after edit point
-	 'Shft+Ctrl+N' # Add new track, bus or vca
+	 'Shft+Ctrl+N' # Add new track, bus or VCA
 	 'Shft+Ctrl+O' # Open recent session
 	 'Shft+Ctrl+R' # Set range to selected regions
 	 'Shft+Ctrl+S' # Quick snapshot session (stay on current)
@@ -158,10 +158,10 @@
 	 ▸ aida-x-lv2 # LV2 AMP model player leveraging AI
 	 ▸ aida-x-vst # AIDA VST version
 	 ▸ aida-x-vst3 # AIDA VST3 version
-	 ▸ ambix-lv2 # LV2 ambisonic plugins with variable order 
+	 ▸ ambix-lv2 # LV2 Ambisonic plugins with variable order 
 	 ▸ ambix-vst # Ambix VST version
 	 ▸ ams-lv2 # Port of the internal modules for ALSA modular synth
-	 ▸ artyfx # Plugin bundle of artistic realtime audio effects
+	 ▸ artyFX # Plugin bundle of artistic realtime audio effects
 	 ▸ avldrums.lv2 # Simple drum sample player plugin for AVLinux
 	 ▸ bchoppr # Audio stream chopping LV2 plugin
 	 ▸ blop.lv2 # Port of the blop LADSPA plugins 
