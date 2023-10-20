@@ -235,25 +235,25 @@
 	   # game and press record. Only play good dubs, put details in chat every spwan
 	   # and drop comms from chat wheel in response to the commentator etc.
 	PLAY TIPS
-	 ▸ Headshots # Aim higher to pop heads
-	 ▸ Surroundings # Quickly check 6 and corners 
 	 ▸ Autoswitch # Autoswitch to secondary when out of ammo
+	 ▸ Awareness # Stay ready for a fight  at all times
 	 ▸ Counterstrafe # Counterstrafer to stop movement
 	 ▸ Crouching # Crouch commit only when certain
-	 ▸ Jumping # Crouchjump to extend jump length
-	 ▸ WKey # Finger off W in combat
-	 ▸ ladders # Forwardstrafe ladders to climb faster
-	 ▸ Peeking # Jigglepeek to subvert expectations
-	 ▸ Spraying # Jigglespray to spray while moving
-	 ▸ Information # Jumpstrafe peek to get more information
-	 ▸ Jumpshots # Knifejump switch for big jumpshots
-	 ▸ Speed # Knife or equipment out for speed
-   	 ▸ Loadouts # Set up loadouts for autobuys
 	 ▸ Footsteps # Shiftwalk for silent footsteps
-	 ▸ Awareness # Stay ready for a fight  at all times
-	 ▸ Reloading # Strafe reload when have to reload in combat
-	 ▸ Switching # Strafe when switching weapons in combat
+	 ▸ Headshots # Aim higher to pop heads
+	 ▸ Information # Jumpstrafe peek to get more information
 	 ▸ Intimidation # Widepeek for the one tap
+	 ▸ Jumping # Crouchjump to extend jump length
+	 ▸ Jumpshots # Knifejump switch for big jumpshots
+	 ▸ Ladders # Forwardstrafe ladders to climb faster
+   	 ▸ Loadouts # Set up loadouts for autobuys
+	 ▸ Peeking # Jigglepeek to subvert expectations
+	 ▸ Reloading # Strafe reload when have to reload in combat
+	 ▸ Speed # Knife or equipment out for speed
+	 ▸ Spraying # Jigglespray to spray while moving
+	 ▸ Surroundings # Quickly check 6 and corners 
+	 ▸ Switching # Strafe when switching weapons in combat
+	 ▸ WKey # Finger off W in combat
 	STEAM LAUNCH OPTIONS
 	 > Library # Go to steam library
 	   > Home # Select the home option
