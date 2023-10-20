@@ -44,7 +44,7 @@
 	 'l' # Select blend tool
 	 'm' # Select move tool
 	 'n' # Select pencil tool
-	 'o' # Select color picker
+	 'o' # Select color pickerq
 	 'p' # Select paintbrush tool
 	 'r' # Use rectangle select tool
 	 's' # Select smudge tool

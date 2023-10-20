@@ -1,5 +1,5 @@
 #include "all_h3lp.h"
-#define TOTAL 5
+#define TOTAL 7
 
 // file list
 char *allh3lpFiles[TOTAL]={

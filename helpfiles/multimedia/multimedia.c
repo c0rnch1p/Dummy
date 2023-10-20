@@ -1,5 +1,5 @@
 #include "multimedia.h"
-#define TOTAL 1
+#define TOTAL 3
 
 // file list
 char *multimediaFiles[TOTAL]={
