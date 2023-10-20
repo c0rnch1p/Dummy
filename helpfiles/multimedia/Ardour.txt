@@ -179,6 +179,7 @@
 	BINARIES
 	 ▸ '/bin/ardour8' # Run Ardour
 	 ▸ '/bin/ardour8-lua' # Ardour Lua CLI
+	 
 	FILES
 	 ▸ '/etc/ardour8/Ardour.keys' # System keybindings config file
 	 ▸ '/etc/ardour8/Ardour.menus' # System menus config file
