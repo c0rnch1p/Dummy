@@ -1,206 +1,206 @@
-     ____  __ ________ ___________________  ___    _______   ______________
-    |    |/ _|_  ___  \\_   _____/\       \|   |  |   |   \ /   /_   _____/
-    |      <_ |    |   \|    __)_ /   |    \   |__|   |\   Y   / |    __)_ 
-    |____|___\_________/_________/____|____/_______\__| \_____/ /_________/
+		 ____  __ ________ ___________________  ___    _______   ______________
+		|    |/ _|_  ___  \\_   _____/\       \|   |  |   |   \ /   /_   _____/
+		|      <_ |    |   \|    __)_ /   |    \   |__|   |\   Y   / |    __)_ 
+		|____|___\_________/_________/____|____/_______\__| \_____/ /_________/
 
-DESCRIPTION
- Kdenlive is an acronym for KDE non linear video editor, its free and open
- source video editing studio based on the MLT Framework, KDE and Qt. The
- project was started by Jason Wood in 2002, and is now maintained by a small
- team of developers. With the release of Kdenlive 15.04.0 in 2015 it became part
- of the official KDE Projects suite. Kdenlive packages are freely available for
- Linux, FreeBSD, and Microsoft Windows. As a whole it is distributed under the
- GPL 3.0, while parts of the source code are available under different licenses
- such as GPL 2.0 and GPL 3.0-or-later. KDEs Kdenlive makes use of MLT, Frei0r
- plugins, SoX and LADSPA libraries. Kdenlive supports all of the formats
- upported by FFmpeg or libav (such as QuickTime, AVI, WMV,  MPEG, and Flash
- Video, among others), and also supports 4:3 and 16:9 aspect ratios for both
- PAL, NTSC and various HD standards, including HDV and AVCHD. Video can also be
- exported to DV devices, or written to a DVD with chapters and a simple menu.
+	DESCRIPTION
+	 Kdenlive is an acronym for KDE non linear video editor, its free and open
+	 source video editing studio based on the MLT Framework, KDE and Qt. The
+	 project was started by Jason Wood in 2002, and is now maintained by a small
+	 team of developers. With the release of Kdenlive 15.04.0 in 2015 it became part
+	 of the official KDE Projects suite. Kdenlive packages are freely available for
+	 Linux, FreeBSD, and Microsoft Windows. As a whole it is distributed under the
+	 GPL 3.0, while parts of the source code are available under different licenses
+	 such as GPL 2.0 and GPL 3.0-or-later. KDEs Kdenlive makes use of MLT, Frei0r
+	 plugins, SoX and LADSPA libraries. Kdenlive supports all of the formats
+	 upported by FFmpeg or libav (such as QuickTime, AVI, WMV,  MPEG, and Flash
+	 Video, among others), and also supports 4:3 and 16:9 aspect ratios for both
+	 PAL, NTSC and various HD standards, including HDV and AVCHD. Video can also be
+	 exported to DV devices, or written to a DVD with chapters and a simple menu.
 
-COMMANDS
- kdenlive --author # Show author information
- kdenlive --license # Show license information
- kdenlive --desktopfile <file> # Set the base file name of the desktop entry
- kdenlive --config <config> # Set a custom config file name
- kdenlive --mlt-path <mlt-path> # Set the path for MLT environment
- kdenlive --mlt-log <verbose/debug> # MLT log level
- kdenlive -i <clips> # Comma separated list of clips to add
- kdenlive --qmljsdebugger <port> # Activates the QML/JS debugger on a port
- kdenlive --platform <platformName[:options]> # QPA plugin
- kdenlive --platformpluginpath <path> # Path to the platform plugins
- kdenlive --platformtheme <theme> # Platform theme
- kdenlive --plugin <plugin> # Additional plugins to load
- kdenlive --qwindowgeometry <geometry> # Window geometry for main window
- kdenlive --qwindowicon <icon> # Default window icon
- kdenlive --qwindowtitle <title> # Title of the first window
- kdenlive --reverse # Sets the applications layout direction to Qt::RightToLeft
- kdenlive --session <session> # Restores an earlier session
- kdenlive --display <display> # Override display variable
- kdenlive --name <name> # Instance name according to ICCCM 4.1.2.5
- kdenlive --nograb # Disable mouse grabbing (useful in debuggers)
- kdenlive --dograb # Force mouse grabbing (even when running in a debugger)
- kdenlive --visual <id> # ID of the X11 Visual to use.
- kdenlive --geometry <geometry> # Alias for --qwindowgeometry
- kdenlive --icon <icon> # Alias for --qwindowicon
- kdenlive --title <title> # Alias for --qwindowtitle
-  # The kdenlive_render program is a binary used by the rendering system in 
-  # Kdenlive, the manpage explains that its not of any concern to users
+	COMMANDS
+	 kdenlive --author # Show author information
+	 kdenlive --license # Show license information
+	 kdenlive --desktopfile <file> # Set the base file name of the desktop entry
+	 kdenlive --config <config> # Set a custom config file name
+	 kdenlive --mlt-path <mlt-path> # Set the path for MLT environment
+	 kdenlive --mlt-log <verbose/debug> # MLT log level
+	 kdenlive -i <clips> # Comma separated list of clips to add
+	 kdenlive --qmljsdebugger <port> # Activates the QML/JS debugger on a port
+	 kdenlive --platform <platformName[:options]> # QPA plugin
+	 kdenlive --platformpluginpath <path> # Path to the platform plugins
+	 kdenlive --platformtheme <theme> # Platform theme
+	 kdenlive --plugin <plugin> # Additional plugins to load
+	 kdenlive --qwindowgeometry <geometry> # Window geometry for main window
+	 kdenlive --qwindowicon <icon> # Default window icon
+	 kdenlive --qwindowtitle <title> # Title of the first window
+	 kdenlive --reverse # Sets the applications layout direction to Qt::RightToLeft
+	 kdenlive --session <session> # Restores an earlier session
+	 kdenlive --display <display> # Override display variable
+	 kdenlive --name <name> # Instance name according to ICCCM 4.1.2.5
+	 kdenlive --nograb # Disable mouse grabbing (useful in debuggers)
+	 kdenlive --dograb # Force mouse grabbing (even when running in a debugger)
+	 kdenlive --visual <id> # ID of the X11 Visual to use.
+	 kdenlive --geometry <geometry> # Alias for --qwindowgeometry
+	 kdenlive --icon <icon> # Alias for --qwindowicon
+	 kdenlive --title <title> # Alias for --qwindowtitle
+	  # The kdenlive_render program is a binary used by the rendering system in 
+	  # Kdenlive, the manpage explains that its not of any concern to users
 
-SHORTCUTS
- 'a' # Toggle track active
- 'b' # Overwrite clip zone in timeline
- 'g' # Show add remove guide
- 'i' # Set zone in clip monitor
- 'j' # Rewind playback
- 'k' # Pause playback
- 'l' # Forward playback or press to cycle speeds (1x, 1.5x, 2x, 3x, 5.5x, 10x)
- 'm' # Spacer tool
- 'o' # Set zone out in clip monitor
- 'p' # Align playhead to mouse position in timeline
- 's' # Selection tool
- 't' # Switch between clip monitor and project monitor
- 'u' # Mix clips
- 'v' # Insert clip zone in timeline
- 'x' # Razor tool
- 'z' # Lift timeline zone
- '1' # Select video track 1
- '2' # Select video track 2
- '3' # Select video track 3
- '4' # Select video track 4
- '5' # Select video track 5
- '6' # Select video track 6
- '7' # Select video track 7
- '8' # Select video track 8
- '9' # Select video track 9
- 'Del' # Delete selected item
- 'Esc' # Return from any tool back to selection tool
- 'End' # Go to timeline clip end
- 'Home' # Go to timeline clip start
- 'Left' # Rewind 1 frame (press again for speeds)
- 'Rght' # Forward 1 frame
- 'Num+*' # Add marker or guide
- 'Sace' # Play or pause playback
- 'Up | Down' # Normalize track height
- 'F1' # Kdenlive handbook
- 'F2' # Rename element
- 'F11' # Switch monitor to fullscreen
- 'F12' # Enable multitrack view
- '<' # Collapse/expand item
- '=' # Focus timecode
- ')' # Resize item end
- '(' # Resize item start
- '+' # Select clip
- '-' # Deselect clip
- ''' # Switch track target audio stream 
- 'Ctrl+a' # Select all (timeline, project bin, title)
- 'Ctrl+c | Ctrl+Ins' # Copy element
- 'Ctrl+g' # Group clips
- 'Ctrl+i' # Insert zone in project bin
- 'Ctrl+m' # Show the menu bar again after it has been hidden
- 'Ctrl+n' # Create a new kdenlive project
- 'Ctrl+o' # Opens a kdenlive project
- 'Ctrl+q' # Quit kdenlive
- 'Ctrl+s' # Saves the current state of the project
- 'Ctrl+v | Shft+Ins' # Paste element
- 'Ctrl+w' # Close the extra bins
- 'Ctrl+z' # Undo action
- 'Ctrl+1' # Select target 1
- 'Ctrl+2' # Select target 2
- 'Ctrl+3' # Select target 3
- 'Ctrl+4' # Select target 4
- 'Ctrl+5' # Select target 5
- 'Ctrl+6' # Select target 6
- 'Ctrl+7' # Select target 7
- 'Ctrl+8' # Select target 8
- 'Ctrl+9' # Select target 9
- 'Ctrl++' # Zoom in (timeline only)
- 'Ctrl+End' # Go to project end in timeline
- 'Ctrl+Home' # Go to project start in timeline
- 'Ctrl+Left' # Go to previous guide in timeline
- 'Ctrl+Rght' # Go to next guide in timeline
- 'Ctrl+Nter' # Open the render window
- 'Ctrl+Spce' # Play zone (playback only)
- 'Ctrl+Tab' # Toggle between sequence tabs, go to next sequence
- 'Ctrl+Shft+,' # Open the config window
- 'Ctrl+=' # Zoom timeline in
- 'Ctrl+-' # Zoom timeline out
- 'ctrl+Shft+A' # Deselect elements
- 'Ctrl+Shft+F' # Full screen mode
- 'Ctrl+Shft+G' # Ungroup clips
- 'Ctrl+Shft+L' # Toggle all track lock
- 'Ctrl+Shft+R' # Cut all clips
- 'Ctrl+Shft+Spce' # Loop timeline zone
- 'Ctrl+Shft+S' # Save the project as
- 'Ctrl+Shft+Tab' # Go to previous sequence
- 'Ctrl+Shft+Z' # Redo action
- 'Ctrl+Alt+,' # Open the shortcut window 
- 'Ctrl+Alt+i' # Open the action window (no other method)
- 'Shft+A' # Toggle all tracks tracks active
- 'Shft+G' # Grab current item
- 'Shft+H' # Toggle disable tracks
- 'Shft+I' # Go to timeline zone start
- 'Shft+L' # Toggle track lock
- 'Shft+O' # Go to timeline zone end
- 'Shft+R' # Cut clip
- 'Shft+S' # Add subtitle
- 'Shft+T' # Toggle track target
- 'Shft+X' # Extract timeline zone
- 'Shft+Rght' # Forward playback 1 second
- 'Shft+F1' # Query element
- 'Shft+Left' # Rewind playback 1 second
- 'Shft+-' # Deselect transition
- 'Shft++' # Select transition
- 'Shft+Nter' # Start preview render
- 'Alt+e' # Add an ellipse
- 'Alt+i' # Insert an image
- 'Alt+r' # Add a rectangle
- 'Alt+s' # Switch back to selection tool 
- 'Alt+t' # Add some text
- 'Alt+1' # Select audio track 1
- 'Alt+2' # Select audio track 2
- 'Alt+3' # Select audio track 3
- 'Alt+4' # Select audio track 4
- 'Alt+5' # Select audio track 5
- 'Alt+6' # Select audio track 6
- 'Alt+7' # Select audio track 7
- 'Alt+8' # Select audio track 8
- 'Alt+9' # Select audio track 9
- 'Alt+Up | Alt+Down' # Move up and down
- 'Alt+Rght | Alt+Left' # Go to next and previous snap point
- 'Alt+Shft+A' # Switch all tracks active
- 'Alt++' # Add clip to selection
- 'Alt+Shft++' # Add transition to selection
+	SHORTCUTS
+	 'a' # Toggle track active
+	 'b' # Overwrite clip zone in timeline
+	 'g' # Show add remove guide
+	 'i' # Set zone in clip monitor
+	 'j' # Rewind playback
+	 'k' # Pause playback
+	 'l' # Forward playback or press to cycle speeds (1x, 1.5x, 2x, 3x, 5.5x, 10x)
+	 'm' # Spacer tool
+	 'o' # Set zone out in clip monitor
+	 'p' # Align playhead to mouse position in timeline
+	 's' # Selection tool
+	 't' # Switch between clip monitor and project monitor
+	 'u' # Mix clips
+	 'v' # Insert clip zone in timeline
+	 'x' # Razor tool
+	 'z' # Lift timeline zone
+	 '1' # Select video track 1
+	 '2' # Select video track 2
+	 '3' # Select video track 3
+	 '4' # Select video track 4
+	 '5' # Select video track 5
+	 '6' # Select video track 6
+	 '7' # Select video track 7
+	 '8' # Select video track 8
+	 '9' # Select video track 9
+	 'Del' # Delete selected item
+	 'Esc' # Return from any tool back to selection tool
+	 'End' # Go to timeline clip end
+	 'Home' # Go to timeline clip start
+	 'Left' # Rewind 1 frame (press again for speeds)
+	 'Rght' # Forward 1 frame
+	 'Num+*' # Add marker or guide
+	 'Sace' # Play or pause playback
+	 'Up | Down' # Normalize track height
+	 'F1' # Kdenlive handbook
+	 'F2' # Rename element
+	 'F11' # Switch monitor to fullscreen
+	 'F12' # Enable multitrack view
+	 '<' # Collapse/expand item
+	 '=' # Focus timecode
+	 ')' # Resize item end
+	 '(' # Resize item start
+	 '+' # Select clip
+	 '-' # Deselect clip
+	 ''' # Switch track target audio stream 
+	 'Ctrl+a' # Select all (timeline, project bin, title)
+	 'Ctrl+c | Ctrl+Ins' # Copy element
+	 'Ctrl+g' # Group clips
+	 'Ctrl+i' # Insert zone in project bin
+	 'Ctrl+m' # Show the menu bar again after it has been hidden
+	 'Ctrl+n' # Create a new kdenlive project
+	 'Ctrl+o' # Opens a kdenlive project
+	 'Ctrl+q' # Quit kdenlive
+	 'Ctrl+s' # Saves the current state of the project
+	 'Ctrl+v | Shft+Ins' # Paste element
+	 'Ctrl+w' # Close the extra bins
+	 'Ctrl+z' # Undo action
+	 'Ctrl+1' # Select target 1
+	 'Ctrl+2' # Select target 2
+	 'Ctrl+3' # Select target 3
+	 'Ctrl+4' # Select target 4
+	 'Ctrl+5' # Select target 5
+	 'Ctrl+6' # Select target 6
+	 'Ctrl+7' # Select target 7
+	 'Ctrl+8' # Select target 8
+	 'Ctrl+9' # Select target 9
+	 'Ctrl++' # Zoom in (timeline only)
+	 'Ctrl+End' # Go to project end in timeline
+	 'Ctrl+Home' # Go to project start in timeline
+	 'Ctrl+Left' # Go to previous guide in timeline
+	 'Ctrl+Rght' # Go to next guide in timeline
+	 'Ctrl+Nter' # Open the render window
+	 'Ctrl+Spce' # Play zone (playback only)
+	 'Ctrl+Tab' # Toggle between sequence tabs, go to next sequence
+	 'Ctrl+Shft+,' # Open the config window
+	 'Ctrl+=' # Zoom timeline in
+	 'Ctrl+-' # Zoom timeline out
+	 'ctrl+Shft+A' # Deselect elements
+	 'Ctrl+Shft+F' # Full screen mode
+	 'Ctrl+Shft+G' # Ungroup clips
+	 'Ctrl+Shft+L' # Toggle all track lock
+	 'Ctrl+Shft+R' # Cut all clips
+	 'Ctrl+Shft+Spce' # Loop timeline zone
+	 'Ctrl+Shft+S' # Save the project as
+	 'Ctrl+Shft+Tab' # Go to previous sequence
+	 'Ctrl+Shft+Z' # Redo action
+	 'Ctrl+Alt+,' # Open the shortcut window 
+	 'Ctrl+Alt+i' # Open the action window (no other method)
+	 'Shft+A' # Toggle all tracks tracks active
+	 'Shft+G' # Grab current item
+	 'Shft+H' # Toggle disable tracks
+	 'Shft+I' # Go to timeline zone start
+	 'Shft+L' # Toggle track lock
+	 'Shft+O' # Go to timeline zone end
+	 'Shft+R' # Cut clip
+	 'Shft+S' # Add subtitle
+	 'Shft+T' # Toggle track target
+	 'Shft+X' # Extract timeline zone
+	 'Shft+Rght' # Forward playback 1 second
+	 'Shft+F1' # Query element
+	 'Shft+Left' # Rewind playback 1 second
+	 'Shft+-' # Deselect transition
+	 'Shft++' # Select transition
+	 'Shft+Nter' # Start preview render
+	 'Alt+e' # Add an ellipse
+	 'Alt+i' # Insert an image
+	 'Alt+r' # Add a rectangle
+	 'Alt+s' # Switch back to selection tool 
+	 'Alt+t' # Add some text
+	 'Alt+1' # Select audio track 1
+	 'Alt+2' # Select audio track 2
+	 'Alt+3' # Select audio track 3
+	 'Alt+4' # Select audio track 4
+	 'Alt+5' # Select audio track 5
+	 'Alt+6' # Select audio track 6
+	 'Alt+7' # Select audio track 7
+	 'Alt+8' # Select audio track 8
+	 'Alt+9' # Select audio track 9
+	 'Alt+Up | Alt+Down' # Move up and down
+	 'Alt+Rght | Alt+Left' # Go to next and previous snap point
+	 'Alt+Shft+A' # Switch all tracks active
+	 'Alt++' # Add clip to selection
+	 'Alt+Shft++' # Add transition to selection
 
-DEPENDS ON
- ▸ qt5-networkauth # Network authentication module
- ▸ knewstuff # Support for downloading application assets
- ▸ knotifyconfig # Configuration system for knotify
- ▸ kfilemetadata # Library for extracting file metadata
- ▸ purpose # Framework for providing abstractions
- ▸ mlt # Open source multimedia framework
- ▸ breeze-icons # Breeze icon themes
- ▸ frei0r-plugins # Minimalistic plugin api for video effects
- ▸ ffmpeg # Record, convert and stream audio and video
- ▸ dvgrab # Saves audio and video data from a digital source
- ▸ recordmydesktop # Theora/vorbis desktop recording in ogg format
- ▸ opencv # Open source computer vision library
- ▸ plasma-desktop # KDE plasma desktop
- ▸ opentimelineio # Open source api for editorial timeline information
- ▸ bigsh0t # Collection of frei0r plugins for VR video
- ▸ mediainfo # Supplies technical and tag information for media files
- ▸ noise-suppression-for-voice # Realtime noise suppression plugin for voice
- 
-REQUIRED BY
- ▸ kde-multimedia-meta # Meta package for KDE multimedia applications
+	DEPENDS ON
+	 ▸ qt5-networkauth # Network authentication module
+	 ▸ knewstuff # Support for downloading application assets
+	 ▸ knotifyconfig # Configuration system for knotify
+	 ▸ kfilemetadata # Library for extracting file metadata
+	 ▸ purpose # Framework for providing abstractions
+	 ▸ mlt # Open source multimedia framework
+	 ▸ breeze-icons # Breeze icon themes
+	 ▸ frei0r-plugins # Minimalistic plugin api for video effects
+	 ▸ ffmpeg # Record, convert and stream audio and video
+	 ▸ dvgrab # Saves audio and video data from a digital source
+	 ▸ recordmydesktop # Theora/vorbis desktop recording in ogg format
+	 ▸ opencv # Open source computer vision library
+	 ▸ plasma-desktop # KDE plasma desktop
+	 ▸ opentimelineio # Open source api for editorial timeline information
+	 ▸ bigsh0t # Collection of frei0r plugins for VR video
+	 ▸ mediainfo # Supplies technical and tag information for media files
+	 ▸ noise-suppression-for-voice # Realtime noise suppression plugin for voice
+	 
+	REQUIRED BY
+	 ▸ kde-multimedia-meta # Meta package for KDE multimedia applications
 
-BINARIES
- ▸ '/bin/kdenlive' # Run Kdenlive
- ▸ '/bin/kdenlive_render' # Run render program for Kdenlive
+	BINARIES
+	 ▸ '/bin/kdenlive' # Run Kdenlive
+	 ▸ '/bin/kdenlive_render' # Run render program for Kdenlive
 
-FILES
- ▸ "$HOME/.config/kdenliverc" # User config file
- ▸ "$HOME/.config/kdenlive-layoutsrc" # User layouts config file
+	FILES
+	 ▸ "$HOME/.config/kdenliverc" # User config file
+	 ▸ "$HOME/.config/kdenlive-layoutsrc" # User layouts config file
 
-WEBLINKS
- ▸ 'https://apps.kde.org/kdenlive/' # Official
+	WEBLINKS
+	 ▸ 'https://apps.kde.org/kdenlive/' # Official
