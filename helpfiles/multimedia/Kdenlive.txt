@@ -1,36 +1,46 @@
-DESCRIPTION  : Kdenlive acronym for KDE Non-Linear Video Editor is a free and open-source video editing software based
-  on the MLT Framework, KDE and Qt. The project was started by Jason Wood in 2002, and is now maintained by a small
-  team of developers. With the release of Kdenlive 15.04.0 in 2015 it became part of the official KDE Projects suite.
-  Kdenlive packages are freely available for Linux, FreeBSD, and Microsoft Windows. As a whole it is distributed under
-  the GPL-3.0-or-later license, while parts of the source code are available under different licenses such as GPL-2.0
-  or later and GPL-3.0-or-later. KDEs Kdenlive makes use of MLT, Frei0r effects, SoX and LADSPA libraries. Kdenlive
-  supports all of the formats supported by FFmpeg or libav (such as QuickTime, AVI, WMV, MPEG, and Flash Video, among
-  others), and also supports 4:3 and 16:9 aspect ratios for both PAL, NTSC and various HD standards, including HDV and
-  AVCHD. Video can also be exported to DV devices, or written to a DVD with chapters and a simple menu.
-PACKAGER     : Antonio Rojas <arojas@archlinux.org>
-VERSION      : 22.08.1
-ARCHITECTURE : x86_64
-DEPENDS      :
-• qt5-networkauth # network authentication module
-• knewstuff # support for downloading application assets from the network
-• knotifyconfig # configuration system for knotify
-• kfilemetadata # library for extracting file metadata
-• purpose # framework for providing abstractions to get the developers purposes fulfilled
-• mlt # open source multimedia framework
-• breeze-icons # breeze icon themes
-• frei0r-plugins # minimalistic plugin api for video effects
-• ffmpeg # complete solution to record, convert and stream audio and video
-• dvgrab # saves audio and video data from an ieee (firewire) digital source
-• recordmydesktop # produces a ogg encapsulated theora/vorbis recording of a desktop
-• opencv # open source computer vision library
-• plasma-desktop # kde plasma desktop
-• opentimelineio # open source api and interchange format for editorial timeline information
-• bigsh0t # collection of frei0r plugins for vr video, with support for shotcut
-• mediainfo # supplies technical and tag information about a video or audio file (cli interface)
-• noise-suppression-for-voice # real-time noise suppression plugin for voice
+     ____  __ ________ ___________________  ___    _______   ______________
+    |    |/ _|_  ___  \\_   _____/\       \|   |  |   |   \ /   /_   _____/
+    |      <_ |    |   \|    __)_ /   |    \   |__|   |\   Y   / |    __)_ 
+    |____|___\_________/_________/____|____/_______\__| \_____/ /_________/
+
+DESCRIPTION
+ Kdenlive acronym for KDE Non-Linear Video Editor is a free and open-source
+ video editing software based on the MLT Framework, KDE and Qt. The project was
+ started by Jason Wood in 2002, and is now maintained by a small team of
+ developers. With the release of Kdenlive 15.04.0 in 2015 it became part of the
+ official KDE Projects suite. Kdenlive packages are freely available for Linux,
+ FreeBSD, and Microsoft Windows. As a whole it is distributed under the
+ GPL-3.0-or-later license, while parts of the source code are available under
+ different licenses such as GPL-2.0 or later and GPL-3.0-or-later. KDEs Kdenlive
+ makes use of MLT, Frei0r effects, SoX and LADSPA libraries. Kdenlive supports
+ all of the formats supported by FFmpeg or libav (such as QuickTime, AVI, WMV,
+ MPEG, and Flash Video, among others), and also supports 4:3 and 16:9 aspect
+ ratios for both PAL, NTSC and various HD standards, including HDV and AVCHD.
+ Video can also be exported to DV devices, or written to a DVD with chapters and
+ a simple menu.
+
+DEPENDS ON
+▸ qt5-networkauth # network authentication module
+▸ knewstuff # support for downloading application assets from the network
+▸ knotifyconfig # configuration system for knotify
+▸ kfilemetadata # library for extracting file metadata
+▸ purpose # framework for providing abstractions to get the developers purposes fulfilled
+▸ mlt # open source multimedia framework
+▸ breeze-icons # breeze icon themes
+▸ frei0r-plugins # minimalistic plugin api for video effects
+▸ ffmpeg # complete solution to record, convert and stream audio and video
+▸ dvgrab # saves audio and video data from an ieee (firewire) digital source
+▸ recordmydesktop # produces a ogg encapsulated theora/vorbis recording of a desktop
+▸ opencv # open source computer vision library
+▸ plasma-desktop # kde plasma desktop
+▸ opentimelineio # open source api and interchange format for editorial timeline information
+▸ bigsh0t # collection of frei0r plugins for vr video, with support for shotcut
+▸ mediainfo # supplies technical and tag information about a video or audio file (cli interface)
+▸ noise-suppression-for-voice # real-time noise suppression plugin for voice
+
 CONFLICTS    : none
 WEBLINKS     :
-• https://apps.kde.org/kdenlive/ # official
+▸ https://apps.kde.org/kdenlive/ # official
 
 #--author                             Show author information.
 #--license                            Show license information.
@@ -72,9 +82,10 @@ WEBLINKS     :
 #dest: destination file
 #args: space separated libavformat arguments
 
-KDENLIVE BINARIES # important kdenlive binary files
-• /bin/kdenlive # non-linear video editor for linux using the mlt video framework
-• /bin/kdenlive_render # render program for kdenlive
-FREQUENTLY USED # important kdenlive files and directories
-• ~/.config/kdenliverc # location of kdenlive configuration file
-• ~/.config/kdenlive-layoutsrc # location of kdenlive layouts configuration file
+BINARIES
+▸ '/bin/kdenlive' # non-linear video editor for linux using the mlt video framework
+▸ '/bin/kdenlive_render' # render program for kdenlive
+
+FILES
+▸ "$HOME/.config/kdenliverc" # location of kdenlive configuration file
+▸ "$HOME/.config/kdenlive-layoutsrc" # location of kdenlive layouts configuration file
