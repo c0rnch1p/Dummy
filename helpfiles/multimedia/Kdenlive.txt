@@ -91,8 +91,8 @@
 	 ')' # Resize item end
 	 '(' # Resize item start
 	 '+' # Select clip
-	 '-' # Deselect clip #'
-	 ''' # Switch track target audio stream
+	 '-' # Deselect clip
+	 "'" # Switch track target audio stream
 	 'Ctrl+a' # Select all (timeline, project bin, title)
 	 'Ctrl+c | Ctrl+Ins' # Copy element
 	 'Ctrl+g' # Group clips
