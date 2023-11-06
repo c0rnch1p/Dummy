@@ -260,11 +260,12 @@
 	     > Counterstrike 2 # Open the context menu for Counterstrike 2
 	       > Properties # Select to the properties tab
 	         > General # Go to the general section
-	 -novid # Disable game intro screen saver
 	 -high # Start game with high priority
-	 -threads 4 # Number of processor cores that the game will use
-	 -nod3d9ex # Reduce memory consumption and speed up switching windows
+	 -insecure # Fix workshop maps that throw errors when loading
 	 -noaafonts # Remove font smoothing
+	 -nod3d9ex # Reduce memory consumption and speed up switching windows
+	 -novid # Disable game intro screen saver
+	 -threads 4 # Number of processor cores that the game will use
 	  
 	WEBLINKS
 	 ▸ 'https://counterstrike.fandom.com/wiki/Counter-Strike_2' # Fandom
