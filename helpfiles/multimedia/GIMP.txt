@@ -1,8 +1,8 @@
-		                   ____________  _________________ 
-		                  /  _____/    |/       \______   \ 
-		                 /   \__---    |   \ /   \     ___/
-		                 \______  /____|____|____/____|    
-		                        )/
+	                       ____________  _________________ 
+	                      /  _____/    |/       \______   \ 
+	                     /   \__---    |   \ /   \     ___/
+	                     \______  /____|____|____/____|    
+	                            )/
 	DESCRIPTION
 	 GIMP (GNU Image Manipulation Program) is used to edit and manipulate images. It
 	 can load and save a variety of image formats and can be used to convert between
