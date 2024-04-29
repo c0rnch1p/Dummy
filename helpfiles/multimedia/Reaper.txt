@@ -302,6 +302,7 @@
 	FILES
 	 ▸ '/home/$USER/.config/REAPER/reaper.ini' # Reaper config file
 	 ▸ '/home/$USER/.config/REAPER/ColorThemes/Default*.ReaperThemeZip' # Theme
+	 ▸ '/home/$USER/.config/REAPER/KeyMaps/DK keymap.ReaperKeyMap' # Keybindings
 	 ▸ '/usr/lib/REAPER/Docs/REAPER\ Quick\ Start.pdf' # Quick start guide
 
 	COMMON USAGE
