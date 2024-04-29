@@ -24,8 +24,8 @@
 	 ▸ 85Gb Storage # Available space
 	 
 	SHORTCUTS
-	   # These are not the default shortcuts for CS2, the keybindings can be
-	   # modified in the keybinding section of the in game settings	
+	   # Not all of these shortcuts are the default keybindings for CS2, they
+	   # can be modified in the keybinding section of the game settings	
 	 'Mouse 1' # Shoot
 	 'Mouse 2' # Aim
 	 'Mouse 5' # Next weapon
@@ -211,29 +211,7 @@
 	   # Config scripts are saved in the CS2 config directory with a name eg. 
 	   # <practice.cfg>. To run the config, load into a game and open the dev
 	   # console, then enter the following command
-	 exec <pracice> # The filename in the command doesnt need the extension 
-	TRAINING PATTERN
-	 ▸ DM 10min T:180min
-	 ▸ CS/HS 30min 14x2.15min rounds or score lmt (apx 180min)
-	 ▸ T:6hr FULL - 3 day cycle 2h a day (rough target not really though)
-	   ####################################################################
-	   DAY 1                    DAY 2                    DAY 3
-	   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-	    ▸ Mirage   DM  CT        ▸ Mirage   CAS T        ▸ Mirage   DM  CT
-	    ▸ Overpass DM  T         ▸ Overpass DM  CT       ▸ Overpass CAS T
-	    ▸ Vertigo  CAS CT        ▸ Vertigo  DM  T        ▸ Vertigo  DM  CT
-	    ▸ Ancient  DM  T         ▸ Ancient  CAS CT       ▸ Ancient  DM  T
-	    ▸ Inferno  DM  CT        ▸ Inferno  DM  T        ▸ Inferno  CAS CT
-	    ▸ Nuke     CAS T         ▸ Nuke     DM  CT       ▸ Nuke     DM  T
-	    ▸ Anubis   DM  CT        ▸ Anubis   CAS T        ▸ Anubis   DM  CT
-	    ▸ Dust II  DM  T         ▸ Dust II  DM  CT       ▸ Dust II  CAS T
-	    ▸ Office   HS  CT        ▸ Office   DM  T        ▸ Office   DM  CT
-	    ▸ Italy    DM  T         ▸ Italy    HS  CT       ▸ Italy    HS  T
-	   ####################################################################
-	RECORDING WITH OBS
-	   # Make sure video capture source is using xcomposite then start music, setup
-	   # game and press record. Only play good dubs, put details in chat every spwan
-	   # and drop comms from chat wheel in response to the commentator etc.
+	 exec <pracice> # The filename in the command doesnt need the extension
 	PLAY TIPS
 	 ▸ Autoswitch # Autoswitch to secondary when out of ammo
 	 ▸ Awareness # Stay ready for a fight  at all times
@@ -261,7 +239,7 @@
 	       > Properties # Select to the properties tab
 	         > General # Go to the general section
 	 -high # Start game with high priority
-	 -insecure # Fix workshop maps that throw errors when loading
+	 -insecure # Fix workshop maps that throqw errors when loading
 	 -noaafonts # Remove font smoothing
 	 -nod3d9ex # Reduce memory consumption and speed up switching windows
 	 -novid # Disable game intro screen saver

@@ -1,0 +1,241 @@
+	    ___ ______  ____  __ _________________  _______ ____________________
+	   |   \      \|    |/  |   _____/_   ___ \/   _   \\__  __  \_   _____/
+	   |   /    |  \       <\_____   \/   \__\/   /_\   \     ___/|    __)__
+	   |___\____|__/____|___|________/\_______/____|____/____|   /_________/
+
+	DESCRIPTION
+	 Inkscape is a Free and open source vector graphics editor. It offers a rich
+	 set of features and is widely used for both artistic and technical
+	 illustrations such as cartoons, clip art, logos, typography, diagramming
+	 and flowcharting. It uses vector graphics to allow for sharp printouts and
+	 renderings at unlimited resolution and is not bound to a fixed number of
+	 pixels like raster graphics. Inkscape uses the standardized SVG file format
+	 as its main format, which is supported by many other applications including
+	 web browsers. The interface is designed to be comfortable and efficient for
+	 skilled users, while remaining conformant to GNOME standards. SVG is a W3C
+	 standard XML format for 2D vector drawing. It allows defining objects in
+	 the drawing using points, paths, and primitive shapes. Colors, fonts,
+	 stroke width, and so forth are specified as style attributes to these
+	 objects. Inkscape uses SVG as its native document format, and has the goal
+	 of becoming the most fully compliant drawing program for SVG files
+	 available in the Open Source community.
+
+	COMMANDS
+	 inkscape --action-list # List available actions
+	 inkscape --actions=<ACTION:ARG;ACTION:ARG> # List of actions (with
+	   # optional arguments) to execute
+	 inkscape --app-id-tag # Create a unique instance of Inkscape with the
+	   # application ID org.inkscape
+	 inkscape -a=<x0:y0:x1:y1> # Area to export in SVG user units
+	 inkscape --batch-process # Close GUI after executing all actions
+	 inkscape -b, --export-background=<color> # Background color for exported
+	   # bitmaps written as any SVG color string
+	 inkscape -C # Area to export is page
+	 inkscape --class=<class> # Set program class as used by the window manager
+	 inkscape --convert-dpi-method=<method> # Method used to convert pre-0.92
+	   # document dpi (none, scale-viewbox, scale-document)
+	 inkscape -D # Area to export is whole drawing (ignoring page size)
+	 inkscape --debug-info # Print debugging information
+	 inkscape -d, --export-dpi=<dpi> # Resolution for bitmaps and filters
+	 inkscape --display=<display> # X display to use
+	 inkscape --export-area-snap # Snap the bitmap export area outwards to the
+	   # nearest integer values
+	 inkscape --export-extension=<expid> # Extension ID for exporting
+	 inkscape --export-ignore-filters # Render objects without filters instead
+	   # of rasterizing (PS, EPS, PDF)
+	 inkscape --export-latex # Export text to LaTeX file (PS, EPS, PDF)
+	 inkscape --export-margin=<margin> # Margin around export area, units of
+	   # page size for SVG, mm for PDF
+	 inkscape --export-overwrite # Overwrite input file
+	 inkscape --export-pdf-version=<version> # PDF version (1.4 or 1.5)
+	 inkscape --export-png-color-mode=<mode> # Color mode (bit depth and color
+	   # type) for exports (Grey_1, Grey_2, Grey_4, Grey_8, Grey_16, RGB_8,
+	   # RGB_16, GreyAlpha_8, GreyAlpha_16, RGBA_8, RGBA_16)
+	 inkscape --export-png-use-dithering=<false|true> # Force or disable dither
+	 inkscape --export-ps-level=<level> # Postscript level (2 or 3)
+	 inkscape --export-type=<type1, type2> # File types to export (svg, png, ps,
+	   # eps, pdf, emf, wmf, xaml)
+	 inkscape --gapplication-app-id # Override the applications ID
+	 inkscape --g-fatal-warnings # Make all warnings fatal
+	 inkscape --gtk-module=<module1, module2> # Load additional GTK+ modules
+	 inkscape -g # With graphical user interface
+	 inkscape -h, --export-height=<height> # Bitmap height in pixels (overrides
+	   # --export-dpi)
+	 inkscape -H # Height of drawing or object (used with --query-id)
+	 inkscape -I=<objid1; objid2> # ID(s) of object(s) to be queried
+	 inkscape -i=<objid1, objid2> # IDs of objects to export
+	 inkscape -j # Hide all objects except object with selected ID
+	 inkscape -l # Remove Inkscape specific SVG attributes and properties
+	 inkscape --name=<name> # Set program name as used by the window manager
+	 inkscape --no-convert-text-baseline-spacing # Do not fix pre-0.92 documents
+	   # text baseline spacing on opening
+	 inkscape -o='/path/file' # Output file name
+	 inkscape --pdf-page=<pgnum> # PDF page number to import
+	 inkscape --pdf-poppler # Use poppler when importing via command line
+	 inkscape -p # Read input file from standard input
+	 inkscape --select=<objid1, objid2> # Select objects
+	 inkscape --shell # Start Inkscape in interactive shell mode
+	 inkscape -S # Print bounding boxes of all objects
+	 inkscape --system-data-directory # Print system data directory
+	 inkscape -T # Convert text to paths (PS, EPS, PDF, SVG)
+	 inkscape -t # Use stored filename and DPI hints when exporting objects
+	 inkscape --user-data-directory # Print user data directory
+	 inkscape --vacuum-defs # Remove unused definitions from the <defs> sections
+	 inkscape -V # Print Inkscape version
+	 inkscape -w, --export-width=<width> # Bitmap width in pixels
+	 inkscape -W # Width of drawing or object (used with --query-id)
+	 inkscape -X # X coordinate of drawing or object (used with --query-id)
+	 inkscape -y=<value> # Background opacity for exports (0.0-1.0, or 1-255)
+	 inkscape -Y # Y coordinate of drawing or object (used with --query-id)
+
+	SHORTCUTS
+	   # There are more shortcuts for reaper that exist than are listed here which
+	   # are related to mouse controls
+	 'a' # Toggle the freehand spraypaint tool
+	 'b' # Toggle the point to point Pen tool
+	 'c' # Toggle the freehand Calligraphy tool
+	 'd' # Toggle the Eyedropper tool
+	 'e' # Draw a circle object on the current document
+	 'g' # Toggle the Gradient tool
+	 'i' # Draw a spiral line on the current document
+	 'm' # Measure the distance between active objects in the current document
+	 'n' # Toggle the currently selected objects node points
+	 'p' # Toggle the freehand Pencil tool
+	 'r' # Draw a rectangle object on the current document
+	 's' # Go to inkscapes selection tool mode
+	 'u' # Toggle the Paint Bucket tool
+	 'x' # Render a 3D perspective box on the current document
+	 'z' # Zoom in on the currently active document
+	 'F10' # Toggle inkscapes Menu Bar
+	 'F11' # Switch the current display to fullscreen mode
+	 '*' # Draw a star object on the current document
+	 'Home' # Reduce the width of the spray radius to its minimum size or set the
+	   # current brush width to its minimum size
+	 'End' # Increase the width of the spray radius to its maximum size or set the
+	   # current brush width to its maximum size
+	 'Esc' # Cancel the current brush stroke or cancel the current node path
+	 'Left' # Move the selected gradient nodes one step to the left, reduce the
+	   # width of the spray radius by one unit or resize the brushs current width by
+	   # one pixel less
+	 'Rght' # Increase the width of the spray radius by one unit, move the selected
+	   # gradient nodes one step to the right or resize the brushs current width by
+	   # one pixel more
+	 'Up' # Increase the amount of object duplicates, increase the angle of the
+	   # brush or move the selected gradient nodes one step up
+	 'Down' # Decrease the angle of the brush, fill the entire region with the
+	   # buckets contents and add it to the current selection or move the selected
+	   # gradient nodes one step down
+	 'Del' # Remove the currently selected abrupt step
+	 'Nter' # Finalize the current node path
+	 'Tab' # Move to the next element in the current dialog box
+	 'Ctrl+b' # Disable the scrollbars in the current document
+	 'Ctrl+c' # Copy the color of an object and place its RGB value in the clipboard
+	 'Ctrl+e' # Show the guide rulers in the current document
+	 'Ctrl+f' # Open the Find and Replace prompt on the current document
+	 'Ctrl+f' # Search through the open dialog boxes in the current session
+	 'Ctrl+g' # Create a new object group using all the currently selected objects
+	 'Ctrl+i' # Open an image as a graphics object in the currently open document
+	 'Ctrl+n' # Create a new Inkscape document
+	 'Ctrl+o' # Open an existing Inkscape document
+	 'Ctrl+q' # Close the currently open document
+	 'Ctrl+s' # Save the currently open Inkscape document
+	 'Ctrl+u' # Remove the group of the currently selected object
+	 'Ctrl+w' # Close the currently open dialog box
+	 'Ctrl+y' # Redo the last undo made on the currently selected object
+	 'Ctrl+z' # Undo the last change made on the currently selected object
+	 'Ctrl+F11' # Toggle display of all toolbars and switch display to fullscreen
+	 'Ctrl+Up' # Move the selected gradient nodes one pixel up
+	 'Ctrl+Down' # Move the selected gradient nodes one pixel down
+	 'Ctrl+Left' # Move the selected gradient nodes one pixel to the left
+	 'Ctrl+Rght' # Move the selected gradient nodes one pixel to the right
+	 'Ctrl+PgDn' # Move back to the previous dialog box in the current session
+	 'Ctrl+PgUp' # Move to the next dialog box in the current session
+	 'Ctrl+Tab' # Go to the next document in the current session
+	 'Ctrl+Ins' # Copy the currently selected object into the system clipboard
+	 'Ctrl+Shft+A' # Open the align and distribute dialog box
+	 'Ctrl+Shft+D' # Print all the available properties for the current document
+	 'Ctrl+Shft+E' # Save the currently open Inkscape document as a PNG image
+	 'Ctrl+Shft+F' # Open the fill and stroke dialog box on the current document
+	 'Ctrl+Shft+H' # Print a history of all the undo actions for current project
+	 'Ctrl+Shft+L' # Open a dialog box that contains all the active layers
+	 'Ctrl+Shft+M' # Open the transform dialog box
+	 'Ctrl+Shft+N' # Create a new drawing layer on the current document
+	 'Ctrl+Shft+O' # Print all the available properties for current document
+	 'Ctrl+Shft+P' # Open inkscapes preferences window
+	 'Ctrl+Shft+S' # Open the save as dialog box for the current document
+	 'Ctrl+Shft+T' # Open the text and fonts dialog box on the current document
+	 'Ctrl+Shft+V' # Paste the style of the object in the clipboard
+	 'Ctrl+Shft+W' # Open the swatches dialog box on the current document
+	 'Ctrl+Shft+X' # Open a dialog box that shows the underlying XML
+	 'Ctrl+Shft+End' # Move the entire layer to the bottom of the document stack
+	 'Ctrl+Shft+Home' # Move the entire layer to the top of the document stack
+	 'Ctrl+Shft+PgDn' # Move the entire layer one level down
+	 'Ctrl+Shft+PgUp' # Move the entire layer one level up
+	 'Ctrl+Shft+Tab' # Go back to the previous document in the current session
+	 'Ctrl+Alt+h' # Vertically center the currently selected group same directory
+	 'Ctrl+Alt+t' # Horizontally center the currently selected group
+	 'Ctrl+Alt+v' # Paste the object from the system clipboard on the original copy
+	 'Ctrl+Alt+Shft+S' # Create duplicate of the currently open file within location
+	 'Shft+D' # Highlight the original object
+	 'Shft+E' # Enable the Eraser tool on the current document
+	 'Shft+J' # Place the copied object anywhere inside spray paints spray radius
+	 'Shft+K' # Increase the number of object duplicates
+	 'Shft+L' # Convert the last pen segment into a line
+	 'Shft+R' # Reverse the gradient step on the current object
+	 'Shft+U' # Convert the last pen segment into a curve
+	 'Shft+Z' # Zoom out of the currently active document
+	 'Shft+F11' # Toggle the display of all the toolbars in the current session
+	 'Shft+Del' # Cut the currently selected object into the system clipboard
+	 'Shft+Ins' # Paste the most recent object from the system clipboard
+	 'Shft+PgDn' # Move the currently selected object one layer down
+	 'Shft+PgUp' # Move the currently selected object one layer up
+	 'Shft+Tab' # Move back to the previous element in the current dialog box
+	 'Alt+d' # Create a clone of the currently selected object
+	 'Alt+Up' # Move the currently selected node by one pixel up
+	 'Alt+Down' # Move the currently selected node by one pixel down
+	 'Alt+Left' # Move the currently selected node one pixel to the left
+	 'Alt+Rght' # Move the currently selected node one pixel to the right
+	 'Alt+Shft+D' # Remove the link between the cloned object and its original
+	 'Alt+Shft+P' # Disable the Palette subwindow in the current document
+	 'Alt+Shft+Up' # Move the currently selected node by ten pixels up
+	 'Alt+Shft+Down' # Move the currently selected node by ten pixels down
+	 'Alt+Shft+Left' # Move the currently selected node by ten pixels to the left
+	 'Alt+Shft+Rght' # Move the currently selected node by ten pixels to the right
+
+	DEPENDS ON
+	 ▸ atkmm # C++ bindings for ATK
+	 ▸ boost-libs # Free portable C++ runtime source libraries
+	 ▸ cairo # 2D graphics library with support for multiple output devices
+	 ▸ cairomm # C++ bindings for cairo
+	 ▸ double-conversion # Binary and decimal routines for IEEE doubles
+	 ▸ fontconfig # Library for configuring and customizing font access
+	 ▸ freetype2 # Font rasterization library
+	 ▸ gc # Garbage collector for C and C++
+	 ▸ gcc-libs # Runtime libraries shipped by GCC
+	 ▸ gdk-pixbuf2 # Image loading library
+	 ▸ glib2 # Low level core library
+	 ▸ glibc # GNU C Library
+	 ▸ glibmm # C++ bindings for GLib
+	 ▸ gobject-introspection-runtime # Runtime introspection system for GObjects
+	 ▸ graphicsmagick # Image processing system
+	 ▸ gsl # (GNU Scientific Library) a modern numerical library for C and C++
+	 ▸ gspell # Spell checking library for GTK applications
+	 ▸ gtk3 # GObject based multi platform GUI toolkit
+	 ▸ gtkmm3 # C++ bindings for GTK+ 3
+	 ▸ harfbuzz # OpenType text shaping engine
+
+	REQUIRED BY
+	 ▸ nextcloud-client-git # Nextloud client for Linux
+	 ▸ themix-theme-materia-git # Materia theme plugin
+
+	BINARIES
+	 ▸ '/bin/inkscape' # Run inkscape
+
+	FILES
+	 ▸ '/home/$USER/.config/inkscape/preferences.xml' # Config file
+
+	COMMON USAGE
+
+	WEBLINKS
+	 ▸ 'https://inkscape.org' # Official page
+	 ▸ 'http://wiki.inkscape.org/wiki/index.php/Using_the_Command_Line' # Guide

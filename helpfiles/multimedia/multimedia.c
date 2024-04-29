@@ -1,11 +1,13 @@
 #include "multimedia.h"
-#define TOTAL 3
+#define TOTAL 5
 
 // file list
 char *multimediaFiles[TOTAL]={
 	"multimedia/Ardour",
 	"multimedia/GIMP",
-	"multimedia/Kdenlive",		
+	"multimedia/Inkscape",
+	"multimedia/Kdenlive",
+	"multimedia/Reaper",	
 };
 
 // initialize submenu
