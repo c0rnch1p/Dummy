@@ -134,9 +134,9 @@
 	 'Alt+5' # Quantize selected regions or notes (focus dependant)
 	 'Alt+6' 'Alt+7' # Boost or cut gain for selected tacks
 	 'Alt+9' # Rename selected
+	 'Alt+Up' 'Alt+Down' # Select previous or next track
 	 'Alt+,' # Move note start earlier (fine)
 	 'Alt+.' # Move note ends later (fine)
-	 'Alt+Up' 'Alt+Down' # Select previous or next track
 
 	DEPENDS ON
 	 ▸ cairo # 2D graphics library

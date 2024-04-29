@@ -1,9 +1,10 @@
 #include "gaming.h"
-#define TOTAL 1
+#define TOTAL 2
 
 // file list
 char *gamingFiles[TOTAL]={
-	"CS2"
+	"CS2",
+	"Steam",
 };
 
 // initialize submenu

@@ -1,0 +1,164 @@
+		           _____________________________  _______   _______   
+		          /   _____/__    ___/_   _____/ /   _   \ /       \  
+		          \_____   \ |    |   |    __)__/   /_\   \   \ /   \ 
+		          /________/ |____|  /_________/_____|____/____|____/                             
+
+	DESCRIPTION
+	 Steam is a video game digital distribution service and storefront by Valve. It
+	 was launched as a software client in September 2003 as a way for Valve to
+	 provide automatic updates for their games, and expanded to distributing and
+	 offering third-party game publishers titles in late 2005. Steam offers various
+	 features, like digital rights management (DRM), game server matchmaking,
+	 anti-cheat measures, social networking and game streaming services. It provides
+	 the user with automatic game updating, saved game cloud synchronization, and
+	 community features such as friends messaging, in-game chat and a community
+	 market. Valve released a freely available application programming interface
+	 (API) called Steamworks in 2008, which developers can use to integrate Steams
+	 functions into their products, including in-game achievements, user
+	 created-content support, and microtransactions. Initially developed for
+	 Microsoft Windows operating systems, Steam was released for macOS in 2010 and
+	 Linux in 2012. Mobile apps to access online Steam features were first released
+	 for iOS and Android in 2012. The platform also offers other digital content and
+	 Valve gaming hardware, including productivity software, game soundtracks,
+	 videos and VR headset Valve Index. The service is the largest digital
+	 distribution platform for PC gaming, estimated around 75% of the market share
+	 in 2013 according to IHS Screen Digest. By 2017, users purchasing games through
+	 Steam totaled approximately US$4.3 billion, representing at least 18% of global
+	 PC game sales according to Steam Spy. By 2021, the service had over 34,000
+	 games with over 132 million monthly active users. The success of Steam has led
+	 to the development of the Steam Machine line of gaming PCs in 2015, which
+	 includes the SteamOS operating system and Steam Controller, Steam Link devices
+	 for local game streaming, and the handheld Steam Deck.
+
+	GUI PREFS
+	   # These are not the default settings for Steam, they are custom settings for
+	   # running on low end hardware and Linux operating systems, other settings
+	   # not in this list have been left out because theyre unrelated, completely 
+	   # preferential or without need for explanation
+	 > Game Settings
+	   > Pings Per Min: <250> # Lower setting
+	   > GPU Accel: <off> # Off for low to mid range GPUs
+	 > Interface Setttings
+	   > On Startup: <library> # Show library on startup
+	 > Library Settings
+	   > Low Bandwidth: <off> # Disables community content
+	   > Low Performance: <on> # Reduces power usage
+	 > Download Settings
+	   > Dl During Game: <on> # Downloads during gameplay
+	   > Throttle: <off> # Dont throttle while streaming
+	   > Bits Per Second: <on> # Display rate in bits
+	   > Limit Bandwidth: <18500Kb/s> # Limit bandwidth to 3Mb/s
+	 > Steam Cloud Settings
+	   > Open Screenshots: <on> # Open screenshots after close
+	 > Broadcasting Settings
+	   > Video Dimensions: <1080p> # Set 1080p
+	   > Optimal Encoding: <best performance> # Better performance
+	   > Viewer Chat: <top left> # Viewer chat in top left
+	   > Show Stats: <on> # Show upload stats
+	 > Web Browser Settings
+	   > Home Page: <www.duckduckgo.com> # Set homepage
+	 > Shader Precache Settings
+	   > Enable Precache: <on> # Vulkan and OpenGL support
+
+	DEPENDS ON
+	 ▸ bash # GNU bourne again shell
+	 ▸ curl # URL retrieval utility and library
+	 ▸ dbus # freedesktop.org message bus system
+	 ▸ desktop-file-utils # Commandline utils for working with desktop entries
+	 ▸ diffutils # Utility programs used for creating patch files
+	 ▸ freetype2 # Font rasterization library
+	 ▸ gdk-pixbuf2 # Image loading library
+	 ▸ hicolor-icon-theme # freedesktop.org hicolor icon theme
+	 ▸ libxcrypt # Modern library for one-way hashing of passwords
+	 ▸ lsb-release # LSB version query program
+	 ▸ lsof # Lists open files for running unix processes
+	 ▸ nss # Network security services
+	 ▸ python # Next generation of the python high-level scripting language
+	 ▸ usbutils # Collection of usb tools to query connected usb devices
+	 ▸ vulkan-icd-loader # Vulkan installable client driver (icd) loader
+	 ▸ xorg-xrandr # Primitive command line interface to randr extension
+	 ▸ zenity # Display graphical dialog boxes from shell scripts
+
+	REQUIRED BY
+	 ▸ arcolinux-meta-steam-amd # Installs steam on ArcoLinux for AMD
+	 ▸ arcolinux-meta-steam-intel # Installs steam on ArcoLinux for Intel
+	 ▸ arcolinux-meta-steam-nvidia # Installs steam on ArcoLinux for Nvidia
+	 ▸ linux-steam-integration # Helper for better Steam integration on Linux
+	 ▸ steam-native-runtime # Native replacement for Steam runtime using system libs
+
+	BINARIES
+	 ▸ '/bin/steamcmd' # Control steam from the command line
+	 ▸ '/bin/steam-native' # Run steam-native
+	 ▸ '/bin/steam-runtime' # Run steam-runtime
+	 ▸ '/home/$USER/.local/share/Steam/ubuntu12_32/steam' # User binary
+
+	FILES
+	 ▸ '/home/$USER/.local/share/Steam/steam.sh' # Run steam from the script
+	 ▸ '/home/$USER/.steampath' -> '/home/$USER/.steam/sdk32/steam' # Path symlink 
+	 ▸ '/home/$USER/.steampid' -> '/home/$USER/.steam/steam.pid' # Pid symlink
+
+	COMMON USAGE
+	MANAGING GAMEFILES
+	 '/home/$USER/.local/share/Steam/steamapps/' # Directory where all games and
+	   # software installed or run through steam is kept which can be copied to an
+	   # external hard drive, smaller games can fit onto a USB
+	 '/run/media/$USER/drive/games/' # Games can be installed directly onto a
+	   # hard drive through the steam interface in order to save storage, in order
+	   # restore a game from its actual location to the system and add it to the
+	   # steam library, the steam interface is also used
+	 > Steam # Navigate to the steam menu
+	   > Restore Game backup # Select the restore game backup option and provide the
+	   # path to the gamefiles  
+	LAUNCH OPTIONS # Launch options allow for the use of commands and variables at
+	   # game startup to optimise performance and fix issues
+	 -novid # Skip intro videos
+	 -32bit # Launch game in 32-bit mode
+	 -autoconfig # Ignore launch settings in custom config files
+	 -clientport <port> # Change the client port for connecting multiple machines
+	 -high # Set game as a high priority process for performance on more resources
+	 -width # Set custom resolution width
+	 -height # Set custom resolution height
+	 -freq <rate> # Set game frequency 
+	 -refresh <rate> # Set refresh rate for higher quality monitors
+	 -safe # Launch game in windowed mode at 640x480 resolution, along with the
+	   # default refresh and disabled antialiasing, helpful for troubleshooting any
+	   # launch issues with the game
+	 -nopreload # Dont load any models unless theyre needed
+	 -mat_antialias <0...8> # Set antialiasing mode
+	 -mat_aaquality <0...4> # Set antialiasing quality
+	 -con_enable <0...1> # Enable the in-game console
+	 -console # Also enables the in-game console and opens it on startup
+	 -useforcedmparms # Enable use of –noforcemspd and –noforcemaccel
+	 -noforcemaccel # Enable use of Windows mouse acceleration settings
+	 -noforcemspd # Enable use of Windows mouse speed settings
+	 -fullscreen # Start the game in fullscreen
+	 -x <length+value> # Place a borderless window along the horizontal axis of 
+	   # the screen, useful for playing on multiple monitors, for example '-x 1921',
+	   # if using three monitors it will place it on the middle screen
+	 -y <width+value> # Places a borderless window along the vertical axis of the
+	   # screen, also used for multiple monitors, for example '-y 0', will place the
+	   # game window on top of the monitor, over the task bar
+	 -override_vpk # Force steam to search for custom content (single player only)
+	 -enable_addons # Search only for whitelisted custom content
+	 -nomousegrab #	Enables the alt-tab function in some Linux devices where the
+	   # game is running full screen and grabbing mouse wont allow the players to
+	   # use the alt-tab function while in-game
+	 -language <language> # Change the language of the game and the menus
+	 -nod3d9ex # Forcefully disable the Windows Aero DirectX extensions
+	 -nomicsettings # Stop the game from changing the microphone output values
+	 -nosound # Turn off the sound in-game
+	 -dx9 # Force the game to run on DirectX 9
+	 -dx11 # Force the game to run on DirectX 11
+	 -gl # Force the game to run on OpenGL
+	 -vulkan # Applies the Vulkan support
+	 -nogrammeramp # Force the game to use the desktop color profile
+	 -antiaddiction_test # Adds an uptime clock
+	 -mesa_glthread <true> # Possible fix for games having issues with GL rendering
+	 -PROTON_NO_ESYNC 1 # Turn off esync for proton to fix stuttering and lag
+	 -DXVK_ASYNC 1 # Turn on async as a replacement for esync if its turned off
+	 %command% # Tell steam to execute these commands   
+		       
+	WEBLINKS
+	 ▸ 'https://steampowered.com' # Official
+	 ▸ 'https://wiki.archlinux.org/title/steam' # Arch wiki
+	 ▸ 'https://wiki.archlinux.org/title/steam/troubleshooting' # Troubleshooting

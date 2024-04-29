@@ -1,11 +1,12 @@
 #include "all_h3lp.h"
-#define TOTAL 9
+#define TOTAL 10
 
 // file list
 char *allh3lpFiles[TOTAL]={
 	"00_dummy",
 	"development/Gedit",
 	"gaming/CS2",
+	"gaming/Steam",	
 	"multimedia/Ardour",
 	"multimedia/GIMP",
 	"multimedia/Inkscape",

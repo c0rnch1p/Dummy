@@ -1,0 +1,30 @@
+WEBLINKS
+ ▸ 'https://github.com/gloriouseggroll' # GE git repo
+ ▸ 'https://github.com/gloriouseggroll/proton-ge-custom/releases' # GE releases
+
+
+GLORIOUS EGGROLL # glorious eggroll is a fork of proton that addresses a variety of common issues and bugs, the
+    # following instructions are from the official readme
+  pacman -S --needed nvidia-dkms vulkan-icd-loader lib32-vulkan-icd-loader # install all depends
+  mkdir -p ~/.var/app/com.valvesoftware.Steam/data/Steam/compatibilitytools.d/;
+  cd ~/.var/app/com.valvesoftware.Steam/data/Steam/compatibilitytools.d/ # make the build directory and go into the
+    # build directory
+  wget https://github.com/GloriousEggroll/proton-ge-custom/releases/download/GE-Proton7-49/GE-Proton7-49.tar.gz # pull
+    # the tarball from the release page
+  tar zxvf GE-Proton7-38.tar.gz # release the tarball into the directory
+  cd GE-Proton7-38.tar.gz; git clone --recurse-submodules http://github.com/gloriouseggroll/proton-ge-custom.git
+    # clone the compatibility tools which are the submodules for proton-ge-custom
+  sudo cp -rf ~/.var/app/com.valvesoftware.Steam/data/Steam/compatibilitytools.d/ ~/.steam/root/ # copy the .var
+    # compatibilitytools.d directory to the .steam root directory to
+  cd ~/.steam/root/compatibilitytools.d/GE-Proton7-38/proton-ge-custom; sudo mkdir build; cd build # change directory
+    # to the main compatibilitytools.d directory then make the build directory and change to it
+  ./configure.sh --enable-ccache --build-name=gloriousEgroll --container-engine=docker # run the configure script
+    # with the build options, needs to be run with elevated privileges
+  make redist; make install # final make command to build redistributed runtime and show logs, a copy of the
+    # compatabilitytools.d directory will be added into the ~/.local/share/Steam directory as well, so there will be
+    # copies of glorious egroll in the home direcotry in .var, .local and .steam, so the copy inside .var/app can be
+    # removed, steam also needs to be restarted and glorious eggroll can then be enabled through settings
+  git checkout currentProtonBranch # when switching between different branches of proton this command will manually
+    # check out from the current branches in use if the entire proton directory has been build from source
+  git submodule update --init --recursive # when switching between different branches of proton this command will
+    # manually update the submodules for the branch in use if the entire proton directory has been built from source
