@@ -200,8 +200,8 @@
 	   # in the editor, they will also be sounded as they are created
 	 > Edit # Go to the edit menu tab
 	   > Preferences # Select the preferences option
-		 > MIDI # Go to the MIDI tab
-		   > Sound MIDI notes as they are selected in the editor: <on> # Turn it on
+	     > MIDI # Go to the MIDI tab
+	       > Sound MIDI notes as they are selected in the editor: <on> # Turn it on
 	   # Make sure that copied MIDI regions create a new file rather than modify the
 	   # original file which can cause issues if that file is needed later. There
 	   # is also a setting to disable overlapping notes
