@@ -187,32 +187,54 @@ FILES
  ▸ '/etc/ardour8/default_ui_config' # System UI config file
 
 COMMON USAGE
+JACK SETUP
+   # Make sure Jack is running either through Cadence or Qjackctl when using
+   # Ardour to record with a MIDI device for the highest quality audio, if its
+   # using Alsa as the audio system the default quality gets applied to the
+   # audio because it doesnt facillitate a simple method for making real-time,
+   # low-latency connections for both audio and MIDI data between applications
+   # and devices at a 48k sample rate, Alsa can safely be used as the audio
+   # driver for the project though
 MIDI SETTINGS
    # Its helpful to make sure that MIDI notes are sounded as they are selected
    # in the editor, they will also be sounded as they are created
  > Edit # Go to the edit menu tab
   > Preferences # Select the preferences option
    > MIDI # Go to the MIDI tab
-     > Sound MIDI notes as they are selected in the editor: 'on' # Turn it on
+     > Sound MIDI notes as they are selected in the editor: <on> # Turn it on
    # Make sure that copied MIDI regions create a new file rather than modify the 
    # original file which can cause issues if that file is needed later. There
    # is also a setting to disable overlapping notes
  > Session # Go to the session menu tab
   > Properties # Select the properties option
    > Misc # Go to the misc tab
-     > MIDI region copies are independent: 'on' # Turn it on
+     > MIDI region copies are independent: <on> # Turn it on
      > Policy for handling overlapping notes on the same MIDI channel: 'Never
        allow them' # Set this policy to make sure that theres no overlapping 
    # notes on the same channel which are difficult to visually identify and can 
    # cause issues with gain and velocity if not removed
-     > 'Use these settings as defaults' # Select to enable globally
+     > Use these settings as defaults # Select to enable globally
    # If notes are still overlapping it may be due to making accidental
    # duplications of notes while in edit mode, while meaning to be in grab mode
-KNOB CONFIGURATION
-   # 
-
-
-
+CONTROL MAPPING
+   # Since Ardour is heavily used with various MIDI input sources, it helps to
+   # know how to map functions each of the controls on those devices. This
+   # applies to all MIDI devices from keyboards to decks
+ > Edit # Open the edit menu
+   > Preferences # Select the preferences option
+     > Control Surfaces # Navigate to the control surfaces section
+       > General MIDI # Select the checkbox and open the general MIDI dialog,
+   # once open set the input, output and default map to the matching device
+   # name, the device should now have the default samples and functions loaded
+   # on each of the knobs, sliders, pads and keys ect. Alternative (but relative
+   # to the action eg. sliding, knob twisting) functions within Ardour can be
+   # mapped to the device points. For example, in order to map the gain of a
+   # track to a knob so that it can be adjusted using the device, hover the
+   # cursor over the track gain then use the shortcut
+ 'Ctrl+Mouse 3' # Mouse 3 is otherwise known as the scroll or middle click, this
+   # needs to be done with one hand because shortcut needs to be held while the
+   # knob on the device is twisted to send an input signal to the DAW until
+   # the connection is created, it may take some fiddling
 
 WEBLINKS
  ▸ 'https://ardour.org' # Official
