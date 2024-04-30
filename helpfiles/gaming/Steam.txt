@@ -181,7 +181,7 @@
 	NATIVE AND RUNTIME
 	   # These binaries configure Steam to globally use Native distro versions of
 	   # steam libraries, or Steam Runtime versions provided by Valve as part of
-	   # Steam. This is somewhat related to the forced method of running the proton
+	   # Steam. This is somewhat related to the forced method of running a
 	   # compatability layer. Software that was made for Windows needs to be patched
 	   # and reconfigured to work on Linux or Mac. Steam offers alot of support for
 	   # this, the Native builds are part of that support to further improve Steam
