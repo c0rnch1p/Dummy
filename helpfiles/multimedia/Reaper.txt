@@ -336,14 +336,14 @@
 	 > Options # Open the options menu
 	   > Preferences # Select the preferences option
 	  > General # Open the general section
-		> Paths # Navigate to the paths dialog
-		  > Default path to save new projects: '/path/project/' # Set this to the
+	      > Paths # Navigate to the paths dialog
+	      > Default path to save new projects: '/path/project/' # Set this to the
 	   # project directory where the 'project.RPP' file is saved
-		  > Default render path: '/path/project/' # Also set this to the project
+	      > Default render path: '/path/project/' # Also set this to the project
 	   # directory so that exports are easily accessed and not lost in media files
-		  > Default recording path: '/path/project/Media/' # Set this to the
+	      > Default recording path: '/path/project/Media/' # Set this to the
 	   # media directory so that all chopped and edited media is kept on its own
-		  > Store all peak caches in alternate path: '/path/project/Repeaks'
+	      > Store all peak caches in alternate path: '/path/project/Repeaks'
 	   # This directory is not created by default, so it needs to be added
 	   # manually to the project folder and then configured in the settings,
 	   # otherwise all the repeak files will be scattered throughout the project
@@ -361,7 +361,7 @@
 	 > File # Open the file menu
 	   > Render # Select the render option
 	  > Source # Navigate to the source dropdown box
-		> Selected tracks (stems) # Set selected tracks as the output source
+	    > Selected tracks (stems) # Set selected tracks as the output source
 	BATCH CONVERTS
 	   # The batch convert feature in Reaper makes converting formats of multiple
 	   # audio files and extracting audio from multiple video files much easier it
