@@ -1,0 +1,132 @@
+THUNDERBIRD GUI SPECS
+ > Account Settings
+  > Html Signature : 'on' # dont use html signature text
+  > Attatch Vcard : 'off' # dont attatch vcard to messages
+   > Server Settings 
+    > Startup Check : 'on' # check for new messages on startup
+    > Check Every : 'on' '1 minutes' # check for new messages every minute
+    > Immediate Noto : 'off' # dont immediately notify when messages arrive
+    > When Deleted : 'Remove it immediately' # remove messages immediately when theyre deleted
+    > Expunge : 'on' # exponge (remove messages marked for completion) the inbox on exit
+    > Empty Trash : 'on' # empty the trash on exit
+   > Copies & Folders 
+    > Same Folder : 'off' # dont place replies in the folder of the message being replied to
+    > Confirm Dialog : 'on' # show confirmation dialog when messages are saved
+   > Composition & Addressing
+    > Html Compose : 'on' # compose messages in HTML format
+    > Auto Quote : 'off' # dont automatically quote messages being replied to 
+    > When Quoting : 'start my reply below the quote' # start reply below the message 
+    > Fwd Sign : 'on' # dont include a signature for forwarded messages
+    > Reply Sign : 'on' # include a signature for replies
+    > For Lookup : 'Use my global LDAP server preferences for this account' # global LDAP prefs
+   > Junk Settings 
+    > Adaptive Junk : 'on' # enable adaptive junk controls for account 
+    > Dont Mark Junk : 'Personal Address Book' # dont mark messages in personal address book as junk
+    > Trust Headers : 'off' # dont trust specific headers of anything
+    > Delete After : '14 days' # delete junk mail after two weeks
+   > Synchronisation & Storage 
+    > Disk Storage : 'on' # keep messages in all folders of the accuont on this computer
+    > Sync Mode : 'Synchronise all messages locally regardless of age' # sync all messages
+    > Nothing Over : '100k' # dont download messages over 100k
+    > Space Recovery : 'Delete all but the most recent <1000> messages' # keep last 1000
+    > Starred Msgs : 'on' # always keep starred messages
+   > End To End Encryption 
+    > Default : 'Enable encryption for new messages' # enable encryption for enw messages
+    > Unencrypted : 'on' # sign unencrypted messages
+    > Public Key : 'on' # attatch public key when adding an openpgp digital signature
+    > Encrypt Subj : 'off' # encrypt the subject of openpgp messages
+    > Encrypt Draft : 'on' # store draft messages in encrypted format
+   > Return Receipts 
+    > Option : 'Use my global return reciept preferences for this account' # use global 
+ > Global Settings
+  > General Settings
+   > Start Page : 'off' # dont show start page in message area on startup
+   > Default Engine : 'DuckDuckGo' # set default search engine
+   > Check Default : 'off' # dont check if thunderbird is default mail client
+   > Show Emotions : 'on' # display emoticons as graphics
+   > Date And Time : 'Application locale' # set locale
+   > Autoscroll : 'off' # dont use autoscroll
+   > Smooth Scroll : 'on' # sue smooth scrolling
+   > Show Scrollbars : 'off' # always show scrollbars 
+   > Message Alert : 'on' # alert when new messages arrive
+   > System Noto : 'on' # use the system notification (more options available)
+   > Play Sound : 'on' # play a sound when new messages arrive with options to
+  # use a default sound or a set a path to an audio file
+   > Saved File Dir : 'Downloads' # set save file dir
+   > Auto Mark Read : 'on' 'Immediately on display' # automatically mark read
+   > Open Msgs In : 'a new tab' # open messages in a new tab
+   > Del Close Tab : 'on' # close message tab when message is moved or deleted
+   > Addr Book Names : 'off' # dont only show display names from address book
+    > Return Reciept Settings
+     > Always Request : 'off' # dont always request return reciepts
+     > On Arrival : 'Move it to my sent folder' # move reciepts to sent folder
+     > On Request : 'Never send a return reciept' # never send return receipts
+    > Connection Settings
+    > Proxy Configs : 'Manual Proxy Configuration' # set manual proxy config to
+  # create a proxy server on the host to use as a network tunnel, commonly 
+  # switched with auto detect when viewing difficult webpages or not running tor
+    > SOCKS Host : '127.0.0.1' # set socks host to loopback
+    > SOCKS Port : '9050' # set port 9050
+    > SOCKS Setting : 'SOCKSv5' # use socks5 
+    > No Proxy For : 'localhost,127.0.0.1' # set direct access addresses
+    > Prompt Auth : 'off' # dont prompt authentication if password is saved
+    > DNS Over SOCKS : 'on' # proxy DNS requests over socks5
+    > Offline Settings
+     > Auto Follow : 'off' # dont automatically follow detected online state
+     > Manual State : 'Offline' # set manual state when starting up to online
+     > Send Unsent : 'No' # dont send unsent messages when going online
+     > Download Msgs : 'No' # dont download messages for offline use
+   > Override Auto : 'on' '20M' # override cache management and only use 50M
+   > Compact Over : '20M' # compact all folders when it will save over 10M 
+   > Ask Every Time : 'off' # dont ask every time before compacting
+   > Global Search : 'on' # enable global search indexer
+   > Store Type : 'File per folder (mbox)' # set storage type for new accounts
+   > Hardware Accel : 'off' # dont use hardware acceleration
+  # the config editor option here is the link to advanced settings
+  > Composition Settings
+   > Fwd Messages : 'As Attatchment' # forward messages as attatchments
+   > Add Extension : 'on' # add an extension to the filename 
+   > Autosave Every : '5 minutes' # autosave the message every 5 minutes
+   > Cnfrm Shortcut : 'off' # confirm when sending the message with a shortcut
+   > Link Previews : 'on' # show link previews when pasting urls
+   > Check Spelling : 'on' # check spelling before sending
+   > While Typing : 'on' # check spelling while typing
+   > Language : 'English' # set language
+   > Message Font : 'Variable Width' 'Medium' # set message font
+   > Reader Colours : 'on' # use default reader colours
+   > Paragraph Fmt : 'on' # use paragraph font
+   > Sending Fmt : 'Automatic' # set sending format to automatic
+   > Addresses Book : 'on' # look for matching entries in local address books
+   > Add Out To : 'Personal Address Book' 'on' # automatically add all addresses
+  # in outgoing messages to personal address book
+   > Default Dir : 'All Address Books' # set default startup dir in the address 
+  # books window to all address books
+   > Attatch Check : 'on' # check for missing attachments
+   > Share Over : '5M' # offer to use filesharing for files larger than 5M
+  > Privacy And Security Settings
+   > Remote Content : 'off' # allow remote content in messages
+   > Web History : 'off' # remember visited websites and links
+   > Accept Cookies : 'on' # accept cookies from sites 
+   > Third Party : 'Never' # never accept third party cookies
+   > Keep Until : 'Ask me every time' # ask what to do with cookies 
+   > Do Not Track : 'on' # send websites a do not track signal
+   > Primary Passwd : 'off' # dont use a primary password
+   > When Junked : 'Delete' # delete emails marked as junk 
+   > Mark Junk Read : 'off' # dont mark junk mail as read 
+   > Filter Logging : 'off' # dont use adaptive junk filter logging
+   > Send Data : 'off' # dont send technical and interaction data to mozilla
+   > Scam Detection : 'on' # notify of suspected scams
+   > Quarantine : 'on' # dont allow antivirus to quarantine individual messages
+   > Cert Requests : 'Ask me every time' # ask when servers requests certs
+   > Query OCSP : 'on' # validate certificate authorities with OCSP 
+  > Chat Settings
+   > On Startup : 'Keep my chat accounts offline' # keep chat offline on startup
+   > Idle Status : 'on' '5min' # set to idle after 5min
+   > Status Message : 'on' 'is afk' # create an idle status message
+   > Typing Notos : 'on' # send is typing notifications
+   > Show Noto : 'with senders name only' # set notification style
+   > Flash Taskbar : 'off' # dont flash the taskbar when notifications arrive
+   > Play Sound : 'on' # play a sound when notifications arrive with options to
+  # use a default sound or a set a path to an audio file
+   > Theme : 'Simple' # set chat box theme 
+   > Variant : 'Dark' # set chat box theme variant 

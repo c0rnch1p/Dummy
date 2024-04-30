@@ -1,0 +1,103 @@
+DESCRIPTION  : In Killing Floor 2, players descend into continental europe where the outbreak caused by Horzine
+  Biotechs failed experiment has quickly spread and gained unstoppable momentum, essentially paralyzing the European
+  Union. Just one month after the events in the original Killing Floor, the specimen clones are everywhere and
+  civilization is in disarray. Communications have failed, governments have collapsed, and military forces have been
+  systematically eradicated. The people of europe know survival and self preservation too well and some lucky survivors
+  have gone into hiding, not all have given up hope though... A group of civilians and mercenaries have banded together
+  to combat the outbreak and established privately funded operation bases across europe. Upon tracking specimen clone
+  outbreaks, players will descend into zed-laden hot zones and exterminate them. 6 player co-op Zed slaughtering mayhem
+  and now, with 12 player Versus Survival Mode, BE the Zeds!
+PROCESSOR    : Core 2 Duo E8200 2.66GHz, Phenom II X2 545
+GRAPHICS     : GeForce GTS 250, Radeon HD 4830
+OS           : Win7, Win8
+ARCHITECTURE : x86_64
+MEMORY       : 3Gb RAM
+STORAGE      : 80b GB
+
+                                           KILLING FLOOR 2 SHORTCUTS
+                                            'mouse 2'        : aim
+                                            'mouse 1'        : shoot
+                                            'mouse 5'        : next weapon
+                                            'mouse 4'        : previous weapon
+                                            'mouse wheel'    : alt fire and block
+                                            'left ctrl'      : toggle crouch
+                                            'left shft'      : hold sprint or walk
+                                            'space'          : jump
+                                            'r'              : reload
+                                            'w'              : forward
+                                            's'              : backward
+                                            'a'              : strafe left
+                                            'd'              : strafe right
+                                            'f'              : use or interact
+                                            'e'              : melee
+                                            'q'              : healthshot
+                                            'x'              : equipment
+                                            'z'              : flashlight
+                                            '1'              : primary weapon
+                                            '2'              : secondary weapon
+                                            '3'              : melee weapon
+                                            'p'              : throw weapon
+                                            'o'              : throw dosh
+                                            'j'              : emote
+                                            'k'              : taunt zeds
+                                            'l'              : skip trader
+                                            'v'              : vote yes
+                                            'n'              : vote no
+                                            'c'              : talk
+                                            'y'              : team talk
+                                            'tab'            : scoreboard
+
+                           KILING FLOOR 2 GUI SPECS
+                           > Mouse Cont Settngs
+                             > Sensitivity     : 2.26 # standard can change later
+                             > Zoom Sens       : 1.00 # default
+                             > Vertical        : 1.00 # default
+                             > Horizontal      : 1.00 # default
+                             > Invert Y        : off # no invert y
+                             > Mouse Smoothing : on # enable mouse smoothing
+                             > View Smoothing  : off # view smoothing
+                             > View Accelerate : off # no view acceleration
+                           > Gameplay Settings
+                             > Field Of View   : 90 # standard
+                             > Gore Intensity  : full # standard
+                             > Frnd HUD Scale  : mid # standard
+                             > Show Crosshair  : on # show crosshair
+                             > Wpn Qk Select   : on # weapon quick select
+                             > Show Kill Tickr : on # zed kill ticker
+                             > Hide Boss Hbar  : on # hide boss healthbar
+                             > Welder In Inv   : on # show welder in inventory
+                             > Alt Akimbo Aim  : on # alternative dual pistol aim
+                             > No Clot Turn    : off # no turn on clot grab
+                             > No Auto Trade   : off # enable auto trade
+                             > No Headshot FX  : off # enable remote headshot effects
+                             > Toggle Sprint   : off # hold to sprint
+                             > Legacy Hbars    : off # no legacy health bars
+                             > Allow 9mm Swap  : on # allow swap to 9 milly
+                           > Basic Video Settings
+                             > Aspect Ratio    : 16:9 # standard
+                             > Resolution      : 1080p # standard
+                             > Graphics Quality: custom # default
+                             > Vsync           : on # reduce screen tearing
+                             > Display         : boarderless # standard
+                             > Variable Frames : on # enable variable frame rate
+                             > Film Gran       : none # set bar to 0
+                             > Nvidia Flex     : off # turn on if using nvidia drivers
+                           > Advanced Video Settings
+                             > Env Detail      : medium # medium environment detail
+                             > Char Detail     : high # high character detail
+                             > FX              : INI override # allow external override
+                             > Texture Reso    : high # high texture resolution
+                             > Texture Filter  : trilinear # trilinear texture filtering
+                             > Shadow Quality  : INI override # allow external override
+                             > Realtime Reflect: off # disable realtime reflections
+                             > Anti Aliasing   : FXAA # FXAA anti aliasing
+                             > Bloom           : low # low bloom
+                             > Motion Blur     : INI override # allow external override
+                             > Ambient Occuls  : SSAO # SSAO ambient occlusion
+                             > Depth Of Field  : on # enable depth of field
+                             > Volum Lighting  : on # enable volumetric lighting
+                             > Lens Flares     : on # enable lens flares
+                             > Light Shaft     : on # enable light shafts
+
+LAUNCH OPTIONS # force use proton hotfix
+  mesa_glthread=true %command% # launch options to enable glthread

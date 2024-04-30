@@ -1,0 +1,90 @@
+FIREFOX GUI SPECS
+ > General
+  > Previous Windows : 'off' # dont open previous windows and tabs
+  > Check Default : 'off' # dont always check if default mail client
+  > Ctrl Tab Recent : 'off' # dont ctrl+tab cycles tabs in recent order
+  > Links In Tabs : 'on' # open links in tabs instead of new windows
+  > Immediate Switch : 'off' # switch to opened media or link immediately
+  > Confirm Close : 'on' # confirm before closing multiple tabs
+  > Confirm Quit : 'on' # confirm before quitting firefox
+  > Site Appearance : 'dark' # set site appearance to dark
+  > Default Zoom : '100%' # set default zoom to 100%
+  > Zoom Text Only : 'off' # dont only zoom text
+  > System Language : 'on' # use operating system language
+  > Check Spelling : 'on' # check spelling while typing
+  > Save File Dir : 'Downloads' # set save file dir to downloads
+  > Always Ask Where : 'off' # dont always ask where to save files
+  > Other Files : 'Ask weather to open or save files' # ask for other files
+  > Play DRM Content : 'on' # play digital rights protected media
+  > Recommended Perf : 'on' # use recommended performance settings
+  > Autoscroll : 'off' # dont use autoscroll
+  > Smooth Scroll : 'on' # use smoothscroll
+  > Show Srollbars : 'off' # dont show scrollbars
+  > Cursor Navigate : 'off' # dont navigate pages with cursor
+  > Search On Type : 'on' # search for text when start tying
+  > Pic In Pic : 'on' # picture in picture video controls
+  > Keys Ctrl Media : 'on' # contol media via hardware and virtual interface
+  > Ext Recommends : 'off' # dont show extension recommendations
+  > Feat Recommends : 'off' # dont show feature recommendations
+   > Network Settings 
+    > Proxy Configs : 'Manual Proxy Configuration' # set manual proxy config to
+  # create a proxy server on the host to use as a network tunnel, commonly 
+  # switched with auto detect when viewing difficult webpages or not running tor
+    > SOCKS Host : '127.0.0.1' # set socks host to loopback
+    > SOCKS Port : '9050' # set port 9050
+    > SOCKS Setting : 'SOCKSv5' # use socks5 
+    > No Proxy For : 'localhost,127.0.0.1' # set direct access addresses
+    > Prompt Auth : 'off' # dont prompt authentication if password is saved
+    > DNS Over SOCKS : 'on' #  proxy DNS requests over socks5
+ > New Windows And Tabs Settings
+  > New Homepage : 'duckduckgo.com' # set new homepage
+  > New Tabs : 'default' # set new tab page to default page
+  > Web Search : 'off' # dont show web search content on homepage
+  > Shortcuts : 'off' # dont show shortcuts content on homepage
+  > Recent Activity : 'off' # dont show recent activity content on homepage
+ > Search Settings
+  > Search Bar : 'Add search bar in toolbar' # search bar next to address bar
+  > Default Engine : 'DuckDuckGo' # set default search engine
+  > Suggestions : 'off' # dont provide search suggestions
+ > Privacy And Security Settings
+  > Browser Privacy : 'Custom' # set browser privacy to custom
+   > Cookies : 'on' 'Cross site tracking cookies, and isolate other cross site 
+     cookies' # block cross site tracking cookies and isolate others
+   > Content Track : 'on' 'In all windows' # block tracking in all windows
+   > Cryptominers : 'on' # block cryptominers
+   > Fingerprinters : 'on' # block fingerprinters
+  > Do Not Track : 'always' # always send a do not track message
+  > Delete Cache : 'off' # dont delete cache (site data) when closed
+  > Ask To Save : 'off' # dont ask to save logins for sites
+  > Show Alerts : 'on' # show alerts about passwords for breached websites
+  > Primary Passwd : 'off' # dont use a primary password
+  > Firefox Will : 'Use custom settings for history' # custom history settings
+  > Always Private : 'off' # dont always use private browsing mode
+  > Remember History : 'off' # dont remember browsing and download history
+  > Remember Search : 'off' # remember search and form history
+  > Clear On Close : 'on' # clear history when firefox closes
+  > Location Permissions
+   > Block Requests : 'off' # dont block location requests
+  > Camera Permissions
+   > Block Requests : 'off' # dont block camera requests
+  > Microphone Permissions
+   > Block Requests : 'off' # dont block microphone requests
+  > Notifications Permissions
+   > Block Requests : 'off' # dont block notification requests
+  > Autoplay Permissions
+   > Site Default :  'Block audio and video' # block autoplays
+  > Virtual Reality 
+   > Block Requests : 'on' # block virtual reality requests 
+  > Block Popups : 'on' # block pop up windows
+  > Block Installs : 'on' # warn when websites attempt to install add ons
+  > Interaction Data : 'off' # dont send interaction data to firefox
+  > Reccomendations : 'off' # dont allow personalised extension recommendations
+  > Run Studies : 'off' # dont allow firefox to install and run studies
+  > Backlogs : 'off' # dont allow firefox to send backlogged crash reports 
+  > Block Dangerous : 'on' # block dangerous and deceptive content
+  > Block Downloads : 'on' # block dangerous downloads
+  > Warn Unwanted : 'on' # warn about dangerous or unwanted content
+  > Query OCSP : 'on' # validate certificate authorities with OCSP 
+  > HTTPS Only : 'Dont enable HTTPS only mode' # set no https only
+  > DNS : 'Default Protection' # set no default protection
+  # advanced settings are accessed at about:config

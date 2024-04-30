@@ -4,7 +4,7 @@
 	                |    |   \    |   /   \ /  \   \ /  \(__    /
 	               /_________/_______/\____|___/____|___/______/
 
-	DESCRIPTION:
+	DESCRIPTION
 	 This is a dummy help file for a program. Note the styling of this page,
 	 the text is indented because highlight is being used to modify the amount
 	 space characters in a tab to create a margin. The file is 80 cols by 54 lines 
@@ -13,30 +13,30 @@
 	 these files, is to maintain the readability of the various forms of information
 	 pertaining to different software.
 
-	COMMANDS:
+	COMMANDS
 	 dummy # Run dummy
 	 dummy --flag # Run dummy with the flag
 	 dummy -f <file> # Dummy with the flag on the file
 	 dummy -f '/path/file' # Above command with full filepath
 
-	SHORTCUTS:
+	SHORTCUTS
 	 'Ctrl+a' # Select all dummy objects
 	 'Ctrl+b' # Toggle dummy toolbar visibility
 	 'Ctrl+c' # Copy dummy selection to clipboard
 	 'Ctrl+d' # Duplicate dummy selection
 
-	DEPENDS ON:
+	DEPENDS ON
 	 ▸ bat # Cat clone with syntax highlighting
 	 ▸ highlight # CLI source code highlighter
 
-	FILES:
+	FILES
 	 ▸ '/path/dummy.c' # Main source file
 	 ▸ '/path/dummy.txt' # Dummy help file
 
-	BINARIES:
+	BINARIES
 	 ▸ '/bin/b3tt3rh3lp' # Program to view help files
 
-	COMMON USAGE:
+	COMMON USAGE
 	 > Edit # Go to the edit tab in the menubar
 	   > Preferences # Select the preferences option
 	     > Exit # Search endlessly for an exit button
@@ -45,11 +45,10 @@
 	 echo '$int' >> injection.txt # A lowly command
 	 cat inj* | grep -o integ | sed 's/g/grate/g' # A wayward pipe
 
-	WEBLINKS:
+	WEBLINKS
 	 ▸ 'https://www.dummyhub.com' # NSFW dummy vids
 	 ▸ 'https://www.pacifiers.com' # Pacifier addiction stories
 	 ▸ 'http://www.forpuppets.com' # Unknown link
 	 ▸ 'https://www.coolgenerator.com/ascii-text-generator' # ASCII titles
-
 
 

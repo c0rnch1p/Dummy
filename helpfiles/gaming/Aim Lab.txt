@@ -1,0 +1,84 @@
+DESCRIPTION  : Aim Lab is the aim trainer of choice for over 20 million players, from beginners to esports pros. Our
+  unique aim analysis optimizes gameplay, targets weaknesses & builds key skills for any FPS or TPS game, all for free!
+  Time to warm up with unlimited scenarios & rank up in-game! Aim Lab has been developed as a personal trainer to help
+  players get better in more games through curated aim training scenarios, improving core FPS skills including
+  flicking, tracking, speed, perception & cognition through detailed aim analysis feedback which guides p[layers on
+  quick improvements. Aim Lab is regularly updated with new features to support more games and is a must for any
+  players, from beginner to pro, to gain a competitive edge.
+PROCESSOR    : Intel® Core™ 2 Duo E6600, AMD Phenom™ X3 8750
+GRAPHICS     : GTX 560
+OS           : Windows 7, Windows 8, Windows 10
+ARCHITECTURE : x86_64
+MEMORY       : 4Gb RAM
+STORAGE      : 3Gb
+
+                                           AIM LAB SHORTCUTS
+                                            'mouse 2'        : aim
+                                            'mouse 1'        : shoot
+                                            'mouse 5' 'r'    : reload
+                                            'mouse 4' 'x'    : detection
+                                            'left ctrl'      : toggle crouch
+                                            'mouse wheel'    : restart
+                                            'left shft'      : hold sprint or walk
+                                            'space'          : jump
+                                            'v'              : toggle FPV or TPV
+                                            'q'              : lean left
+                                            'e'              : lean right
+
+                           AIM LAB GUI SPECS
+                           > Audio Settings
+                             > Change Hit Noise: optional # option to import a file
+                           > Graphics Settings
+                             > Display Mode    : fullscreen exclusive # same as borderless mode
+                             > Selected Disp   : N/A # default
+                             > Display Reso    : 1080p # default
+                             > Display Rf/Rt   : 1080p # default
+                             > Stretch Ratio   : 16:9 # default
+                             > Mx Qd Frames    : 3 # better performance
+                             > Frame Limiter   : off # dont limit frames
+                             > Graphics Qual   : fastest # for speedy pops
+                             > Post Process    : on # allow fullscreen FX
+                             > Muzzle Flash    : off # too much FX
+                             > Shell Casing    : on # good FX
+                             > Bullet Impact   : off # too much FX
+                             > Player Damage   : on # reinforce childhood trauma
+                             > Target Destroy  : off # too much FX
+                           > Control Settings
+                             > Game Profile    : aimlab # default
+                             > 360 Distance    : 22.6 # mouse travels 22.6 cm for 360
+                             > Sensitivity     : 1 # mouse movement detection
+                             > Field Of View   : 90 # standard for most games
+                             > ADS 360 Dist    : 22.6 # while aiming down sight
+                             > ADS Sensitivity : 1 # while aiming down sight
+                             > ADS FOV         : 50 # while aiming down sight
+                             > Sens Randomizer : off # dont randomise sensitivity settings
+                             > Hipfire Scaling : off # dont scale sensitivity to distance
+                             > ADS Scaling     : off # dont scale aim sensitivity to distance
+                             > Mouse CPI       : 800 # aligned with sensitivity settings
+                             > Y-Axis Sens Rt  : use game settings # default
+                             > Y-Axis Sens Gn  : 1 # default
+                             > Y-Axis Invert   : off # personal preference
+                           > Game Settings
+                             > Player Avatar   : original # original player avatar
+                             > Appearance      : normal # normal appearance no holo gun
+                             > Metallic        : mid low # mid low metallic FX
+                             > Smoothness      : low # set below metallic level
+                           > Keybinding Settings
+                             > Zoom Bind Mode  : hold # hold to zoom
+                             > Crouch Bind Md  : toggle # toggle to crouch
+                             > Lean Bind Mode  : hold # hold to lean
+
+LAUNCH OPTIONS # force use glorious eggroll
+  mesa_glthread=true %command% # launch options to enable mesa glthread
+AIM LAB ACCOUNT # account sign up
+    # aim lab is kind of shit because it will limit alot of its features based solely upon weather or not the person
+    # playing has an aim lab account
+SAVING ISSUES # visual settings not saving
+    # sometimes the custom visual settings wont save, to avoid this ever happening make sure the launch option is
+    # entered correctly and the in gui specs have been configured before loading the first training session
+TRAINING ROUTINE # gameplay guide for aim lab
+- Gridshot x 4 # four rounds fo gridshot
+- Microshot x 5 # five rounds of microshot
+- Motionshot x 4 # four rounds of motionshot
+- Spidershot x 5 # five rounds of spidershot
+- Detection x 4 # four rounds of detection
