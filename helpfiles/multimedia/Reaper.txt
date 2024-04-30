@@ -371,31 +371,31 @@
 	 filename.wav outputfile.wav # Alternatively include the output file
 	   # Any number of extra files and output formats can be provided
 	 <CONFIG # Config block which can contain any of the following parameters
-	  SRATE 44100 # Omit to use source sample rate
-	  NCH 2 # Omit to use source channel count
-	  RSMODE modeidx # Resample mode, copy from project file
-	  DITHER 3 # 1=dither, 2=noise shaping, 3=both
-	  USESRCSTART 1 # 1=write source media BWF start offset to output
-	  USESRCMETADATA 1 # 1=attempt to preserve original media file metadata
-	  PAD_START 1.0 # Leading silence in sec, can be negative
-	  PAD_END 1.0 # Trailing silence in sec, can be negative
-	  OUTPATH 'path' # Set an output path if a path is not provided
-	  OUTPATTERN '$wildcard' # Specify wildcard patterns to use in the outfile
-	  NORMALIZE 1 -6.0 0 # 1=peak, 2=true peak, 3=lufs-i, 4=lufs-s, 5=lufs-m,
-	   # second parameter is dB, third parameter can be set to 1 to normalize
-	   # only if the audio too loud
-	  BRICKWALL 1 -1.0 # 1=peak, 2=true peak, second parameter is dB
-	  FADE 0.0 0.0 1 1 # Fade-in and out length and shape (length 0.001=1ms)
-	  FXCHAIN 'fxchainfilename' # Use full path if specified, or FxChains dir
-	  FX_NCH 4 # If not specified, FX will be configured to 4 channels
-	  CPULIMIT 0 # Available CPU cores (0-8 or omit)
-	  <FXCHAIN # Contents of .RfxChain file
-	  > # Close off fxchain block
-	  <OUTFMT # Base64 data such as contents of <RENDER_CFG or <RECORD_CFG
-	  > # Close out otfmt block
-	  <METADATA # Contents of <RENDER_METADATA block from project file
-	  > # Close off metadata block
-	 > # Close off config block, save the config script and now it can be used to
+	     SRATE 44100 # Omit to use source sample rate
+	     NCH 2 # Omit to use source channel count
+	     RSMODE modeidx # Resample mode, copy from project file
+	     DITHER 3 # 1=dither, 2=noise shaping, 3=both
+	     USESRCSTART 1 # 1=write source media BWF start offset to output
+	     USESRCMETADATA 1 # 1=attempt to preserve original media file metadata
+	     PAD_START 1.0 # Leading silence in sec, can be negative
+	     PAD_END 1.0 # Trailing silence in sec, can be negative
+	     OUTPATH 'path' # Set an output path if a path is not provided
+	     OUTPATTERN '$wildcard' # Specify wildcard patterns to use in the outfile
+	     NORMALIZE 1 -6.0 0 # 1=peak, 2=true peak, 3=lufs-i, 4=lufs-s, 5=lufs-m,
+	  # second parameter is dB, third parameter can be set to 1 to normalize
+	  # only if the audio too loud
+	     BRICKWALL 1 -1.0 # 1=peak, 2=true peak, second parameter is dB
+	     FADE 0.0 0.0 1 1 # Fade-in and out length and shape (length 0.001=1ms)
+	     FXCHAIN 'fxchainfilename' # Use full path if specified, or FxChains dir
+	     FX_NCH 4 # If not specified, FX will be configured to 4 channels
+	     CPULIMIT 0 # Available CPU cores (0-8 or omit)
+	     <FXCHAIN # Contents of .RfxChain file
+	     > # Close off fxchain block
+	     <OUTFMT # Base64 data such as contents of <RENDER_CFG or <RECORD_CFG
+	     > # Close out otfmt block
+	     <METADATA # Contents of <RENDER_METADATA block from project file
+	     > # Close off metadata block
+	     > # Close off config block, save the config script and now it can be used to
 	   # provide export paramaters for the files to reaper by running the command
 	 reaper -batchconvert 'filelist.txt' # Enter command in a terminal to output the
 	   # files into the current directory

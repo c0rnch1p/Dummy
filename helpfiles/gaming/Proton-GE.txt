@@ -51,12 +51,12 @@
 	   # To enable Proton-GE in Steam, open steam (native)
 	 > Steam Menu # Open the steam menu
 	   > Compatability # Navigate to the compatability section
-		 > Enable Steam Play for all other titles: <on> # Check the box to enable
+	     > Enable Steam Play for all other titles: <on> # Check the box to enable
 	   # for all titles, to use the custom build of proton with a game, go to the
 	   # games library within Steam and open the context menu for the game
 	 > Properties # Select the properties option
 	   > Compatability # Navigate to the compatability section
-		 > Force the use of a specific Steam Play compatability tool: <on> # Check
+	     > Force the use of a specific Steam Play compatability tool: <on> # Check
 	   # the box to force the use of Proton, and make sure that Proton-GE is
 	   # selected in the dropdown box in both the Steam menu and the game properties
 	STEAM NATIVE RUNTIME

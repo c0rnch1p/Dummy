@@ -37,29 +37,29 @@
 	   # preferential or without need for explanation
 	 > Steam Menu  
 	   > Game Settings
-		 > Pings Per Min: <250> # Lower setting
-		 > GPU Accel: <off> # Off for low to mid range GPUs
+	     > Pings Per Min: <250> # Lower setting
+	     > GPU Accel: <off> # Off for low to mid range GPUs
 	   > Interface Setttings
-		 > On Startup: <library> # Show library on startup
+	     > On Startup: <library> # Show library on startup
 	   > Library Settings
-		 > Low Bandwidth: <off> # Disables community content
-		 > Low Performance: <on> # Reduces power usage
+	     > Low Bandwidth: <off> # Disables community content
+	     > Low Performance: <on> # Reduces power usage
 	   > Download Settings
-		 > Dl During Game: <on> # Downloads during gameplay
-		 > Throttle: <off> # Dont throttle while streaming
-		 > Bits Per Second: <on> # Display rate in bits
-		 > Limit Bandwidth: <18500Kb/s> # Limit bandwidth to 3Mb/s
+	     > Dl During Game: <on> # Downloads during gameplay
+	     > Throttle: <off> # Dont throttle while streaming
+	     > Bits Per Second: <on> # Display rate in bits
+	     > Limit Bandwidth: <18500Kb/s> # Limit bandwidth to 3Mb/s
 	   > Steam Cloud Settings
-		 > Open Screenshots: <on> # Open screenshots after close
+	     > Open Screenshots: <on> # Open screenshots after close
 	   > Broadcasting Settings
-		 > Video Dimensions: <1080p> # Set 1080p
-		 > Optimal Encoding: <best performance> # Better performance
-		 > Viewer Chat: <top left> # Viewer chat in top left
-		 > Show Stats: <on> # Show upload stats
+	     > Video Dimensions: <1080p> # Set 1080p
+	     > Optimal Encoding: <best performance> # Better performance
+	     > Viewer Chat: <top left> # Viewer chat in top left
+	     > Show Stats: <on> # Show upload stats
 	   > Web Browser Settings
-		 > Home Page: <www.duckduckgo.com> # Set homepage
+	     > Home Page: <www.duckduckgo.com> # Set homepage
 	   > Shader Precache Settings
-		 > Enable Precache: <on> # Vulkan and OpenGL support
+	     > Enable Precache: <on> # Vulkan and OpenGL support
 
 	DEPENDS ON
 	 ▸ bash # GNU bourne again shell
@@ -121,8 +121,8 @@
 	   # check on problematic games before using this feature in Steam
 	 > Steam Menu # Open the Steam Menu
 	   > Storage # Navigate to the storage section
-		 > ... # Select the three dotted line next to the storage info
-		   > Repair Library # Run the repair process, this overall approach to
+	     > ... # Select the three dotted line next to the storage info
+	       > Repair Library # Run the repair process, this overall approach to
 	   # storage management and solving issues with games in Steam is much more
 	   # effective than constantly uninstalling and reinstalling games taking up
 	   # time and bandwidth

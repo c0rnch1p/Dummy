@@ -1,9 +1,8 @@
 #include "utilities.h"
-#define TOTAL 1
+#define TOTAL 0
 
 // file list
 char *utilitiesFiles[TOTAL]={
-	""
 };
 
 // initialize submenu

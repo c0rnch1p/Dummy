@@ -3,7 +3,7 @@
 
 // file list
 char *allh3lpFiles[TOTAL]={
-	"00_dummy",
+	"/00_dummy",
 	"development/Gedit",
 	"gaming/CS2",
 	"gaming/Proton-GE",
