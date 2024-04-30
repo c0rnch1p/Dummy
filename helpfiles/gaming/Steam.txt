@@ -35,30 +35,31 @@
 	   # running on low end hardware and Linux operating systems, other settings
 	   # not in this list have been left out because theyre unrelated, completely 
 	   # preferential or without need for explanation
-	 > Game Settings
-	   > Pings Per Min: <250> # Lower setting
-	   > GPU Accel: <off> # Off for low to mid range GPUs
-	 > Interface Setttings
-	   > On Startup: <library> # Show library on startup
-	 > Library Settings
-	   > Low Bandwidth: <off> # Disables community content
-	   > Low Performance: <on> # Reduces power usage
-	 > Download Settings
-	   > Dl During Game: <on> # Downloads during gameplay
-	   > Throttle: <off> # Dont throttle while streaming
-	   > Bits Per Second: <on> # Display rate in bits
-	   > Limit Bandwidth: <18500Kb/s> # Limit bandwidth to 3Mb/s
-	 > Steam Cloud Settings
-	   > Open Screenshots: <on> # Open screenshots after close
-	 > Broadcasting Settings
-	   > Video Dimensions: <1080p> # Set 1080p
-	   > Optimal Encoding: <best performance> # Better performance
-	   > Viewer Chat: <top left> # Viewer chat in top left
-	   > Show Stats: <on> # Show upload stats
-	 > Web Browser Settings
-	   > Home Page: <www.duckduckgo.com> # Set homepage
-	 > Shader Precache Settings
-	   > Enable Precache: <on> # Vulkan and OpenGL support
+	 > Steam Menu  
+	   > Game Settings
+	     > Pings Per Min: <250> # Lower setting
+	     > GPU Accel: <off> # Off for low to mid range GPUs
+	   > Interface Setttings
+	     > On Startup: <library> # Show library on startup
+	   > Library Settings
+	     > Low Bandwidth: <off> # Disables community content
+	     > Low Performance: <on> # Reduces power usage
+	   > Download Settings
+	     > Dl During Game: <on> # Downloads during gameplay
+	     > Throttle: <off> # Dont throttle while streaming
+	     > Bits Per Second: <on> # Display rate in bits
+	     > Limit Bandwidth: <18500Kb/s> # Limit bandwidth to 3Mb/s
+	   > Steam Cloud Settings
+	     > Open Screenshots: <on> # Open screenshots after close
+	   > Broadcasting Settings
+	     > Video Dimensions: <1080p> # Set 1080p
+	     > Optimal Encoding: <best performance> # Better performance
+	     > Viewer Chat: <top left> # Viewer chat in top left
+	     > Show Stats: <on> # Show upload stats
+	   > Web Browser Settings
+	     > Home Page: <www.duckduckgo.com> # Set homepage
+	   > Shader Precache Settings
+	     > Enable Precache: <on> # Vulkan and OpenGL support
 
 	DEPENDS ON
 	 ▸ bash # GNU bourne again shell
@@ -108,7 +109,10 @@
 	   # steam library, the steam interface is also used
 	 > Steam # Navigate to the steam menu
 	   > Restore Game backup # Select the restore game backup option and provide the
-	   # path to the gamefiles  
+	   # path to the gamefiles
+	   
+	   
+	   
 	LAUNCH OPTIONS # Launch options allow for the use of commands and variables at
 	   # game startup to optimise performance and fix issues
 	 -novid # Skip intro videos
@@ -156,7 +160,12 @@
 	 -mesa_glthread <true> # Possible fix for games having issues with GL rendering
 	 -PROTON_NO_ESYNC 1 # Turn off esync for proton to fix stuttering and lag
 	 -DXVK_ASYNC 1 # Turn on async as a replacement for esync if its turned off
-	 %command% # Tell steam to execute these commands   
+	 %command% # Tell steam to execute these commands
+	RUNTIME AND RUNTIME
+	
+	NATIVE RUNTIME
+	
+	STEAM PLAY
 		       
 	WEBLINKS
 	 ▸ 'https://steampowered.com' # Official
