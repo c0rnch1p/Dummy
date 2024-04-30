@@ -1,370 +1,406 @@
-	        _____________________ _______ _____________________________
-	        \__  __   \_   _____//   _   \\__  __  \_   _____/__  __   \
-	         |       _/|    __)_/   /_\   \|   ____/|    __)__|       _/
-	         |____|___/_________/____|____/____|   /_________/|____|___/
+         _____________________ _______ _____________________________
+         \__  __   \_   _____//   _   \\__  __  \_   _____/__  __   \
+          |       _/|    __)_/   /_\   \|   ____/|    __)__|       _/
+          |____|___/_________/____|____/____|   /_________/|____|___/
 
-	DESCRIPTION
-	 REAPER (Rapid Environment for Audio Production, Engineering, and Recording)
-	 is a digital audio workstation and MIDI sequencer software created by
-	 Cockos. REAPER acts as a host to most industry standard plugin formats
-	 (eg. VST and AU) and can import all commonly used media formats, including
-	 video. REAPER and its included plugins are available in 32-bit and 64-bit
-	 format. While not a dedicated video editor, REAPER can be used to cut and
-	 trim video files and to edit or replace the audio within. Common video
-	 effects such as fades, wipes and cross-fades are available. REAPER aligns
-	 video files in a project, as it would an audio track, and the video part of
-	 a file can be viewed in separate video window while working on the project.
+DESCRIPTION
+ REAPER (Rapid Environment for Audio Production, Engineering, and Recording) is
+ a digital audio workstation and MIDI sequencer software created by Cockos.
+ Reaper acts as a host to most industry standard plugin formats (eg. VST and AU)
+ and can import all commonly used media formats, including video. Reaper and its
+ included plugins are available in 32-bit and 64-bit format. While not a
+ dedicated video editor, Reaper can be used to cut and trim video files and to
+ edit or replace the audio within. Common video effects such as fades, wipes and
+ cross-fades are available. Reaper aligns video files in a project, as it would
+ an audio track, and the video part of a file can be viewed in separate video
+ window while working on the project.
 
-	COMMANDS
-	 reaper -audiocfg # Show audio configuration at startup
-	 reaper -batchconvert 'filelist.txt' # Batch converter mode
-	 reaper -cfgfile 'file.ini' # Use full path for alternate resource directory
-	 reaper -close <all> <save|nosave> # Close projects (potentially deprecated)
-	 reaper -ignoreerrors # Dont show errors on load
-	 reaper -newinst | -nonewinst # Override preference for new instance check
-	 reaper -new # Start with new project
-	 reaper -nosplash # Dont show splash screen window
-	 reaper -renderproject 'file.rpp' # Render project and exit
-	 reaper -saveas 'newfile.rpp' # Save project after loading as file
-	 reaper -splashlog '/path/file.log' # Write splash message log to file
-	 reaper -template 'file.rpp' # Start with template project
+COMMANDS
+ reaper -audiocfg # Show audio configuration at startup
+ reaper -batchconvert 'filelist.txt' # Batch converter mode
+ reaper -cfgfile 'file.ini' # Use full path for alternate resource directory
+ reaper -close <all> <save|nosave> # Close projects (potentially deprecated)
+ reaper -ignoreerrors # Dont show errors on load
+ reaper -newinst | -nonewinst # Override preference for new instance check
+ reaper -new # Start with new project
+ reaper -nosplash # Dont show splash screen window
+ reaper -renderproject 'file.rpp' # Render project and exit
+ reaper -saveas 'newfile.rpp' # Save project after loading as file
+ reaper -splashlog '/path/file.log' # Write splash message log to file
+ reaper -template 'file.rpp' # Start with template project
 
-	SHORTCUTS
-	   # Not all of these shortcuts are the default keybindings for reaper, they
-	   # can be modified in the keybinding section of reaper settings or in the
-	   # config file, there are also more shortcuts for reaper that exist than
-	   # are listed here which are related to MIDI controls
-	 'a' # Select and split item under edit or play cursor
-	 'b' # Toggle fx bypass for current or last touched track
-	 'c' # Edit time signature marker near cursor
-	 'f' # View fx chain for current or last touched track
-	 'm' # Insert marker at current position
-	 's' # Split items at edit or play cursor
-	 't' # Switch items to next take
-	 'v' # Toggle track pre-fx volume envelope visible
-	 'x' # Crossfade items within time selection
-	 'z' # Move edit cursor to next zero crossing in items	 
-	 '.' # Move items or envelope points right
-	 ',' # Move items or envelope points left
-	 '[' # Set start point
-	 ']' # Set end point
-	 ';' # Go to previous marker or project start
-	 "'" # Go to next marker or project end
-	 '/' # Toggle looped segment scrub at edit cursor
-	 '1...0' # Go to marker number
-	 'Left' # Scrub cursor left 1 pixel
-	 'Rght' # Scrub cursor right 1 pixel
-	 'PgUp' # Move edit cursor back 1 measure
-	 'PgDw' # Move edit cursor forward 1 measure
-	 'Del' # Remove items, tracks or contents of time selection, markers or envelope
-	   # points (focus dependant)
-	 'End' # Go to End of Time Selection
-	 'Nter' # Cycle folder collapse state (open, small, closed)
-	 'Esc' # Remove time selection and loop points
-	 'Home' # Go to start of time selection
-	 'Num1' # Move contents of items left
-	 'Num2' # Move items or envelope points down 1 track or a bit
-	 'Num3' # Move contents of items right
-	 'Num4' # Move items or envelope points left
-	 'Num6' # Move items or envelope points right
-	 'Num7' # Move items left preserving timing of contents
-	 'Num8' # Move items or envelope points up 1 track or a bit
-	 'Num9' # Move items right preserving timing of contents
-	 'Ctrl+a' # Select all items, tracks or envelope points, depending on focus
-	 'Ctrl+b' # Toggle all take fx bypass for selected items
-	 'Ctrl+c' # Copy items, tracks or envelope points (focus dependant)
-	 'Ctrl+d' # Duplicate items
-	 'Ctrl+e' # Open item copies in primary external editor
-	 'Ctrl+f' # Show fx chain for item take
-	 'Ctrl+g' # Group items
-	 'Ctrl+h' # Heal splits in items
-	 'Ctrl+i' 'DblTap Ins' # Insert media file
-	 'Ctrl+l' # Set item end to source media end
-	 'Ctrl+m' # Add stretch marker at cursor
-	 'Ctrl+t' # Insert and name track
-	 'Ctrl+u' # Glue items
-	 'Ctrl+v' # Paste items or tracks
-	 'Ctrl+w' # Write current values for all writing envelopes from cursor to end
-	 'Ctrl+x' # Cut items, tracks or envelope points (focus dependant)
-	 'Ctrl+z' # Undo
-	 'Ctrl+,' # Grow left edge of items
-	 'Ctrl+.' # Shrink left edge of items
-	 'Ctrl+[' # Nudge left edge left
-	 'Ctrl+]' # Nudge left edge right
-	 "Ctrl+'" # Go to next stretch marker
-	 'Ctrl+;' # Go to previous stretch marker
-	 'Ctrl+1...0' # Add or move marker 1...10 to play edit cursor
-	 'Ctrl+F2' # Show media item source properties
-	 'Ctrl+F7' # Set take channel mode to normal
-	 'Ctrl+F8' # Set take channel mode to mono, down mix
-	 'Ctrl+F9' # Set take channel mode to mono, left
-	 'Ctrl+F10' # Set take channel mode to mono, right
-	 'Ctrl+Up' # Nudge active take volume up
-	 'Ctrl+Down' # Nudge active take volume down
-	 'Ctrl+Left' # Select and move to previous item
-	 'Ctrl+Rght' # Select and move to next item
-	 'Ctrl+PgUp' # Move edit cursor back 1 beat
-	 'Ctrl+PgDn' # Move edit cursor forward 1 beat
-	 'Ctrl+Bkspc' # Reset item pitch
-	 'Ctrl+DblTap Ins' # Insert virtual instrument on new track
-	 'Ctrl+Num4' # Grow left edge of items
-	 'Ctrl+Num6' # Shrink left edge of items
-	 'Ctrl+Num7' # Move cursor left to edge of item
-	 'Ctrl+Num9' # Move cursor right to edge of item
-	 'Ctrl+Shft+A' # Select all items in current time selection
-	 'Ctrl+Shft+B' # Monitoring fx toggle bypass
-	 'Ctrl+Shft+C' # copy items, tracks or envelope points, depending on focus,
-	   # within time selection if any, smart copy
-	 'Ctrl+Shft+D' # Duplicate selected area of items
-	 'Ctrl+Shft+E' # Open item copies in secondary external editor
-	 'Ctrl+Shft+G' # Remove items from group
-	 'Ctrl+Shft+H' # Hide all envelopes for all tracks
-	 'Ctrl+Shft+I' # Insert automation item
-	 'Ctrl+Shft+N' # Normalise items
-	 'Ctrl+Shft+S' # Split items at edit or play cursor, ignoring grouping
-	 'Ctrl+Shft+T' # Delete active take from items, prompt to confirm
-	 'Ctrl+Shft+X' # cut items, tracks or envelope points, depending on focus,
-	   # within time selection if any, smart cut
-	 'Ctrl+Shft+Z' # Redo
-	 'Ctrl+Shft+,' # Move cursor left to edge of item
-	 'Ctrl+Shft+.' # Move cursor right to edge of item
-	 'Ctrl+Shft+0' # Set to 1/48, 1/32 triplet
-	 'Ctrl+Shft+1' # Set to 1
-	 'Ctrl+Shft+2' # Set to 1/2
-	 'Ctrl+Shft+3' # Set to 1/32
-	 'Ctrl+Shft+4' # Set to 1/4
-	 'Ctrl+Shft+5' # Set to 1/6, 1/4 triplet
-	 'Ctrl+Shft+6' # Set to 1/16
-	 'Ctrl+Shft+7' # Set to 1/24, 1/16 triplet
-	 'Ctrl+Shft+8' # Set to 1/8
-	 'Ctrl+Shft+9' # Set to 1/12, 1/8 triplet
-	 'Ctrl+Shft+Left' # Move to previous item, leaving other items selected
-	 'Ctrl+Shft+Rght' # Move to next item, leaving other items selected
-	 'Ctrl+Alt+a' # Select all items in track
-	 'Ctrl+Alt+b' # Save live output to disk, bounce
-	 'Ctrl+Alt+c' # Create measure from time selection, new time signature
-	 'Ctrl+Alt+d' # Duplicate active take
-	 'Ctrl+Alt+e' # Open in built-in midi editor
-	 'Ctrl+Alt+f' # Move and stretch items to fit time selection
-	 'Ctrl+Alt+g' # Toggle item grouping override
-	 'Ctrl+Alt+i' # Fade items into cursor
-	 'Ctrl+Alt+k' # Insert or edit tempo marker and add stretch marker at cursor
-	 'Ctrl+Alt+l' # Show or hide track or take envelope for last touched fx param
-	 'Ctrl+Alt+m' # Move last focused stretch marker to current edit cursor position
-	 'Ctrl+Alt+o' # Fade items out from cursor
-	 'Ctrl+Alt+p' # toggle track or take pan envelope visibility (focus dependant)
-	 'Ctrl+Alt+q' # Open render queue
-	 'Ctrl+Alt+r' # Render project to disk
-	 'Ctrl+Alt+u' # Move items to sub project, non destructive glue
-	 'Ctrl+Alt+v' # Toggle track or take envelope visibility (focus dependant)
-	 'Ctrl+Alt+z' # Show undo history window 
-	 'Ctrl+Alt+,' # Move items left preserving timing of contents
-	 'Ctrl+Alt+.' # Move items right preserving timing of contents
-	 'Ctrl+Alt+[' # Nudge left
-	 'Ctrl+Alt+]' # Nudge right
-	 'Ctrl+Alt+-' # Time compress selected items, fine
-	 'Ctrl+Alt+4' # Insert four envelope points at time selection
-	 'Ctrl+Alt+F5' # Toggle track or take mute envelope visibility (focus dependant)
-	 'Ctrl+Alt+Num4' # Move items or envelope points left by grid size
-	 'Ctrl+Alt+Num6' # Move items or envelope points right by grid size
-	 'Ctrl+Alt+DblTap Ins' # Insert empty space at time selection, move later items
-	 'Ctrl+Alt+Shft+M' # Toggle master track visible
-	 'Ctrl+Alt+Shft+P' # Toggle track pre-fx pan or take pitch envelope visibility
-	 'Shft+a' # Deselect all selected items
-	 'Shft+B' # Toggle fx bypass for master track
-	 'Shft+C' # Insert or tempo time signature change marker at edit cursor
-	 'Shft+E' # Insert new point at current position
-	 'Shft+F' # View fx chain for master track
-	 'Shft+G' # Select all items in groups
-	 'Shft+H' # Hide all envelopes for tracks
-	 'Shft+I' # View i/o for master track
-	 'Shft+L' # View envelopes for current or last touched track
-	 'Shft+M' # insert or edit marker at current position
-	 'Shft+N' # Normalise multiple items to common gain
-	 'Shft+O' # Show all active envelopes for tracks
-	 'Shft+P' # View fx parameters for master track
-	 'Shft+R' # Insert region from time selection
-	 'Shft+S' # Split items at time selection
-	 'Shft+T' # Switch items to previous take
-	 'Shft+V' # Paste as take in items
-	 'Shft+W' # Write current values for all writing envelopes to time selection
-	 'Shft+X' # Remove content trim behind items
-	 'Shft+Z' # Move edit cursor to previous zero crossing in items
-	 'Shft+.' # Move contents of items right
-	 "Shft+'" # Move edit cursor to next tempo or time signature change
-	 'Shft+[' # Shft left, by time selection length
-	 'Shft+]' # Shft right, by time selection length
-	 'Shft+,' # Move contents of items left
-	 'Shft+;' # Move edit cursor to previous tempo or time signature change
-	 'Shft+0' # Pitch item up 1 semitone
-	 'Shft+1' # Decrease item rate by 0.6% 10 cents
-	 'Shft+2' # Increase item rate by 0.6% 10 cents
-	 'Shft+3' # Decrease item rate by 0.6% 10 cents clear preserve pitch
-	 'Shft+4' # Increase item rate by 0.6% 10 cents clear preserve pitch
-	 'Shft+5' # Decrease item rate by 6% 1 semitone clear preserve pitch
-	 'Shft+6' # Increase item rate by 6% 1 semitone clear preserve pitch
-	 'Shft+7' # Pitch item down 1 cent
-	 'Shft+8' # Pitch item up 1 cent
-	 'Shft+9' # Pitch item down 1 semitone
-	 'Shft+F2' # Show media items or take properties
-	 'Shft+F5' # Toggle mute for master track
-	 'Shft+F6' # Toggle solo for master track
-	 'Shft+F9' # Toggle stereo or mono l+r
-	 'Shft+F11' # Nudge volume of master track down
-	 'Shft+F12' # Nudge volume of master track up
-	 'Shft+Home' # Select from cursor to start of project
-	 'Shft+End' # Select from cursor to end of project
-	 'Shft+Left' # Scrub cursor left creating time selection
-	 'Shft+Rght' # Scrub cursor right creating time selection
-	 'Shft+Nter' # Cycle track folder state (track, folder, nested folder, end)
-	 'Shft+DblTap Ins' # Insert new midi item
-	 'Alt+a' # Actions
-	 'Alt+e' # Edit
-	 'Alt+f | F10' # File
-	 'Alt+h' # Help
-	 'Alt+i' # Insert
-	 'Alt+j' # Move to previous envelope point
-	 'Alt+k' # Move to next envelope point
-	 'Alt+l' # Select next track or take envelope (focus dependant)
-	 'Alt+o' # Options
-	 'Alt+p' # View fx parameters for current track or take (focus dependant)
-	 'Alt+r' # Render project, using the most recent render settings,
-	 'Alt+v' # View
-	 'Alt+z' # Split at previous zero crossing
-	 'Alt+,' # Shrink right edge of items
-	 'Alt+.' # Grow right edge of items
-	 'Alt+[' # Nudge right edge left
-	 'Alt+]' # Nudge right edge right
-	 'Alt+1...0' # Go to region 1...10 after region finishes playing, smooth seek
-	 'Alt+F4' # Toggle item mute
-	 'Alt+F5' # Toggle item solo
-	 'Alt+End' # Move edit cursor to start of next measure
-	 'Alt+Home' # Move edit cursor to start of current measure
-	 'Alt+Bkspc' # Set item rate to 1.0
-	 'Alt+Num2' # Move selected envelope points down
-	 'Alt+Num4' # Shrink right edge of items
-	 'Alt+Num6' # Grow right edge of items
-	 'Alt+Num8' # Move selected envelope points up
-	 'Alt+Shft+A' # Select all items on selected tracks in current time selection
-	 'Alt+Shft+B' # Toggle fx bypass on all tracks
-	 'Alt+Shft+E' # Add or edit envelope point value at cursor
-	 'Alt+Shft+I' # Add stretch marker to cursor and snap to grid
-	 'Alt+Shft+J' # Move to previous envelope point (leaving other points selected)
-	 'Alt+Shft+K' # Move to next envelope point (leaving other points selected)
-	 'Alt+Shft+L' # Select previous track or take envelope (focus dependant)
-	 'Alt+Shft+R' # Show region or marker manager window
-	 'Alt+Shft+,' # Move items or envelope points left by grid size
-	 'Alt+Shft+.' # Move items or envelope points right by grid size
-	 'Alt+Shft+]' # Set end point
-	 'Alt+Shft+[' # Set start point
-	 'Ctrl+Alt+=' # Time stretch selected items, fine
-	 'Alt+Shft+0' # Nudge item pitch up, b
-	 'Alt+Shft+3' # Nudge item pitch down, resampled a
-	 'Alt+Shft+4' # Nudge item pitch up, resampled a
-	 'Alt+Shft+5' # Nudge item pitch down, resampled b
-	 'Alt+Shft+6' # Nudge item pitch up, resampled b
-	 'Alt+Shft+7' # Nudge item pitch down
-	 'Alt+Shft+8' # Nudge item pitch up
-	 'Alt+Shft+9' # Nudge item pitch down, b
-	 'Alt+Shft+Home' # Go to start of loop
-	 'Alt+Shft+End' # Go to end of loop
-	 'Alt+Shft+Left' # Move cursor left to grid division
-	 'Alt+Shft+Rght' # Move cursor right to grid division
-	 
-	DEPENDS ON
-	 ▸ alsa-lib # Alternative implementation of Linux sound support
-	 ▸ fontconfig # Library for configuring and customizing font access
-	 ▸ gcc-libs # Runtime libraries shipped by GCC
-	 ▸ hicolor-icon-theme # freedesktop.org hicolor icon theme
-	 ▸ libglvnd # GL vendor-neutral dispatch library
-	 ▸ libx11 # X11 client-side library
-	 ▸ libxi # X11 input extension library
+SHORTCUTS
+   # Not all of these shortcuts are the default keybindings for Reaper, they
+   # can be modified in the keybinding section of Reaper settings or in the
+   # config file, there are also more shortcuts for Reaper that exist than are
+   # listed here which are related to MIDI controls
+ 'a' # Select and split item under edit or play cursor
+ 'b' # Toggle fx bypass for current or last touched track
+ 'c' # Edit time signature marker near cursor
+ 'f' # View fx chain for current or last touched track
+ 'm' # Insert marker at current position
+ 's' # Split items at edit or play cursor
+ 't' # Switch items to next take
+ 'v' # Toggle track pre-fx volume envelope visible
+ 'x' # Crossfade items within time selection
+ 'z' # Move edit cursor to next zero crossing in items
+ '.' # Move items or envelope points right
+ ',' # Move items or envelope points left
+ '[' # Set start point
+ ']' # Set end point
+ ';' # Go to previous marker or project start
+ "'" # Go to next marker or project end
+ '/' # Toggle looped segment scrub at edit cursor
+ '1...0' # Go to marker number
+ 'Left' # Scrub cursor left 1 pixel
+ 'Rght' # Scrub cursor right 1 pixel
+ 'PgUp' # Move edit cursor back 1 measure
+ 'PgDw' # Move edit cursor forward 1 measure
+ 'Del' # Remove items, tracks or contents of time selection, markers or envelope
+   # points (focus dependant)
+ 'End' # Go to End of Time Selection
+ 'Nter' # Cycle folder collapse state (open, small, closed)
+ 'Esc' # Remove time selection and loop points
+ 'Home' # Go to start of time selection
+ 'Num1' # Move contents of items left
+ 'Num2' # Move items or envelope points down 1 track or a bit
+ 'Num3' # Move contents of items right
+ 'Num4' # Move items or envelope points left
+ 'Num6' # Move items or envelope points right
+ 'Num7' # Move items left preserving timing of contents
+ 'Num8' # Move items or envelope points up 1 track or a bit
+ 'Num9' # Move items right preserving timing of contents
+ 'Ctrl+a' # Select all items, tracks or envelope points, depending on focus
+ 'Ctrl+b' # Toggle all take fx bypass for selected items
+ 'Ctrl+c' # Copy items, tracks or envelope points (focus dependant)
+ 'Ctrl+d' # Duplicate items
+ 'Ctrl+e' # Open item copies in primary external editor
+ 'Ctrl+f' # Show fx chain for item take
+ 'Ctrl+g' # Group items
+ 'Ctrl+h' # Heal splits in items
+ 'Ctrl+i' 'DblTap Ins' # Insert media file
+ 'Ctrl+l' # Set item end to source media end
+ 'Ctrl+m' # Add stretch marker at cursor
+ 'Ctrl+t' # Insert and name track
+ 'Ctrl+u' # Glue items
+ 'Ctrl+v' # Paste items or tracks
+ 'Ctrl+w' # Write current values for all writing envelopes from cursor to end
+ 'Ctrl+x' # Cut items, tracks or envelope points (focus dependant)
+ 'Ctrl+z' # Undo
+ 'Ctrl+,' # Grow left edge of items
+ 'Ctrl+.' # Shrink left edge of items
+ 'Ctrl+[' # Nudge left edge left
+ 'Ctrl+]' # Nudge left edge right
+ "Ctrl+'" # Go to next stretch marker
+ 'Ctrl+;' # Go to previous stretch marker
+ 'Ctrl+1...0' # Add or move marker 1...10 to play edit cursor
+ 'Ctrl+F2' # Show media item source properties
+ 'Ctrl+F7' # Set take channel mode to normal
+ 'Ctrl+F8' # Set take channel mode to mono, down mix
+ 'Ctrl+F9' # Set take channel mode to mono, left
+ 'Ctrl+F10' # Set take channel mode to mono, right
+ 'Ctrl+Up' # Nudge active take volume up
+ 'Ctrl+Down' # Nudge active take volume down
+ 'Ctrl+Left' # Select and move to previous item
+ 'Ctrl+Rght' # Select and move to next item
+ 'Ctrl+PgUp' # Move edit cursor back 1 beat
+ 'Ctrl+PgDn' # Move edit cursor forward 1 beat
+ 'Ctrl+Bkspc' # Reset item pitch
+ 'Ctrl+DblTap Ins' # Insert virtual instrument on new track
+ 'Ctrl+Num4' # Grow left edge of items
+ 'Ctrl+Num6' # Shrink left edge of items
+ 'Ctrl+Num7' # Move cursor left to edge of item
+ 'Ctrl+Num9' # Move cursor right to edge of item
+ 'Ctrl+Shft+A' # Select all items in current time selection
+ 'Ctrl+Shft+B' # Monitoring fx toggle bypass
+ 'Ctrl+Shft+C' # copy items, tracks or envelope points, depending on focus,
+   # within time selection if any, smart copy
+ 'Ctrl+Shft+D' # Duplicate selected area of items
+ 'Ctrl+Shft+E' # Open item copies in secondary external editor
+ 'Ctrl+Shft+G' # Remove items from group
+ 'Ctrl+Shft+H' # Hide all envelopes for all tracks
+ 'Ctrl+Shft+I' # Insert automation item
+ 'Ctrl+Shft+N' # Normalise items
+ 'Ctrl+Shft+S' # Split items at edit or play cursor, ignoring grouping
+ 'Ctrl+Shft+T' # Delete active take from items, prompt to confirm
+ 'Ctrl+Shft+X' # cut items, tracks or envelope points, depending on focus,
+   # within time selection if any, smart cut
+ 'Ctrl+Shft+Z' # Redo
+ 'Ctrl+Shft+,' # Move cursor left to edge of item
+ 'Ctrl+Shft+.' # Move cursor right to edge of item
+ 'Ctrl+Shft+0' # Set to 1/48, 1/32 triplet
+ 'Ctrl+Shft+1' # Set to 1
+ 'Ctrl+Shft+2' # Set to 1/2
+ 'Ctrl+Shft+3' # Set to 1/32
+ 'Ctrl+Shft+4' # Set to 1/4
+ 'Ctrl+Shft+5' # Set to 1/6, 1/4 triplet
+ 'Ctrl+Shft+6' # Set to 1/16
+ 'Ctrl+Shft+7' # Set to 1/24, 1/16 triplet
+ 'Ctrl+Shft+8' # Set to 1/8
+ 'Ctrl+Shft+9' # Set to 1/12, 1/8 triplet
+ 'Ctrl+Shft+Left' # Move to previous item, leaving other items selected
+ 'Ctrl+Shft+Rght' # Move to next item, leaving other items selected
+ 'Ctrl+Alt+a' # Select all items in track
+ 'Ctrl+Alt+b' # Save live output to disk, bounce
+ 'Ctrl+Alt+c' # Create measure from time selection, new time signature
+ 'Ctrl+Alt+d' # Duplicate active take
+ 'Ctrl+Alt+e' # Open in built-in midi editor
+ 'Ctrl+Alt+f' # Move and stretch items to fit time selection
+ 'Ctrl+Alt+g' # Toggle item grouping override
+ 'Ctrl+Alt+i' # Fade items into cursor
+ 'Ctrl+Alt+k' # Insert or edit tempo marker and add stretch marker at cursor
+ 'Ctrl+Alt+l' # Show or hide track or take envelope for last touched fx param
+ 'Ctrl+Alt+m' # Move last focused stretch marker to current edit cursor position
+ 'Ctrl+Alt+o' # Fade items out from cursor
+ 'Ctrl+Alt+p' # toggle track or take pan envelope visibility (focus dependant)
+ 'Ctrl+Alt+q' # Open render queue
+ 'Ctrl+Alt+r' # Render project to disk
+ 'Ctrl+Alt+u' # Move items to sub project, non destructive glue
+ 'Ctrl+Alt+v' # Toggle track or take envelope visibility (focus dependant)
+ 'Ctrl+Alt+z' # Show undo history window
+ 'Ctrl+Alt+,' # Move items left preserving timing of contents
+ 'Ctrl+Alt+.' # Move items right preserving timing of contents
+ 'Ctrl+Alt+[' # Nudge left
+ 'Ctrl+Alt+]' # Nudge right
+ 'Ctrl+Alt+-' # Time compress selected items, fine
+ 'Ctrl+Alt+4' # Insert four envelope points at time selection
+ 'Ctrl+Alt+F5' # Toggle track or take mute envelope visibility (focus dependant)
+ 'Ctrl+Alt+Num4' # Move items or envelope points left by grid size
+ 'Ctrl+Alt+Num6' # Move items or envelope points right by grid size
+ 'Ctrl+Alt+DblTap Ins' # Insert empty space at time selection, move later items
+ 'Ctrl+Alt+Shft+M' # Toggle master track visible
+ 'Ctrl+Alt+Shft+P' # Toggle track pre-fx pan or take pitch envelope visibility
+ 'Shft+a' # Deselect all selected items
+ 'Shft+B' # Toggle fx bypass for master track
+ 'Shft+C' # Insert or tempo time signature change marker at edit cursor
+ 'Shft+E' # Insert new point at current position
+ 'Shft+F' # View fx chain for master track
+ 'Shft+G' # Select all items in groups
+ 'Shft+H' # Hide all envelopes for tracks
+ 'Shft+I' # View i/o for master track
+ 'Shft+L' # View envelopes for current or last touched track
+ 'Shft+M' # insert or edit marker at current position
+ 'Shft+N' # Normalise multiple items to common gain
+ 'Shft+O' # Show all active envelopes for tracks
+ 'Shft+P' # View fx parameters for master track
+ 'Shft+R' # Insert region from time selection
+ 'Shft+S' # Split items at time selection
+ 'Shft+T' # Switch items to previous take
+ 'Shft+V' # Paste as take in items
+ 'Shft+W' # Write current values for all writing envelopes to time selection
+ 'Shft+X' # Remove content trim behind items
+ 'Shft+Z' # Move edit cursor to previous zero crossing in items
+ 'Shft+.' # Move contents of items right
+ "Shft+'" # Move edit cursor to next tempo or time signature change
+ 'Shft+[' # Shft left, by time selection length
+ 'Shft+]' # Shft right, by time selection length
+ 'Shft+,' # Move contents of items left
+ 'Shft+;' # Move edit cursor to previous tempo or time signature change
+ 'Shft+0' # Pitch item up 1 semitone
+ 'Shft+1' # Decrease item rate by 0.6% 10 cents
+ 'Shft+2' # Increase item rate by 0.6% 10 cents
+ 'Shft+3' # Decrease item rate by 0.6% 10 cents clear preserve pitch
+ 'Shft+4' # Increase item rate by 0.6% 10 cents clear preserve pitch
+ 'Shft+5' # Decrease item rate by 6% 1 semitone clear preserve pitch
+ 'Shft+6' # Increase item rate by 6% 1 semitone clear preserve pitch
+ 'Shft+7' # Pitch item down 1 cent
+ 'Shft+8' # Pitch item up 1 cent
+ 'Shft+9' # Pitch item down 1 semitone
+ 'Shft+F2' # Show media items or take properties
+ 'Shft+F5' # Toggle mute for master track
+ 'Shft+F6' # Toggle solo for master track
+ 'Shft+F9' # Toggle stereo or mono l+r
+ 'Shft+F11' # Nudge volume of master track down
+ 'Shft+F12' # Nudge volume of master track up
+ 'Shft+Home' # Select from cursor to start of project
+ 'Shft+End' # Select from cursor to end of project
+ 'Shft+Left' # Scrub cursor left creating time selection
+ 'Shft+Rght' # Scrub cursor right creating time selection
+ 'Shft+Nter' # Cycle track folder state (track, folder, nested folder, end)
+ 'Shft+DblTap Ins' # Insert new midi item
+ 'Alt+a' # Actions
+ 'Alt+e' # Edit
+ 'Alt+f | F10' # File
+ 'Alt+h' # Help
+ 'Alt+i' # Insert
+ 'Alt+j' # Move to previous envelope point
+ 'Alt+k' # Move to next envelope point
+ 'Alt+l' # Select next track or take envelope (focus dependant)
+ 'Alt+o' # Options
+ 'Alt+p' # View fx parameters for current track or take (focus dependant)
+ 'Alt+r' # Render project, using the most recent render settings,
+ 'Alt+v' # View
+ 'Alt+z' # Split at previous zero crossing
+ 'Alt+,' # Shrink right edge of items
+ 'Alt+.' # Grow right edge of items
+ 'Alt+[' # Nudge right edge left
+ 'Alt+]' # Nudge right edge right
+ 'Alt+1...0' # Go to region 1...10 after region finishes playing, smooth seek
+ 'Alt+F4' # Toggle item mute
+ 'Alt+F5' # Toggle item solo
+ 'Alt+End' # Move edit cursor to start of next measure
+ 'Alt+Home' # Move edit cursor to start of current measure
+ 'Alt+Bkspc' # Set item rate to 1.0
+ 'Alt+Num2' # Move selected envelope points down
+ 'Alt+Num4' # Shrink right edge of items
+ 'Alt+Num6' # Grow right edge of items
+ 'Alt+Num8' # Move selected envelope points up
+ 'Alt+Shft+A' # Select all items on selected tracks in current time selection
+ 'Alt+Shft+B' # Toggle fx bypass on all tracks
+ 'Alt+Shft+E' # Add or edit envelope point value at cursor
+ 'Alt+Shft+I' # Add stretch marker to cursor and snap to grid
+ 'Alt+Shft+J' # Move to previous envelope point (leaving other points selected)
+ 'Alt+Shft+K' # Move to next envelope point (leaving other points selected)
+ 'Alt+Shft+L' # Select previous track or take envelope (focus dependant)
+ 'Alt+Shft+R' # Show region or marker manager window
+ 'Alt+Shft+,' # Move items or envelope points left by grid size
+ 'Alt+Shft+.' # Move items or envelope points right by grid size
+ 'Alt+Shft+]' # Set end point
+ 'Alt+Shft+[' # Set start point
+ 'Ctrl+Alt+=' # Time stretch selected items, fine
+ 'Alt+Shft+0' # Nudge item pitch up, b
+ 'Alt+Shft+3' # Nudge item pitch down, resampled a
+ 'Alt+Shft+4' # Nudge item pitch up, resampled a
+ 'Alt+Shft+5' # Nudge item pitch down, resampled b
+ 'Alt+Shft+6' # Nudge item pitch up, resampled b
+ 'Alt+Shft+7' # Nudge item pitch down
+ 'Alt+Shft+8' # Nudge item pitch up
+ 'Alt+Shft+9' # Nudge item pitch down, b
+ 'Alt+Shft+Home' # Go to start of loop
+ 'Alt+Shft+End' # Go to end of loop
+ 'Alt+Shft+Left' # Move cursor left to grid division
+ 'Alt+Shft+Rght' # Move cursor right to grid division
 
-	REQUIRED BY
-	 ▸ adlplug # FM synthesizer for ADLMIDI with OPL3 chip emulation
-	 ▸ aida-x # Amp model player leveraging AI
-	 ▸ ambix # Ambisonic plugins with variable order
-	 ▸ artyfx # Plugin bundle of artistic realtime audio effects
-	 ▸ avldrums.lv2 # Simple drum sample player plugin
-	 ▸ bchoppr # Audio stream chopping LV2 plugin
-	 ▸ blop.lv2 # Port of the BLOP LADSPA plugins by Mike Rawes to LV2
-	 ▸ bsequencer # Multi channel MIDI step sequencer with a variable matrix
-	 ▸ bshapr # Beat envelope shaper LV2 plugin
-	 ▸ bslizr # Audio effect plugin for sequenced slicing audio input signals
-	 ▸ cardinal # Virtual modular synthesizer
-	 ▸ dexed-clap # Software synth closely modelled on the Yamaha DX7
-	 ▸ distrho-ports-lv2 # Linux audio plugins and LV2 ports
+DEPENDS ON
+ ▸ alsa-lib # Alternative implementation of Linux sound support
+ ▸ fontconfig # Library for configuring and customizing font access
+ ▸ gcc-libs # Runtime libraries shipped by GCC
+ ▸ hicolor-icon-theme # freedesktop.org hicolor icon theme
+ ▸ libglvnd # GL vendor-neutral dispatch library
+ ▸ libx11 # X11 client-side library
+ ▸ libxi # X11 input extension library
 
-	BINARIES
-	 ▸ '/bin/reaper' -> '/usr/lib/REAPER/reaper' # Run reaper
-	 ▸ '/usr/lib/REAPER/reamote-server' # Run reaper from a remote server
+REQUIRED BY
+ ▸ adlplug # FM synthesizer for ADLMIDI with OPL3 chip emulation
+ ▸ aida-x # Amp model player leveraging AI
+ ▸ ambix # Ambisonic plugins with variable order
+ ▸ artyfx # Plugin bundle of artistic realtime audio effects
+ ▸ avldrums.lv2 # Simple drum sample player plugin
+ ▸ bchoppr # Audio stream chopping LV2 plugin
+ ▸ blop.lv2 # Port of the BLOP LADSPA plugins by Mike Rawes to LV2
+ ▸ bsequencer # Multi channel MIDI step sequencer with a variable matrix
+ ▸ bshapr # Beat envelope shaper LV2 plugin
+ ▸ bslizr # Audio effect plugin for sequenced slicing audio input signals
+ ▸ cardinal # Virtual modular synthesizer
+ ▸ dexed-clap # Software synth closely modelled on the Yamaha DX7
+ ▸ distrho-ports-lv2 # Linux audio plugins and LV2 ports
 
-	FILES
-	 ▸ '/home/$USER/.config/REAPER/reaper.ini' # Reaper config file
-	 ▸ '/home/$USER/.config/REAPER/ColorThemes/Default*.ReaperThemeZip' # Theme
-	 ▸ '/home/$USER/.config/REAPER/KeyMaps/DK keymap.ReaperKeyMap' # Keybindings
-	 ▸ '/usr/lib/REAPER/Docs/REAPER\ Quick\ Start.pdf' # Quick start guide
+BINARIES
+ ▸ '/bin/reaper' -> '/usr/lib/REAPER/reaper' # Run Reaper
+ ▸ '/usr/lib/REAPER/reamote-server' # Run Reaper from a remote server
 
-	COMMON USAGE
-	WILDCARDS
-	   # Reaper implements the use of wildcards in the file naming section for
-	   # project renders and within the batch converter feature, the following
-	   # is a list of each of the wildcards
-	 ▸ $project # Replaces with project name
-	 ▸ $author # Replaces with project author (from Settings)
-	 ▸ $track # Replaces with track name
-	 ▸ $tracknumber # 1 for the first track, 2 for the second and so on
-	 ▸ $parenttrack # Replaces with parent track name
-	 ▸ $recpass # Replaces with recording pass
-	 ▸ $year # Replaces with year
-	 ▸ $year2 # Replaces with last 2 digits of the year
-	 ▸ $month # Replaces with month number
-	 ▸ $monthname # Replaces with month name
-	 ▸ $day # Replaces with day of the month
-	 ▸ $hour # Replaces with hour of the day in 24-hour format
-	 ▸ $hour12 # Replaces with hour of the day in 12-hour format
-	 ▸ $ampm # Replaces with AM or PM depending on time
-	 ▸ $minute # Replaces with minute of the hour
-	 ▸ $second # Replaces with second of the minute
-	 ▸ $user # Replaces with user name
-	 ▸ $computer # Replaces with computer name
-	BATCH CONVERTS
-	   # The batch convert feature in reaper makes converting formats of
-	   # multiple audio files and extracting audio from multiple video files much
-	   # easier it can be used within the program itself or on the command line.
-	   # The following shows the format of the 'filelist.txt' file provided when
-	   # batch converting on the command line
-	 filename.wav # The file to be converted
-	 filename.wav outputfile.wav # Alternatively include the output file
-	   # Any number of extra files and output formats can be provided
-	 <CONFIG # Config block which can contain any of the following parameters
-		 SRATE 44100 # Omit to use source sample rate
-		 NCH 2 # Omit to use source channel count
-		 RSMODE modeidx # Resample mode, copy from project file
-		 DITHER 3 # 1=dither, 2=noise shaping, 3=both
-		 USESRCSTART 1 # 1=write source media BWF start offset to output
-		 USESRCMETADATA 1 # 1=attempt to preserve original media file metadata
-		 PAD_START 1.0 # Leading silence in sec, can be negative
-		 PAD_END 1.0 # Trailing silence in sec, can be negative
-		 OUTPATH 'path' # Set an output path if a path is not provided
-		 OUTPATTERN '$wildcard' # Specify wildcard patterns to use in the outfile
-		 NORMALIZE 1 -6.0 0 # 1=peak, 2=true peak, 3=lufs-i, 4=lufs-s, 5=lufs-m,
-	   # second parameter is dB, third parameter can be set to 1 to normalize
-	   # only if the audio too loud
-		 BRICKWALL 1 -1.0 # 1=peak, 2=true peak, second parameter is dB
-		 FADE 0.0 0.0 1 1 # Fade-in and out length and shape (length 0.001=1ms)
-		 FXCHAIN 'fxchainfilename' # Use full path if specified, or FxChains dir
-		 FX_NCH 4 # If not specified, FX will be configured to 4 channels
-		 CPULIMIT 0 # Available CPU cores (0-8 or omit)
-		 <FXCHAIN # Contents of .RfxChain file
-		 > # Close off fxchain block
-		 <OUTFMT # Base64 data such as contents of <RENDER_CFG or <RECORD_CFG
-		 > # Close out otfmt block
-		 <METADATA # Contents of <RENDER_METADATA block from project file
-		 > # Close off metadata block
-	 > # Close off config block
+FILES
+ ▸ '/home/$USER/.config/REAPER/reaper.ini' # Reaper config file
+ ▸ '/home/$USER/.config/REAPER/ColorThemes/Default*.ReaperThemeZip' # Theme
+ ▸ '/home/$USER/.config/REAPER/KeyMaps/DK keymap.ReaperKeyMap' # Keybindings
+ ▸ '/usr/lib/REAPER/Docs/REAPER\ Quick\ Start.pdf' # Quick start guide
 
-	WEBLINKS
-	 ▸ 'https://reaper.fm' # Official page
-	 ▸ 'https://www.cockos.com' # Cockos official page
-	 ▸ 'https://www.reaperaccessibility.com' # Further documentation
+COMMON USAGE
+WILDCARDS
+   # Reaper implements the use of wildcards in the file naming section for
+   # renders and type conversions and within the batch converter feature, the
+   # following is a list of each of the wildcards
+ ▸ $project # Replaces with project name
+ ▸ $author # Replaces with project author (from Settings)
+ ▸ $track # Replaces with track name
+ ▸ $tracknumber # 1 for the first track, 2 for the second and so on
+ ▸ $parenttrack # Replaces with parent track name
+ ▸ $recpass # Replaces with recording pass
+ ▸ $year # Replaces with year
+ ▸ $year2 # Replaces with last 2 digits of the year
+ ▸ $month # Replaces with month number
+ ▸ $monthname # Replaces with month name
+ ▸ $day # Replaces with day of the month
+ ▸ $hour # Replaces with hour of the day in 24-hour format
+ ▸ $hour12 # Replaces with hour of the day in 12-hour format
+ ▸ $ampm # Replaces with AM or PM depending on time
+ ▸ $minute # Replaces with minute of the hour
+ ▸ $second # Replaces with second of the minute
+ ▸ $user # Replaces with user name
+ ▸ $computer # Replaces with computer name
+PROJECT PATHS
+   # Reaper makes use of predefined paths in many of its features for
+   # convinience, including the exportation and conversion features, because it
+   # is dealing with output files. There are four main folders that should be
+   # set up for a reaper project and configured in the preferences under
+ > Options # Open the options menu
+   > Preferences # Select the preferences option
+  > General # Open the general section
+    > Paths # Navigate to the paths dialog
+      > Default path to save new projects: '/path/project/' # Set this to the
+   # project directory where the 'project.RPP' file is saved
+      > Default render path: '/path/project/' # Also set this to the project
+   # directory so that exports are easily accessed and not lost in media files
+      > Default recording path: '/path/project/Media/' # Set this to the
+   # media directory so that all chopped and edited media is kept on its own
+      > Store all peak caches in alternate path: '/path/project/Repeaks'
+   # This directory is not created by default, so it needs to be added
+   # manually to the project folder and then configured in the settings,
+   # otherwise all the repeak files will be scattered throughout the project
+   # folder, there is another folder that should also be added for stems, this
+   # folder wont be configured within the path settings, but it can be selected
+   # when doing a stem export to keep all the stems together
+ cd '/path/project'; mkdir 'Reapeaks' 'Stems' # create the directories, the
+   # paths are global, meaning if there are multiple project tabs open, and the
+   # preferences are set in one project then changed in another, they will be
+   # changed across all open projects
+STEM EXPORTS
+   # A stem export is when instead of exporting the entire project as a single
+   # file, each track is exported as its own file. To do this the output source
+   # needs to be changed
+ > File # Open the file menu
+   > Render # Select the render option
+  > Source # Navigate to the source dropdown box
+    > Selected tracks (stems) # Set selected tracks as the output source
+BATCH CONVERTS
+   # The batch convert feature in Reaper makes converting formats of multiple
+   # audio files and extracting audio from multiple video files much easier it
+   # can be used within the program itself or on the command line. The following
+   # shows the format of the 'filelist.txt' file provided when batch converting
+ filename.wav # The file to be converted
+ filename.wav outputfile.wav # Alternatively include the output file
+   # Any number of extra files and output formats can be provided
+ <CONFIG # Config block which can contain any of the following parameters
+  SRATE 44100 # Omit to use source sample rate
+  NCH 2 # Omit to use source channel count
+  RSMODE modeidx # Resample mode, copy from project file
+  DITHER 3 # 1=dither, 2=noise shaping, 3=both
+  USESRCSTART 1 # 1=write source media BWF start offset to output
+  USESRCMETADATA 1 # 1=attempt to preserve original media file metadata
+  PAD_START 1.0 # Leading silence in sec, can be negative
+  PAD_END 1.0 # Trailing silence in sec, can be negative
+  OUTPATH 'path' # Set an output path if a path is not provided
+  OUTPATTERN '$wildcard' # Specify wildcard patterns to use in the outfile
+  NORMALIZE 1 -6.0 0 # 1=peak, 2=true peak, 3=lufs-i, 4=lufs-s, 5=lufs-m,
+   # second parameter is dB, third parameter can be set to 1 to normalize
+   # only if the audio too loud
+  BRICKWALL 1 -1.0 # 1=peak, 2=true peak, second parameter is dB
+  FADE 0.0 0.0 1 1 # Fade-in and out length and shape (length 0.001=1ms)
+  FXCHAIN 'fxchainfilename' # Use full path if specified, or FxChains dir
+  FX_NCH 4 # If not specified, FX will be configured to 4 channels
+  CPULIMIT 0 # Available CPU cores (0-8 or omit)
+  <FXCHAIN # Contents of .RfxChain file
+  > # Close off fxchain block
+  <OUTFMT # Base64 data such as contents of <RENDER_CFG or <RECORD_CFG
+  > # Close out otfmt block
+  <METADATA # Contents of <RENDER_METADATA block from project file
+  > # Close off metadata block
+ > # Close off config block, save the config script and now it can be used to
+   # provide export paramaters for the files to reaper by running the command
+ reaper -batchconvert 'filelist.txt' # Enter command in a terminal to output the
+   # files into the current directory
+
+WEBLINKS
+ ▸ 'https://reaper.fm' # Official page
+ ▸ 'https://www.cockos.com' # Cockos official page
+ ▸ 'https://www.reaperaccessibility.com' # Further documentation

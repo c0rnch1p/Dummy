@@ -1,218 +1,223 @@
-	          ___________________________________  ____ _____________ 
-	         /   _   \______    \____   \_____   \|    |   \_____    \ 
-	        /   /_\   \        _/    )   \/   |   \    |   /        _/
-	        \____|____/____|____/________/\_______/_______/|____|____/
+          ___________________________________  ____ _____________ 
+         /   _   \______    \____   \_____   \|    |   \_____    \ 
+        /   /_\   \        _/    )   \/   |   \    |   /        _/
+        \____|____/____|____/________/\_______/_______/|____|____/
 
-	DESCRIPTION
-	 Ardour is a hard disk recorder and digital audio workstation that runs on 
-	 Linux, Mac, FreeBSD and Windows which is suitable for professional use. Its 
-	 primary creator Paul Davis is also responsible for the Jack Audio Connection 
-	 Kit. Ardour is free software, released under the terms of the GPL 2.0 or later. 
-	 Its audio recording and production ability is limited only by the hardware its 
-	 run on. Monitoring options include self monitoring, external hardware support, 
-	 and specialised software support. Ardour supports an arbitrary number of tracks 
-	 and busses through an anything to anywhere routing system. All parameters can 
-	 be automated and sample data is mixed and maintained internally in 32 bit 
-	 floating point format. Ardour can read most if not all media file formats and 
-	 has high grade export capability. While written in C, Ardour also has built in 
-	 compatibility with Lua, which is used to extend its functionality.
+DESCRIPTION
+ Ardour is a hard disk recorder and digital audio workstation that runs on 
+ Linux, Mac, FreeBSD and Windows which is suitable for professional use. Its 
+ primary creator Paul Davis is also responsible for the Jack Audio Connection 
+ Kit. Ardour is free software, released under the terms of the GPL 2.0 or later. 
+ Its audio recording and production ability is limited only by the hardware its 
+ run on. Monitoring options include self monitoring, external hardware support, 
+ and specialised software support. Ardour supports an arbitrary number of tracks 
+ and busses through an anything to anywhere routing system. All parameters can 
+ be automated and sample data is mixed and maintained internally in 32 bit 
+ floating point format. Ardour can read most if not all media file formats and 
+ has high grade export capability. While written in C, Ardour also has built in 
+ compatibility with Lua, which is used to extend its functionality.
 
-	COMMANDS
-	 ardour8 # Run and select session
-	 ardour8 -a # Dont contact website for announcements
-	 ardour8 -b # Show all current key bindings
-	 ardour8 -n # Dont show splash screen on startup
-	 ardour8 -D list # Show available debugging options
-	 ardour8 -D <option> # Set debugging flags
-	 ardour8 -N <name> # Create new session with a name
-	 ardour8 -T <template> # Use given template for new session
+COMMANDS
+ ardour8 # Run and select session
+ ardour8 -a # Dont contact website for announcements
+ ardour8 -b # Show all current key bindings
+ ardour8 -n # Dont show splash screen on startup
+ ardour8 -D list # Show available debugging options
+ ardour8 -D <option> # Set debugging flags
+ ardour8 -N <name> # Create new session with a name
+ ardour8 -T <template> # Use given template for new session
 
-	SHORTCUTS
-	 'a' # Solo selected region
-	 'c' # Select cut tool or edit selected note channels
-	 'd' # Select note drawing tool
-	 'e' # Select content tool
-	 'g' # Select object tool
-	 'h' 'Alt+Spce' # Play selected (audition)
-	 'j' # Trim region start at edit point
-	 'k' # Trim region end at edit point
-	 'l' # Play loop range
-	 'p' # Move playhead to cursor
-	 'r' # Select range tool
-	 's' # Cut region at cursor
-	 't' # Select time FX tool
-	 'x' # Align region sync relative
-	 'z' # Zoom to selection
-	 'q' # Quantize selected notes
-	 'v' # Show note velocity editor
-	 '3' # Toggle smart mode
-	 '4' # Toggle snap
-	 '7' # Toggle auto return
-	 '9' # Set new tempo at region start
-	 'Bkspc' 'Del' # Delete selected (focus dependant)
-	 'End' # Move playhead to end
-	 'Nter' 'Home' # Move playhead to start
-	 'Esc' # Deselect all (focus dependant)
-	 'Left' 'Rght' # Move playhead to previous or next grid
-	 'Up' 'Down' # Step tracks or transpose note up or down a semitone
-	 'PgUp' 'PgDn' # Scroll tracks up or down
-	 'Spce' # Start and stop playback
-	 'Tab' # Select next item (focus dependant)
-	 ']' # Set loop range from selection
-	 ',' # Move note start earlier
-	 '.' # Move note end later
-	 'Ctrl+a' # Select all regions or notes (mode dependant)
-	 'Ctrl+c' # Copy selected regions or notes (mode dependant)
-	 'Ctrl+d' # Duplicate selected regions or notes (mode dependant)
-	 'Ctrl+e' # Extend note selection
-	 'Ctrl+e' # Quick session export
-	 'Ctrl+f' # Follow playhead
-	 'Ctrl+i' # Import audio or invert note selection (mode dependant)
-	 'Ctrl+l' # Select all in loop range
-	 'Ctrl+n' # Create new session
-	 'Ctrl+o' # Open existing session
-	 'Ctrl+q' # Quit current session
-	 'Ctrl+r' 'Ctrl+y' 'Ctrl+Shft+Z' # Redo action
-	 'Ctrl+s' # Save current session
-	 'Ctrl+v' # Paste copied region or notes (focus dependant)
-	 'Ctrl+x' # Cut selected region or notes (focus dependant)
-	 'Ctrl+z' # Undo last action 
-	 'Ctrl+\`' # Send all MIDI notes off (panic)
-	 'Ctrl+,' # Move note start later
-	 'Ctrl+.' # Move note ends earlier
-	 'Ctrl+Up' # Move selected tracks up or increase note velocity
-	 'Ctrl+Down' # Move selected tracks down or decrease note velocity
-	 'Ctrl+Spce' # Stop and forget capture
-	 'Ctrl+Tab' # Select previous note
-	 'Ctrl+Alt+,' # Move note start later (fine)
-	 'Ctrl+Alt+.' # Move note end earlier (fine)
-	 'Ctrl+Alt+Up' 'Ctrl+Alt+Down' # Increase or decrease note velocity (fine)
-	 'Shft+B' # Toggle record enable selected track
-	 'Shft+E' # Show editor mixer
-	 'Shft+L' # Show editor list
-	 'Shft+R' # Enable record for session
-	 'Shft+S' # Show summary
-	 'Shft+:' # Copy current take to new playlist on selected track
-	 'Shft+"' # New playlist for selected tracks
-	 'Shft+?' # Show playlist selector
-	 'Shft+=' # Expand track height
-	 'Shft+>' # Record with count in
-	 'Shft+Spce' # Start recording
-	 'Shft+Left' 'Shft+Rght' # Rewind or fast forward playback
-	 'Shft+Up' 'Shft+Down' # Transpose selected note up or down an octave
-	 'Shft+Tab' # Add next note to selection
-	 'Shft+Ctrl+E' # Select all after edit point
-	 'Shft+Ctrl+N' # Add new track, bus or VCA
-	 'Shft+Ctrl+O' # Open recent session
-	 'Shft+Ctrl+R' # Set range to selected regions
-	 'Shft+Ctrl+S' # Quick snapshot session (stay on current)
-	 'Shft+Ctrl+:' # Copy playlist for all tracks
-	 'Shft+Ctrl+"' # New playlist for all tracks
-	 'Shft+Ctrl+Spce' # Play from edit point and return
-	 'Shft+Ctrl+Tab' # Add previous note to selection
-	 'Shft+Ctrl+Up' 'Shft+Ctrl+Down' # Increase or decrease note velocity
-	 'Shft+Alt+A' # Show audio connections window
-	 'Shft+Alt+M' # Show MIDI connections window
-	 'Shft+Alt+C' # Consolidate regions in range selection
-	 'Shft+Alt+R' # Create range from selection
-	 'Shft+Alt+=' # Shrink track height
-	 'Shft+Alt+_' # Zoom to whole session
-	 'Shft+Alt+Left' 'Shft+Alt+Rght' # Playhead to previous or next region
-	 'Alt+c' # Switch to cue strip
-	 'Alt+d' # Multi duplicate selected regions or notes (mode dependant)
-	 'Alt+e' 'Shft+Alt+E' # Stem export selected items
-	 'Alt+i' # Toggle editor MIDI input active for selected tracks
-	 'Alt+k' # Show virtual keyboard window
-	 'Alt+l' # Show locations window
-	 'Alt+m' # Toggle between mixer and editor strips
-	 'Alt+o' # Open properties window
-	 'Alt+r' # Show recorder strip
-	 'Alt+s' # Toggle solo on selected track
-	 'Alt+0' # Opaque selected regions
-	 'Alt+1' # Mute selected track or region (focus dependant) 
-	 'Alt+3' # Normalise selected region
-	 'Alt+5' # Quantize selected regions or notes (focus dependant)
-	 'Alt+6' 'Alt+7' # Boost or cut gain for selected tacks
-	 'Alt+9' # Rename selected
-	 'Alt+Up' 'Alt+Down' # Select previous or next track
-	 'Alt+,' # Move note start earlier (fine)
-	 'Alt+.' # Move note ends later (fine)
+SHORTCUTS
+ 'a' # Solo selected region
+ 'c' # Select cut tool or edit selected note channels
+ 'd' # Select note drawing tool
+ 'e' # Select content tool
+ 'g' # Select object tool
+ 'h' 'Alt+Spce' # Play selected (audition)
+ 'j' # Trim region start at edit point
+ 'k' # Trim region end at edit point
+ 'l' # Play loop range
+ 'p' # Move playhead to cursor
+ 'r' # Select range tool
+ 's' # Cut region at cursor
+ 't' # Select time FX tool
+ 'x' # Align region sync relative
+ 'z' # Zoom to selection
+ 'q' # Quantize selected notes
+ 'v' # Show note velocity editor
+ '3' # Toggle smart mode
+ '4' # Toggle snap
+ '7' # Toggle auto return
+ '9' # Set new tempo at region start
+ 'Bkspc' 'Del' # Delete selected (focus dependant)
+ 'End' # Move playhead to end
+ 'Nter' 'Home' # Move playhead to start
+ 'Esc' # Deselect all (focus dependant)
+ 'Left' 'Rght' # Move playhead to previous or next grid
+ 'Up' 'Down' # Step tracks or transpose note up or down a semitone
+ 'PgUp' 'PgDn' # Scroll tracks up or down
+ 'Spce' # Start and stop playback
+ 'Tab' # Select next item (focus dependant)
+ ']' # Set loop range from selection
+ ',' # Move note start earlier
+ '.' # Move note end later
+ 'Ctrl+a' # Select all regions or notes (mode dependant)
+ 'Ctrl+c' # Copy selected regions or notes (mode dependant)
+ 'Ctrl+d' # Duplicate selected regions or notes (mode dependant)
+ 'Ctrl+e' # Extend note selection
+ 'Ctrl+e' # Quick session export
+ 'Ctrl+f' # Follow playhead
+ 'Ctrl+i' # Import audio or invert note selection (mode dependant)
+ 'Ctrl+l' # Select all in loop range
+ 'Ctrl+n' # Create new session
+ 'Ctrl+o' # Open existing session
+ 'Ctrl+q' # Quit current session
+ 'Ctrl+r' 'Ctrl+y' 'Ctrl+Shft+Z' # Redo action
+ 'Ctrl+s' # Save current session
+ 'Ctrl+v' # Paste copied region or notes (focus dependant)
+ 'Ctrl+x' # Cut selected region or notes (focus dependant)
+ 'Ctrl+z' # Undo last action 
+ 'Ctrl+\`' # Send all MIDI notes off (panic)
+ 'Ctrl+,' # Move note start later
+ 'Ctrl+.' # Move note ends earlier
+ 'Ctrl+Up' # Move selected tracks up or increase note velocity
+ 'Ctrl+Down' # Move selected tracks down or decrease note velocity
+ 'Ctrl+Spce' # Stop and forget capture
+ 'Ctrl+Tab' # Select previous note
+ 'Ctrl+Alt+,' # Move note start later (fine)
+ 'Ctrl+Alt+.' # Move note end earlier (fine)
+ 'Ctrl+Alt+Up' 'Ctrl+Alt+Down' # Increase or decrease note velocity (fine)
+ 'Shft+B' # Toggle record enable selected track
+ 'Shft+E' # Show editor mixer
+ 'Shft+L' # Show editor list
+ 'Shft+R' # Enable record for session
+ 'Shft+S' # Show summary
+ 'Shft+:' # Copy current take to new playlist on selected track
+ 'Shft+"' # New playlist for selected tracks
+ 'Shft+?' # Show playlist selector
+ 'Shft+=' # Expand track height
+ 'Shft+>' # Record with count in
+ 'Shft+Spce' # Start recording
+ 'Shft+Left' 'Shft+Rght' # Rewind or fast forward playback
+ 'Shft+Up' 'Shft+Down' # Transpose selected note up or down an octave
+ 'Shft+Tab' # Add next note to selection
+ 'Shft+Ctrl+E' # Select all after edit point
+ 'Shft+Ctrl+N' # Add new track, bus or VCA
+ 'Shft+Ctrl+O' # Open recent session
+ 'Shft+Ctrl+R' # Set range to selected regions
+ 'Shft+Ctrl+S' # Quick snapshot session (stay on current)
+ 'Shft+Ctrl+:' # Copy playlist for all tracks
+ 'Shft+Ctrl+"' # New playlist for all tracks
+ 'Shft+Ctrl+Spce' # Play from edit point and return
+ 'Shft+Ctrl+Tab' # Add previous note to selection
+ 'Shft+Ctrl+Up' 'Shft+Ctrl+Down' # Increase or decrease note velocity
+ 'Shft+Alt+A' # Show audio connections window
+ 'Shft+Alt+M' # Show MIDI connections window
+ 'Shft+Alt+C' # Consolidate regions in range selection
+ 'Shft+Alt+R' # Create range from selection
+ 'Shft+Alt+=' # Shrink track height
+ 'Shft+Alt+_' # Zoom to whole session
+ 'Shft+Alt+Left' 'Shft+Alt+Rght' # Playhead to previous or next region
+ 'Alt+c' # Switch to cue strip
+ 'Alt+d' # Multi duplicate selected regions or notes (mode dependant)
+ 'Alt+e' 'Shft+Alt+E' # Stem export selected items
+ 'Alt+i' # Toggle editor MIDI input active for selected tracks
+ 'Alt+k' # Show virtual keyboard window
+ 'Alt+l' # Show locations window
+ 'Alt+m' # Toggle between mixer and editor strips
+ 'Alt+o' # Open properties window
+ 'Alt+r' # Show recorder strip
+ 'Alt+s' # Toggle solo on selected track
+ 'Alt+0' # Opaque selected regions
+ 'Alt+1' # Mute selected track or region (focus dependant) 
+ 'Alt+3' # Normalise selected region
+ 'Alt+5' # Quantize selected regions or notes (focus dependant)
+ 'Alt+6' 'Alt+7' # Boost or cut gain for selected tacks
+ 'Alt+9' # Rename selected
+ 'Alt+Up' 'Alt+Down' # Select previous or next track
+ 'Alt+,' # Move note start earlier (fine)
+ 'Alt+.' # Move note ends later (fine)
 
-	DEPENDS ON
-	 ▸ cairo # 2D graphics library
-	 ▸ gcc-libs # Runtime libraries for GCC
-	 ▸ glibc # GNU C library
-	 ▸ gtkmm # C++ bindings for GTK2
-	 ▸ libx11 # X11 client side library
-	 ▸ taglib # Library for reading and editing audio file metadata
-	 ▸ alsa-lib # Library for Linux sound card support 
-	 ▸ atkmm # C++ bindings for ATK
-	 ▸ aubio # Tool for extracting annotations from audio signals
-	 ▸ cairomm # C++ bindings for Cairo
-	 ▸ curl # Command line tool for transferring data with URLs
-	 ▸ dbus # Freedesktop message bus system
-	 ▸ fftw # Library for computing the discrete fourier transform
-	 
-	REQUIRED BY
-	 ▸ adlplug-lv2 # LV2 FM synthesizer for ADLMIDI
-	 ▸ adlplug-vst # ADLPlug VST version
-	 ▸ aida-x-lv2 # LV2 AMP model player leveraging AI
-	 ▸ aida-x-vst # AIDA VST version
-	 ▸ aida-x-vst3 # AIDA VST3 version
-	 ▸ ambix-lv2 # LV2 Ambisonic plugins with variable order 
-	 ▸ ambix-vst # Ambix VST version
-	 ▸ ams-lv2 # Port of the internal modules for ALSA modular synth
-	 ▸ artyFX # Plugin bundle of artistic realtime audio effects
-	 ▸ avldrums.lv2 # Simple drum sample player plugin for AVLinux
-	 ▸ bchoppr # Audio stream chopping LV2 plugin
-	 ▸ blop.lv2 # Port of the blop LADSPA plugins 
-	 ▸ bsequencer # Multi channel LV2 MIDI step sequencer
-	 ▸ bshapr # Beat envelope shaper LV2 plugin
-	 ▸ bslizr # LV2 plugin for sequenced slicing stereo input signals
-	 ▸ cardinal-lv2 # Virtual modular synthesizer
-	 ▸ cardinal-vst # Cardinal VST version
-	 ▸ cardinal-vst3 # Cardinal VST3 version
-	 ▸ distrho-ports-lv2 # Linux audio plugins and LV2 ports
-	 ▸ distrho-ports-vst # Distrho ports VST version
-	 ▸ distrho-ports-vst3 # Distrho ports VST3 version
-	 ▸ dpf-plugins-ladspa # Collection of DPF based plugins
+DEPENDS ON
+ ▸ cairo # 2D graphics library
+ ▸ gcc-libs # Runtime libraries for GCC
+ ▸ glibc # GNU C library
+ ▸ gtkmm # C++ bindings for GTK2
+ ▸ libx11 # X11 client side library
+ ▸ taglib # Library for reading and editing audio file metadata
+ ▸ alsa-lib # Library for Linux sound card support 
+ ▸ atkmm # C++ bindings for ATK
+ ▸ aubio # Tool for extracting annotations from audio signals
+ ▸ cairomm # C++ bindings for Cairo
+ ▸ curl # Command line tool for transferring data with URLs
+ ▸ dbus # Freedesktop message bus system
+ ▸ fftw # Library for computing the discrete fourier transform
+ 
+REQUIRED BY
+ ▸ adlplug-lv2 # LV2 FM synthesizer for ADLMIDI
+ ▸ adlplug-vst # ADLPlug VST version
+ ▸ aida-x-lv2 # LV2 AMP model player leveraging AI
+ ▸ aida-x-vst # AIDA VST version
+ ▸ aida-x-vst3 # AIDA VST3 version
+ ▸ ambix-lv2 # LV2 Ambisonic plugins with variable order 
+ ▸ ambix-vst # Ambix VST version
+ ▸ ams-lv2 # Port of the internal modules for ALSA modular synth
+ ▸ artyFX # Plugin bundle of artistic realtime audio effects
+ ▸ avldrums.lv2 # Simple drum sample player plugin for AVLinux
+ ▸ bchoppr # Audio stream chopping LV2 plugin
+ ▸ blop.lv2 # Port of the blop LADSPA plugins 
+ ▸ bsequencer # Multi channel LV2 MIDI step sequencer
+ ▸ bshapr # Beat envelope shaper LV2 plugin
+ ▸ bslizr # LV2 plugin for sequenced slicing stereo input signals
+ ▸ cardinal-lv2 # Virtual modular synthesizer
+ ▸ cardinal-vst # Cardinal VST version
+ ▸ cardinal-vst3 # Cardinal VST3 version
+ ▸ distrho-ports-lv2 # Linux audio plugins and LV2 ports
+ ▸ distrho-ports-vst # Distrho ports VST version
+ ▸ distrho-ports-vst3 # Distrho ports VST3 version
+ ▸ dpf-plugins-ladspa # Collection of DPF based plugins
 
-	BINARIES
-	 ▸ '/bin/ardour8' # Run Ardour
-	 ▸ '/bin/ardour8-lua' # Ardour Lua CLI
-	 
-	FILES
-	 ▸ '/etc/ardour8/Ardour.keys' # System keybindings config file
-	 ▸ '/etc/ardour8/Ardour.menus' # System menus config file
-	 ▸ '/etc/ardour8/default_ui_config' # System UI config file
+BINARIES
+ ▸ '/bin/ardour8' # Run Ardour
+ ▸ '/bin/ardour8-lua' # Ardour Lua CLI
+ 
+FILES
+ ▸ '/etc/ardour8/Ardour.keys' # System keybindings config file
+ ▸ '/etc/ardour8/Ardour.menus' # System menus config file
+ ▸ '/etc/ardour8/default_ui_config' # System UI config file
 
-	COMMON USAGE
-	MIDI SETTINGS
-	   # Its helpful to make sure that MIDI notes are sounded as they are selected
-	   # in the editor, they will also be sounded as they are created
-	 > Edit # Go to the edit menu tab
-	  > Preferences # Select the preferences option
-	   > MIDI # Go to the MIDI tab
-	     > Sound MIDI notes as they are selected in the editor: 'on' # Turn it on
-	   # Make sure that copied MIDI regions create a new file rather than modify the 
-	   # original file which can cause issues if that file is needed later. There
-	   # is also a setting to disable overlapping notes
-	 > Session # Go to the session menu tab
-	  > Properties # Select the properties option
-	   > Misc # Go to the misc tab
-	     > MIDI region copies are independent: 'on' # Turn it on
-	     > Policy for handling overlapping notes on the same MIDI channel: 'Never
-	       allow them' # Set this policy to make sure that theres no overlapping 
-	   # notes on the same channel which are difficult to visually identify and can 
-	   # cause issues with gain and velocity if not removed
-	     > 'Use these settings as defaults' # Select to enable globally
-	   # If notes are still overlapping it may be due to making accidental
-	   # duplications of notes while in edit mode, while meaning to be in grab mode
+COMMON USAGE
+MIDI SETTINGS
+   # Its helpful to make sure that MIDI notes are sounded as they are selected
+   # in the editor, they will also be sounded as they are created
+ > Edit # Go to the edit menu tab
+  > Preferences # Select the preferences option
+   > MIDI # Go to the MIDI tab
+     > Sound MIDI notes as they are selected in the editor: 'on' # Turn it on
+   # Make sure that copied MIDI regions create a new file rather than modify the 
+   # original file which can cause issues if that file is needed later. There
+   # is also a setting to disable overlapping notes
+ > Session # Go to the session menu tab
+  > Properties # Select the properties option
+   > Misc # Go to the misc tab
+     > MIDI region copies are independent: 'on' # Turn it on
+     > Policy for handling overlapping notes on the same MIDI channel: 'Never
+       allow them' # Set this policy to make sure that theres no overlapping 
+   # notes on the same channel which are difficult to visually identify and can 
+   # cause issues with gain and velocity if not removed
+     > 'Use these settings as defaults' # Select to enable globally
+   # If notes are still overlapping it may be due to making accidental
+   # duplications of notes while in edit mode, while meaning to be in grab mode
+KNOB CONFIGURATION
+   # 
 
-	WEBLINKS
-	 ▸ 'https://ardour.org' # Official
-	 ▸ 'https://freesound.org' # Freesound samples
-	 ▸ 'https://calf-studio-gear.org' # Calf plugins
-	 ▸ 'https://www.looperman.com' # Looperman plugins
-	 ▸ 'https://manual.Ardour.org/toc/' # Official docs
-	 ▸ 'https://x42-plugins.com/x42/' # X42 plugins
+
+
+
+WEBLINKS
+ ▸ 'https://ardour.org' # Official
+ ▸ 'https://freesound.org' # Freesound samples
+ ▸ 'https://calf-studio-gear.org' # Calf plugins
+ ▸ 'https://www.looperman.com' # Looperman plugins
+ ▸ 'https://manual.Ardour.org/toc/' # Official docs
+ ▸ 'https://x42-plugins.com/x42/' # X42 plugins
