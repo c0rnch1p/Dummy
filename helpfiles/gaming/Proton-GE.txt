@@ -1,65 +1,70 @@
- _____________________________________________  _______      __________________
- \__  __   \_____   \_____  \__    ___/__     \ \      \    /  _____/_   _____/
-  |     ___/       _//   |   \|    |  /   |    \/   |   \  /   \__---|    __)_ 
-  |____|   |____|___/________/|____|  \________/____|___/  \________/_________/
+	 _____________________________________________  _______      __________________
+	 \__  __   \_____   \_____  \__    ___/__     \ \      \    /  _____/_   _____/
+	  |     ___/       _//   |   \|    |  /   |    \/   |   \  /   \__---|    __)_ 
+	  |____|   |____|___/________/|____|  \________/____|___/  \________/_________/
 
-DESCRIPTION
- Proton is a compatibility layer for Windows games to run on Linux-based
- operating systems. Proton is developed by Valve in cooperation with developers
- from CodeWeavers. It is a collection of software and libraries combined with a
- patched version of Wine to improve performance and compatibility with Windows
- games. Proton is designed for integration into the Steam client as
- 'Steam Play'. It is officially distributed through the client, although
- third-party forks can be manually installed. Proton was initially released on
- 21 August 2018. Upon release, Valve announced a list of 27 games that were
- tested and certified to perform like their native Windows counterparts without
- requiring end-user tweaking. These include Doom (2016), Quake, and Final
- Fantasy VI. Proton incorporates several libraries that improve 3D performance.
- These include Direct3D-to-Vulkan translation layers, namely DXVK for Direct3D
- 9, 10 and 11, and VKD3D-Proton for Direct3D 12. A separate library known as
- D9VK handled Direct3D 9 support until it was merged into DXVK in December 2019.
- Proton-GE-custom is a custom build of proton which creator Glorious Eggroll
- made available and updates regularly. Some argue that the GE-custom build is
- better than the vanilla build of proton, especially on lower end hardware and
- linux systems in general.
+	DESCRIPTION
+	 Proton is a compatibility layer for Windows games to run on Linux-based
+	 operating systems. Proton is developed by Valve in cooperation with developers
+	 from CodeWeavers. It is a collection of software and libraries combined with a
+	 patched version of Wine to improve performance and compatibility with Windows
+	 games. Proton is designed for integration into the Steam client as
+	 'Steam Play'. It is officially distributed through the client, although
+	 third-party forks can be manually installed. Proton was initially released on
+	 21 August 2018. Upon release, Valve announced a list of 27 games that were
+	 tested and certified to perform like their native Windows counterparts without
+	 requiring end-user tweaking. These include Doom (2016), Quake, and Final
+	 Fantasy VI. Proton incorporates several libraries that improve 3D performance.
+	 These include Direct3D-to-Vulkan translation layers, namely DXVK for Direct3D
+	 9, 10 and 11, and VKD3D-Proton for Direct3D 12. A separate library known as
+	 D9VK handled Direct3D 9 support until it was merged into DXVK in December 2019.
+	 Proton-GE-custom is a custom build of proton which creator Glorious Eggroll
+	 made available and updates regularly. Some argue that the GE-custom build is
+	 better than the vanilla build of proton, especially on lower end hardware and
+	 linux systems in general.
 
-DEPENDS ON
- ▸ attr # Extended attribute support library for ACL support
- ▸ fontconfig # Library for configuring and customizing font access
- ▸ libxrandr # X11 RandR extension library
- ▸ libxi # X11 Input extension library
- ▸ gettext # GNU internationalization library
- ▸ freetype2 # Font rasterization library
- ▸ gcc-libs # Runtime libraries shipped by GCC
- ▸ libpcap # System-independent interface for user-level packet capture
- ▸ lzo # Portable lossless data compression library
- ▸ libxkbcommon # Keymap handling library for toolkits and window systems
- ▸ steam-native-runtime # Native replacement for runtime using system libraries
+	DEPENDS ON
+	 ▸ attr # Extended attribute support library for ACL support
+	 ▸ fontconfig # Library for configuring and customizing font access
+	 ▸ libxrandr # X11 RandR extension library
+	 ▸ libxi # X11 Input extension library
+	 ▸ gettext # GNU internationalization library
+	 ▸ freetype2 # Font rasterization library
+	 ▸ gcc-libs # Runtime libraries shipped by GCC
+	 ▸ libpcap # System-independent interface for user-level packet capture
+	 ▸ lzo # Portable lossless data compression library
+	 ▸ libxkbcommon # Keymap handling library for toolkits and window systems
+	 ▸ steam-native-runtime # Native replacement for runtime using system libraries
 
-FILES
- ▸ '/home/$USER/.cache/yay/proton-ge-custom/proton-ge-custom.install' # AUR file
+	FILES
+	 ▸ '/home/$USER/.cache/yay/proton-ge-custom/proton-ge-custom.install' # AUR file
 
-BINARIES
- ▸ '/usr/share/steam/compatibilitytools.d/proton-ge-custom/proton' # Run proton
+	BINARIES
+	 ▸ '/usr/share/steam/compatibilitytools.d/proton-ge-custom/proton' # Run proton
 
-COMMON USAGE
-INSTALLING AND ENABLING
-   # Proton-GE can be either installed directly from the AUR with an AUR helper
-   # like yay for Arch users, otherwise it can be built from source following
-   # the instructions on Glorious Eggrolls github
- yay proton-ge-custom # Its a lengthy install
-   # To enable Proton-GE in Steam, open steam (native)
- > Steam Menu # Open the steam menu
-   > Compatability # Navigate to the compatability section
-     > Enable Steam Play for all other titles: <on> # Check the box to enable
-   # for all titles, to use the custom build of proton with a game, go to the
-   # games library within Steam and open the context menu for the game
- > Properties # Select the properties option
-   > Compatability # Navigate to the compatability section
-     > Force the use of a specific Steam Play compatability tool: <on> # Check
-   # the box to force the use of Proton, and make sure that Proton-GE is
-   # selected in the dropdown box in both the Steam menu and the game properties
+	COMMON USAGE
+	INSTALLING AND ENABLING
+	   # Proton-GE can be either installed directly from the AUR with an AUR helper
+	   # for Arch users, otherwise it can be built from source following the
+	   # instructions on Glorious Eggrolls github
+	 yay proton-ge-custom # Its a lengthy install
+	   # To enable Proton-GE in Steam, open steam (native)
+	 > Steam Menu # Open the steam menu
+	   > Compatability # Navigate to the compatability section
+		 > Enable Steam Play for all other titles: <on> # Check the box to enable
+	   # for all titles, to use the custom build of proton with a game, go to the
+	   # games library within Steam and open the context menu for the game
+	 > Properties # Select the properties option
+	   > Compatability # Navigate to the compatability section
+		 > Force the use of a specific Steam Play compatability tool: <on> # Check
+	   # the box to force the use of Proton, and make sure that Proton-GE is
+	   # selected in the dropdown box in both the Steam menu and the game properties
+	STEAM NATIVE RUNTIME
+	   # There is a package in the Arch repos called steam-native-runtime which is
+	   # an unlisted dependancy of proton-GE-custom, this is a runtime version of
+	   # Steam native and the binary can be ignored, but it will be included and
+	   # used with proton-GE-custom if its installed with an AUR helper like yay
 
-WEBLINKS
- ▸ 'https://github.com/gloriouseggroll' # GE git repo
- ▸ 'https://github.com/gloriouseggroll/proton-ge-custom/releases' # GE releases
+	WEBLINKS
+	 ▸ 'https://github.com/gloriouseggroll' # GE git repo
+	 ▸ 'https://github.com/gloriouseggroll/proton-ge-custom/releases' # GE releases

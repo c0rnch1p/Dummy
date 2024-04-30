@@ -1,7 +1,7 @@
-		           _____________________________  _______   _______   
-		          /   _____/__    ___/_   _____/ /   _   \ /       \  
-		          \_____   \ |    |   |    __)__/   /_\   \   \ /   \ 
-		          /________/ |____|  /_________/_____|____/____|____/                             
+			       _____________________________  _______   _______   
+			      /   _____/__    ___/_   _____/ /   _   \ /       \  
+			      \_____   \ |    |   |    __)__/   /_\   \   \ /   \ 
+			      /________/ |____|  /_________/_____|____/____|____/                             
 
 	DESCRIPTION
 	 Steam is a video game digital distribution service and storefront by Valve. It
@@ -37,29 +37,29 @@
 	   # preferential or without need for explanation
 	 > Steam Menu  
 	   > Game Settings
-	     > Pings Per Min: <250> # Lower setting
-	     > GPU Accel: <off> # Off for low to mid range GPUs
+		 > Pings Per Min: <250> # Lower setting
+		 > GPU Accel: <off> # Off for low to mid range GPUs
 	   > Interface Setttings
-	     > On Startup: <library> # Show library on startup
+		 > On Startup: <library> # Show library on startup
 	   > Library Settings
-	     > Low Bandwidth: <off> # Disables community content
-	     > Low Performance: <on> # Reduces power usage
+		 > Low Bandwidth: <off> # Disables community content
+		 > Low Performance: <on> # Reduces power usage
 	   > Download Settings
-	     > Dl During Game: <on> # Downloads during gameplay
-	     > Throttle: <off> # Dont throttle while streaming
-	     > Bits Per Second: <on> # Display rate in bits
-	     > Limit Bandwidth: <18500Kb/s> # Limit bandwidth to 3Mb/s
+		 > Dl During Game: <on> # Downloads during gameplay
+		 > Throttle: <off> # Dont throttle while streaming
+		 > Bits Per Second: <on> # Display rate in bits
+		 > Limit Bandwidth: <18500Kb/s> # Limit bandwidth to 3Mb/s
 	   > Steam Cloud Settings
-	     > Open Screenshots: <on> # Open screenshots after close
+		 > Open Screenshots: <on> # Open screenshots after close
 	   > Broadcasting Settings
-	     > Video Dimensions: <1080p> # Set 1080p
-	     > Optimal Encoding: <best performance> # Better performance
-	     > Viewer Chat: <top left> # Viewer chat in top left
-	     > Show Stats: <on> # Show upload stats
+		 > Video Dimensions: <1080p> # Set 1080p
+		 > Optimal Encoding: <best performance> # Better performance
+		 > Viewer Chat: <top left> # Viewer chat in top left
+		 > Show Stats: <on> # Show upload stats
 	   > Web Browser Settings
-	     > Home Page: <www.duckduckgo.com> # Set homepage
+		 > Home Page: <www.duckduckgo.com> # Set homepage
 	   > Shader Precache Settings
-	     > Enable Precache: <on> # Vulkan and OpenGL support
+		 > Enable Precache: <on> # Vulkan and OpenGL support
 
 	DEPENDS ON
 	 ▸ bash # GNU bourne again shell
@@ -85,7 +85,7 @@
 	 ▸ arcolinux-meta-steam-intel # Installs steam on ArcoLinux for Intel
 	 ▸ arcolinux-meta-steam-nvidia # Installs steam on ArcoLinux for Nvidia
 	 ▸ linux-steam-integration # Helper for better Steam integration on Linux
-	 ▸ steam-native-runtime # Native replacement for Steam runtime using system libs
+	 ▸ steam-native-runtime # Native replacement for runtime using system libraries
 
 	BINARIES
 	 ▸ '/bin/steamcmd' # Control steam from the command line
@@ -107,12 +107,25 @@
 	   # hard drive through the steam interface in order to save storage, in order
 	   # restore a game from its actual location to the system and add it to the
 	   # steam library, the steam interface is also used
-	 > Steam # Navigate to the steam menu
+	 > Steam Menu # Open the steam menu
 	   > Restore Game backup # Select the restore game backup option and provide the
-	   # path to the gamefiles
-	   
-	   
-	   
+	   # path to the gamefiles, sometimes games may present issues and there is a
+	   # liklihood that the cause of the issue is related to the gamefiles on the
+	   # system, in order to run a check on the gamefiles to verify their integrity,
+	   # go to the games library within Steam and open the context menu for the game
+	 > Properties # Select the properties option
+	   > Installed Files # Navigate to the installed files section
+		 > Verify Integrity of game files # Run the integrity check on the game, if
+	   # isues still persist or are happening for multiple games an attempt can be
+	   # made to repair the files in the library, its best to do an integrity
+	   # check on problematic games before using this feature in Steam
+	 > Steam Menu # Open the Steam Menu
+	   > Storage # Navigate to the storage section
+		 > ... # Select the three dotted line next to the storage info
+		   > Repair Library # Run the repair process, this overall approach to
+	   # storage management and solving issues with games in Steam is much more
+	   # effective than constantly uninstalling and reinstalling games taking up
+	   # time and bandwidth
 	LAUNCH OPTIONS # Launch options allow for the use of commands and variables at
 	   # game startup to optimise performance and fix issues
 	 -novid # Skip intro videos
@@ -161,13 +174,21 @@
 	 -PROTON_NO_ESYNC 1 # Turn off esync for proton to fix stuttering and lag
 	 -DXVK_ASYNC 1 # Turn on async as a replacement for esync if its turned off
 	 %command% # Tell steam to execute these commands
-	RUNTIME AND RUNTIME
-	
-	NATIVE RUNTIME
-	
 	STEAM PLAY
-		       
+	   # Steam Play is the feature that allows users to run compatibility layers in
+	   # Linux versions of the Steam client. Proton being one of them, which is
+	   # based upon another little program called Wine
+	NATIVE AND RUNTIME
+	   # These binaries configure Steam to globally use Native distro versions of
+	   # steam libraries, or Steam Runtime versions provided by Valve as part of
+	   # Steam. This is somewhat related to the forced method of running the proton
+	   # compatability layer. Software that was made for Windows needs to be patched
+	   # and reconfigured to work on Linux or Mac. Steam offers alot of support for
+	   # this, the Native builds are part of that support to further improve Steam
+	   # functionality on Linux, so its a good idea to use that
+
 	WEBLINKS
+	 ▸ 'https://github.com/ValveSoftware/steam-for-linux' # Known issues
 	 ▸ 'https://steampowered.com' # Official
 	 ▸ 'https://wiki.archlinux.org/title/steam' # Arch wiki
 	 ▸ 'https://wiki.archlinux.org/title/steam/troubleshooting' # Troubleshooting
