@@ -102,11 +102,11 @@
 	 'n' # Toggle the currently selected objects node points
 	 'p' # Toggle the freehand Pencil tool
 	 'r' # Draw a rectangle object on the current document
-	 's' # Go to inkscapes selection tool mode
+	 's' # Go to Inkscapes selection tool mode
 	 'u' # Toggle the Paint Bucket tool
 	 'x' # Render a 3D perspective box on the current document
 	 'z' # Zoom in on the currently active document
-	 'F10' # Toggle inkscapes Menu Bar
+	 'F10' # Toggle Inkscapes Menu Bar
 	 'F11' # Switch the current display to fullscreen mode
 	 'Home' # Reduce the width of the spray radius to its minimum size or set the
 	   # current brush width to its minimum size
@@ -161,7 +161,7 @@
 	 'Ctrl+Shft+M' # Open the transform dialog box
 	 'Ctrl+Shft+N' # Create a new drawing layer on the current document
 	 'Ctrl+Shft+O' # Print all the available properties for current document
-	 'Ctrl+Shft+P' # Open inkscapes preferences window
+	 'Ctrl+Shft+P' # Open Inkscapes preferences window
 	 'Ctrl+Shft+S' # Open the save as dialog box for the current document
 	 'Ctrl+Shft+T' # Open the text and fonts dialog box on the current document
 	 'Ctrl+Shft+V' # Paste the style of the object in the clipboard
@@ -236,9 +236,8 @@
 
 	COMMON USAGE
 	TOOL STYLES
-	   # Each of the tools on the panel in Inkscape can be set to remember a
-	   # specific style, this is useful when a style is preferred over the default
-	   # for a tool
+	   # Each of the tools on the panel can be set to remember a specific style,
+	   # this is useful when a style is preferred over the default for a tool
 	 > Edit # Open the edit menu
 	   > Preferences # Select the preferences option
 		 > Tools # # Navigate to the tools section
