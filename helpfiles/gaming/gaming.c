@@ -1,9 +1,10 @@
 #include "gaming.h"
-#define TOTAL 2
+#define TOTAL 3
 
 // file list
 char *gamingFiles[TOTAL]={
 	"CS2",
+	"Proton-GE",
 	"Steam",
 };
 
