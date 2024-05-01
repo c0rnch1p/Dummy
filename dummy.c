@@ -205,14 +205,14 @@ void screenKeys(int ch, int* toggleKeys){
 // highlight and bat
 void fileReader(const char* flPth){
 	char modPath[255];
-	char lang[]="/usr/share/dummy/lang.lua";
-	char theme[]="/usr/share/dummy/theme.lua";
+	char lang[]="/usr/share/Dummy/lang.lua";
+	char theme[]="/usr/share/Dummy/theme.lua";
 	int termCols=COLS;
 	int tabSpc=(COLS >= 200) ? (COLS - 80) / 2 : 4;
 	/* the variable above can be broken down as, if screen is larger than
 	160 cols, subtract 80 (file width) and divide the result by 2.offset to
 	centre the page, else tab width is set to 4 to avoid text wrapping */
-	snprintf(modPath, sizeof(modPath), "/usr/share/dummy/helpfiles/%s.txt", flPth);
+	snprintf(modPath, sizeof(modPath), "/usr/share/Dummy/helpfiles/%s.txt", flPth);
 	int pid1=fork();
 	if(pid1 == -1){
 		fprintf(stderr, "⚠ fork failed ⚠\n");
