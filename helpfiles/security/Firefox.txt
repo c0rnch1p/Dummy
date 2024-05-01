@@ -1,3 +1,79 @@
+         ___________________________________________________ ____  ____                    
+         \_   _____/   \__  __   \_   _____/_   _____/__ _  \\   \/   /
+          |    __) |   ||       _/|    __)__|    __) /   |   \>      < 
+          |____|   |___||____|___/_________/|____|   \_______/___/\___\
+
+DESCRIPTION
+
+COMMANDS
+
+SHORTCUTS
+
+DEPENDS ON
+
+FILES
+
+BINARIES
+
+COMMON USAGE
+
+WEBLINKS
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 FIREFOX GUI SPECS
  > General
   > Previous Windows : 'off' # dont open previous windows and tabs

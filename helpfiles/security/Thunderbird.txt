@@ -1,3 +1,57 @@
+       ______________ ___ ____ ___________ ________ ____________________ 
+       \__    ___/   |   \|   |   \       \\__  __ \\_   _____/__  __   \              
+         |    | /    -    \   |   /    |   \|    |  \|    __)__|       _/
+         |____| \____|____/______/\____|___/________/_________/|____|___/
+                       \__   _   /   \__  __   \__  __ \  
+                        |    )   \   ||       _/|    |  \                                               
+                        |________/___||____|___/________/
+
+DESCRIPTION
+
+COMMANDS
+
+SHORTCUTS
+
+DEPENDS ON
+
+FILES
+
+BINARIES
+
+COMMON USAGE
+
+WEBLINKS
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 THUNDERBIRD GUI SPECS
  > Account Settings
   > Html Signature : 'on' # dont use html signature text

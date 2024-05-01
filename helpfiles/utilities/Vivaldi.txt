@@ -1,0 +1,639 @@
+            ____   ____ _______   ___________  ____   ________  ___ 
+            \   \ /   /|   \   \ /   /   _   \|    |  \__  __ \|   |
+             \   Y   / |   |\   Y   /   /_\   \    |__ |    |  \   |
+              \_____/  |___| \_____/\____|____/_______||_______/___|                        
+
+DESCRIPTION
+
+COMMANDS
+
+SHORTCUTS
+
+DEPENDS ON
+
+FILES
+
+BINARIES
+
+COMMON USAGE
+
+WEBLINKS
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+DESCRIPTION  : Vivaldi is an open source, cross platform web browser developed by Vivaldi Technologies, a company
+   founded by Tatsuki Tomita and Jon Stephenson Von Tetzchner, who was the co-founder and CEO of Opera Software.
+   Vivaldi was officially launched in April 2016. It is first and foremost targeted towards technically inclined
+   users as well as former Opera users disgruntled by its transition from the Presto Layout Engine to a Chromium based
+   browser that resulted in the loss of many of its iconic features. Despite being Opera based, Vivaldi aims to revive
+   the features of the Presto Engine with more flexibility and efficiency than its predecessors.
+PACKAGER     : Mark Wagie <mark@manjaro.org>
+VERSION      : 5.4.2753.51
+ARCHITECTURE : x86_64
+DEPENDS      :
+• gtk3 # gobject-based multi-platform gui toolkit
+• libcups # the cups printing system client libraries and headers
+• nss # network security services
+• alsa-lib # an alternative implementation of linux sound support
+• libxss # x11 screen saver extension library
+• desktop-file-utils # command line utilities for working with desktop entries
+• shared-mime-info # freedesktop.org shared mime info
+• hicolor-icon-theme # freedesktop.org hicolor icon theme
+• vivaldi-ffmpeg-codecs # additional support for codecs for vivaldi
+• libnotify # library for sending desktop notifications
+CONFLICTS    : none
+WEBLINKS     :
+• https://vivaldi.com # official
+• https://wiki.archlinux.org/title/Vivaldi # arch wiki page
+
+VIVALDI SHORTCUTS
+						'w'                     : open window panel
+						'b'                     : open bookmarks panel
+						'l'                     : open reading list panel
+						'j'                     : open downloads panel
+						'h'                     : open history panel
+						'i'                     : open notes panel
+						'u'                     : open transate panel
+						'f'                     : open feeds panel
+						'y'                     : open contacts panel
+						'm'                     : open mail panel
+						't'                     : open tasks panel
+						'w'                     : open window panel
+						'q'                     : open quick commands
+						'n'                     : compose new message
+						'r'                     : reply to message
+						'f'                     : forward message
+						'k'                     : mark as read
+						'm'                     : mark message thread as read
+						'e'                     : show messages for sender
+						'g'                     : mark message and proceed
+						'e'                     : open calendar panel
+						'r'                     : refresh calendar
+						'd'                     : day view
+						'n'                     : multi week view
+						'm'                     : month view
+						'y'                     : year view
+						'a'                     : agenda view
+						'k'                     : view next period
+						'j'                     : view previous period
+						't'                     : view today
+						'c'                     : create event
+						'g'                     : go to date
+						'/'                     : search in calendar
+						'Esc'                   : stop loading
+						'F1'                    : toggle current panel
+						'F3'                    : toggle show panel
+						'F4'                    : focus panel controls
+						'F5'                    : focus searchbar
+						'F6'                    : focus next pane
+						'F7'                    : focus panel
+						'F8'                    : focus address field
+						'F9'                    : focus page
+						'F10'                   : focus top menu
+						'Ctrl+.'                : enter break mode
+						'Ctrl+n'                : new window
+						'Ctrl+c'                : copy selected text to clipboard
+						'Ctrl+x'                : cut selected text to clipboard
+						'Ctrl+v'                : paste selcted text from clipboard
+						'Ctrl+z'                : undo last action
+						'Ctrl+f'                : find
+						'Ctrl+o'                : open file
+						'Ctrl+s'                : capture page to file
+						'Ctrl+t'                : new tab
+						'Ctrl+w'                : close tab
+						'Ctrl+r'                : reload page
+						'Ctrl+d'                : add page to bookmarks
+						'Ctrl+l'                : add page to reading list
+						'Ctrl+b'                : open bookmarks window
+						'Ctrl+j'                : open downloads popup
+						'Ctrl+h'                : open history window
+						'Ctrl+i'                : open notes window
+						'Ctrl+u'                : open translate window
+						'Ctrl+m'                : open mail window
+						'Ctrl+e'                : open calendar window
+						'Ctrl+p'                : print page
+						'Ctrl+q'                : exit vivaldi
+						'Ctrl+F1'               : show webpage shortcuts
+						'Ctrl+F3'               : view page source
+						'Ctrl+F12'              : open settings
+						'Ctrl+Tab'              : cycle tabs forward
+						'Ctrl+PgUp' 'Ctrl+PgDn' : switch to previous or next tab
+						'Ctrl+Rght' 'Ctrl+Left' : find next or last in page
+						'Ctrl+1...9'            : switch to tab number
+						'Ctrl+Shft+T'           : customize toolbar
+						'Ctrl+Shft+S'           : save page as
+						'Ctrl+Shft+J'           : open developer console
+						'Ctrl+Shft+L'           : open developer tools
+						'Ctrl+Shft+M'           : open mail settings
+						'Ctrl+Shft+E'           : open extensions
+						'Ctrl+Shft+P'           : open profile manager
+						'Ctrl+Shft+G'           : open guest window
+						'Ctrl+Shft+H'           : hibernate inactive tabs
+						'Ctrl+Shft+R'           : force reload page
+						'Ctrl+Shft+Z'           : reopen closed tab
+						'Ctrl+Shft+N'           : new private window
+						'Ctrl+Shft+W'           : close window
+						'Ctrl+Shft+Del'         : delete browsing data
+						'Ctrl+Shft+End'         : detatch tab
+						'Ctrl+Shft+Tab'         : cycle tabs backward
+						'Ctrl+Shft+PgDn'        : move current tab right or back
+						'Ctrl+Shft+PgUp'        : move current tab left or forward
+						'Ctrl+Alt+i'            : copy selected text to note
+						'Ctrl+Alt+n'            : export notes
+						'Ctrl+Alt+b'            : export bookmarks
+						'Ctrl+Alt+u'            : translate selected text
+						'Ctrl+Alt+s'            : capture area to file
+						'Shft+S'                : capture page to clipboard
+						'Shft+R'                : reply all messages
+						'Shft+K'                : mark as unread
+						'Shft+M'                : mark message thread as unread
+						'Shft+F6'               : focus previous pane
+						'Shft+Del'              : delete permenantly
+						'Shft+Esc'              : open task manager
+						'Alt+s'                 : capture area to clipboard
+						'Alt+q'                 : make a qr code for the page
+						'Alt+t'                 : show message thread while in mail panel
+						'Alt+w'                 : show week view while in claendar panel
+						'Alt+Nter'              : open address from address bar in new tab
+						'Alt+Shft+S'            : toggle show statusbar
+						'Alt+Shft+1'            : tile vertically
+						'Alt+Shft+2'            : tile horizontally
+						'Alt+Shft+3'            : tile to grid
+						'Alt+Shft+4'            : untile tabs
+						'Alt+Shft+5'            : open links and tile
+						'Alt+Shft+F7'           : open previous panel
+						'Alt+Shft+Left'         : go back
+						'Alt+Shft+Rght'         : go forward
+
+                           VIVALDI GUI SPECS
+                           > General Settings
+                             > Check Default   : on # enable check default browser on startup
+                             > Home Page       : start page # set home page to start page
+                             > Startup With    : start page # set startup page to start page
+                             > Lazy Load       : on # enable lazy load restored session tabs
+                             > Load Pinned Tabs: on # enable always load pinned tabs
+                             > Exit Confirm    : off # disable exit confirmation dialog
+                             > Close Confirm   : off # diasable close window confirmation dialog
+                             > Language        : english us # set language to english uk
+                             > Date Time Format: inherit from operating system # set date and time format to inherit OS
+                             > Week Starts On  : monday # set week to start on monday
+                             > First Week      : first week in calendar year # set first week to first in calendar year
+                             > Accept Langs    : en-gb en-us en # set accept languages en-gb en-us and en
+                             > Auto Translate  : on # enable automatically offer to translate pages
+                             > Features        : on # enable mail, calendar and feeds
+                           > Sync Settings
+                             > Sync Selected Data Settings
+                               > Bookmarks       : on # enable sync bookmarks
+                               > Settings        : on # enable sync settings
+                               > Passwords       : on # enable sync passwords
+                               > Autofill        : off # disable sync autofill
+                               > History         : off # disable sync history
+                               > Extensions      : on # enable sync extensions
+                               > Reading List    : on # enable sync reading list
+                               > Notes           : on # enable sync notes
+                           > Appearance Settings
+                             > Settings In Tab : off # disable open settings in a tab
+                             > Popups In Tabs  : off # disable open popups in tabs
+                             > Use Animation   : off # disable use animation
+                             > Range Controls  : off # disable use buttons in range controls
+                             > Native Window   : on # enable use native window
+                             > Fade Colours    : on # enable fade colours in background windows
+                             > Simple Scrollbar: on # enable use simple scrollbars
+                             > Monochrome Icons: off # disable use monochrome settings icons
+                             > Controls Pos    : right side # set vivaldi control menu to right side
+                             > Status Bar      : show status bar # set status bar to show status bare
+                             > Interface Zoom  : 100% # set user interface zoom to 100%
+                             > Indicate Overlay: off # disable show when entering or exiting break mode
+                             > Menu Position   : horizontal # fuckin vivaldi
+                             > Icon Style      : vivaldi icon # true
+                           > Theme Settings
+                             > Theme Editor Settings
+                               > Accent From Page: on # enable accent from page
+                               > Accent On Window: off # disable accent from window
+                               > Limit Accent Sat: 70% # set limit accent colour saturation to 70%
+                               > Colour Contrast : 2 # set colour contrast to 2
+                               > Transparency    : 7 # set transparency to 7 out of 25
+                               > Transparent Bar : on # enable transparent tab bar
+                               > Transparent Tabs: on # enable transparent background tabs
+                               > Blur            : 0 # set blur to 0
+                               > Corner Rounding : 9 # set corner rounding to 9
+                             > Theme Schedule  : operating system # set time schedule to operating system
+                             > Phillips Hue    : off # disable hue unless integrated IOT network
+                           > Start Page Settings
+                             > Page Navigation : hide titles # set start page navigation to hide titles
+                             > Dial Appearance : show title on hover # set speed dial appearance to show title on hovrt
+                             > Favicon         : on # enable show favicon
+                             > Delete          : on # enable show delete button
+                             > Thumbnail       : on # enable show thumbnail control buttons
+                             > Add Button      : on # enable show add button
+                             > Privacy Stats   : on # enable show privacy statistics
+                             > Maximum Columns : 3 # set maximum number of columns to 3
+                             > Thumbnail Size  : medium # set speed dial thumbnail size to medium
+                             > Drag Drop Render: on # enable allow drag and drop rendering
+                             > Vivaldi Game    : off # dont get distracted
+                           > Tabs Settings
+                             > Tab Bar         : on # enable show tab bar
+                             > Tab Bar Position: right # set tab bar position to right
+                             > New Tab Page    : start page # set new tab page to start page
+                             > New Tab Position: as last tab # set new tab position to as last tab
+                             > Background Open : on # enable new tab from link opens in background
+                             > Cloned Tab Pos  : next to original tab # set cloned tab position to next to original tab
+                             > Always Activate : on # enable always activate related tabs
+                             > Close Activation: activate below in tab order # set activate below in tab order
+                             > Align Buttons   : on # enable align next close button
+                             > Dbl Click Close : off # disable close tab on double click
+                             > Keep Window Open: on # enable keep window open when last tab is closed
+                             > Confirm Close   : off # disable confirm closing maximum amount of tabs
+                             > Focus Content   : on # enable focus page content on new tab
+                             > Hrzntl Scrolling: on # enable enable horizontal scrolling
+                             > Remove Spacing  : on # enable remove tab spacing in maximized windows
+                             > Trash Can       : on # enable display trash can
+                             > Synced Tabs     : on # enable display synced tabs button
+                             > Popup Thumbnails: on # enable show popup thumbnails
+                             > Tab Thumbnails  : off # disable show tab thumbnails
+                             > Close Button    : on # enable display close button
+                             > On Left Side    : on # enable display close button on left side
+                             > Permanently     : off # disable display close button on left side permantently
+                             > Tab Notos       : on # enable detect page title notifications
+                             > Indicators      : on # enable use unread indicators
+                             > Dim On Hibernate: on # enable dim tab when hibernated
+                             > Min Active Width: 30px # set active tab minimum width to 30 pixels
+                             > Load Progress   : favicon spinner # set tab load progress to favicon spinner
+                             > Tab Cycling     : cycle in tab order # set tab cycling to cycle in tab order
+                             > Show Cycler     : on # enable show tab cycler
+                             > Cycler As List  : on # enable show tab cycler as list
+                             > Switch By Scroll: off # disable switch tabs by scrolling
+                             > Minimise Active : off # disable minimise active tab
+                             > Tab Selection   : on # enable tab selection
+                             > Include Initial : on # enable include active tab in initial selection
+                             > Stacking        : accordion # set tab stacking to accordion
+                             > Open Current    : on # enable open tabs in current tab stack
+                             > Drag Drop Stack : on # enable allow stacking by drag and drop
+                             > Drop Delay      : mid # set drop delay to mid
+                             > Pinned Tabs     : dont close pinned tabs # set pinned tabs to dont close pinned tabs
+                             > Separator       : on # enable show separator below pinned tabs
+                             > Mute Tab Audio  : prioritise active tab # set mute tab audio to prioritise active tab
+                           > Panel Settings
+                             > Panel Position  : left side # set panel position to left side
+                             > Panel Toggle    : on # enable show panel toggle
+                             > Floating Panel  : off # disable floating panel
+                             > Close Inactive  : off # disable auto-close inactive panel
+                             > Close Button    : on # enable show close button
+                             > Folder Counters : on # enable show folder counters
+                             > Panel Notos     : on # enable detect page title notifications
+                             > Lazy Load       : on # enable lazy load web panels
+                             > Auto Note Open  : on # enable open panel automatically
+                             > Notify New Note : on # enable notify on adding a new note
+                             > Fetch Screenshot: on # enable fetch screenshot for new notes
+                             > Sgl Clk Win Pane: on # enable activate window panel with single click
+                             > Pinned Folder   : on # enable tab pinning in window panel
+                             > Drag Drop Stack : on # enable create tab stack by drag and drop
+                             > Unread Badge    : on # enable show unread tabs badge
+                             > Panel > Dialog  : on # enable use panel instead of dialog
+                             > Paste Translate : on # enable translate when pasting text
+                             > Sgl Clk Read Lst: on # enable activate reading list with single click
+                             > Unread Counter  : on # enable show unread counters
+                             > Sgl Clk Contacts: on # enable activate contacts panel with single click
+                             > Contact Action  : view all mail messages # set view all mail messages to default
+                           > Adress Bar Settings
+                             > Address Bar     : on # enable show address bar
+                             > Address Bar Pos : bottom # set address bar position to bottom
+                             > Full Address    : on # enable show full address
+                             > Activate Select : on # enable select adress on activation
+                             > Copy Cut Encoded: on # enable copy and cut encoded address for hyperlinks
+                             > Progress Bar    : on # enable page load progress bar
+                             > QR Code Generate: on # enable QR code generator
+                             > Auto Complete   : off # disable auto complete address
+                             > Prefer Bookmarks: off # disable always prefer bookmarks
+                             > Typing Dropdown : off # disable show drop down menu when typing
+                             > Bookmark Include: off # disable include bookmarks
+                             > Typed History   : off # disable include typed history
+                             > Frequent Visits : off # disable include frequently visited pages
+                             > Browser History : off # disable include browser history
+                             > Search Queries  : off # disable show search queries in typed history
+                             > Domain Expansion: off # disable domain expansion with shotcut
+                             > Extension Vis   : toggle only hidden extensions # set toggle only hidden extensions
+                             > Expand Dropdown : on # enable expand hidden extensions to drop down menu
+                             > HTTPS Always    : off # disable always use secure connection
+                             > Paste Strip Java: on # enable strip java from pasted stext
+                             > Highlight Base  : on # enable highlight base domain in address
+                           > Bookmarks Settings
+                             > Bookmark In New : on # enable open bookmarks in new tab
+                             > Sgl Clk Items   : on # enable open boookmark panel items with single click
+                             > Use & In Title  : off # disable use "&" in title to underline next letter in menus
+                             > Confirm Max Open: off # disable confirm opening bookmarks over maximum of 10
+                             > Data From Page  : on # enable fetch bookmark data from page metadata
+                             > Dialog Always   : off # disable always open bookmark dialog
+                             > Show Bar        : off # disable show bookmarks bar
+                             > Bar Position    : top # set bar position to top
+                             > Icon Only       : icon only # again with the fuckin sloppy tidy shit
+                           > Search Settings
+                             > Default Engine  : duckduckgo # set duckduckgo as default search engine
+                             > Private Window  : duckduckgo # set duckduckgo as private window search engine
+                             > Image Engine    : google # set google as default image search engine
+                             > Field Display   : show as text field # set field display to show as text field
+                             > Dropdown Nick   : on # enable show search engine nickname in dropdown menu
+                             > Always New Tab  : on # enable always search in a new tab
+                             > Show Icon       : on # enable show search engine icon
+                             > In Address Field: on # enable search in address field
+                             > Extensions      : on # enable control by extensions
+                             > Speed Dial Srch : off # disable show search on speed dial
+                             > Keep Last Engine: on # enable keep last selected search engine
+                             > Background Srch : on # enable page selection search in background
+                             > Address Suggests: off # disable search suggestions in address field
+                             > Nickname Only   : off # disable only when using search engine nickname
+                             > In Seach Field  : off # disable search sugestions in seach field
+                           > Quick Commands Settings
+                             > Search Types And Priority Settings
+                               > Calculator      : 1 on # enable calculator and set as first priority
+                               > Page Actions    : 2 on # enable page actions and set as second priority
+                               > Commands        : 3 # set commands as third priority
+                               > Command Chains  : 4 # set command chains as fourth priority
+                               > Web Search Ntry : 5 # set web search and URL entry as fifth priority
+                               > Bookmarks       : 6 on # enable bookmarks and set as sixth priority, set nicknames
+                               > Notes           : 7 on # enable notes and set a seventh priority
+                               > Reading List    : 8 on # enable reading list and set as eighth priority
+                               > Open Tabs       : 9 # set open tabs as ninth priority
+                               > Closed Tabs     : 10 # set closed tabs as tenth priority
+                               > Extensions      : 11 off # disable extensions and set as eleventh priority
+                               > Browsing History: 12 off # disable browsing history and set as twelvth priority
+                             > Keep Last Value : on # enable keep last typed value
+                             > Limit Vis Result: off # disable limit number of visible results
+                             > New Tab On Link : on # enable open links in a new tab
+                             > Nicname Match   : on # enable open bookmarks on nickname match
+                             > Notes In Manager: on # enable open notes in notes manager
+                           > Keyboard Settings
+                             > Focus Cycling   : cycle in component # set foucus cycling to cycle in component
+                             > Full Access     : focus all controls # set full keyboard access to focus all controls
+                             > Access Keys     : on # enable allow access keys
+                             > Enable Shortcuts: on # enable enable keyboard shortcuts
+                             > Sgl Key Shortcut: on # enable single key shortcuts
+                             > Mail And Cal    : on # enable single key shortcuts in mail and calendar
+                             > Space Key FF    : off # disable space key to fast forward
+                             > Alt Main Menu   : on # enable alt key for main menu
+                           > Mouse Settings
+                             > Gestures        : off # disable allow mouse gestures
+                             > Alt Gestures    : off # disable perform gestures with allt key
+                             > Sensitivity     : 100 # set sensitivity to 100
+                             > Rocker Gestures : off # disable allow rocker gestures
+                           > Privacy And Security Settings
+                             > Phishing Protect: on # enable phishing and malaware protection
+                             > DNS Resolve     : off # disable DNS to help resolve navigation errors
+                             > Autofill Assist : off # disable form autofill assist
+                             > Google Token    : on # enable google services token
+                             > Hangouts        : off # disable hangouts
+                             > Web Store       : on # enable web store
+                             > Address Field   : on # enable search in address field
+                             > Suggest Addr Fld: off # disable suggestions in address field
+                             > Suggest Srch Fld: off # disable suggetions in search field
+                             > Ask Not To Track: on # enable ask websites not to track me
+                             > Block Ads       : on # enable block ads on abusive sites
+                             > Hyperlink Track : off # disable allow hyperlink audit tracking
+                             > Broadcast IP    : off # disable broadcastIP for best webRTC performance
+                             > Addr Fld Hstry  : off # disable show typed history in address field
+                             > Srch Fld Hstry  : off # disable show typed history in search field
+                             > Save History    : session only # set save history to session only
+                             > Form Autofill   : off # disable form autofill
+                             > Card Autofill   : off # disable card autofill
+                             > Show Intro      : off # disable show intro
+                             > Default Permissions Settings
+                               > Autoplay        : allow # set autoplay to allow
+                               > Sound           : allow # set sound to allow
+                               > Notos           : allow # set notifications to allow
+                               > Geolocaion      : block # set geolocation to block
+                               > Camera          : ask # set camera to ask
+                               > Microphone      : ask # set microphone to ask
+                               > Motion Sensors  : block # set motion sensors to blovk
+                               > Bluetooth Device: ask # set bluetooth devices to ask
+                               > MIDI Devices    : ask # set midi devices to ask
+                               > Popups          : block # set popups to block
+                               > Idle Detection  : block # set idle dectection to block
+                             > Blocking Level  : block trackers # set blocking level to block trackers
+                             > Save Passwords  : on # enable save webpage passwords
+                             > Accept Cookied  : session only # set accept cookies to session only
+                             > Third Party     : allow all # set third party cookies to allow all
+                           > Download Settings
+                             > Noconfirm Save  : off # disable save files to default location without asking
+                             > Update Default  : on # enable update default location when choosing save as location
+                             > Auto Display DLs: on # enable display downloads automatically
+                             > Noto On Complete: on # enable notify on completed downloads
+                           > Webpage Settings
+                             > Smooth Scrolling: off # disable smooth scrolling
+                             > Hardware Accel  : off # disable hardware acceleration
+                             > PictureInPicture: on # enable picture in picture mode when available
+                             > Text Select Link: on # allow text selection in links
+                             > Translate Button: on # enable show selected text translate button
+                             > Webpage Focus   : focus all controls and links # set webpage focus to focus all controls
+                             > Spatial Navigate: on # enable spacial navigation
+                             > FS Reminder     : off # disable show fullscreen reminder
+                             > FS Hide Cursor  : on # enable hide the mouse cursor for page initiated fullscreen
+                             > Image Animation : loop # set play image animation to loop
+                             > Load Images     : always # set load images to always
+                             > Defualt Zoom    : 100% # set default zoom to 100%
+                             > Ctrl + Zoom     : on # enable use ctrl + scrol to zoom page
+                             > Use Tab Zoom    : off # disable use tab zoom
+                             > Internal PDFs   : on # enable internal PDF viewer
+                             > Widevine Plugin : on # enable widevine plugin
+                             > Display Settings: on # enable display settings on page in reader
+                             > Virticle Text   : on # enable allow virtical text direction
+                             > Font Face       : san serif # set font fce to sans serif
+                             > Font Size       : 100% # set font size to 100%
+                             > Line Height     : 1.5 # set line height to 1.5 default
+                             > Column Width    : 64 # set column width to 64
+                             > Colour Scheme   : dark # set colour scheme to dark
+                             > Text Dirextion  : horizontal # set text direction to horizontal
+                             > Default Size    : 9 # set default font size to 9
+                             > Minimum Size    : 9 # set minimum font size to 9
+                             > Font            : source code pro # source code pro everything
+                           > Mail Settings
+                             > IMAP Logs       : off # disable turn on IMAP logs in console
+                             > SMTP Logs       : off # disable turn on SMTP logs in console
+                             > Mail View Layout: vertical # set mail view layour to vertical
+                             > Relative Dates  : on # enable use relative dates
+                             > Mail Notos      : on # enable mail notos
+                             > Sent Notos      : on # enable notification on successfully sent
+                             > Count Unseen    : on # enable highlight and count unseen messages
+                             > Nter Search Key : off # disable start search using enter key
+                             > Handle Mailto   : on # enable handle mailto link in vivaldi
+                             > Status Bttn Ctr : on # enable show counters on status button
+                             > Panel Bttn Ctr  : on # enable show counters on panel button
+                             > Trash Bttn Ctr  : on # enable show counters on trash button
+                             > Spam Bttn Ctr   : on # enable show counters on spam button
+                             > Archive Bttn Ctr: on # enable show counters on archive messages
+                             > Draft Bttn Ctr  : on # enable show counters and draft messages
+                             > Display Panel   : on # enable display mail panel when viewing mail
+                             > Auto Open       : on # enable open panel automatically
+                             > Sgl Clk Tabs    : on # enable open mail tabs with single click
+                             > Active Indicate : on # enable show activity indicators
+                             > Error Messages  : on # enable error messages
+                             > Show Unsubbed   : on # enable show unsubscribed mailboxes
+                             > Mail Panel Order And Visibiity Settings
+                               > All Messages    : 1 on # enable all messages and set as first priority
+                               > Labels          : 2 on # enable labels and set as second priority
+                               > All Accounts    : 3 on # enable all accounts and set as third priority
+                               > Feeds           : 4 on # enable feeds and set as fourth priority
+                               > Mailing Lists   : 5 on # enable mailing lists and set as fifth priority
+                               > Custom Folders  : 6 off # disable custom folders and set as sixth priority
+                               > Filters         : 7 off # disable filters and set as seventh priority
+                               > Flags           : 8 off # disable flags and set as eighth priority
+                             > Check Every     : minute # set check for new mail to every minute
+                             > Mail Rendering  : prefer HTML over text # set mail rendering to prefer HTML over text
+                             > Colour Quoted   : on # enable colour quoted text
+                             > Gen Contacts    : on # enable generate contacts for message recipients
+                             > Composer Colours: inherit theme colours # set composer colours to inherit theme colours
+                             > ID Headers      : on # enable mail client identification headers
+                             > Permadel Dplcts : from all accounts and folders # set duplicate deletion preference
+                             > Add Archive     : off # disable add archive folder if missing
+                             > Enable M C F    : on # enable mail calendar and feeds
+                           > Calendar Settings
+                             > Property Icons  : on # enable show event property icons
+                             > Week Number     : on # enable show week number
+                             > Events View     : full # set events view to full
+                             > Day Starts      : 00:00 # set day to start at 00:00
+                             > Day Ends        : 00:00 # set day to end at 00:00
+                             > Collapse Hours  : no # disable collapse excluded hours
+                             > Time Increments : 1h # set time increments to 1 hour
+                             > Only Hour Girds : on # enable show only 1 hour gridlines
+                             > Hour Increments : on # enable use 1 hour increments for keyboard navigation
+                             > Click Timeslot  : select period # set click on time slot should to select period
+                             > Click Outside   : save changes # set click outside event should save changes
+                             > Calendar Editing: dialog # set calendar editing to dialog
+                             > Event Duration  : no duration # set default event duration to no duration
+                             > Default Reminder: 1h before # set default event reminder to one hour before
+                             > All Day Remind  : same day 9:00 # set reminder for all day events to same day 9am
+                             > Auto Adjust End : except for all day events # set auto adjust end time exception
+                             > Auto Focus Field: on # enable auto focus next field date time
+                             > Enable Notos    : on # enable calendar notifications
+                             > Noto Style      : system notification # set notification style to system notification
+                             > Noto Sound      : none # set notification sound to none
+                             > Send Invites    : ask each time # set sent invite email messages to ask each time
+                             > Open ICS Files  : on # enable open ICS files in vivaldi
+                             > Open Webcal Link: on # enable open webcal links in vivaldi
+                             > Enable M C F    : on # enable mail calendar and feeds
+                           > Feed Settings
+                             > Detect Feeds    : on # enable detect feeds in web pages
+                             > New Item Noto   : off # disable show notification for new feed items
+                             > Embed YT Links  : on # enable embed youtube links in attatchments
+                             > Enable M C F    : on # enable mail calendar and feeds
+                           > You & Vivaldi Settings
+                             > Person          : Person1 # set name to person1
+                             > Sync And Vivaldi Services Settings
+                               > Autocompletion  : off # disable autocomplete searches and URLs
+                               > Google Reporting: off # disable make searches and browsing better
+                           > Autofill Settings
+                             > Password Manager Settings
+                               > Offer To Save   : on # enable offer to save passwords
+                               > Auto Signin     : on # enable auto sign in to sites and apps using stored credntials
+                             > Payment Method Settings
+                               > Save And Fill   : off # disable save and fill payment methods
+                               > Allow Save Check: off # disable allow sites to check if payment methods saved
+                             > Addresses And More Settings
+                               > Save And Fill   : off # disable save and fill addresses
+                           > Privacy And Security Settings
+                             > Advanced Brwosing Data Settings
+                               > Time Tange      : all time # set time range to all time
+                               > Browsing History: on # enable delete browsing history
+                               > Download History: on # enable delete download history
+                               > Cookies And Data: on # enable delete cookies and other site data
+                               > Cache And Files : on # enable delete cached images and files
+                               > Signin Data     : on # enable delete passwords and other sign in data
+                               > Autofill Data   : on # enable delete autofill form data
+                               > Site Settings   : on # enable delete site settings
+                               > Hosted App Data : on # enable delete hosted app data
+                             > Cookies And Other Site Data Settings
+                               > General Settings: allow all cookies # set general settings to allow all cookies
+                               > Clear Cookies   : on # enable clear cookies and site data when close all windows
+                               > Do Not Track    : on # enable send a do not track message request with traffic
+                               > Preload Pages   : off # disable preload pages for faster browsing and searching
+                             > Security Settings
+                               > Safe Browsing  : standard protection # set safe browsing to standard protection
+                               > HTTPS Everwhere: off # disable always use secure connections
+                               > Use Secure DNS : with current service provider # set secure DNS to service provider
+                             > Site Settings
+                               > Location       : dont allow sites to see location # set dont allow
+                               > Camera         : sites can ask to use camera # set to ask
+                               > Microphone     : sites can ask to use microphone # set to ask
+                               > Notifications  : use quieter messaging # set notifications to use quieter messaging
+                               > Background Sync: dont allow closed sites to finish sending or receiving data # set
+                               > JavaScript     : sites can use javascript # set javascript to sites can use
+                               > Images         : sites can show images # set images to sites can show images
+                               > PopUp Redirects: dont allow sites to send pop ups or use redirects # set
+                               > Sound          : sites can play sound # set sound to sites can play sound
+                               > Ads            : block ads on sites that show intrusive or misleading ads # set
+                               > PDFs           : open PDFs in vivaldi # set PDFs to open in vivaldi
+                               > Content IDs    : sites can play protected content # # set content ID to play protected
+                               > Sign In Prompts: block sign in prompts from identity services # block sign in prompts
+                           > Appearance Settings
+                             > Home Button    : new tab page # enable show home button and set to new tab page
+                             > Bookmarks Bar  : off # disable show bookmarks bar
+                             > System Boarders: on # enable use system title bar and boarders
+                           > Search Engine Settings
+                             > Search Engine  : duckduckgo # set search engine to duckduckgo
+                           > On Startup Settings
+                             > On Startup     : open the new tab page # set to open the new tab page on startup
+                           > Languages Settings
+                             > GoogleTranslate: on # enable use google translate
+                             > Check Spelling : all available languages # set for all available languages
+                           > Downloads Settings
+                             > Ask Where      : on # enable ask where to save each file before downloading
+                           > Accessibility Settings
+                             > Quick Highlight: on # enable show a quick highlight for the focused object
+                             > Text Cursor Nav: off # disable navigate pages with a text cursor
+                           > System Settings
+                             > Background Run : off # disable continue running backgruond apps when vivaldi is closed
+                             > Hardware Accel : off # disable use hardware acceleration where possible
+                             > Proxy Settings : onion browser button # allow to override setting control
+
+VIVALDI BINARIES # important vivaldi binary files
+• /bin/vivaldi-stable # web browser
+FREQUENTLY USED # important vivaldi files and directories
+• ~/.cache/vivaldi/ # location of vivaldi user cache directory
+• ~/.config/vivaldi/ # location of vivaldi user config directory
+• /opt/vivaldi/ # location of vivaldi option extensions directory
+EXTRA SETTINGS # extra settings for vivaldi
+    # the following settings seem to be slowly getting phased out and can only be accessed through glitches that
+    # redirect there including the manage passwords prompt on webpages, once glitched into the first tab can be
+    # bookmarked for later use along with any other frequently used tabs as a workaround to the gui redirect bug
+• vivaldi://settings/people # location of you & vivaldi settings
+• vivaldi://settings/autofill # location of autofill settings
+• vivaldi://settings/privacy # location of privacy and security settings
+• vivaldi://settings/appearance # location of appearance settings
+• vivaldi://settings/search # location search engine settings
+• vivaldi://settings/defaultBrowser # location of default browser settings
+• vivaldi://settings/onStartup # location of on startup settings
+• vivaldi://settings/languages # location of languages settings
+• vivaldi://settings/downloads # location of downloads settings
+• vivaldi://settings/accessibility # location of accessibility settings
+• vivaldi://settings/system # location of system settings
+
