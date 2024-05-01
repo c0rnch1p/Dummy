@@ -26,9 +26,9 @@ $(TARGET): $(SRC) $(HEADER)
 install: $(TARGET)
 	mv $(TARGET) $(LOCBIN)
 	sudo mv $(LOCBIN)/$(TARGET) $(BINDIR)
-	sudo cp -r ../$(TARGET) $(SHARED) 
+	sudo cp -r ../Dummy $(SHARED)
 
 clean:
 	rm -f $(LOCBIN)/$(TARGET)
 	sudo rm -f $(BINDIR)/$(TARGET)
-	sudo rm -rf $(SHARED)/$(TARGET)
+	sudo rm -rf $(SHARED)/Dummy
