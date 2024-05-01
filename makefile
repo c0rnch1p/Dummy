@@ -14,7 +14,7 @@ SRC=\
 	helpfiles/programming/programming.c \
 	helpfiles/security/security.c \
 	helpfiles/utilities/utilities.c
-TARGET=Dummy
+TARGET=dummy
 HEADER=helpfiles/headers.h
 CFLAGS=-lmenu -lncurses -lm
 
