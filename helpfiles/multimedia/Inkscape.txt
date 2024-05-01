@@ -1,4 +1,4 @@
-		___ ______  ____  __ _________________  _______ ____________________
+	    ___ ______  ____  __ _________________  _______ ____________________
 	   |   \      \|    |/  |   _____/_   ___ \/   _   \\__  __  \_   _____/
 	   |   /    |  \       <\_____   \/   \__\/   /_\   \     ___/|    __)__
 	   |___\____|__/____|___|________/\_______/____|____/____|   /_________/
@@ -240,9 +240,9 @@
 	   # this is useful when a style is preferred over the default for a tool
 	 > Edit # Open the edit menu
 	   > Preferences # Select the preferences option
-		 > Tools # # Navigate to the tools section
-		   > <tool> # Select the desired tool
-		     > Take from selection # Remember the current style settings, the style
+	     > Tools # # Navigate to the tools section
+	       > <tool> # Select the desired tool
+	         > Take from selection # Remember the current style settings, the style
 	   # is now locked to that tool and can only be changed again using the above 
 	   # method unless its switched back to 'Last used style'
 

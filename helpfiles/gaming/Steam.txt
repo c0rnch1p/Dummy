@@ -1,7 +1,7 @@
-			       _____________________________  _______   _______   
-			      /   _____/__    ___/_   _____/ /   _   \ /       \  
-			      \_____   \ |    |   |    __)__/   /_\   \   \ /   \ 
-			      /________/ |____|  /_________/_____|____/____|____/                             
+	               _____________________________  _______   _______
+	              /   _____/__    ___/_   _____/ /   _   \ /       \
+	              \_____   \ |    |   |    __)__/   /_\   \   \ /   \
+	              /________/ |____|  /_________/_____|____/____|____/
 
 	DESCRIPTION
 	 Steam is a video game digital distribution service and storefront by Valve. It
@@ -115,7 +115,7 @@
 	   # go to the games library within Steam and open the context menu for the game
 	 > Properties # Select the properties option
 	   > Installed Files # Navigate to the installed files section
-		 > Verify Integrity of game files # Run the integrity check on the game, if
+	     > Verify Integrity of game files # Run the integrity check on the game, if
 	   # isues still persist or are happening for multiple games an attempt can be
 	   # made to repair the files in the library, its best to do an integrity
 	   # check on problematic games before using this feature in Steam
