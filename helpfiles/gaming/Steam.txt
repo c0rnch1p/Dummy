@@ -157,7 +157,7 @@
 	   # game window on top of the monitor, over the task bar
 	 -override_vpk # Force steam to search for custom content (single player only)
 	 -enable_addons # Search only for whitelisted custom content
-	 -nomousegrab #	Enables the alt-tab function in some Linux devices where the
+	 -nomousegrab # Enables the alt-tab function in some Linux devices where the
 	   # game is running full screen and grabbing mouse wont allow the players to
 	   # use the alt-tab function while in-game
 	 -language <language> # Change the language of the game and the menus
@@ -173,7 +173,7 @@
 	 -mesa_glthread <true> # Possible fix for games having issues with GL rendering
 	 -PROTON_NO_ESYNC 1 # Turn off esync for proton to fix stuttering and lag
 	 -DXVK_ASYNC 1 # Turn on async as a replacement for esync if its turned off
-	 %command% # Tell steam to execute these commands
+	 %command% # Tell steam to execute these commands (deprecated)
 	STEAM PLAY
 	   # Steam Play is the feature that allows users to run compatibility layers in
 	   # Linux versions of the Steam client. Proton being one of them, which is
@@ -182,8 +182,8 @@
 	   # These binaries configure Steam to globally use Native distro versions of
 	   # steam libraries, or Steam Runtime versions provided by Valve as part of
 	   # Steam. This is somewhat related to the forced method of running a
-	   # compatability layer. Software that was made for Windows needs to be patched
-	   # and reconfigured to work on Linux or Mac. Steam offers alot of support for
+	   # compatibility layer. Software that was made for Windows needs to be patched
+	   # and reconfigured to work on Linux or Mac. Steam offers a lot of support for
 	   # this, the Native builds are part of that support to further improve Steam
 	   # functionality on Linux, so its a good idea to use that
 
