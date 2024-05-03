@@ -9,7 +9,7 @@
 	 the text is indented because highlight is being used to modify the amount
 	 space characters in a tab to create a margin. The file is 80 cols by 54 lines 
 	 (minimum for bat at standard terminal size) not counting the tab chars. This
-	 file wont open if the terminal is size is too small. Idea behind formatting
+	 file wont open if the terminal size is too small. The idea behind formatting
 	 these files, is to maintain the readability of the various forms of information
 	 pertaining to different software.
 
