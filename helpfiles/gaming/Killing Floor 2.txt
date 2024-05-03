@@ -7,7 +7,19 @@
              |____|   |_______|________/________/____|____/ \_______\
      
 DESCRIPTION
-
+In Killing Floor 2, players descend into continental europe where the outbreak
+caused by Horzine Biotechs failed experiment has quickly spread and gained
+unstoppable momentum, essentially paralyzing the European Union. Just one month
+after the events in the original Killing Floor, the specimen clones are
+everywhere and civilization is in disarray. Communications have failed,
+governments have collapsed, and military forces have been systematically
+eradicated. The people of europe know survival and self preservation too well
+and some lucky survivors have gone into hiding, not all have given up hope
+though... A group of civilians and mercenaries have banded together to combat
+the outbreak and established privately funded operation bases across europe.
+Upon tracking specimen clone outbreaks, players will descend into zed-laden hot
+zones and exterminate them. 6 player co-op Zed slaughtering mayhem and now, with
+12 player Versus Survival Mode, BE the Zeds!
 COMMANDS
 
 SHORTCUTS
@@ -19,6 +31,12 @@ FILES
 BINARIES
 
 COMMON USAGE
+STEAM LAUNCH SETTINGS
+   # Best settings on Arch Linux based systems, go to the games library within
+   # Steam and open the context menu for the game
+	 > Properties # Select the properties option	   
+	   > Compatability <Proton 9.0> # Navigate to the compatability section, and
+   # select proton 9.0
 
 WEBLINKS
 
@@ -51,15 +69,7 @@ WEBLINKS
 
 
 
-DESCRIPTION  : In Killing Floor 2, players descend into continental europe where the outbreak caused by Horzine
-  Biotechs failed experiment has quickly spread and gained unstoppable momentum, essentially paralyzing the European
-  Union. Just one month after the events in the original Killing Floor, the specimen clones are everywhere and
-  civilization is in disarray. Communications have failed, governments have collapsed, and military forces have been
-  systematically eradicated. The people of europe know survival and self preservation too well and some lucky survivors
-  have gone into hiding, not all have given up hope though... A group of civilians and mercenaries have banded together
-  to combat the outbreak and established privately funded operation bases across europe. Upon tracking specimen clone
-  outbreaks, players will descend into zed-laden hot zones and exterminate them. 6 player co-op Zed slaughtering mayhem
-  and now, with 12 player Versus Survival Mode, BE the Zeds!
+DESCRIPTION  : 
 PROCESSOR    : Core 2 Duo E8200 2.66GHz, Phenom II X2 545
 GRAPHICS     : GeForce GTS 250, Radeon HD 4830
 OS           : Win7, Win8
@@ -152,5 +162,4 @@ STORAGE      : 80b GB
                              > Lens Flares     : on # enable lens flares
                              > Light Shaft     : on # enable light shafts
 
-LAUNCH OPTIONS # force use proton hotfix
-  mesa_glthread=true %command% # launch options to enable glthread
+

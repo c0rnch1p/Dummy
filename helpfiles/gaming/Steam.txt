@@ -126,8 +126,16 @@
 	   # storage management and solving issues with games in Steam is much more
 	   # effective than constantly uninstalling and reinstalling games taking up
 	   # time and bandwidth
-	LAUNCH OPTIONS # Launch options allow for the use of commands and variables at
-	   # game startup to optimise performance and fix issues
+	LAUNCH OPTIONS
+	   # Launch options allow for the use of commands and variables at game startup
+	   # to optimise performance and fix issues, go to the games library within
+	   # Steam and open the context menu for the game
+	 > Properties # Select the properties option
+	   > General # Stay on the general section
+	     > Launch Options # Enter the desired launch options into the box, please
+	   # note that some launch options may be too heavy at startup and cause
+	   # crashes, there are known issues with the fullscreen option among others
+	   # and sometimes options wont work with the dash
 	 -novid # Skip intro videos
 	 -32bit # Launch game in 32-bit mode
 	 -autoconfig # Ignore launch settings in custom config files
@@ -188,7 +196,11 @@
 	   # functionality on Linux, so its a good idea to use that
 
 	WEBLINKS
+	 ▸ 'https://appuals.com/steam-set-launch-options-and-full-list' # Launch opt
 	 ▸ 'https://github.com/ValveSoftware/steam-for-linux' # Known issues
+	 ▸ 'https://help.steampowered.com/en/faqs/view/7D01-D2DD-D75E-2955' # Launch opt
 	 ▸ 'https://steampowered.com' # Official
 	 ▸ 'https://wiki.archlinux.org/title/steam' # Arch wiki
 	 ▸ 'https://wiki.archlinux.org/title/steam/troubleshooting' # Troubleshooting
+	 ▸ 'https://www.protondb.com' # Protondb game info
+
