@@ -1,0 +1,16 @@
+GOVERLAY
+
+DESCRIPTION
+GOverlay is an open source project created by Benjamimgois and Flightlessmango
+aimed to create a Graphical UI to manage Vulkan and OpenGL overlays with a
+preview. It now supports the management of a range of different gaming utilities
+including Flightlessmanogs MangoHud, vkBasalt and ReplaySorcery. 
+
+WEBLINKS
+ ▸ 'https://flightlessmango.com' # Flightlessmango official page
+ ▸ 'https://github.com/benjamimgois/goverlay' # Goverlay git repo
+ ▸ 'https://github.com/DadSchoorse/vkBasalt' # vkBasalt graphics layer git repo
+ ▸ 'https://github.com/flightlessmango/MangoHud' # Mangohud overlay git repo
+ ▸ 'https://github.com/matanui159/ReplaySorcery' # ReplaySorcery git repo
+ ▸ 'https://man.archlinux.org/man/goverlay.1.en' # Arch manual page goverlay
+ ▸ 'https://wiki.archlinux.org/title/MangoHud' # Arch wiki mangohud
