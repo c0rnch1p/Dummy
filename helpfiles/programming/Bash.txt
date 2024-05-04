@@ -235,60 +235,69 @@
 	 ▸ '/root/.bashrc' # Root user bash config file
 
 	COMMON USAGE
-	REDIRECTIONS
+	FILE DESCRIPTORS
 	   # The concept of file descriptors, such as stdin, stdout, and stderr, is not
-	   # exclusive to Bash or any particular programming language, it's a
-	   # fundamental part of Unix-like operating systems. However, the specific
-	   # syntax for redirecting these file descriptors can vary between different
-	   # shells and environments, general file descriptors across systems
+	   # exclusive to Bash or any particular programming language, its a
+	   # fundamental part of Unix-like systems. However, the specific syntax for
+	   # redirecting these file descriptors can vary between different shells and
+	   # environments, they are as follows
 	 ▸ stdin: <0> # Standard input
 	 ▸ stdout: <1> # Standard output
 	 ▸ stderr: <2> # Standard error
-	   # These are used across various Unix-like systems and programming
-	   # environments for handling input and output operations, the way to redirect
-	   # these file descriptors can differ, Bash offers various shorthand
-	   # redirections like '&>' for redirecting both stdout and stderr
-	   # simultaneously, as well as other nuanced redirection capabilities. Sh
-	   # (POSIX shell) doesnt support some of the more nuanced redirection syntax
-	   # that Bash supports, such as '&>' require the use of more verbose forms like
-	   # ">'file' 1>&2", here are the file descriptor redirections that will work in
-	   # a standard bash script
-	0>'file' # Redirects the stdin from a file
-	1>'file' || >'file' # Redirects the stdout to a file
-	2>'file' # Redirects the stderr to a file
-	&>'file' # Redirects both stdout and stderr to the same file
-	0>&1 # Redirects standard input to standard output, rarely useful
-	0>&2 # Redirects stdin to stderr, rarely useful
-	1>&0 || >&0 # Redirects standard output to standard input, rarely useful
-	1>&2 || >&2 # Redirects standard stdout to stderr, commonly used
-	2>&0 # Redirects standard error to standard input, rarely useful
-	2>&1 # Redirects standard error to standard output, commonly used
-	0>>'file' # Append stdin to an existing file
-	1>>'file' || >>'file' # Append stdout to an existing file
-	2>>'file' # Append stderr to an existing file
-	&>>'file' # Append stdout and stderr to an existing file
-	>|'file' # Forces output to a file even if the noclobber option is set, which
+	 ▸ stdlog: <3> # Standard logging space, there are usually up to 1021 empty
+	   # file descriptors which can be used for logging and diverting data streams,
+	   # to check the number of file descriptors on the system run
+	 ulimit -n # Print the maximum number of open file descriptors for the system, 
+	   # the 'ulimit' command as well as the '/etc/security/limits.conf' file should
+	   # be used if extensive control over system parameters of this type is
+	   # required, especially for managing multiple system users which in Linux are
+	   # not always assiciated with the physical user
+	REDIRECTIONS
+	   # The longhand versions of these commands are used across various Unix-like
+	   # systems and programming environments for handling input and output
+	   # operations, the ones which have an alternative shorthand format will only
+	   # work in the bash shell
+	 0>'file' # Redirects the stdin from a file
+	 1>'file' || >'file' # Redirects the stdout to a file
+	 2>'file' # Redirects the stderr to a file
+	 &>'file' # Redirects both stdout and stderr to the same file
+	 0>&1 # Redirects standard input to standard output, rarely useful
+	 0>&2 # Redirects stdin to stderr, rarely useful
+	 1>&0 || >&0 # Redirects standard output to standard input, rarely useful
+	 1>&2 || >&2 # Redirects standard stdout to stderr, commonly used
+	 2>&0 # Redirects standard error to standard input, rarely useful
+	 2>&1 # Redirects standard error to standard output, commonly used
+	 0>>'file' # Append stdin to an existing file
+	 1>>'file' || >>'file' # Append stdout to an existing file
+	 2>>'file' # Append stderr to an existing file
+	 &>>'file' # Append stdout and stderr to an existing file
+	 >|'file' # Forces output to a file even if the noclobber option is set, which
 	   # normally prevents overwriting of files
-	exec 3>'file' # Opens file descriptor 3 for writing to a file. This is an
+	 exec 3>'file' # Opens file descriptor 3 for writing to a file. This is an
 	   # example of using exec to manage file descriptors explicitly, the default
 	   # number of available file descriptors is usually 1024 (ulimit -n)
-	exec 3>&1 # Duplicates file descriptor 3 to point to the stdout
-	exec 3>&4 # Duplicates file descriptor 3 to point to file descriptor 4
-	exec 3<&- # Closes input for file descriptor 3
-	exec 4>&- # Closes output for file descriptor 4 (same effect as above)
-	<command> <'file' # Redirects command input to read from a file for programs
+	 exec 3>&1 # Duplicates file descriptor 3 to point to the stdout
+	 exec 3>&4 # Duplicates file descriptor 3 to point to file descriptor 4
+	 exec 3<&- # Closes input for file descriptor 3
+	 exec 4>&- # Closes output for file descriptor 4 (same effect as above but
+	   # closing from the other end of the data stream)
+	HERE COMMANDS
+	   # These commands are used for the purpose of managing the input and output of
+	   # files on the command line in combination with various programs that
+	   # facillitate that functionality
+	 <command> <'file' # Redirects command input to read from a file for programs
 	   # that can take input from stdin eg.
-	sort <'data.txt' # sort the data from the file on the command line
-	<command> <<EOF >'file' # Provides multi-line input to a command via a here
+	 sort <'data.txt' # sort the data from the file on the command line
+	 <command> <<EOF >'file' # Provides multi-line input to a command via a here
 	   # document and saves the output to 'file' eg.
-	sed 's/old/new/' <<EOF >'output.txt' # Define a sed sequence that outputs to
+	 sed 's/old/new/' <<EOF >'output.txt' # Define a sed sequence that outputs to
 	   # a file when an EOF is encountered in the here document
-	old line 1 # Add a line of text with the pattern to be replaced
-	old line 2 # Another line
-	EOF # Trigger the EOF and the output is printed to the file with the new text
-	<command> <<<'string' # Here-string, redirects input to be taken from the
+	 old line 1 # Add a line of text with the pattern to be replaced
+	 old line 2 # Another line
+	 EOF # Trigger the EOF and the output is printed to the file with the new text
+	 <command> <<<'string' # Here-string, redirects input to be taken from the
 	   # provided string if thats the only form of stdin required eg.
-	grep 'pattern' <<<'string containing a pattern' # Highlight the portion of the
+	 grep 'pattern' <<<'string containing a pattern' # Highlight the portion of the
 	   # string containing the matching pattern provided to grep
 
 	WEBLINKS
