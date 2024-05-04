@@ -1,1 +1,1 @@
-make install && ./'commit.sh' 2>&1
+make install && ./'commit.sh' 2>'/dev/null'
