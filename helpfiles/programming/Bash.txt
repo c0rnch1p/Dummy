@@ -217,9 +217,6 @@
 	 ▸ glibc # GNU C library
 	 ▸ ncurses # SysV curses emulation library
 
-	REQUIRED BY
-	 # Everything in linux
-
 	BINARIES
 	 ▸ '/bin/bash' # Invoke the gnu bourne again shell
 	 ▸ '/bin/bashbug' # Send mail to the bash maintainers
@@ -281,7 +278,7 @@
 	 exec 3<&- # Closes input for file descriptor 3
 	 exec 4>&- # Closes output for file descriptor 4 (same effect as above but
 	   # closing from the other end of the data stream)
-	HERE COMMANDS
+	HERE FILES
 	   # These commands are used for the purpose of managing the input and output of
 	   # files on the command line in combination with various programs that
 	   # facillitate that functionality
