@@ -42,28 +42,28 @@
 	   # can be modified in the actions and shortcuts section of the Shotcut
 	   # help menu, there are also probably a few more shortcuts for Shotcut that
 	   # exist than the ones in this list
-	 'a' # Append
-	 'b' # Overwrite
-	 'c'|'Ctrl+c' # Copy
+	 'a' # Append item 
+	 'b' # Overwrite item
+	 'c'|'Ctrl+c' # Copy item
 	 'f' # Choose a filter
 	 'i' # Set in or trim clip in
-	 'j' # Rewind
+	 'j' # Rewind item
 	 'k'|'Space' # Pause and play
 	 'l' # Fast forward
 	 'm' # Add or edit marker at cursor
 	 'o' # Set out or move cursor to the left
 	 'p' # Switch source or project
-	 'r' # Replace
-	 's' # Split
-	 'v' # Insert
+	 'r' # Replace item
+	 's' # Split item
+	 'v' # Insert item
 	 'x'|'Shft+Del' # Ripple delete
 	 'z'|'Del'|'Backspace' # Lift
 	 '0' # Zoom fit
-	 '1...9' # Select item N
+	 '1...9' # Select item number
 	 'F2' # Rename clip (properties)
 	 'F3' # Find (recent)
 	 'F4' # Settings proxy use proxy
-	 'F5' # Reload
+	 'F5' # Reload item
 	 'F6' # Settings preview scaling none
 	 'F7' # Settings preview scaling 360p
 	 'F8' # Settings preview scaling 540p
@@ -105,9 +105,9 @@
 	 'Ctrl+s' # File save
 	 'Ctrl+t' # Enter timecode
 	 'Ctrl+u' # Add audio track
-	 'Ctrl+v' # Paste
+	 'Ctrl+v' # Paste item
 	 'Ctrl+w' # File close
-	 'Ctrl+x' # Cut
+	 'Ctrl+x' # Cut item
 	 'Ctrl+y'|'Ctrl+Shft+Z' # Edit redo
 	 'Ctrl+z' # Edit undo
 	 'Ctrl+0' # View jobs
@@ -155,14 +155,14 @@
 	 'Ctrl+Alt+u' # Remove track
 	 'Ctrl+Alt+Down' # Set current track below
 	 'Ctrl+Alt+Up' # Set current track above
-	 'Shft+A' # Append
-	 'Shft+B' # Update
-	 'Shft+C' # Copy
+	 'Shft+A' # Append playlist
+	 'Shft+B' # Update playlist
+	 'Shft+C' # Copy playlist
 	 'Shft+F' # Remove filter
 	 'Shft+I' # Ripple trim clip in
 	 'Shft+O' # Ripple trim clip out
-	 'Shft+V' # Insert
-	 'Shft+X' # Delete
+	 'Shft+V' # Insert playlist
+	 'Shft+X' # Delete playlist
 	 'Shft+Esc' # Grab focus
 	 'Shft+Nter'|'Shft+DblClk' # Goto or seek
 	 'Shft+PgDn' # Forward two seconds
