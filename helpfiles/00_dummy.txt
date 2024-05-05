@@ -15,7 +15,7 @@
 	COMMANDS
 	 dummy # Run dummy
 	 dummy --flag # Run dummy with the flag
-	 dummy -f <file> # Dummy with the flag on the file
+	 dummy -t <type> # Dummy with the flag on the file
 	 dummy -f '/path/file' # Above command with full filepath
 
 	SHORTCUTS
