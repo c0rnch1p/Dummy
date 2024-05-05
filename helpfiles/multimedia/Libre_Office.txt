@@ -73,22 +73,16 @@
 	SHORTCUTS
 	UNIVERSAL
 	 'F1' # Open LibreOffice help in browser
-	 'F6' 'Shft+F6' # Change focus to next or previous subwindow 
-	 'F10' 'Alt+f' # Activate the file menu 
-	 'Down' # Move the selection down, or selects the next element below
-	 'End' # Jump to the last entry
+	 'F6'/'Shft+F6' # Change focus to next or previous subwindow 
+	 'F10'|'Alt+f' # Activate the file menu 
+	 'Home'/'End' # Jump to the first or last entry
 	 'Esc' # Leave current mode and return to last mode or close action or dialog
-	 'Home' # Jump to the first entry
 	 'Ins' # Insert a new theme
-	 'Left' # Select the next element on the left
 	 'Nter' # Activate focused button or element in a dialog
-	 'PgDn' # Scroll down one screen
-	 'PgUp' # Scroll up one screen
-	 'Rght' # Selects the next element on the right
+	 'PgUp'/'PgDn' # Scroll up or down one screen
 	 'Spce' # Select a point of a drawing object or toggle focused item
 	 'Tab' # Advance focus to the next element in a dialog, move between areas or
 	   # select the next drawing object
-	 'Up' # Move the selection up one or select the next element above
 	 'Up'/'Down'/'Left'/'Rght' # Change active field in option section of a dialog
 	   # or move the selected point
 	 'Alt+Up'/'Down'/'Left'/'Rght' # Moves the selected object one pixel
