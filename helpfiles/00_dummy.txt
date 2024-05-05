@@ -1,13 +1,12 @@
-
-	               _________  ____ ___  ______   ______ ____ ___ 
-	               \______  \|    |   \/      \ /      \__  |   \
-	                |    |   \    |   /   \ /  \   \ /  \(__    /
-	               /_________/_______/\____|___/____|___/______/
+		           _________  ____ ___  ______   ______ ____ ___ 
+		           \______  \|    |   \/      \ /      \__  |   \
+		            |    |   \    |   /   \ /  \   \ /  \(__    /
+		           /_________/_______/\____|___/____|___/______/
 
 	DESCRIPTION
-	 This is a dummy help file for a program. Note the styling of this page,
-	 the text is indented because highlight is being used to modify the amount
-	 space characters in a tab to create a margin. The file is 80 cols by 54 lines 
+	 This is a dummy help file for a program called Dummy. Note the styling of this
+	 page, the text is indented because highlight is being used to modify the amount
+	 space characters in a tab to create a margin. The file is 80 cols by 54 lines
 	 (minimum for bat at standard terminal size) not counting the tab chars. This
 	 file wont open if the terminal size is too small. The idea behind formatting
 	 these files, is to maintain the readability of the various forms of information
@@ -34,21 +33,23 @@
 	 ▸ '/path/dummy.txt' # Dummy help file
 
 	BINARIES
-	 ▸ '/bin/dummy' # Program to view help files
+	 ▸ '/bin/dummy' # Program to view dummy files
 
 	COMMON USAGE
+	FORMATTING STYLE
 	 > Edit # Go to the edit tab in the menubar
 	   > Preferences # Select the preferences option
-	     > Exit # Search endlessly for an exit button
+		 > Exit # Search endlessly for an exit button
 	   # Minor interjection on formatting 
 	 int='notaninteger' # A wild variable 
-	 echo '$int' >> injection.txt # A lowly command
+	 echo "$int" >> injection.txt # A lowly command
 	 cat inj* | grep -o integ | sed 's/g/grate/g' # A wayward pipe
+	FORMATTING REMINDERS
+	   # Shortcut order 'Alt, Ctrl, Shift', 'letters, numbers (0..9, num1...num9,
+	   # F1...F9), symbols', include weblinks 'src, wikis, mans, officials, repos'
 
 	WEBLINKS
 	 ▸ 'https://www.dummyhub.com' # NSFW dummy vids
 	 ▸ 'https://www.pacifiers.com' # Pacifier addiction stories
 	 ▸ 'http://www.forpuppets.com' # Unknown link
 	 ▸ 'https://www.coolgenerator.com/ascii-text-generator' # ASCII titles
-
-
