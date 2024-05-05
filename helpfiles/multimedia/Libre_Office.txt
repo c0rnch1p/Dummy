@@ -4,7 +4,7 @@
 		        _____|________\___|________/____|___/_________/______
 		        \_____   \_   _____/_   _____/  |_    ___ \_   _____/
 		         /    |   \    __)  |    __)|   |     \__)/|   __)__ 
-		         \________/___/     |___/   |___|_________/_________/
+		         \________/___|     |___|   |___|_________/_________/
 
 	DESCRIPTION
 	 LibreOffice is a free and open source office productivity suite, a project of 
@@ -353,13 +353,29 @@
 	 ▸ unoconv # LibreOffice based document converter
 
 	BINARIES
-	 ▸ '/bin/loffice' # Run LibreOffice HQ 
-	 ▸ '/bin/lowriter' # Run LibreOffice Writer
-	 ▸ '/bin/localc' # Run LibreOffice Calc
-	 ▸ '/bin/lomath' # Run LibreOffice Math
-	 ▸ '/bin/lodraw' # Run LibreOffice Draw
-	 ▸ '/bin/loimpress' # Run LibreOffice Impress
 	 ▸ '/bin/lobase' # Run LibreOffice Base
+	 ▸ '/bin/localc' # Run LibreOffice Calc
+	 ▸ '/bin/lodraw' # Run LibreOffice Draw
+	 ▸ '/bin/loffice' # Run LibreOffice HQ 
+	 ▸ '/bin/loimpress' # Run LibreOffice Impress
+	 ▸ '/bin/lomath' # Run LibreOffice Math
+	 ▸ '/bin/lowriter' # Run LibreOffice Writer
+	 
+	FILES
+	 ▸ '/etc/profile.d/libreoffice-fresh.sh' # Executable containing system vars
+	 ▸ '/usr/share/bash-completion/completions/libreoffice.sh' # Custom launcher
+	 
+	COMMON USAGE
+	ENVIRONMENT VARIABLES
+	   # LibreOffice has some builtin environment variables that allow the user to
+	   # control different graphical and functioinal features of its applications,
+	   # this on uses VCL (Visual Class Library) plugins through SAL (System
+	   # Abstraction Layer) at launch in '/etc/profile.d/libreoffice-fresh.sh'
+	 SAL_USE_VCLPLUGIN='gen'|'kf6'|'qt5'|'qt6'|'gtk3'|'gtk4' # Set VCLPLUGIN to use
+	   # GenUI, KDE frameworks 6, qt5, qt6, gtk3 or gtk4, there are six exports
+	   # of the same variable in that file each with the six different possible
+	   # values by default, there are a couple hundred more compatible environment
+	   # variables, explained in detail at 'documentfoundation.org'
 	 
 	WEBLINKS
 	 ▸ 'https://documentation.libreoffice.org/en/english-documentation' # Documentation
@@ -367,4 +383,6 @@
 	 ▸ 'https://git.libreoffice.org/core' # Core git repo
 	 ▸ 'https://github.com/LibreOffice' # Git repo
 	 ▸ 'https://www.libreoffice.org' # Official page
+	 ▸ 'https://wiki.documentfoundation.org/Development/Environment_variables'
+	   # Extensive list of LibreOffice environment variables     
 
