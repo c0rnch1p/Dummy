@@ -1,7 +1,7 @@
-		           _________  ____ ___  ______   ______ ____ ___ 
-		           \______  \|    |   \/      \ /      \__  |   \
-		            |    |   \    |   /   \ /  \   \ /  \(__    /
-		           /_________/_______/\____|___/____|___/______/
+	               _________  ____ ___  ______   ______ ____ ___
+	               \______  \|    |   \/      \ /      \__  |   \
+	                |    |   \    |   /   \ /  \   \ /  \(__    /
+	               /_________/_______/\____|___/____|___/______/
 
 	DESCRIPTION
 	 This is a dummy help file for a program called Dummy. Note the styling of this
@@ -39,7 +39,7 @@
 	FORMATTING STYLE
 	 > Edit # Go to the edit tab in the menubar
 	   > Preferences # Select the preferences option
-		 > Exit # Search endlessly for an exit button
+	     > Exit # Search endlessly for an exit button
 	   # Minor interjection on formatting 
 	 int='notaninteger' # A wild variable 
 	 echo "$int" >> injection.txt # A lowly command
