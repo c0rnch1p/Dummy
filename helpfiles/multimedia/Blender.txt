@@ -13,24 +13,6 @@
 	 for 2D animations as well.
 
 	COMMANDS
-	 blender --addons <addon,*> # Comma separated list of addons to enable
-	 blender --app-template '/path/template' # Set the application template
-	 blender --debug-all # Enable all debug messages
-	 blender --debug-gpu # Enable GPU debug context and information for openGL
-	 blender --debug-io # Enable debug messages for io
-	 blender --debug-python # Enable debug messages for python
-	 blender --log <match,*> # Enable logging categories
-	 blender --log-file '/path/file' # Set a file to output the log to
-	 blender --log-level <level> # Set the logging verbosity level 
-	 blender --log-show-backtrace # Show backtrace for each log message 
-	 blender --log-show-basename # Only show file name in output without path
-	 blender --log-show-timestamp # Show a timestamp for each log message 
-	 blender --open-last # Open the most recently opened blend file
-	 blender --python-console # Run blender with an interactive python console
-	 blender --python-expr <expression> # Run the given python expression 
-	 blender --python-text <name> # Run the specified python text block
-	 blender --python-use-system-env # Allow python to use system environment vars
-	 blender --verbose <level> # Set the logging verbosity level for debug messages 
 	 blender -a # Render frames from start to end
 	 blender -a <options> 'file1' 'file2' # Run blender in animation mode for
 	   # multiple input files with different playback options
@@ -56,14 +38,64 @@
 	 blender -x <bool> # Enable the file extension for the render
 	 blender -Y # Disable automatic python script execution 
 	 blender -y # Enable automatic python script execution
-	 blender-thumbnailer <in.blend> <out.png> # Use blender as thumbnail creator
+	 blender --addons <addon,*> # Comma separated list of addons to enable
+	 blender --app-template '/path/template' # Set the application template
+	 blender --debug-all # Enable all debug messages
+	 blender --debug-cycles # Enable debug messages from Cycles
+	 blender --debug-depsgraph # Enable all debug messages from dependency graph
+	 blender --debug-depsgraph-build # Graph construction related debug messages
+	 blender --debug-depsgraph-eval # Evaluation related debug messages
+	 blender --debug-depsgraph-no-threads # Switch to single threaded evaluation
+	 blender --debug-depsgraph-pretty # Enable colors for dependency graph messages
+	 blender --debug-depsgraph-tag # Tagging related debug messages
+	 blender --debug-depsgraph-time # Timing related debug messages
+	 blender --debug-depsgraph-uuid # Verify validity of session-wide identifiers
+	   # assigned to ID datablocks
+	 blender --debug-events # Enable debug messages for the event system
+	 blender --debug-exit-on-error # Immediately exit when errors are detected
+	 blender --debug-ffmpeg # Enable debug messages from FFmpeg library
+	 blender --debug-fpe # Enable floating-point exceptions
+	 blender --debug-freestyle # Enable debug messages for Freestyle
+	 blender --debug-ghost # Enable debug messages for Ghost (Linux only)
+	 blender --debug-gpu # Enable GPU debug context and informtion for OpenGL 4.3+
+	 blender --debug-gpu-disable-ssbo # Disable use of shader storage buffer objects
+	 blender --debug-gpu-force-workarounds # Enable workarounds for typical GPU
+	   # issues and disable all GPU extensions
+	 blender --debug-handlers # Enable debug messages for event handling
+	 blender --debug-io # Enable debug messages for I/O (Collada, ...)
+	 blender --debug-jobs # Enable time profiling for background jobs
+	 blender --debug-libmv # Enable debug messages from libmv library
+	 blender --debug-memory # Enable fully guarded memory allocation and debugging
+	 blender --debug-python # Enable debug messages for Python
+	 blender --debug-value <value> # Set debug value of <value> on startup
+	 blender --debug-wintab # Enable debug messages for Wintab
+	 blender --debug-wm # Enable debug messages for the window manager, show all
+	   # operators in search and show all keymap errors
+	 blender --debug-xr # Enable debug messages for virtual reality contexts and
+	   # enable the OpenXR API validation layer
+	 blender --debug-xr-time # Virtual reality frame rendering times debug messages
+	 blender --disable-abort-handler # Disable the abort handler
+	 blender --disable-crash-handler # Disable the crash handler
+	 blender --log <match,*> # Enable logging categories
+	 blender --log-file '/path/file' # Set a file to output the log to
+	 blender --log-level <level> # Set the logging verbosity level 
+	 blender --log-show-backtrace # Show backtrace for each log message 
+	 blender --log-show-basename # Only show file name in output without path
+	 blender --log-show-timestamp # Show a timestamp for each log message 
+	 blender --open-last # Open the most recently opened blend file
+	 blender --python-console # Run blender with an interactive python console
+	 blender --python-expr <expression> # Run the given python expression 
+	 blender --python-text <name> # Run the specified python text block
+	 blender --python-use-system-env # Allow python to use system environment vars
+	 blender --verbose <level> # Set the logging verbosity level for debug messages 
+	 blender-thumbnailer 'in.blend' 'out.png' # Use blender as thumbnail creator
 
 	SHORTCUTS
 	   # Not all of these shortcuts are the default keybindings for Blender, they
 	   # can be modified in the keymap section of the Blender preferences, there are
-	   # also more shortcuts for Blender that exist than the ones in this list.
-	   # Blender has a lot of shortcuts by default, probably more than any other
-	   # application, because it has so many features that operate independently
+	   # also more shortcuts for Blender than the ones in this list. Blender has a
+	   # lot of shortcuts by default, probably more than any other application,
+	   # because it has so many features that operate independently
 	 'a' # Select all objects
 	 'b' # Set marker box select
 	 'c' # Set circle select
@@ -151,7 +183,7 @@
 	 'Ctrl+Left' 'Ctrl+Rght' # Switch to next and previous workspace
 	 'Ctrl+PgDn' # Jump to previous keyframe
 	 'Ctrl+PgUp' # Jump to next keyframe
-	 'Ctrl+Spce'# Toggle show widget area
+	 'Ctrl+Spce' # Toggle show widget area
 	 'Ctrl+Tab' # Weight paint mode
 	 'Ctrl+Up' # Maximize sub window
 	 'Ctrl+Alt+a' # Align bones

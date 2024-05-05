@@ -19,22 +19,22 @@
 	 assisted by OpenGL GPU based processing for better functionality.
 	 
 	COMMANDS
-	 shotcut --fullscreen # Open shotcut in fullscreen mode
-	 shotcut --noupgrade # Hide upgrade prompt and menu timeline on startup
-	 shotcut --qmljsdebugger <port> # Activate the QML JS debugger with a port
-	 shotcut --gpu # Use GPU processing
-	 shotcut --clear-recent # Clear recents on exit
 	 shotcut --appdata <directory> # Directory for app configuration and data
-	 shotcut --plugin <plugin> # Additional plugins to load (can be repeated)
-	 shotcut --geometry <geometry> # Window geometry (x11 syntax '100x100+50+50')
-	 shotcut --icon <icon> # Default window icon
-	 shotcut --title <title> # Set title of the first window
-	 shotcut --reverse # Sets the applications layout direction 
-	 shotcut --session <session> # Restores the application from an earlier session
+	 shotcut --clear-recent # Clear recents on exit
 	 shotcut --display <display> # Display name (overrides \${display})
+	 shotcut --dograb # Force mouse grabbing 
+	 shotcut --fullscreen # Open shotcut in fullscreen mode
+	 shotcut --geometry <geometry> # Window geometry (x11 syntax '100x100+50+50')
+	 shotcut --gpu # Use GPU processing
+	 shotcut --icon <icon> # Default window icon
 	 shotcut --name <name> # Icccm instance name 
 	 shotcut --nograb # Disable mouse grabbing 
-	 shotcut --dograb # Force mouse grabbing 
+	 shotcut --noupgrade # Hide upgrade prompt and menu timeline on startup
+	 shotcut --plugin <plugin> # Additional plugins to load (can be repeated)
+	 shotcut --qmljsdebugger <port> # Activate the QML JS debugger with a port
+	 shotcut --reverse # Sets the applications layout direction 
+	 shotcut --session <session> # Restores the application from an earlier session
+	 shotcut --title <title> # Set title of the first window
 	 shotcut --visual <id> # X server to use
 
 	SHORTCUTS
@@ -90,6 +90,28 @@
 	 'PgUp' # Backward one second
 	 'Rght'|'k+l' # Move cursor to the rght (next frame)
 	 'Up' # Move cursor to previous line or select previous filter
+	 'Alt+m' # Add or edit marker around selected clips
+	 'Alt+r' # Toggle ripple markers
+	 'Alt+0' # Reset zoom
+	 'Alt+1' # View layout logging dialog
+	 'Alt+2' # View layout editing dialog
+	 'Alt+3' # View layout FX dialog
+	 'Alt+4' # View layout color dialog
+	 'Alt+5' # View layout audio dialog
+	 'Alt+6' # View layout player dialog
+	 'Alt+#' # Zoom out
+	 'Alt+=' # Zoom in
+	 'Alt+[' # Seek previous simple keyframe
+	 'Alt+]' # Seek next simple keyframe
+	 'Alt+Down' # Open next
+	 'Alt+Left' # Seek previous edit
+	 'Alt+PgDn' # Forward jump
+	 'Alt+PgUp' # Backward jump
+	 'Alt+Rght' # Seek next edit
+	 'Alt+Up' # Open previous 
+	 'Alt+Shft+R' # Toggle ripple markers, mode, and all tracks
+	 'Alt+Shft+Down' # Move track down
+	 'Alt+Shft+Up' # Move track up	 
 	 'Ctrl+a' # Select all
 	 'Ctrl+d' # Select none
 	 'Ctrl+e' # File export video
@@ -167,28 +189,6 @@
 	 'Shft+Nter'|'Shft+DblClk' # Goto or seek
 	 'Shft+PgDn' # Forward two seconds
 	 'Shft+PgUp' # Backward two seconds
-	 'Alt+m' # Add or edit marker around selected clips
-	 'Alt+r' # Toggle ripple markers
-	 'Alt+0' # Reset zoom
-	 'Alt+1' # View layout logging dialog
-	 'Alt+2' # View layout editing dialog
-	 'Alt+3' # View layout FX dialog
-	 'Alt+4' # View layout color dialog
-	 'Alt+5' # View layout audio dialog
-	 'Alt+6' # View layout player dialog
-	 'Alt+#' # Zoom out
-	 'Alt+=' # Zoom in
-	 'Alt+[' # Seek previous simple keyframe
-	 'Alt+]' # Seek next simple keyframe
-	 'Alt+Down' # Open next
-	 'Alt+Left' # Seek previous edit
-	 'Alt+PgDn' # Forward jump
-	 'Alt+PgUp' # Backward jump
-	 'Alt+Rght' # Seek next edit
-	 'Alt+Up' # Open previous 
-	 'Alt+Shft+R' # Toggle ripple markers, mode, and all tracks
-	 'Alt+Shft+Down' # Move track down
-	 'Alt+Shft+Up' # Move track up
 	 
 	DEPENDS ON
 	 ▸ qt6-base # Cross-platform application and UI framework

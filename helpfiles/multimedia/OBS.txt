@@ -18,16 +18,16 @@
 	 FFmpeg URL. OBS Studio also supports plugins to extend its functionality.
 	 
 	COMMANDS
-	 obs --startstreaming # Automatically start streaming
-	 obs --startrecording # Automatically start recording
-	 obs --startvirtualcam # Start virtual camera (if available)
+	 obs --always-on-top # Start in always on top mode
 	 obs --collection 'string' # Use specific scene collection
+	 obs --disable-missing-files-check # No missing files dialog
+	 obs --minimize-to-tray # Minimize to system tray
 	 obs --profile 'string' # Use specific profile
 	 obs --scene 'string' # Start with specific scene
+	 obs --startrecording # Automatically start recording
+	 obs --startstreaming # Automatically start streaming
+	 obs --startvirtualcam # Start virtual camera (if available)
 	 obs --studio-mode # Enable studio mode
-	 obs --minimize-to-tray # Minimize to system tray
-	 obs --always-on-top # Start in always on top mode
-	 obs --disable-missing-files-check # No missing files dialog
 	 
 	SHORTCUTS
 	 'Del' # Remove item
