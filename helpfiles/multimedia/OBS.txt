@@ -69,25 +69,25 @@
 
 	COMMMON USAGE
 	VIDEO WINDOW
-	  # The following settings show how to keep the video window visible while OBS
-	  # is minimized, this can be useful while recording the screen with a webcam
-	  # window open somewhere for streaming
+	   # The following settings show how to keep the video window visible while OBS
+	   # is minimized, this can be useful while recording the screen with a webcam
+	   # window open somewhere for streaming
 	 > Source Panel: <+> # Click the add source button 
 	   > <video device> # Select the webcam in use
 	 > File # Go to the file menu tab
 	   > Settings # Select the settings option
 	     > General # Go to the general tab
 	       > Projectors: 'Make projectors always on top' # Scroll to projectors and
-	  # set to always on top to lock the desktop video window in front
+	   # set to always on top to lock the desktop video window in front
 	 > Source Panel # Navigate back to the source panel
 	   > <video device> [context menu]: 'Windowed Projector (Source)' # Open the
-	  # context menu for the video device and select windowed projector to display
-	  # the video window on the desktop, if the video window in the scene doesnt
-	  # automatically get replaced, then it can be hidden by dragging the projector
-	  # over the top of it because its been locked to the front of the scene
+	   # context menu for the video device and select windowed projector to display
+	   # the video window on the desktop, if the video window in the scene doesnt
+	   # automatically get replaced, then it can be hidden by dragging the projector
+	   # over the top of it because its been locked to the front of the scene
 	 > Source Panel # Navigate back to the source panel
 	   > <video device>: <👁 > # Toggle hide or unhide the scene camera, to control
-	  # the visibility of the projector (video device)
+	   # the visibility of the projector (video device)
 
 	WEBLINKS
 	 ▸ 'https://obsproject.com' # Official page

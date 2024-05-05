@@ -33,7 +33,7 @@
 	 blender --verbose <level> # Set the logging verbosity level for debug messages 
 	 blender -a # Render frames from start to end
 	 blender -a <options> 'file1' 'file2' # Run blender in animation mode for
-	  # multiple input files with different playback options
+	   # multiple input files with different playback options
 	 blender -b # Run render in background
 	 blender -d # Turn debugging on
 	 blender -E <engine> # Specify the render engine
@@ -59,11 +59,11 @@
 	 blender-thumbnailer <in.blend> <out.png> # Use blender as thumbnail creator
 
 	SHORTCUTS
-	  # Not all of these shortcuts are the default keybindings for Blender, they can
-	  # be modified in the keymap section of the Blender preferences, there are also
-	  # more shortcuts for Blender that exist than the ones in this list. Blender
-	  # has a lot of shortcuts by default, probably more than any other application,
-	  # because it has so many segregated features that operate independently
+	   # Not all of these shortcuts are the default keybindings for Blender, they
+	   # can be modified in the keymap section of the Blender preferences, there are
+	   # also more shortcuts for Blender that exist than the ones in this list.
+	   # Blender has a lot of shortcuts by default, probably more than any other
+	   # application, because it has so many features that operate independently
 	 'a' # Select all objects
 	 'b' # Set marker box select
 	 'c' # Set circle select
