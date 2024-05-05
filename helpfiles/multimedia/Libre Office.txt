@@ -1,0 +1,413 @@
+		              ____     ________________________________
+		             |    |   |   |_  __   \_____   \_   _____/
+		             |    |___|   |    |  _/       _/|    __)_ 
+		        _____|________\___|________/____|___/_________/______
+		        \_____   \_   _____/_   _____/  |_    ___ \_   _____/
+		         /    |   \    __)  |    __)|   |     \__)/|   __)__ 
+		         \________/___/     |___/   |___|_________/_________/
+
+	DESCRIPTION
+	 LibreOffice is a free and open source office productivity suite, a project of 
+	 The Document Foundation (TDF). It was forked in 2010 from OpenOffice.org, an 
+	 open sourced version of the earlier StarOffice. Its suite consists of programs 
+	 for word processing, creating and editing of spreadsheets, slideshows, diagrams
+	 and drawings, working with databases, and composing mathematical formulae. Its 
+	 available in 115 languages. TDF doesnt provide support for LibreOffice, but 
+	 Enterprised focused editions are available from companies in the ecosystem. 
+	 LibreOffice uses the OpenDocument standard as its native file format, but 
+	 supports formats of most other major office suites, including Microsoft Office, 
+	 through a variety of import and export filters. LibreOffice is available for a 
+	 variety of computing platforms, with official support for Microsoft Windows, 
+	 macOS and Linux and community builds for many other platforms. LibreOffice is 
+	 the default office suite of most popular Linux distributions. It is the most 
+	 actively developed free and open source office suite, with approximately 50 
+	 times the development activity of Apache OpenOffice, the other major descendant 
+	 of OpenOffice.org, in 2015. LibreOffice Online is an online office suite which 
+	 includes the applications Writer, Calc and Impress and provides an upstream for 
+	 projects such as commercial Collabora Online. The project was announced and a 
+	 beta released on 28 September 2010. In the nine months between January 2011 
+	 (the first stable release) and on October 2011, LibreOffice had been downloaded 
+	 about 7.5 million times. In 2015, the project claimed 120 million unique 
+	 downloading addresses from May 2011 to May 2015, excluding Linux distributions, 
+	 with 55 million of those being from May 2014 to May 2015. The Document 
+	 Foundation estimates that there are 200 million active LibreOffice users 
+	 worldwide approximately 25% are students and 10% are Linux users.
+	 
+	COMMANDS
+	 loffice -env:<var>=<value> # Set a bootstrap variable
+	 loffice -n '/path/file' # Treat files as templates for creation of new documents
+	 loffice -o '/path/file' # Open files for editing
+	 loffice -p '/path/file' # Print files to default printer
+	 loffice --base # Create a new database
+	 loffice --calc # Create an empty calc document
+	 loffice --convert-to <type:mode> --outdir '/path/file' # specify the type, its
+	   # mode and an ouput directory for the conversion
+	 loffice --convert-to <exttype>:<encoder> '/path/file' # Specify the type,
+	   # its mode and the encoding format for the conversion
+	 loffice --convert-to <type> '/path/file' # Set the output type for file conversions
+	 loffice --convert-to <type> --outdir '/path/' --convert-images-to <type> 'file'
+	   # Specify the type for the doument and contained images, and an output folder
+	 loffice --display <display> # Set display name
+	 loffice --draw # Create an empty draw document
+	 loffice --global # Create an empty global (master) writer document
+	 loffice --headless # Start in headless mode (no GUI)
+	 loffice --helpbase # Open built in or online help on base
+	 loffice --helpbasic # Open built in or online help on basic scripting language
+	 loffice --helpcalc # Open built in or online help on calc
+	 loffice --helpdraw # Open built in or online help on draw
+	 loffice --helpimpress # Open built in or online help on impress
+	 loffice --helpmath # Open built in or online help on math
+	 loffice --helpwriter # Open built in or online help on writer
+	 loffice --impress # Create an empty impress document
+	 loffice --math # Create an empty math document (formula)
+	 loffice --nologo # Disable the splash screen at program start
+	 loffice --norestore # Disable restart and file recovery after a system crash
+	 loffice --print-to-file --outdir '/path/file' # Print file to output dir
+	 loffice --pt <printer> '/path/file' # Print files to printer (\${printername})
+	 loffice --safe-mode # Start in a safe mode
+	 loffice --show # Open and shows the presentation documents
+	 loffice --view '/path/file' # Open files in viewer mode (read only)
+	 loffice --web # Create an empty html document
+	 loffice --writer # Create an empty writer document
+	 
+	SHORTCUTS
+	UNIVERSAL
+	 'F1' # Open LibreOffice help in browser
+	 'F6'/'Shft+F6' # Change focus to next or previous subwindow 
+	 'F10'|'Alt+f' # Activate the file menu 
+	 'Home'/'End' # Jump to the first or last entry
+	 'Esc' # Leave current mode and return to last mode or close action or dialog
+	 'Ins' # Insert a new theme
+	 'Nter' # Activate focused button or element in a dialog
+	 'PgUp'/'PgDn' # Scroll up or down one screen
+	 'Spce' # Select a point of a drawing object or toggle focused item
+	 'Tab' # Advance focus to the next element in a dialog, move between areas or
+	   # select the next drawing object
+	 'Up'/'Down'/'Left'/'Rght' # Change active field in option section of a dialog
+	   # or move the selected point
+	 'Alt+Up'/'Down'/'Left'/'Rght' # Moves the selected object one pixel
+	 'Ctrl+a' # Select all
+	 'Ctrl+b' # Apply the bold attribute to the selection
+	 'Ctrl+c' # Copy the selected items
+	 'Ctrl+d' # Delete the selected theme
+	 'Ctrl+f' # Activate the find toolbar
+	 'Ctrl+h' # Call the find & replace dialog
+	 'Ctrl+i' # Apply the italic attribute to the selection or insert a copy of the
+	   # selected object into the current document
+	 'Ctrl+m' # Clear direct formatting from selected text or objects 
+	 'Ctrl+n' # Create a new document
+	 'Ctrl+o' # Open a document
+	 'Ctrl+p' # Print the document or switch between themes view and object view
+	 'Ctrl+q' # Exit the application
+	 'Ctrl+r' # Open the Enter Title dialog
+	 'Ctrl+s' # Save the current document
+	 'Ctrl+t' # Open the Enter Title dialog
+	 'Ctrl+u' # Apply the underline attribute to the selection or refresh the theme
+	 'Ctrl+v' # Paste items from the clipboard
+	 'Ctrl+x' # Cut the selected items
+	 'Ctrl+y' # Redo last action
+	 'Ctrl+z' # Undo last action
+	 'Ctrl+F4'|'Alt+F4' # Close the current document
+	 'Ctrl+End' # Select the last object
+	 'Ctrl+Home' # Select the first object
+	 'Ctrl+Nter' # Insert a new drawing object or open the properties dialog
+	 'Ctrl+PgDn' # Move pointer to the last row
+	 'Ctrl+PgUp' # Move pointer to the first row
+	 'Ctrl+Spce' # Toggle row selection
+	 'Ctrl+Tab' # Insert a tab at the start of a header
+	 'Ctrl+Tab' # Select the next point of the object
+	 'Ctrl+Shft+Ins' # Insert selected object as linked object into current document
+	 'Ctrl+Shft+Tab' # Select previous point of object
+	 'Shft+F1' # Context help selector
+	 'Shft+F2' # Turn on extended tips for the current control selection
+	 'Shft+F10' # Open a context menu
+	 'Shft+Spce' # Select an additional point in or selects the current column
+	 'Shft+Tab' # Move focus to the previous element in dialog or move between areas
+	 'Shft+Ctrl+F' # Search for the last entered search term
+	 'Shft+Ctrl+J' # Switch to fullscreen mode
+	 'Shft+Ctrl+N' # Open the templates dialog
+	 'Shft+Ctrl+R' # Toggle the visibility of the page ruler
+	 'Shft+Ctrl+V' # Open the paste special dialog
+	 'Shft+Ctrl+Y' # Repeat last command
+	 'Shft+Alt+Ctrl+V' # Paste unformatted text from the clipboard
+	WRITER
+	 'F2' # Toggle show or hide formula bar
+	 'F3' # Enable AutoText
+	 'F5' # Toggle navigator on or off
+	 'F7' # Spellcheck text
+	 'F8' # Enable extension mode
+	 'F9' # Update focused fields
+	 'F11' # Toggle styles window on or off
+	 'F12' # Toggle numbering on or off
+	 'End' # Go to the end of the current line
+	 'Esc' # Escape selected text or clear selection
+	 'Home' # Go to the beginning of the current line
+	 'Ins' # Toggle insert mode on or off
+	 'Left'/'Rght' # Move cursor to the left and right
+	 'PgDn'/'PgUp' # Move up or down one page
+	 'Tab' # Move heading format down one level in the outline
+	 'Up'/'Down' # Move cursor up or down one line
+	 'Alt+Ctrl+Shft+Up'/'Down'/'Left'/'Rght' # Resize by moving top left corner
+	 'Alt+Ctrl+Up'/'Down'/'Left'/'Rght' # Resize by moving lower right corner
+	 'Alt+Nter' # Insert a new paragraph directly before or after a section
+	 'Alt+Shft+Up'/'Down'/'Left'/'Rght' # Increase or decrease size of column or
+	   # row on the left or top cell edge
+	 'Alt+Up'/'Down'/'Left'/'Rght' # Move object vertically or horizontally 
+	 'Ctrl+a' # Select all text
+	 'Ctrl+d' # Double underline selected text
+	 'Ctrl+e' # Center text
+	 'Ctrl+h' # Find and replace text
+	 'Ctrl+j' # Justify text
+	 'Ctrl+l' # Align text left
+	 'Ctrl+r' # Align text right
+	 'Ctrl+y' # Redo last action
+	 'Ctrl+0' # Apply Text Body paragraph style
+	 'Ctrl+1' # Apply Heading 1 paragraph style
+	 'Ctrl+2' # Apply Heading 2 paragraph style
+	 'Ctrl+3' # Apply Heading 3 paragraph style
+	 'Ctrl+4' # Apply Heading 4 paragraph style
+	 'Ctrl+5' # Apply Heading 5 paragraph style
+	 'Ctrl+F2' # Insert fields
+	 'Ctrl+F3' # Edit AutoText
+	 'Ctrl+F7' # Thesaurus
+	 'Ctrl+F8' # Field shadings on / off
+	 'Ctrl+F9' # Show fields
+	 'Ctrl+F10' # Non printing characters on or off
+	 'Ctrl+F11' # Sets focus to Apply Style box
+	 'Ctrl+F12' # Insert or edit Table
+	 'Ctrl+*' # Run macro field
+	 'Ctrl++' # Calculate the selected text and copy the result
+	 'Ctrl+BkSpc' # Delete text to beginning of word
+	 'Ctrl+DblClk'|'Ctrl+Shft+F10' # Dock or undock windows
+	 'Ctrl+Del' # Delete text to end of word
+	 'Ctrl+Del+Shft' # Delete text to end of sentence
+	 'Ctrl+Down' # Move cursor to beginning of next paragraph
+	 'Ctrl+End' # Go to end of document
+	 'Ctrl+End+Shft' # Go and select text to end of document
+	 'Ctrl+Home' # Go to start of document
+	 'Ctrl+Home+Shft' # Go and select text to start of document
+	 'Ctrl+Left' # Go to beginning of word
+	 'Ctrl+Nter' # Manual page break
+	 'Ctrl+PgDn' # Switch cursor between text and footer
+	 'Ctrl+PgUp' # Switch cursor between text and header
+	 'Ctrl+Rght' # Go to start of next word
+	 'Ctrl+Tab' # Inserts a tab stop
+	 'Ctrl+Up' # Move cursor to beginning of the previous paragraph
+	 'Ctrl+Shft+B' # Subscript
+	 'Ctrl+Shft+P' # Superscript
+	 'Ctrl+Shft+T' # Removes cell protection from all selected tables
+	 'Ctrl+Shft+F4' # Open Data Source View
+	 'Ctrl+Shft+F5' # Navigator on, go to page number
+	 'Ctrl+Shft+F8' # Block selection mode
+	 'Ctrl+Shft+F9' # Update Input Fields and Input Lists
+	 'Ctrl+Shft+F11' # Update Style
+	 'Ctrl+Shft+F12' # Numbering or bullets off
+	 'Ctrl+Shft+-' # Non breaking hyphen (is not used for hyphenation)
+	 'Ctrl+Shft+BkSpc' # Delete text to beginning of sentence
+	 'Ctrl+Shft+Down' # Select to end of paragraph
+	 'Ctrl+Shft+Left' # Selecting to the left word by word
+	 'Ctrl+Shft+Nter' # Column break in multi-columnar texts
+	 'Ctrl+Shft+Rght' # Selecting to the right word by word
+	 'Ctrl+Shft+Spce' # Non breaking spaces
+	 'Ctrl+Shft+Tab' # Use previous suggestion with automatic word completion
+	 'Ctrl+Shft+Up' # Select to beginning of paragraph
+	 'Ctrl+Alt+Down' # Move the active or selected paragraphs down one paragraph
+	 'Ctrl+Alt+Shft+Up'/'Down'/'Left'/'Rght' # Like Alt, but only modify active cell
+	 'Ctrl+Alt+Shft+V' # Paste the contents of the clipboard as unformatted text
+	 'Ctrl+Alt+Up' # Move the active or selected paragraphs up one paragraph
+	 'Shft+F4' # Select next frame
+	 'Shft+F8' # Additional selection mode
+	 'Shft+F9' # Calculate Table
+	 'Shft+F11' # Create Style
+	 'Shft+F12' # Bullets on
+	 'Shft+Down' # Selecting lines in a downward direction
+	 'Shft+End' # Go and select to end of line
+	 'Shft+Home' # Go and select to the beginning of a line
+	 'Shft+Left' # Move cursor with selection to the left
+	 'Shft+Nter' # Line break without paragraph change
+	 'Shft+PgDn' # Move down screen page with selection
+	 'Shft+PgUp' # Move up screen page with selection
+	 'Shft+Rght' # Move cursor with selection to the right
+	 'Shft+Tab' # The heading in format is moved up one level in the outline
+	 'Shft+Up' # Selecting lines in an upwards direction
+	 'Shft+Ctrl+Del' # Force delete
+	CALC
+	 'Alt+o' # Display the options for the current field
+	 'Alt+Down' # Increase height of current row
+	 'Alt+Left' # Decrease the width of the current column
+	 'Alt+PgDn' # Move one screen page to the right
+	 'Alt+PgUp' # Move one screen to the left
+	 'Alt+Rght' # Increase width of the current column
+	 'Alt+Up' # Decrease height of current row
+	 'Alt+Shft+Up'/'Down'/'Left'/'Rght' # Optimize the column width or row height
+	 'Ctrl+1' # Open Format Cells dialog
+	 'Ctrl+F1' # Display the comment that is attached to the current cell
+	 'Ctrl+F2' # Open the Function Wizard
+	 'Ctrl+F3' # Open the Define Names dialog
+	 'Ctrl+F7' # Open the Thesaurus if the current cell contains text
+	 'Ctrl+F8' # Highlight cells containing values
+	 'Ctrl+F9' # Update the selected chart
+	 'Ctrl+F12' # Ungroup the selected data range
+	 'Ctrl+Down' # Move the current field down one place
+	 'Ctrl+Down' # Move the cursor to the bottom edge of the current data range
+	 'Ctrl+End' # Move the current field to the last place
+	 'Ctrl+End' # Move the cursor to the last cell on the sheet that contains data
+	 'Ctrl+Home' # Move the current field to the first place
+	 'Ctrl+Home' # Move the cursor to the first cell in the sheet (A1)
+	 'Ctrl+Left' # Move the current field one place to the left
+	 'Ctrl+Left' # Move the cursor to the left edge of the current data range
+	 'Ctrl+PgDn' # Move one sheet to the right or next page in print preview
+	 'Ctrl+PgUp' # Move one sheet to the left or previous page in print preview
+	 'Ctrl+Rght' # Move the current field one place to the right
+	 'Ctrl+Rght' # Move the cursor to the right edge of the current data range
+	 'Ctrl+Up' # Move the current field up one place
+	 'Ctrl+Up' # Move the cursor to the top edge of the current data range
+	 'Ctrl+*' # Select the data range that contains the cursor
+	 'Ctrl++' # Insert cell
+	 'Ctrl+-' # Delete cell
+	 'Ctrl+/' # Select the matrix formula range that contains the cursor
+	 'Ctrl+\' # Display or hide the formulas instead of the values in all cells
+	 'Ctrl+Shft+1' # Set two decimal places, thousands separator
+	 'Ctrl+Shft+2' # Set the standard exponential format
+	 'Ctrl+Shft+3' # Set the standard date format
+	 'Ctrl+Shft+4' # Set the standard currency format
+	 'Ctrl+Shft+5' # Set the standard percentage format (two decimal places)
+	 'Ctrl+Shft+6' # Set the standard format
+	 'Ctrl+Shft+F9' # Recalculate all formulas in all sheets
+	 'Ctrl+Shft+Up'/'Down'/'Left'/'Rght' # Select all cells containing data from the
+	   # current cell to the end of the continuous range of data cells
+	 'F2' # Switch to Edit mode and place the cursor at the end of current cell
+	 'F4' # Rearrange the relative or absolute references (eg. A1, $A$1, $A1, A$1)
+	   # in the input field
+	 'F5' # Show or hide the Navigator
+	 'F7' # Check spelling in the current sheet
+	 'F8' # Turn additional selection mode on or off
+	 'F9' # Recalculate changed formulas in the current sheet
+	 'F11' # Open the Styles window where
+	 'F12' # Group the selected data range
+	 'Del' # Remove the current field from the area
+	 'Down' # Move the focus down one item in the current dialog area
+	 'End' # Move the cursor to the last cell of the current row
+	 'End' # Select the last item in the current dialog area
+	 'Enter' # Move the cursor down one cell in a selected range
+	 'Home' # Move the cursor to the first cell of the current row
+	 'Home' # Select the first item in the current dialog area
+	 'Left' # Move the focus one item to the left in the current dialog area
+	 'Rght' # Move the focus one item to the right in the current dialog area
+	 'Tab' # Move forwards through dialog element selection
+	 'Up' # Move the focus up one element in the current dialog area
+	 'Shft+F5' # Trace dependents
+	 'Shft+F7' # Trace precedents
+	 'Shft+F11' # Create a document template
+	 'Shft+End' # Select cells from current cell to last cell of the current row
+	 'Shft+Home' # Select cells from current cell to first cell of the current row
+	 'Shft+PgDn' # Select cells from current cell down to one page in the current
+	   # column or extend the existing selection one page down
+	 'Shft+PgUp' # Select cells from the current cell up to one page in the current
+	   # column or extends the existing selection one page up
+	 'Shft+Tab' # Move backwards through dialog element selection
+	 'Shft+Ctrl+F2' # Move the cursor to the Input line where
+	 'Shft+Ctrl+F4' # Show or Hides the Database explorer
+	 'Shft+Ctrl+F5' # Move the cursor from the Input line to the Sheet area box
+	 'Shft+Ctrl+F11' # Update the templates
+	 'Shft+Ctrl+PgDn' # Add the next sheet to the current selection of sheets
+	 'Shft+Ctrl+PgUp' # Add the previous sheet to the current selection of sheets
+
+	DEPENDS ON
+	 ▸ boost-libs # Free peer reviewed portable C++ source runtime libraries
+	 ▸ box2d # 2D rigid body simulation library for games
+	 ▸ cairo # 2D graphics library with support for multiple output devices
+	 ▸ clucene # C++ port of the high-performance text search engine Lucene
+	 ▸ curl # Command line tool and library for transferring data with URLs
+	 ▸ dbus # Freedesktop.org message bus system
+	 ▸ desktop-file-utils # Command line utilities for working with desktop entries
+	 ▸ expat # XML parser library
+	 ▸ fontconfig # Library for configuring and customizing font access
+	 ▸ freetype2 # Font rasterization library
+	 ▸ gcc-libs # Runtime libraries shipped by GCC
+	 ▸ glib2 # Low level core library
+	 ▸ glibc # GNU C Library
+	 ▸ gpgme # C wrapper library for GnuPG
+	 ▸ graphite # Re-implementation of the SIL graphite text processing engine
+	 ▸ harfbuzz-icu # OpenType text shaping engine with ICU integration
+	 ▸ hicolor-icon-theme # Freedesktop.org Hicolor icon theme
+	 ▸ hunspell # Spell checker and morphological analyzer library and program
+	 ▸ hyphen # library for high quality hyphenation and justification
+	 ▸ icu # international components for unicode library
+	 ▸ lcms2 # small footprint color management engine
+	 ▸ libabw # Library that parses the file format of AbiWord documents
+	 ▸ libatomic_ops # Provide semi-portable access to atomic memory operations
+	 ▸ libcdr # CorelDraw file format importer library for LibreOffice
+	 ▸ libcmis # C and C++ client library for the CMIS protocol
+	 ▸ libcups # OpenPrinting CUPS, client libraries and headers
+	 ▸ libe-book # Library for import of reflowable e-book formats
+	 ▸ libepoxy # Library handling OpenGL function pointer management
+	 ▸ libepubgen # EPUB generator for librevenge
+	 ▸ libetonyek # Library and a toolset for converting Apple Keynote presentations
+	 ▸ libexttextcat # N-Gram based text categorization library
+	 ▸ libfreehand # Library for import of Aldus, Macromedia and Adobe FreeHand docs
+	 ▸ libjpeg-turbo # JPEG image codec with accelerated baseline compression
+	 ▸ liblangtag # Interface libs to access tags for identifying languages
+	 ▸ libldap # Lightweight Directory Access Protocol (LDAP) client libraries
+	 ▸ libmspub # Microsoft Publisher file format parser library (latest snapshot)
+	 ▸ libmwaw # Import library for some old mac text documents
+	 ▸ libnumbertext # Number to number name and money text conversion library
+	 ▸ libodfgen # Library for generating documents in Open Document Format
+	 ▸ liborcus # File import filter library for spreadsheet documents
+	 ▸ libpagemaker # Library that parses the file format of PageMaker documents
+	 ▸ libpng # Collection of routines used to create PNG format graphics files
+	 ▸ libqxp # Library that parses the file format of QuarkXPress documents
+	 ▸ librevenge # Library for REVerses ENGineered formats filters
+	 ▸ libstaroffice # Filter for old StarOffice documents based on librevenge
+	 ▸ libtiff # Library for manipulation of TIFF images
+	 ▸ libtommath # Optimized and routines for integer based theoretic applications
+	 ▸ libvisio # Library providing ability to interpret and import visio diagrams
+	 ▸ libwebp # WebP library and conversion tools
+	 ▸ libwpd # Library for importing WordPerfect (tm) documents
+	 ▸ libwps # Microsoft Works file word processor format import filter library
+	 ▸ libx11 # X11 client library
+	 ▸ libxext # X11 miscellaneous extensions library
+	 ▸ libxinerama # X11 Xinerama extension library
+	 ▸ libxml2 # XML C parser and toolkit
+	 ▸ libxrandr # x11 randr extension library
+	 ▸ libxslt # XML stylesheet transformation library
+	 ▸ libzmf # Library for import of Zoner drawing and bitmap files
+	 ▸ neon # HTTP and WebDAV client library with a C interface
+	 ▸ nspr # Netscape Portable Runtime
+	 ▸ nss # Network Security Services
+	 ▸ openjpeg2 # Open source JPEG 2000 codec
+	 ▸ pango # Library for layout and rendering of text
+	 ▸ poppler # PDF rendering library based on XPDF
+	 ▸ python # Next generation of the python high level scripting language
+	 ▸ raptor # C library that parses RDF, XML and N-Triples into RDF triples
+	 ▸ redland # Library that provides a high level interface to RDF data
+	 ▸ shared-mime-info # Freedesktop.org Shared MIME Info
+	 ▸ xdg-utils # Command-line tools that assist with desktop integration tasks
+	 ▸ xmlsec # XML Security Library is a C library based on LibXML2
+	 ▸ zlib # Compression library implementing the deflate compression method
+	 ▸ zxing-cpp # C++ library to decode QRCode
+
+	REQUIRED BY
+	 ▸ libreoffice-extension-languagetool # Open source style and grammar checker
+	 ▸ libreoffice-extension-texmaths # LaTeX equation editor for LibreOffice
+	 ▸ libreoffice-extension-writer2latex # LaTeX equation editor for LibreOffice
+	 ▸ libreoffice-fresh-sdk # Software development kit for LibreOffice Fresh
+	 ▸ parlatype-libreoffice-extension # Parlatype LibreOffice extension
+	 ▸ unoconv # LibreOffice based document converter
+
+	BINARIES
+	 ▸ '/bin/loffice' # Run LibreOffice HQ 
+	 ▸ '/bin/lowriter' # Run LibreOffice Writer
+	 ▸ '/bin/localc' # Run LibreOffice Calc
+	 ▸ '/bin/lomath' # Run LibreOffice Math
+	 ▸ '/bin/lodraw' # Run LibreOffice Draw
+	 ▸ '/bin/loimpress' # Run LibreOffice Impress
+	 ▸ '/bin/lobase' # Run LibreOffice Base
+	 
+	WEBLINKS
+	 ▸ 'https://documentation.libreoffice.org/en/english-documentation' # Documentation
+	 ▸ 'https://en.wikipedia.org/wiki/LibreOffice' # Wikipedia
+	 ▸ 'https://git.libreoffice.org/core' # Core git repo
+	 ▸ 'https://github.com/LibreOffice' # Git repo
+	 ▸ 'https://www.libreoffice.org' # Official page
+
