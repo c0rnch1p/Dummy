@@ -4,11 +4,11 @@
 	        |________/_______\________/____|____/________/________/____|____/
 
 	DESCRIPTION
-	 Blender is a free and open source 3D computer graphics software tool set used 
-	 for animation, visual effects, printed models, motion graphics, interactive 3D 
-	 applications and virtual reality. Its often used alongside video game engines 
-	 like Unreal and Unity. It supports the entirety of the 3D pipeline, modeling, 
-	 rigging, animation, simulation, rendering, compositing, motion tracking, and 
+	 Blender is a free and open source 3D computer graphics software tool set used
+	 for animation, visual effects, printed models, motion graphics, interactive 3D
+	 applications and virtual reality. Its often used alongside video game engines
+	 like Unreal and Unity. It supports the entirety of the 3D pipeline, modeling,
+	 rigging, animation, simulation, rendering, compositing, motion tracking, and
 	 video editing. While highly proficient with 3D animation Blender is often used
 	 for 2D animations as well.
 
@@ -49,15 +49,15 @@
 	 blender --debug-depsgraph-pretty # Enable colors for dependency graph messages
 	 blender --debug-depsgraph-tag # Tagging related debug messages
 	 blender --debug-depsgraph-time # Timing related debug messages
-	 blender --debug-depsgraph-uuid # Verify validity of session-wide identifiers
-	   # assigned to ID datablocks
+	 blender --debug-depsgraph-uuid # Verify validity of session wide identifiers
+	   # assigned to ID data blocks
 	 blender --debug-events # Enable debug messages for the event system
 	 blender --debug-exit-on-error # Immediately exit when errors are detected
 	 blender --debug-ffmpeg # Enable debug messages from FFmpeg library
-	 blender --debug-fpe # Enable floating-point exceptions
+	 blender --debug-fpe # Enable floating point exceptions
 	 blender --debug-freestyle # Enable debug messages for Freestyle
 	 blender --debug-ghost # Enable debug messages for Ghost (Linux only)
-	 blender --debug-gpu # Enable GPU debug context and informtion for OpenGL 4.3+
+	 blender --debug-gpu # Enable GPU debug context and information for OpenGL 4.3+
 	 blender --debug-gpu-disable-ssbo # Disable use of shader storage buffer objects
 	 blender --debug-gpu-force-workarounds # Enable workarounds for typical GPU
 	   # issues and disable all GPU extensions
@@ -103,7 +103,7 @@
 	 'f' # Change brush size or make face from selected object
 	 'g' # Move selected object (focus dependent)
 	 'h' # (Un)hide node, change handle to bezier
-	 'h' 'Alt+h' # Hide and unhide selected object 
+	 'h'|'Alt+h' # Hide and unhide selected object 
 	 'i' # Insert keyframe or use render buffer
 	 'k' # Split strip
 	 'l' # Select connected or select linked objects
@@ -120,7 +120,6 @@
 	 'w' # Only render selected, subdivide selected object or switch cursor modes
 	 'x' # Delete item (focus dependent)
 	 'y' # Separate images
-	 '.' # Zoom to object
 	 'Num0' # Camera view
 	 'Num1' # Switch to front view (x)
 	 'Num2' # Nudge viewport down
@@ -131,20 +130,18 @@
 	 'Num7' # Switch to top view (z)
 	 'Num8' # Nudge viewport up
 	 'Num9' # View orbit
-	 ']' '[' # Scroll up and down hierarchy
-	 'Down' # Back 10 frames
-	 'Esc' # Stop render process
 	 'F3' # Save render
 	 'F11' # Show last render
 	 'F12' # Render image
+	 'Esc' # Stop render process
 	 'Home' # Show all frames
-	 'Left' # Previous frame
-	 'Page+Down' # Previous strip
-	 'Page+Up' # Next strip
-	 'Rght' # Next frame
+	 'Left'/'Rght' # Next or previous frame
+	 'PgUp'/'PgDn' # Next or previous strip
 	 'Spce' # Play animation
 	 'Tab' # Edit group or edit object mode
-	 'Up' # Forward 10 frames
+	 'Up'/'Down' # Forward or back 10 frames
+	 '.' # Zoom to object
+	 ']'/'[' # Scroll up and down hierarchy
 	 'Alt+a' # Play/stop animation
 	 'Alt+e' # Relax pose
 	 'Alt+f' # Fill align selected faces or switch bone direction
@@ -176,13 +173,12 @@
 	 'Ctrl+t' # Change selected object track, tilt object, or toggle FPS
 	 'Ctrl+u' # Save over default scene
 	 'Ctrl+v' # Paste pose or paste strip
-	 'Ctrl+z' # Undo last action
+	 'Ctrl+z'/'Shft+Ctrl+Z' # Undo or redo last action
 	 'Ctrl+1...4' # Add subdivision level
 	 'Ctrl+F4' # Make screen cast
 	 'Ctrl+F12' # Render animation
-	 'Ctrl+Left' 'Ctrl+Rght' # Switch to next and previous workspace
-	 'Ctrl+PgDn' # Jump to previous keyframe
-	 'Ctrl+PgUp' # Jump to next keyframe
+	 'Ctrl+Left'/'Ctrl+Rght' # Switch to next and previous workspace
+	 'Ctrl+PgUp'/'Ctrl+PgDn' # Jump to next and previous keyframe
 	 'Ctrl+Spce' # Toggle show widget area
 	 'Ctrl+Tab' # Weight paint mode
 	 'Ctrl+Up' # Maximize sub window
@@ -199,7 +195,6 @@
 	 'Shft+M' # View bone layers
 	 'Shft+S' # Snap strip to scrubber
 	 'Shft+W' # Set bone flag
-	 'Shft+\`' # Enable fly mode 
 	 'Shft+F1' # Append file
 	 'Shft+F2' # Show logic editor on workspace
 	 'Shft+F3' # Show node editor on workspace
@@ -211,9 +206,8 @@
 	 'Shft+F9' # Show outliner on workspace
 	 'Shft+F10' # Show UV image editor on workspace
 	 'Shft+F11' # Show text editor on workspace
-	 'Shft+Left' # Jump to start point
-	 'Shft+Rght' # Jump to end point
-	 'Shft+Ctrl+Z' # Redo action
+	 'Shft+Left'/'Shft+Rght' # Jump to start or end point
+	 'Shft+\\' # Enable fly mode 
 	 'Shft+Alt+F' # Beauty fill align selected faces 
 	 'Shft+Alt+L' # Unlock strip
 	 
@@ -264,5 +258,7 @@
 	 ▸ 'https://docs.blender.org/manual/en/latest/' # Blender manual
 	 ▸ 'https://en.wikipedia.org/wiki/Blender_(software)' # Wikipedia
 	 ▸ 'https://github.com/blender/blender' # Git repo
+	 ▸ 'https://projects.blender.org/blender/blender' # Core git repo
+	 ▸ 'https://wiki.archlinux.org/title/Blender' # Arch wiki
 	 ▸ 'https://www.blender.org' # Official page
 
