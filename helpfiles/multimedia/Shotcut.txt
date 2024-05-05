@@ -62,12 +62,12 @@
 	 '1...9' # Select timeline number
 	 'F2' # Rename clip (properties)
 	 'F3' # Find (recent)
-	 'F4' # Settings proxy use proxy
+	 'F4' # Set proxy use proxy
 	 'F5' # Reload timeline
-	 'F6' # Settings preview scaling none
-	 'F7' # Settings preview scaling 360p
-	 'F8' # Settings preview scaling 540p
-	 'F9' # Settings preview scaling 720p
+	 'F6' # Set preview scaling none
+	 'F7' # Set preview scaling 360p
+	 'F8' # Set preview scaling 540p
+	 'F9' # Set preview scaling 720p
 	 'F1' # Help topic
 	 'F11'|'Ctrl+Shft+F' # View fullscreen
 	 '#' # Zoom out
@@ -110,16 +110,16 @@
 	 'Ctrl+x' # Cut timeline
 	 'Ctrl+y'|'Ctrl+Shft+Z' # Edit redo
 	 'Ctrl+z' # Edit undo
-	 'Ctrl+0' # View jobs
-	 'Ctrl+1' # View audio peak meter
-	 'Ctrl+2' # View properties
-	 'Ctrl+3' # View recent
-	 'Ctrl+4' # View playlist
-	 'Ctrl+5' # View timeline
-	 'Ctrl+6' # View filters
-	 'Ctrl+7' # View keyframes
-	 'Ctrl+8' # View history
-	 'Ctrl+9' # View export
+	 'Ctrl+0' # View jobs dialog
+	 'Ctrl+1' # View audio peak meter dialog
+	 'Ctrl+2' # View properties dialog
+	 'Ctrl+3' # View recent dialog
+	 'Ctrl+4' # View playlist dialog
+	 'Ctrl+5' # View timeline dialog
+	 'Ctrl+6' # View filters dialog
+	 'Ctrl+7' # View keyframe dialogs
+	 'Ctrl+8' # View history dialog
+	 'Ctrl+9' # View export dialog
 	 'Ctrl+#' # Make tracks shorter
 	 'Ctrl+=' # Make tracks taller
 	 'Ctrl+Down' # Move selection down
@@ -170,12 +170,12 @@
 	 'Alt+m' # Add or edit marker around selected clips
 	 'Alt+r' # Toggle ripple markers
 	 'Alt+0' # Reset zoom
-	 'Alt+1' # View layout logging
-	 'Alt+2' # View layout editing
-	 'Alt+3' # View layout FX
-	 'Alt+4' # View layout color
-	 'Alt+5' # View layout audio
-	 'Alt+6' # View layout player
+	 'Alt+1' # View layout logging dialog
+	 'Alt+2' # View layout editing dialog
+	 'Alt+3' # View layout FX dialog
+	 'Alt+4' # View layout color dialog
+	 'Alt+5' # View layout audio dialog
+	 'Alt+6' # View layout player dialog
 	 'Alt+#' # Zoom out
 	 'Alt+=' # Zoom in
 	 'Alt+[' # Seek previous simple keyframe
