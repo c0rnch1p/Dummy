@@ -1,5 +1,5 @@
 	                        ___________________ _________
-	                        \_____   \__   _  _)   _____/
+	                        \_  __   \__   _  _)   _____/
 	                        /    |    \   __   \_____   \
 	                        \_________/________/________/
 
@@ -47,9 +47,9 @@
 	 ▸ pciutils # PCI bus configuration space access library and tools
 	 ▸ qt6-svg # Classes for displaying the contents of SVG files
 	 ▸ curl # Command line tool and library for transferring data with URLs
-	 ▸ jack2 # JACK low-latency audio server
+	 ▸ jack2 # JACK low latency audio server
 	 ▸ gtk-update-icon-cache # GTK icon cache updater
-	 ▸ pipewire # Low-latency audio and video router and processor
+	 ▸ pipewire # Low latency audio and video router and processor
 	 ▸ libxcomposite # X11 Composite extension library
 	 ▸ libdatachannel # C and C++ WebRTC network library
 	 

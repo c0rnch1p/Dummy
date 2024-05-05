@@ -62,7 +62,7 @@
 	 blender --debug-gpu-force-workarounds # Enable workarounds for typical GPU
 	   # issues and disable all GPU extensions
 	 blender --debug-handlers # Enable debug messages for event handling
-	 blender --debug-io # Enable debug messages for I/O (Collada, ...)
+	 blender --debug-io # Enable debug messages for IO
 	 blender --debug-jobs # Enable time profiling for background jobs
 	 blender --debug-libmv # Enable debug messages from libmv library
 	 blender --debug-memory # Enable fully guarded memory allocation and debugging
@@ -173,7 +173,7 @@
 	 'Ctrl+p' # Change selected object parent
 	 'Ctrl+r' # Create a loop cut on selected object or rotate object
 	 'Ctrl+s' # Save current session
-	 'Ctrl+t' # Change selected object track, tilt object, or toggle frames/seconds
+	 'Ctrl+t' # Change selected object track, tilt object, or toggle FPS
 	 'Ctrl+u' # Save over default scene
 	 'Ctrl+v' # Paste pose or paste strip
 	 'Ctrl+z' # Undo last action
@@ -220,7 +220,7 @@
 	DEPENDS ON
 	 ▸ alembic # Open framework for storing and sharing scene data
 	 ▸ bash # GNU Bourne Again shell
-	 ▸ boost-libs # Free peer reviewed portable C++ source libraries (runtime libs)
+	 ▸ boost-libs # Free peer reviewed portable C++ source runtime libraries
 	 ▸ draco # Library for compressing and decompressing 3D meshes and point clouds
 	 ▸ embree # Collection of high performance ray tracing kernels
 	 ▸ expat # XML parser library
@@ -245,7 +245,24 @@
 	 ▸ '/bin/blender-thumbnailer' # Run blender thumbnailer
 	 ▸ '/bin/blender-softwaregl' # Run blender softwareGL version
 
+	COMMON USAGE
+	ENVIRONMENT VARIABLES
+	   # These are the shell variables that correspond to Blender, their values must
+	   # reference an existing directory or they will be ignored
+	 BLENDER_SYSTEM_DATAFILES='/path/file' # Directory for system wide data files
+	 BLENDER_SYSTEM_PYTHON='/path/file' # Directory for system Python libraries
+	 BLENDER_SYSTEM_RESOURCES='/path/file' # Directory for system files
+	 BLENDER_SYSTEM_SCRIPTS='/path/file' # Directory for system wide scripts
+	 BLENDER_USER_CONFIG='/path/file' # Directory for user configuration files
+	 BLENDER_USER_DATAFILES='/path/file' # Directory for user data files
+	 BLENDER_USER_RESOURCES='/path/file' # Directory for user files
+	 BLENDER_USER_SCRIPTS='/path/file' # Directory for user scripts
+	 OCIO='/path/file' # Path to override the OpenColorIO configuration file
+
 	WEBLINKS
-	 ▸ 'https://www.blender.org' # Official page
-	 ▸ 'https://docs.blender.org/manual/en/latest/' # Blender manual
 	 ▸ 'https://docs.blender.org/api/current/index.html' # Python API manual
+	 ▸ 'https://docs.blender.org/manual/en/latest/' # Blender manual
+	 ▸ 'https://en.wikipedia.org/wiki/Blender_(software)' # Wikipedia
+	 ▸ 'https://github.com/blender/blender' # Git repo
+	 ▸ 'https://www.blender.org' # Official page
+

@@ -1,5 +1,5 @@
 #include "all_h3lp.h"
-#define TOTAL 14
+#define TOTAL 15
 
 // file list
 char *allh3lpFiles[TOTAL]={
@@ -13,6 +13,7 @@ char *allh3lpFiles[TOTAL]={
 	"multimedia/GIMP",
 	"multimedia/Inkscape",
 	"multimedia/Kdenlive",
+	"multimedia/Libre Office",	
 	"multimedia/OBS",
 	"multimedia/Reaper",
 	"multimedia/Shotcut",

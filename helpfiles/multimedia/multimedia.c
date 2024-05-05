@@ -1,5 +1,5 @@
 #include "multimedia.h"
-#define TOTAL 8
+#define TOTAL 9
 
 // file list
 char *multimediaFiles[TOTAL]={
@@ -8,6 +8,7 @@ char *multimediaFiles[TOTAL]={
 	"multimedia/GIMP",
 	"multimedia/Inkscape",
 	"multimedia/Kdenlive",
+	"multimedia/Libre Office",	
 	"multimedia/OBS",	
 	"multimedia/Reaper",
 	"multimedia/Shotcut",
