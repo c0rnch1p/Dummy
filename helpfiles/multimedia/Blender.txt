@@ -1,1 +1,219 @@
-Blender
+		   _______________  ___________ ____________________________________
+		   \__   _  _)    | \_   _____//       \__  __  \_   _____/__  __   \       
+		    |   __   \    |__|    __)_/    |    \    |   \    __)_ |       _/
+		    |________/_______\________/____|____/________/________/____|____/
+		    
+	DESCRIPTION 
+	 Blender is a free and open source 3D computer graphics software tool set used 
+	 for animation, visual effects, printed models, motion graphics, interactive 3D 
+	 applications and virtual reality. Its often used alongside video game engines 
+	 like Unreal and Unity. It supports the entirety of the 3D pipeline, modeling, 
+	 rigging, animation, simulation, rendering, compositing, motion tracking, and 
+	 video editing. While highly proficient with 3D animation Blender is often used
+	 for 2D animations as well.
+
+	COMMANDS
+	 blender --addons <addon,*> # Comma separated list of addons to enable
+	 blender --app-template '/path/template' # Set the application template
+	 blender --debug-all # Enable all debug messages
+	 blender --debug-gpu # Enable GPU debug context and information for openGL
+	 blender --debug-io # Enable debug messages for io
+	 blender --debug-python # Enable debug messages for python
+	 blender --log <match,*> # Enable logging categories
+	 blender --log-file '/path/file' # Set a file to output the log to
+	 blender --log-level <level> # Set the logging verbosity level 
+	 blender --log-show-backtrace #	Show backtrace for each log message 
+	 blender --log-show-basename # Only show file name in output without path
+	 blender --log-show-timestamp # Show a timestamp for each log message 
+	 blender --open-last # Open the most recently opened blend file
+	 blender --python-console # Run blender with an interactive python console
+	 blender --python-expr <expression> # Run the given python expression 
+	 blender --python-text <name> # Run the specified python text block
+	 blender --python-use-system-env # Allow python to use system environment vars
+	 blender --verbose <level> # Set the logging verbosity level for debug messages 
+	 blender -a # Render frames from start to end
+	 blender -a <options> 'file1' 'file2' # Run blender in animation mode for
+	   # multiple input files with different playback options
+	 blender -b # Run render in background
+	 blender -d # Turn debugging on
+	 blender -E <engine> # Specify the render engine
+	 blender -e <frame> # Run playback until frame
+	 blender -e <frame> # Set render to end at frame 
+	 blender -F <format> # Set the render format
+	 blender -f <fps> <base> # Specify fps to run playback with
+	 blender -f <frame> # Render frame and save it
+	 blender -j <frame> # Set playback frame step to frame
+	 blender -M # Maximize on opening graphical interface
+	 blender -m # Read playback file from disk (no buffer)
+	 blender -o '/path/file' # Set the render path and file name
+	 blender -P '/path/file' # Run the specified python script
+	 blender -s <frame> # Set render to start at frame
+	 blender -s <frame> # Start playback from frame
+	 blender -S <name> # Set the active scene name for rendering
+	 blender -t <threads> #	Use amount of threads for rendering or other processes
+	 blender -W # Open graphical interface in fullscreen mode
+	 blender -w # Open graphical interface with borders
+	 blender -x <bool> # Enable the file extension for the render
+	 blender -Y # Disable automatic python script execution 
+	 blender -y # Enable automatic python script execution
+	 blender-thumbnailer <in.blend> <out.png> # Use blender as thumbnail creator
+
+	SHORTCUTS
+	  # Not all of these shortcuts are the default keybindings for Blender, they can
+	  # be modified in the keymap section of the Blender preferences, there are also
+	  # more shortcuts for Blender that exist than the ones in this list. Blender
+	  # has a lot of shortcuts by default, probably more than any other application,
+	  # because it has so many segregated features that operate independently
+	 'a' # Select all objects
+	 'b' # Set marker box select
+	 'c' # Set circle select
+	 'e' # Extrude selected object or set end frame
+	 'f' # Change brush size or make face from selected object
+	 'g' # Move selected object (focus dependent)
+	 'h' # (Un)hide node, change handle to bezier
+	 'h' | 'Alt+h' # Hide or unhide selected object 
+	 'i' # Insert keyframe or use render buffer
+	 'k' # Split strip
+	 'l' # Select connected or select linked objects
+	 'm' # Add marker, move selected object to layer or move to bone layers
+	 'n' # Properties or toggle show properties
+	 'o' # Toggle propositional editing mode
+	 'p' # Separate selected object
+	 'r' # Rotate selected object (focus dependent)
+	 's' # Scale selected object (focus dependent) or set start frame
+	 't' # Toggle show toolbar
+	 'v' # Change handle to vector
+	 'v' # Rip selected object
+	 'v' # Zoom in background
+	 'w' # Only render selected, subdivide selected object or switch cursor modes
+	 'x' # Delete item (focus dependent)
+	 'y' # Separate images
+	 '.' # Zoom to object
+	 'Num0' # Camera view
+	 'Num1' # Switch to front view (x)
+	 'Num2' # Nudge viewport down
+	 'Num3' # Switch to side view (y)
+	 'Num4' # Nudge viewport left
+	 'Num5' # Switch view perspective and orthographic
+	 'Num6' # Nudge viewport right
+	 'Num7' # Switch to top view (z)
+	 'Num8' # Nudge viewport up
+	 'Num9' # View orbit
+	 ']' '[' # Scroll hierarchy
+	 'Down' # Back 10 frames
+	 'Esc' # Stop render process
+	 'F3' # Save render
+	 'F11' # Show last render
+	 'F12' # Render image
+	 'Home' # Show all frames
+	 'Left' # Previous frame
+	 'Page+Down' # Previous strip
+	 'Page+Up' # Next strip
+	 'Rght' # Next frame
+	 'Spce' # Play animation
+	 'Tab' # Edit group or edit object mode
+	 'Up' # Forward 10 frames
+	 'Alt+a' # Play/stop animation
+	 'Alt+e' # Relax pose
+	 'Alt+f' # Fill align selected faces or switch bone direction
+	 'Alt+g' # Ungroup objects
+	 'Alt+i' # Remove keyframe
+	 'Alt+l' # Clear pose location
+	 'Alt+m' # Show merge vertices dialog for selected object
+	 'Alt+p' # Clear selected object parent
+	 'Alt+r' # Clear pose rotation
+	 'Alt+s' # Clear pose scale or toggle shrink and flatten tool 
+	 'Alt+t' # Clear selected object track or clear tilt
+	 'Alt+v' # Zoom out background
+	 'Alt+F11' # Full screen mode
+	 'Alt+Shft+a' # Play animation in reverse
+	 'Ctrl+a' # Apply pose
+	 'Ctrl+c' # Copy pose or strip
+	 'Ctrl+e' # Show edit edges dialog for selected object
+	 'Ctrl+f' # Rotate brush texture
+	 'Ctrl+g' # Add to bone group
+	 'Ctrl+g' # Make group
+	 'Ctrl+i' # Invert object selection
+	 'Ctrl+l' # Select all linked objects
+	 'Ctrl+m' # Apply mirror modifier to selected object or enable mirror mode
+	 'Ctrl+n' # Recalculate roll
+	 'Ctrl+o' # Change active camera
+	 'Ctrl+p' # Change selected object parent
+	 'Ctrl+r' # Create a loop cut on selected object or rotate object
+	 'Ctrl+s' # Save current session
+	 'Ctrl+t' # Change selected object track, tilt object, or toggle frames/seconds
+	 'Ctrl+u' # Save over default scene
+	 'Ctrl+v' # Paste pose or paste strip
+	 'Ctrl+z' # Undo last action
+	 'Ctrl+1...4' # Add subdivision level
+	 'Ctrl+F4' # Make screen cast
+	 'Ctrl+F12' # Render animation
+	 'Ctrl+Left' 'Ctrl+Rght' # Switch to next and previous workspace
+	 'Ctrl+PgDn' # Jump to previous keyframe
+	 'Ctrl+PgUp' # Jump to next keyframe
+	 'Ctrl+Spce'# Toggle show widget area
+	 'Ctrl+Tab' # Weight paint mode
+	 'Ctrl+Up' # Maximize sub window
+	 'Ctrl+Alt+a' # Align bones
+	 'Ctrl+Alt+i' # Remove IK
+	 'Shft+A' # Add node or object
+	 'Shft+B' # Only render portion
+	 'Shft+C' # Reset 3D field to original angle
+	 'Shft+D' # Duplicate item (focus dependent)
+	 'Shft+F' # Change brush strength
+	 'Shft+H' # Reset to default handle
+	 'Shft+I' # Add IK
+	 'Shft+L' # Lock strip
+	 'Shft+M' # View bone layers
+	 'Shft+S' # Snap strip to scrubber
+	 'Shft+W' # Set bone flag
+	 'Shft+\`' # Enable fly mode 
+	 'Shft+F1' # Append file
+	 'Shft+F2' # Show logic editor on workspace
+	 'Shft+F3' # Show node editor on workspace
+	 'Shft+F4' # Show python console on workspace
+	 'Shft+F5' # Show 3D viewport on workspace
+	 'Shft+F6' # Show graph editor on workspace (f-curve)
+	 'Shft+F7' # Show properties on workspace
+	 'Shft+F8' # Show video sequence editor on workspace
+	 'Shft+F9' # Show outliner on workspace
+	 'Shft+F10' # Show UV image editor on workspace
+	 'Shft+F11' # Show text editor on workspace
+	 'Shft+Left' # Jump to start point
+	 'Shft+Rght' # Jump to end point
+	 'Shft+Ctrl+Z' # Redo action
+	 'Shft+Alt+F' # Beauty fill align selected faces 
+	 'Shft+Alt+L' # Unlock strip
+	 
+	DEPENDS ON
+	 ▸ alembic # Open framework for storing and sharing scene data
+	 ▸ bash # GNU Bourne Again shell
+	 ▸ boost-libs # Free peer reviewed portable C++ source libraries (runtime libs)
+	 ▸ draco # Library for compressing and decompressing 3D meshes and point clouds
+	 ▸ embree # Collection of high performance ray tracing kernels
+	 ▸ expat # XML parser library
+	 ▸ ffmpeg # Complete solution to record, convert and stream audio and video
+	 ▸ fftw # Library for computing the discrete Fourier transform (DFT)
+	 ▸ freetype2 # Font rasterization library
+	 ▸ gcc-libs # Runtime libraries shipped by GCC
+	 ▸ glew # OpenGL Extension Wrangler Library
+	 ▸ glibc # GNU C Library
+	 ▸ gmp # Free library for arbitrary precision arithmetic
+	 ▸ hicolor-icon-theme # Freedesktop.org Hicolor icon theme
+	 ▸ imath # C++ and python library for vector, matrix, and math operations
+	 ▸ intel-oneapi-compiler-dpcpp-cpp-runtime-libs # Intel oneAPI C++ compiler
+	 ▸ intel-oneapi-compiler-shared-runtime-libs # Intel oneAPI C++ compiler runtime
+	 ▸ jack # JACK low latency audio server
+	 ▸ jemalloc # General purpose scalable concurrent malloc implementation
+	 ▸ level-zero-loader # API low level interfaces in oneAPI platform devices
+	 ▸ libepoxy # Library handling OpenGL function pointer management
+
+	BINARIES
+	 ▸ '/bin/blender' # Run blender
+	 ▸ '/bin/blender-thumbnailer' # Run blender thumbnailer
+	 ▸ '/bin/blender-softwaregl' # Run blender softwareGL version
+
+	WEBLINKS
+	 ▸ 'https://www.blender.org' # Official page
+	 ▸ 'https://docs.blender.org/manual/en/latest/' # Blender manual
+	 ▸ 'https://docs.blender.org/api/current/index.html' # Python API manual
