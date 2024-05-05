@@ -48,7 +48,7 @@
 	 'f' # Choose a filter
 	 'i' # Set in or trim clip in
 	 'j' # Rewind item
-	 'k'|'Space' # Pause and play
+	 'k'|'Spce' # Pause and play
 	 'l' # Fast forward
 	 'm' # Add or edit marker at cursor
 	 'o' # Set out or move cursor to the left
@@ -57,7 +57,7 @@
 	 's' # Split item
 	 'v' # Insert item
 	 'x'|'Shft+Del' # Ripple delete
-	 'z'|'Del'|'Backspace' # Lift
+	 'z'|'Del'|'BkSp' # Lift
 	 '0' # Zoom fit
 	 '1...9' # Select item number
 	 'F2' # Rename clip (properties)
@@ -129,7 +129,7 @@
 	 'Ctrl+PgUp' # Backward 5 seconds
 	 'Ctrl+Rght'|'Alt+Rght' # Move cursor to previous word
 	 'Ctrl+Rght'|'Alt+Rght' # Move selection Rght
-	 'Ctrl+Space' # Select under playhead
+	 'Ctrl+Spce' # Select under playhead
 	 'Ctrl+Up' # Move selection up
 	 'Ctrl+Shft+A' # Select all
 	 'Ctrl+Shft+D' # Selection none
