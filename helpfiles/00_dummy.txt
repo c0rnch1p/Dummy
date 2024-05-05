@@ -34,7 +34,7 @@
 	 ▸ '/path/dummy.txt' # Dummy help file
 
 	BINARIES
-	 ▸ '/bin/b3tt3rh3lp' # Program to view help files
+	 ▸ '/bin/dummy' # Program to view help files
 
 	COMMON USAGE
 	 > Edit # Go to the edit tab in the menubar
