@@ -71,7 +71,7 @@
 	 'f' # Change brush size or make face from selected object
 	 'g' # Move selected object (focus dependent)
 	 'h' # (Un)hide node, change handle to bezier
-	 'h' | 'Alt+h' # Hide or unhide selected object 
+	 'h' 'Alt+h' # Hide and unhide selected object 
 	 'i' # Insert keyframe or use render buffer
 	 'k' # Split strip
 	 'l' # Select connected or select linked objects
@@ -99,7 +99,7 @@
 	 'Num7' # Switch to top view (z)
 	 'Num8' # Nudge viewport up
 	 'Num9' # View orbit
-	 ']' '[' # Scroll hierarchy
+	 ']' '[' # Scroll up and down hierarchy
 	 'Down' # Back 10 frames
 	 'Esc' # Stop render process
 	 'F3' # Save render
