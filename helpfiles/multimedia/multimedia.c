@@ -1,5 +1,5 @@
 #include "multimedia.h"
-#define TOTAL 7
+#define TOTAL 8
 
 // file list
 char *multimediaFiles[TOTAL]={
@@ -10,6 +10,7 @@ char *multimediaFiles[TOTAL]={
 	"multimedia/Kdenlive",
 	"multimedia/OBS",	
 	"multimedia/Reaper",
+	"multimedia/Shotcut",
 };
 
 // initialize submenu

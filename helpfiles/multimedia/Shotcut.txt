@@ -1,0 +1,218 @@
+	         _________ ___ ______________________________ ____ _____________
+	        /   _____//   |   \_  __   \_    ___/    ___ \    |   \_    ___/
+	        \_____   \    ~    \   |    \    | /    (___\/    |   /|    |
+	        /________/____|____/________/____| \_________/_______/ |____|
+
+	DESCRIPTION
+	 Shotcut is a free and open source, cross platform video, audio, and image
+	 editing program for FreeBSD, Linux, Mac and Windows. Started in 2011 by Dan
+	 Dennedy, Shotcut is developed on the MLT Multimedia Framework, in development
+	 since 2004 by the same author. Shotcut was originally conceived in November
+	 2004 by Charlie Yates, an MLT cofounder and the original lead developer. The
+	 current version of Shotcut is a complete rewrite by Dan Dennedy, another MLT
+	 cofounder. Dennedy wanted to create a new editor based on MLT and chose to
+	 reuse the Shotcut name, since he liked it so much. He wanted to make something
+	 to exercise the new cross platform capabilities of MLT, in conjunction with the
+	 WebVfx and Movit plugins. Shotcut supports video, audio, and image formats via
+	 FFmpeg. It uses a timeline for non linear video editing of multiple tracks that
+	 may be composed of various file formats. Scrubbing and transport control are
+	 assisted by OpenGL GPU based processing for better functionality.
+	 
+	COMMANDS
+	 shotcut --fullscreen # Open shotcut in fullscreen mode
+	 shotcut --noupgrade # Hide upgrade prompt and menu item on starup
+	 shotcut --qmljsdebugger <port> # Activate the qml js debugger with a port
+	 shotcut --gpu # Use gpu processing
+	 shotcut --clear-recent # Clear recents on exit
+	 shotcut --appdata <directory> # Directory for app configuration and data
+	 shotcut --plugin <plugin> # Additional plugins to load (can be repeated)
+	 shotcut --geometry <geometry> # Window geometry (x11 syntax '100x100+50+50')
+	 shotcut --icon <icon> # Default window icon
+	 shotcut --title <title> # Set title of the first window
+	 shotcut --reverse # Sets the applications layout direction 
+	 shotcut --session <session> # Restores the application from an earlier session
+	 shotcut --display <display> # Display name (overrides \${display})
+	 shotcut --name <name> # Icccm instance name 
+	 shotcut --nograb # Disable mouse grabbing 
+	 shotcut --dograb # Force mouse grabbing 
+	 shotcut --visual <id> # X server to use
+
+	SHORTCUTS
+	   # Not all of these shortcuts are the default keybindings for Shotcut, they
+	   # can be modified in the actions and shortcuts section of the Shotcut
+	   # help menu, there are also probably a few more shortcuts for Shotcut that
+	   # exist than the ones in this list
+	 'a' # Append
+	 'b' # Overwrite
+	 'c'|'Ctrl+c' # Copy
+	 'f' # Choose a filter
+	 'i' # Set in or trim clip in
+	 'j' # Rewind
+	 'k'|'Space' # Pause and play
+	 'l' # Fast forward
+	 'm' # Add or edit marker at cursor
+	 'o' # Set out or move cursor to the left
+	 'p' # Switch source or project
+	 'r' # Replace
+	 's' # Split
+	 'v' # Insert
+	 'x'|'Shft+Del' # Ripple delete
+	 'z'|'Del'|'Backspace' # Lift
+	 '0' # Zoom fit
+	 '1...9' # Select item N
+	 'F2' # Rename clip (properties)
+	 'F3' # Find (recent)
+	 'F4' # Settings proxy use proxy
+	 'F5' # Reload
+	 'F6' # Settings preview scaling none
+	 'F7' # Settings preview scaling 360p
+	 'F8' # Settings preview scaling 540p
+	 'F9' # Settings preview scaling 720p
+	 'F1' # Help topic
+	 'F11 / Ctrl+Shft+F' # View fullscreen
+	 '#' # Zoom out
+	 ';' # Toggle keyframe at playhead
+	 '<' # Seek to previous marker
+	 '=' # Zoom in
+	 '>' # Seek to next marker
+	 '?' or '/' # Help keyboard shortcuts
+	 '[' # Set filter start
+	 ']' # Set filter end
+	 '{' # Set first simple keyframe
+	 '}' # Set second simple keyframe
+	 'DblClk' # Seek start of selected
+	 'Down' # Move cursor to the next line or select next filter
+	 'End' # Move cursor to end player
+	 'Home' # Move cursor to start player
+	 'Left'|'h+j' # Move cursor to the left (previous frame)
+	 'Nter' # Add selected filter
+	 'PgDn' # Forward one second
+	 'PgUp' # Backward one second
+	 'Rght'|'k+l' # Move cursor to the rght (next frame)
+	 'Up' # Move cursor to previous line or select previous filter
+	 'Ctrl+a' # Select all
+	 'Ctrl+d' # Select none
+	 'Ctrl+e' # File export video
+	 'Ctrl+h' # Toggle hide track
+	 'Ctrl+i' # Add video track
+	 'Ctrl+j' # Set jump time
+	 'Ctrl+l' # Toggle lock track
+	 'Ctrl+m' # Toggle mute track
+	 'Ctrl+o' # File open
+	 'Ctrl+p' # Toggle snapping
+	 'Ctrl+q' # File quit
+	 'Ctrl+r' # Toggle ripple mode
+	 'Ctrl+s' # File save
+	 'Ctrl+t' # Enter timecode
+	 'Ctrl+u' # Add audio track
+	 'Ctrl+v' # Paste
+	 'Ctrl+w' # File close
+	 'Ctrl+x' # Cut
+	 'Ctrl+y'|'Ctrl+Shft+Z' # Edit redo
+	 'Ctrl+z' # Edit undo
+	 'Ctrl+0' # View jobs
+	 'Ctrl+1' # View audio peak meter
+	 'Ctrl+2' # View properties
+	 'Ctrl+3' # View recent
+	 'Ctrl+4' # View playlist
+	 'Ctrl+5' # View timeline
+	 'Ctrl+6' # View filters
+	 'Ctrl+7' # View keyframes
+	 'Ctrl+8' # View history
+	 'Ctrl+9' # View export
+	 'Ctrl+#' # Make tracks shorter
+	 'Ctrl+=' # Make tracks taller
+	 'Ctrl+Down' # Move selection down
+	 'Ctrl+Left'|'Alt+left' # Move cursor to next word or move selection left
+	 'Ctrl+Nter'|'DblClk' # Open selected
+	 'Ctrl+PgDn' # Forward 5 seconds
+	 'Ctrl+PgUp' # Backward 5 seconds
+	 'Ctrl+Rght'|'Alt+Rght' # Move cursor to previous word
+	 'Ctrl+Rght'|'Alt+Rght' # Move selection Rght
+	 'Ctrl+Space' # Select under playhead
+	 'Ctrl+Up' # Move selection up
+	 'Ctrl+Shft+A' # Select all
+	 'Ctrl+Shft+D' # Selection none
+	 'Ctrl+Shft+E' # File export frame
+	 'Ctrl+Shft+M' # Delete marker
+	 'Ctrl+Shft+O' # File open other
+	 'Ctrl+Shft+P' # Enter the playhead
+	 'Ctrl+Shft+R' # Toggle ripple mode and all tracks
+	 'Ctrl+Shft+S' # File save as
+	 'Ctrl+Shft+V' # Paste text only
+	 'Ctrl+Shft+3' # View notes
+	 'Ctrl+Shft+6' # View markers
+	 'Ctrl+Shft+Down' # Move down
+	 'Ctrl+Shft+PgDn' # Forward 10 seconds
+	 'Ctrl+Shft+PgUp' # Backward 10 seconds
+	 'Ctrl+Shft+Up' # Move up
+	 'Ctrl+Alt+a' # Select all on current track
+	 'Ctrl+Alt+c' # Copy timeline to source
+	 'Ctrl+Alt+i' # Insert track
+	 'Ctrl+Alt+m' # Cycle marker color
+	 'Ctrl+Alt+p' # Scroll to playhead on zoom
+	 'Ctrl+Alt+r' # Toggle ripple all tracks
+	 'Ctrl+Alt+u' # Remove track
+	 'Ctrl+Alt+Down' # Set current track below
+	 'Ctrl+Alt+Up' # Set current track above
+	 'Shft+A' # Append
+	 'Shft+B' # Update
+	 'Shft+C' # Copy
+	 'Shft+F' # Remove filter
+	 'Shft+I' # Ripple trim clip in
+	 'Shft+O' # Ripple trim clip out
+	 'Shft+V' # Insert
+	 'Shft+X' # Delete
+	 'Shft+Esc' # Grab focus
+	 'Shft+Nter'|'Shft+DblClk' # Goto or seek
+	 'Shft+PgDn' # Forward two seconds
+	 'Shft+PgUp' # Backward two seconds
+	 'Alt+m' # Add or edit marker around selected clips
+	 'Alt+r' # Toggle ripple markers
+	 'Alt+0' # Reset zoom
+	 'Alt+1' # View layout logging
+	 'Alt+2' # View layout editing
+	 'Alt+3' # View layout fx
+	 'Alt+4' # View layout color
+	 'Alt+5' # View layout audio
+	 'Alt+6' # View layout player
+	 'Alt+#' # Zoom out
+	 'Alt+=' # Zoom in
+	 'Alt+[' # Seek previous simple keyframe
+	 'Alt+]' # Seek next simple keyframe
+	 'Alt+Down' # Open next
+	 'Alt+Left' # Seek previous edit
+	 'Alt+PgDn' # Forward jump
+	 'Alt+PgUp' # Backward jump
+	 'Alt+Rght' # Seek next edit
+	 'Alt+Up' # Open previous 
+	 'Alt+Shft+R' # Toggle ripple markers, mode, and all tracks
+	 'Alt+Shft+Down' # Move track down
+	 'Alt+Shft+Up' # Move track up
+	 
+	DEPENDS ON
+	 ▸ qt6-base # Cross-platform application and UI framework
+	 ▸ qt6-declarative # Classes for QML and JavaScript languages
+	 ▸ qt6-imageformats # Plugins for additional image formats: TIFF, MNG, TGA, WBMP
+	 ▸ qt6-multimedia # Classes for audio, video, radio and camera functionality
+	 ▸ qt6-translations # Cross-platform application and UI framework (Translations)
+	 ▸ mlt # Open source multimedia framework
+	 ▸ movit # Modern video toolkit
+	 ▸ ffmpeg # Complete solution to record, convert and stream audio and video
+	 ▸ lib32-x264 # Open Source H264/AVC video encoder (32 bit)
+	 ▸ libvpx # VP8 and VP9 codec
+	 ▸ lame # High quality MPEG Audio Layer III (MP3) encoder
+	 ▸ frei0r-plugins # Collection of video effect plugins
+	 ▸ ladspa # Linux Audio Developers Simple Plugin API (LADSPA)
+	 ▸ qt6-charts # Provides a set of easy to use chart components
+
+	BINARIES
+	 ▸ '/bin/shotcut' # Run shotcut
+	 
+	FILES
+	 ▸ '/home/$USER/.config/Meltytech/shotcut.conf' # User config file
+	 
+	WEBLINKS
+	 ▸ 'https://shotcut.org' # Official page
+	 ▸ 'https://shotcut.org/resources/' # Resources page
+	 ▸ 'https://forum.shotcut.org/c/docs/docs-english/12' # Documentation
