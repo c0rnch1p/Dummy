@@ -86,7 +86,7 @@
 	 'Up'/'Down'/'Left'/'Rght' # Change active field in option section of a dialog
 	   # or move the selected point
 	 'Alt+Up'/'Down'/'Left'/'Rght' # Moves the selected object one pixel
-	 'Ctrl+a' # Select all
+	 'Ctrl+a' # Select all items
 	 'Ctrl+b' # Apply the bold attribute to the selection
 	 'Ctrl+c'/'Ctrl+v' # Copy or paste the selected items
 	 'Ctrl+d' # Delete the selected theme
@@ -262,7 +262,7 @@
 	 'Ctrl++' # Insert cell
 	 'Ctrl+-' # Delete cell
 	 'Ctrl+/' # Select the matrix formula range that contains the cursor
-	 'Ctrl+\' # Display or hide the formulas instead of the values in all cells
+	 'Ctrl+\\' # Display or hide the formulas instead of the values in all cells
 	 'Ctrl+Shft+1' # Set two decimal places, thousands separator
 	 'Ctrl+Shft+2' # Set the standard exponential format
 	 'Ctrl+Shft+3' # Set the standard date format
