@@ -86,7 +86,7 @@
 	  # automatically get replaced, then it can be hidden by dragging the projector
 	  # over the top of it because its been locked to the front of the scene
 	 > Source Panel # Navigate back to the source panel
-	   > <video device>: <👁> # Toggle hide or unhide the scene camera, to control
+	   > <video device>: <👁 > # Toggle hide or unhide the scene camera, to control
 	  # the visibility of the projector (video device)
 
 	WEBLINKS
