@@ -4,7 +4,7 @@
 // file list
 char *gamingFiles[TOTAL]={
 	"CS2",
-	"Proton-GE",
+	"Proton_GE",
 	"Steam",
 };
 

@@ -8,7 +8,7 @@ char *multimediaFiles[TOTAL]={
 	"multimedia/GIMP",
 	"multimedia/Inkscape",
 	"multimedia/Kdenlive",
-	"multimedia/Libre\ Office",	
+	"multimedia/Libre_Office",	
 	"multimedia/OBS",	
 	"multimedia/Reaper",
 	"multimedia/Shotcut",
