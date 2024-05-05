@@ -69,7 +69,7 @@
 	 'F8' # Settings preview scaling 540p
 	 'F9' # Settings preview scaling 720p
 	 'F1' # Help topic
-	 'F11 / Ctrl+Shft+F' # View fullscreen
+	 'F11'|'Ctrl+Shft+F' # View fullscreen
 	 '#' # Zoom out
 	 ';' # Toggle keyframe at playhead
 	 '<' # Seek to previous marker
