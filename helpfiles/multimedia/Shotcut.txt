@@ -20,9 +20,9 @@
 	 
 	COMMANDS
 	 shotcut --fullscreen # Open shotcut in fullscreen mode
-	 shotcut --noupgrade # Hide upgrade prompt and menu item on starup
-	 shotcut --qmljsdebugger <port> # Activate the qml js debugger with a port
-	 shotcut --gpu # Use gpu processing
+	 shotcut --noupgrade # Hide upgrade prompt and menu item on startup
+	 shotcut --qmljsdebugger <port> # Activate the QML JS debugger with a port
+	 shotcut --gpu # Use GPU processing
 	 shotcut --clear-recent # Clear recents on exit
 	 shotcut --appdata <directory> # Directory for app configuration and data
 	 shotcut --plugin <plugin> # Additional plugins to load (can be repeated)
@@ -75,7 +75,7 @@
 	 '<' # Seek to previous marker
 	 '=' # Zoom in
 	 '>' # Seek to next marker
-	 '?' or '/' # Help keyboard shortcuts
+	 '?'|'/' # Help keyboard shortcuts
 	 '[' # Set filter start
 	 ']' # Set filter end
 	 '{' # Set first simple keyframe
@@ -123,7 +123,7 @@
 	 'Ctrl+#' # Make tracks shorter
 	 'Ctrl+=' # Make tracks taller
 	 'Ctrl+Down' # Move selection down
-	 'Ctrl+Left'|'Alt+left' # Move cursor to next word or move selection left
+	 'Ctrl+Left'|'Alt+Left' # Move cursor to next word or move selection left
 	 'Ctrl+Nter'|'DblClk' # Open selected
 	 'Ctrl+PgDn' # Forward 5 seconds
 	 'Ctrl+PgUp' # Backward 5 seconds
@@ -172,7 +172,7 @@
 	 'Alt+0' # Reset zoom
 	 'Alt+1' # View layout logging
 	 'Alt+2' # View layout editing
-	 'Alt+3' # View layout fx
+	 'Alt+3' # View layout FX
 	 'Alt+4' # View layout color
 	 'Alt+5' # View layout audio
 	 'Alt+6' # View layout player
@@ -192,14 +192,14 @@
 	 
 	DEPENDS ON
 	 ▸ qt6-base # Cross-platform application and UI framework
-	 ▸ qt6-declarative # Classes for QML and JavaScript languages
+	 ▸ qt6-declarative # Classes for  QML and JavaScript languages
 	 ▸ qt6-imageformats # Plugins for additional image formats: TIFF, MNG, TGA, WBMP
 	 ▸ qt6-multimedia # Classes for audio, video, radio and camera functionality
 	 ▸ qt6-translations # Cross-platform application and UI framework (Translations)
 	 ▸ mlt # Open source multimedia framework
 	 ▸ movit # Modern video toolkit
 	 ▸ ffmpeg # Complete solution to record, convert and stream audio and video
-	 ▸ lib32-x264 # Open Source H264/AVC video encoder (32 bit)
+	 ▸ lib32-x264 # Open Source H264 and AVC video encoder (32 bit)
 	 ▸ libvpx # VP8 and VP9 codec
 	 ▸ lame # High quality MPEG Audio Layer III (MP3) encoder
 	 ▸ frei0r-plugins # Collection of video effect plugins
