@@ -233,6 +233,48 @@
 	 ▸ jemalloc # General purpose scalable concurrent malloc implementation
 	 ▸ level-zero-loader # API low level interfaces in oneAPI platform devices
 	 ▸ libepoxy # Library handling OpenGL function pointer management
+	 ▸ libharu # C library for generating PDF documents
+	 ▸ libjpeg-turbo # JPEG image codec with accelerated baseline compression
+	 ▸ libpng # Collection of routines used to create PNG format graphics files
+	 ▸ libsndfile # C library for reading and writing files containing sampled audio
+	 ▸ libspnav # Alternative to the proprietary 3Dconnexion device driver and SDK
+	 ▸ libtiff # Library for manipulation of TIFF images
+	 ▸ libwebp # WebP library and conversion tools
+	 ▸ libx11 # X11 client-side library
+	 ▸ libxfixes # X11 miscellaneous fixes extension library
+	 ▸ libxi # X11 Input extension library
+	 ▸ libxkbcommon # Keymap handling library for toolkits and window systems
+	 ▸ libxml2 # XML C parser and toolkit
+	 ▸ libxrender # X Rendering Extension client library
+	 ▸ libxxf86vm # X11 XFree86 video mode extension library
+	 ▸ llvm-libs # LLVM runtime libraries
+	 ▸ materialx # Open standard for development content in computer graphics
+	 ▸ onetbb # High level abstract threading library
+	 ▸ openal # Cross-platform 3D audio library, software implementation
+	 ▸ opencollada # Stream based reader and writer library for COLLADA files
+	 ▸ opencolorio # Color management framework for visual effects and animation
+	 ▸ openexr # High dynamic range image file format library
+	 ▸ openimagedenoise # Intel Open Image Denoise Library
+	 ▸ openimageio # Library for reading and writing images
+	 ▸ openjpeg2 # Open source JPEG 2000 codec
+	 ▸ openpgl # Intel Open Path Guiding Library
+	 ▸ openshadinglanguage # Advanced shading language for production GI renderers
+	 ▸ opensubdiv # Open Source subdivision surface library
+	 ▸ openvdb # Tools for the efficient storage and manipulation of sparse data
+	 ▸ openxr # Open standard for virtual reality and augmented reality platforms
+	 ▸ potrace # Utility for tracing a bitmap
+	 ▸ pugixml # Light weight, simple and fast XML parser for C++ with XPath support
+	 ▸ pystring # C++ functions matching the behavior of python string methods
+	 ▸ python # The python programming language
+	 ▸ python-numpy # Scientific tools for Python
+	 ▸ python-requests # Python HTTP for Humans
+	 ▸ sdl2 # Library for access to a video, audio, mouse, and keyboard
+	 ▸ shared-mime-info # Freedesktop.org Shared MIME Info
+	 ▸ usd # 3D VFX pipeline interchange file format
+	 ▸ xdg-utils # Command line tools assist with desktop integration tasks
+	 ▸ yaml-cpp # YAML parser and emitter in C++, written around the YAML
+	 ▸ zlib # Compression library implementing the deflate compression method
+	 ▸ zstd # Zstandard, fast realtime compression algorithm
 
 	BINARIES
 	 ▸ '/bin/blender' # Run blender
