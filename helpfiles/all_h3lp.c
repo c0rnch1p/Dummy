@@ -1,5 +1,5 @@
 #include "all_h3lp.h"
-#define TOTAL 12
+#define TOTAL 13
 
 // file list
 char *allh3lpFiles[TOTAL]={
@@ -7,12 +7,13 @@ char *allh3lpFiles[TOTAL]={
 	"development/Gedit",
 	"gaming/CS2",
 	"gaming/Proton-GE",
-	"gaming/Steam",	
+	"gaming/Steam",
 	"multimedia/Ardour",
-	"multimedia/Blender",	
+	"multimedia/Blender",
 	"multimedia/GIMP",
 	"multimedia/Inkscape",
 	"multimedia/Kdenlive",
+	"multimedia/OBS",
 	"multimedia/Reaper",
 	"programming/Bash",
 };

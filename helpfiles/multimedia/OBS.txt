@@ -1,1 +1,96 @@
-OBS
+	                        ___________________ _________
+	                        \_____   \__   _  _)   _____/
+	                        /    |    \   __   \_____   \
+	                        \_________/________/________/
+
+	DESCRIPTION
+	 OBS (Open Broadcaster Software) is a free, open source, and cross platform
+	 screencasting and streaming program. It is available for Linux, BSD, Windows,
+	 and Mac. Written in C and built with Qt, OBS Studio provides real time capture,
+	 scene composition, recording, encoding, and broadcasting via the Realtime
+	 Messaging Protocol (RTMP), HLS, SRT or RIST. It can stream videos to any RTMP
+	 supporting destination, including YouTube, Twitch, Instagram and Facebook. For
+	 video encoding, OBS Studio can use the x264 transcoder, Intel Quick Sync Video,
+	 Nvidia NVENC and the AMD Video Coding Engine to encode video streams into the
+	 H.264 MPEG4 AVC or H.265 HEVC formats. It can encode multiple tracks of audio
+	 in the AAC format. More experienced users can choose any codecs and containers
+	 available in libavcodec and libavformat, or output the stream to a custom
+	 FFmpeg URL. OBS Studio also supports plugins to extend its functionality.
+	 
+	COMMANDS
+	 obs --startstreaming # Automatically start streaming
+	 obs --startrecording # Automatically start recording
+	 obs --startvirtualcam # Start virtual camera (if available)
+	 obs --collection 'string' # Use specific scene collection
+	 obs --profile 'string' # Use specific profile
+	 obs --scene 'string' # Start with specific scene
+	 obs --studio-mode # Enable studio mode
+	 obs --minimize-to-tray # Minimize to system tray
+	 obs --always-on-top # Start in always on top mode
+	 obs --disable-missing-files-check # No missing files dialog
+	 
+	SHORTCUTS
+	 'Del' # Remove item
+	 'Ctrl+c' # Copy panel item
+	 'Ctrl+d' 'Ctrl-f' 'Ctrl-s' # Fit source to screen
+	 'Ctrl+r' # Reset transform to default layout
+	 'Ctrl+v' # Paste copied panel item
+	 'Ctrl+Up' 'Ctrl-Down' # Move item up or down in list
+	 'Ctrl+Home' 'Ctrl-End' # Move item to top or bottom of list
+	 
+	DEPENDS ON
+	 ▸ ffmpeg # Complete solution to record, convert and stream audio and video
+	 ▸ libxinerama # X11 Xinerama extension library
+	 ▸ libxkbcommon-x11 # Keyboard handling library using XKB data for X11 XCB clients
+	 ▸ mbedtls # Open source, portable, easy to use, readable and flexible TLS library
+	 ▸ rnnoise # Noise suppression library based on a recurrent neural network
+	 ▸ pciutils # PCI bus configuration space access library and tools
+	 ▸ qt6-svg # Classes for displaying the contents of SVG files
+	 ▸ curl # Command line tool and library for transferring data with URLs
+	 ▸ jack2 # JACK low-latency audio server
+	 ▸ gtk-update-icon-cache # GTK icon cache updater
+	 ▸ pipewire # Low-latency audio and video router and processor
+	 ▸ libxcomposite # X11 Composite extension library
+	 ▸ libdatachannel # C and C++ WebRTC network library
+	 
+	REQUIRED BY
+	 ▸ obs-backgroundremoval # Background removal plugin for OBS studio
+	 ▸ obs-gstreamer # OBS source plugin to feed GStreamer launch pipelines into OBS
+	 ▸ obs-plugin-looking-glass-git # Stream directly from Looking Glass
+	 ▸ obs-rtspserver # Output encoding and rtsp stream publishing
+	 ▸ obs-streamfx-unstable # Modern stream affects
+	 ▸ obs-vaapi # OBS Studio VAAPI support via GStreamer
+	 ▸ obs-vkcapture-git # OBS Linux Vulkan and OpenGL game capture
+	 ▸ wlrobs # Screen capture on wlroots based wayland compositors
+
+	BINARIES
+	 ▸ '/bin/obs' # Run OBS
+	 ▸ '/bin/obs-ffmpeg-mux' # OBS ffmpeg multiplexer
+
+	COMMMON USAGE
+	VIDEO WINDOW
+	  # The following settings show how to keep the video window visible while OBS
+	  # is minimized, this can be useful while recording the screen with a webcam
+	  # window open somewhere for streaming
+	 > Source Panel: '+' # Click the add source button 
+	   > <video device> # Select the webcam in use
+	 > File # Go to the file menu tab
+	   > Settings # Select the settings option
+	     > General # Go to the general tab
+	       > Projectors: 'Make projectors always on top' # Scroll to projectors and
+	  # set to always on top to lock the desktop video window in front
+	 > Source Panel # Navigate back to the source panel
+	   > <video device> [context menu]: 'Windowed Projector (Source)' # Open the
+	  # context menu for the video device and select windowed projector to display
+	  # the video window on the desktop, if the video window in the scene doesnt
+	  # automatically get replaced, then it can be hidden by dragging the projector
+	  # over the top of it because its been locked to the front of the scene
+	 > Source Panel # Navigate back to the source panel
+	   > <video device>: '👁' # Toggle hide or unhide the scene camera, to control
+	  # the visibility of the projector (video device)
+
+	WEBLINKS
+	 ▸ 'https://obsproject.com' # Official page
+	 ▸ 'https://docs.obsproject.com' # Documentation
+	 ▸ 'https://obsproject.com/wiki/' # OBS wiki
+
