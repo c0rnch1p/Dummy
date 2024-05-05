@@ -1,9 +1,9 @@
-		   _______________  ___________ ____________________________________
-		   \__   _  _)    | \_   _____//       \__  __  \_   _____/__  __   \       
-		    |   __   \    |__|    __)_/    |    \    |   \    __)_ |       _/
-		    |________/_______\________/____|____/________/________/____|____/
-		    
-	DESCRIPTION 
+	       _______________  ___________ ____________________________________
+	       \__   _  _)    | \_   _____//       \__  __  \_   _____/__  __   \
+	        |   __   \    |__|    __)_/    |    \    |   \    __)_ |       _/
+	        |________/_______\________/____|____/________/________/____|____/
+
+	DESCRIPTION
 	 Blender is a free and open source 3D computer graphics software tool set used 
 	 for animation, visual effects, printed models, motion graphics, interactive 3D 
 	 applications and virtual reality. Its often used alongside video game engines 
@@ -22,7 +22,7 @@
 	 blender --log <match,*> # Enable logging categories
 	 blender --log-file '/path/file' # Set a file to output the log to
 	 blender --log-level <level> # Set the logging verbosity level 
-	 blender --log-show-backtrace #	Show backtrace for each log message 
+	 blender --log-show-backtrace # Show backtrace for each log message 
 	 blender --log-show-basename # Only show file name in output without path
 	 blender --log-show-timestamp # Show a timestamp for each log message 
 	 blender --open-last # Open the most recently opened blend file
@@ -50,7 +50,7 @@
 	 blender -s <frame> # Set render to start at frame
 	 blender -s <frame> # Start playback from frame
 	 blender -S <name> # Set the active scene name for rendering
-	 blender -t <threads> #	Use amount of threads for rendering or other processes
+	 blender -t <threads> # Use amount of threads for rendering or other processes
 	 blender -W # Open graphical interface in fullscreen mode
 	 blender -w # Open graphical interface with borders
 	 blender -x <bool> # Enable the file extension for the render
