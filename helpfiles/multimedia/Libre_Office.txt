@@ -75,17 +75,18 @@
 	 'F1' # Open LibreOffice help in browser
 	 'F6'/'Shft+F6' # Change focus to next or previous subwindow 
 	 'F10'|'Alt+f' # Activate the file menu 
-	 'Home'/'End' # Jump to the first or last entry
+	 'Alt+Arrows' # Moves the selected object one pixel
+	 'Arrows' # Change active field in option section of a dialog or move the
+	   # selected point
 	 'Esc' # Leave current mode and return to last mode or close action or dialog
+	 'Home'/'End' # Jump to the first or last entry
 	 'Ins' # Insert a new theme
 	 'Nter' # Activate focused button or element in a dialog
 	 'PgUp'/'PgDn' # Scroll up or down one screen
 	 'Spce' # Select a point of a drawing object or toggle focused item
 	 'Tab'/'Shft+Tab' # Advance focus to the next or previous element in a dialog,
 	   # move between areas or select the next drawing object
-	 'Up'/'Down'/'Left'/'Rght' # Change active field in option section of a dialog
-	   # or move the selected point
-	 'Alt+Up'/'Down'/'Left'/'Rght' # Moves the selected object one pixel
+	 'Alt+Ctrl+Shft+V' # Paste unformatted text from the clipboard
 	 'Ctrl+a' # Select all items
 	 'Ctrl+b' # Apply the bold attribute to the selection
 	 'Ctrl+c'/'Ctrl+v' # Copy or paste the selected items
@@ -114,7 +115,7 @@
 	 'Ctrl+Spce' # Toggle row selection
 	 'Ctrl+Tab'/'Ctrl+Shft+Tab' # Insert a tab at the start or end of a header or
 	   # select the next or previous point of the object
-	 'Ctrl+Shft+Ins' # Insert selected object as linked object into current document
+	 'Ctrl+Shft+Ins' # Insert selected object as linked object into the document
 	 'Shft+F1' # Context help selector
 	 'Shft+F2' # Turn on extended tips for the current control selection
 	 'Shft+F10' # Open a context menu
@@ -125,7 +126,6 @@
 	 'Shft+Ctrl+R' # Toggle the visibility of the page ruler
 	 'Shft+Ctrl+V' # Open the paste special dialog
 	 'Shft+Ctrl+Y' # Repeat last command
-	 'Shft+Alt+Ctrl+V' # Paste unformatted text from the clipboard
 	WRITER
 	 'F2' # Toggle show or hide formula bar
 	 'F3' # Enable AutoText
@@ -135,20 +135,25 @@
 	 'F9' # Update focused fields
 	 'F11' # Toggle styles window on or off
 	 'F12' # Toggle numbering on or off
-	 'End' # Go to the end of the current line
+	 'Arrows' # Move cursor in each different direction
 	 'Esc' # Escape selected text or clear selection
-	 'Home' # Go to the beginning of the current line
+	 'Home'/'End' # Go to the beginning or end of the current line
 	 'Ins' # Toggle insert mode on or off
-	 'Left'/'Rght' # Move cursor to the left and right
 	 'PgDn'/'PgUp' # Move up or down one page
 	 'Tab' # Move heading format down one level in the outline
-	 'Up'/'Down' # Move cursor up or down one line
-	 'Alt+Ctrl+Shft+Up'/'Down'/'Left'/'Rght' # Resize by moving top left corner
-	 'Alt+Ctrl+Up'/'Down'/'Left'/'Rght' # Resize by moving lower right corner
+	 'Alt+Ctrl+Arrows'|'Alt+Shft+Arrows'|'Alt+Ctrl+Shft+Arrows' # Resize object
+	   # by moving its corners or edges in different directions
+	 'Alt+Ctrl+Shft+Arrows' # Like Alt, but only modify active cell
+	 'Alt+Ctrl+Up'/'Alt+Ctrl+Down' # Move the active or selected paragraphs up or
+	   # down one paragraph
 	 'Alt+Nter' # Insert a new paragraph directly before or after a section
-	 'Alt+Shft+Up'/'Down'/'Left'/'Rght' # Increase or decrease size of column or
-	   # row on the left or top cell edge
-	 'Alt+Up'/'Down'/'Left'/'Rght' # Move object vertically or horizontally 
+	 'Alt+Up+Arrows' # Move object vertically or horizontally 
+	 'Ctrl+0' # Apply text body paragraph style
+	 'Ctrl+1' # Apply heading 1 paragraph style
+	 'Ctrl+2' # Apply heading 2 paragraph style
+	 'Ctrl+3' # Apply heading 3 paragraph style
+	 'Ctrl+4' # Apply heading 4 paragraph style
+	 'Ctrl+5' # Apply heading 5 paragraph style
 	 'Ctrl+a' # Select all text
 	 'Ctrl+d' # Double underline selected text
 	 'Ctrl+e' # Center text
@@ -157,40 +162,26 @@
 	 'Ctrl+l' # Align text left
 	 'Ctrl+r' # Align text right
 	 'Ctrl+y' # Redo last action
-	 'Ctrl+0' # Apply Text Body paragraph style
-	 'Ctrl+1' # Apply Heading 1 paragraph style
-	 'Ctrl+2' # Apply Heading 2 paragraph style
-	 'Ctrl+3' # Apply Heading 3 paragraph style
-	 'Ctrl+4' # Apply Heading 4 paragraph style
-	 'Ctrl+5' # Apply Heading 5 paragraph style
 	 'Ctrl+F2' # Insert fields
 	 'Ctrl+F3' # Edit AutoText
 	 'Ctrl+F7' # Thesaurus
-	 'Ctrl+F8' # Field shadings on / off
+	 'Ctrl+F8' # Field shadings on or off
 	 'Ctrl+F9' # Show fields
 	 'Ctrl+F10' # Non printing characters on or off
 	 'Ctrl+F11' # Sets focus to Apply Style box
 	 'Ctrl+F12' # Insert or edit Table
 	 'Ctrl+*' # Run macro field
 	 'Ctrl++' # Calculate the selected text and copy the result
-	 'Ctrl+BkSpc' # Delete text to beginning of word
+	 'Ctrl+BkSpc'/'Ctrl+Del' # Delete text to beginning or end of word
 	 'Ctrl+DblClk'|'Ctrl+Shft+F10' # Dock or undock windows
-	 'Ctrl+Del' # Delete text to end of word
-	 'Ctrl+Del+Shft' # Delete text to end of sentence
-	 'Ctrl+Down' # Move cursor to beginning of next paragraph
-	 'Ctrl+End' # Go to end of document
-	 'Ctrl+End+Shft' # Go and select text to end of document
-	 'Ctrl+Home' # Go to start of document
-	 'Ctrl+Home+Shft' # Go and select text to start of document
-	 'Ctrl+Left' # Go to beginning of word
+	 'Ctrl+Home'/'Ctrl+End' # Go to start or end of document
+	 'Ctrl+Left'/'Ctrl+Rght' # Go to beginning or end of word
 	 'Ctrl+Nter' # Manual page break
-	 'Ctrl+PgDn' # Switch cursor between text and footer
-	 'Ctrl+PgUp' # Switch cursor between text and header
-	 'Ctrl+Rght' # Go to start of next word
+	 'Ctrl+PgUp'/'Ctrl+PgDn' # Switch cursor between text and the page footer or
+	   # between the text and the page header
 	 'Ctrl+Tab' # Inserts a tab stop
-	 'Ctrl+Up' # Move cursor to beginning of the previous paragraph
-	 'Ctrl+Shft+B' # Subscript
-	 'Ctrl+Shft+P' # Superscript
+	 'Ctrl+Up'/'Ctrl+Down' # Move cursor to beginning or end of paragraph
+	 'Ctrl+Shft+B'/'Ctrl+Shft+P' # Toggle subscript or superscript
 	 'Ctrl+Shft+T' # Removes cell protection from all selected tables
 	 'Ctrl+Shft+F4' # Open Data Source View
 	 'Ctrl+Shft+F5' # Navigator on, go to page number
@@ -199,43 +190,47 @@
 	 'Ctrl+Shft+F11' # Update Style
 	 'Ctrl+Shft+F12' # Numbering or bullets off
 	 'Ctrl+Shft+-' # Non breaking hyphen (is not used for hyphenation)
-	 'Ctrl+Shft+BkSpc' # Delete text to beginning of sentence
-	 'Ctrl+Shft+Down' # Select to end of paragraph
-	 'Ctrl+Shft+Left' # Selecting to the left word by word
+	 'Ctrl+Shft+BkSpc'/'Ctrl+Del+Shft' # Delete text to beginning or end of sentence
+	 'Ctrl+Shft+Home'/'Ctrl+Shft+End' # Select text to start or end of document
+	 'Ctrl+Shft+Left'/'Ctrl+Shft+Rght' # Select to the left or right word by word
 	 'Ctrl+Shft+Nter' # Column break in multi-columnar texts
-	 'Ctrl+Shft+Rght' # Selecting to the right word by word
-	 'Ctrl+Shft+Spce' # Non breaking spaces
-	 'Ctrl+Shft+Tab' # Use previous suggestion with automatic word completion
-	 'Ctrl+Shft+Up' # Select to beginning of paragraph
-	 'Ctrl+Alt+Down' # Move the active or selected paragraphs down one paragraph
-	 'Ctrl+Alt+Shft+Up'/'Down'/'Left'/'Rght' # Like Alt, but only modify active cell
-	 'Ctrl+Alt+Shft+V' # Paste the contents of the clipboard as unformatted text
-	 'Ctrl+Alt+Up' # Move the active or selected paragraphs up one paragraph
+	 'Ctrl+Shft+Spce' # Toggle non breaking spaces
+	 'Ctrl+Shft+Up'/'Ctrl+Shft+Down' # Select to beginning or end of paragraph
+	 'Ctrl+Shft+Alt+V' # Paste the contents of the clipboard as unformatted text
 	 'Shft+F4' # Select next frame
 	 'Shft+F8' # Additional selection mode
-	 'Shft+F9' # Calculate Table
-	 'Shft+F11' # Create Style
-	 'Shft+F12' # Bullets on
-	 'Shft+Down' # Selecting lines in a downward direction
-	 'Shft+End' # Go and select to end of line
-	 'Shft+Home' # Go and select to the beginning of a line
-	 'Shft+Left' # Move cursor with selection to the left
-	 'Shft+Nter' # Line break without paragraph change
-	 'Shft+PgDn' # Move down screen page with selection
-	 'Shft+PgUp' # Move up screen page with selection
-	 'Shft+Rght' # Move cursor with selection to the right
-	 'Shft+Tab' # The heading in format is moved up one level in the outline
-	 'Shft+Up' # Selecting lines in an upwards direction
+	 'Shft+F9' # Toggle calculate table
+	 'Shft+F11' # Toggle create style
+	 'Shft+F12' # Toggle bullets on
 	 'Shft+Ctrl+Del' # Force delete
+	 'Shft+Home'/'Shft+End' # Select text to the beginning or end of a line
+	 'Shft+Nter' # Line break without paragraph change
+	 'Shft+PgUp'/'Shft+PgDn' # Move up or down one page with selection
+	 'Shft+Rght'/'Shft+Left' # Move cursor with selection to the right or left
+	 'Shft+Tab'/'Ctrl+Shft+Tab' # Move heading format up or down one level or use
+	   # next or previous suggestion with automatic word completion
+	 'Shft+Up'/'Shft+Down' # Selecting lines in an upwards or downwards direction
 	CALC
+	 'F2' # Switch to edit mode and place the cursor at the end of current cell
+	 'F4' # Rearrange the relative or absolute references (eg. A1, $A$1, $A1, A$1)
+	   # in the input field
+	 'F5' # Show or hide the Navigator
+	 'F7' # Check spelling in the current sheet
+	 'F8' # Turn additional selection mode on or off
+	 'F9' # Recalculate changed formulas in the current sheet
+	 'F11' # Open the styles window where
+	 'F12' # Group the selected data range
+	 'Arrows' # Move the focus of the sheet or the dialog area in different directions
+	 'Del' # Remove the current field from the area
+	 'Enter' # Move the cursor down one cell in a selected range
+	 'Home'/'End' # Move the cursor to the first or last cell of the current row or
+	   # select the first or last item in the current dialog area
+	 'Tab'/'Shft+Tab' # Move forwards and backwards through dialog element selection
+	 'Alt+Left'/'Alt+Rght' # Decrease or increase the width of the current column
 	 'Alt+o' # Display the options for the current field
-	 'Alt+Down' # Increase height of current row
-	 'Alt+Left' # Decrease the width of the current column
-	 'Alt+PgDn' # Move one screen page to the right
-	 'Alt+PgUp' # Move one screen to the left
-	 'Alt+Rght' # Increase width of the current column
-	 'Alt+Up' # Decrease height of current row
-	 'Alt+Shft+Up'/'Down'/'Left'/'Rght' # Optimize the column width or row height
+	 'Alt+PgUp'/'Alt+PgDn' # Move one sheet to the left or right
+	 'Alt+Shft+Arrows' # Optimize the column width or row height
+	 'Alt+Up'/'Alt+Down' # Increase or decrease height of current row
 	 'Ctrl+1' # Open Format Cells dialog
 	 'Ctrl+F1' # Display the comment that is attached to the current cell
 	 'Ctrl+F2' # Open the Function Wizard
@@ -244,23 +239,13 @@
 	 'Ctrl+F8' # Highlight cells containing values
 	 'Ctrl+F9' # Update the selected chart
 	 'Ctrl+F12' # Ungroup the selected data range
-	 'Ctrl+Down' # Move the current field down one place
-	 'Ctrl+Down' # Move the cursor to the bottom edge of the current data range
-	 'Ctrl+End' # Move the current field to the last place
-	 'Ctrl+End' # Move the cursor to the last cell on the sheet that contains data
-	 'Ctrl+Home' # Move the current field to the first place
-	 'Ctrl+Home' # Move the cursor to the first cell in the sheet (A1)
-	 'Ctrl+Left' # Move the current field one place to the left
-	 'Ctrl+Left' # Move the cursor to the left edge of the current data range
-	 'Ctrl+PgDn' # Move one sheet to the right or next page in print preview
-	 'Ctrl+PgUp' # Move one sheet to the left or previous page in print preview
-	 'Ctrl+Rght' # Move the current field one place to the right
-	 'Ctrl+Rght' # Move the cursor to the right edge of the current data range
-	 'Ctrl+Up' # Move the current field up one place
-	 'Ctrl+Up' # Move the cursor to the top edge of the current data range
+	 'Ctrl+Arrows' # Move the current field or cursor around in different directions
+	 'Ctrl+Home'/'Ctrl+End' # Move the current field to the first or last place or
+	   # wove the cursor to the first or last cell on the sheet that contains data
+	 'Ctrl+PgUp'/'Ctrl+PgDn' # Move one sheet to the left or right, or the next or
+	   # previous page in print preview
 	 'Ctrl+*' # Select the data range that contains the cursor
-	 'Ctrl++' # Insert cell
-	 'Ctrl+-' # Delete cell
+	 'Ctrl++'/'Ctrl+-' # Insert or delete cell
 	 'Ctrl+/' # Select the matrix formula range that contains the cursor
 	 'Ctrl+\\' # Display or hide the formulas instead of the values in all cells
 	 'Ctrl+Shft+1' # Set two decimal places, thousands separator
@@ -270,44 +255,20 @@
 	 'Ctrl+Shft+5' # Set the standard percentage format (two decimal places)
 	 'Ctrl+Shft+6' # Set the standard format
 	 'Ctrl+Shft+F9' # Recalculate all formulas in all sheets
-	 'Ctrl+Shft+Up'/'Down'/'Left'/'Rght' # Select all cells containing data from the
-	   # current cell to the end of the continuous range of data cells
-	 'F2' # Switch to Edit mode and place the cursor at the end of current cell
-	 'F4' # Rearrange the relative or absolute references (eg. A1, $A$1, $A1, A$1)
-	   # in the input field
-	 'F5' # Show or hide the Navigator
-	 'F7' # Check spelling in the current sheet
-	 'F8' # Turn additional selection mode on or off
-	 'F9' # Recalculate changed formulas in the current sheet
-	 'F11' # Open the Styles window where
-	 'F12' # Group the selected data range
-	 'Del' # Remove the current field from the area
-	 'Down' # Move the focus down one item in the current dialog area
-	 'End' # Move the cursor to the last cell of the current row
-	 'End' # Select the last item in the current dialog area
-	 'Enter' # Move the cursor down one cell in a selected range
-	 'Home' # Move the cursor to the first cell of the current row
-	 'Home' # Select the first item in the current dialog area
-	 'Left' # Move the focus one item to the left in the current dialog area
-	 'Rght' # Move the focus one item to the right in the current dialog area
-	 'Tab' # Move forwards through dialog element selection
-	 'Up' # Move the focus up one element in the current dialog area
-	 'Shft+F5' # Trace dependents
-	 'Shft+F7' # Trace precedents
+	 'Ctrl+Shft+Arrows' # Select all cells containing data from the current cell
+	   # to the end of the continuous range of data cells
+	 'Shft+F5'/'Shft+F7' # Trace dependents and precedents
 	 'Shft+F11' # Create a document template
-	 'Shft+End' # Select cells from current cell to last cell of the current row
-	 'Shft+Home' # Select cells from current cell to first cell of the current row
-	 'Shft+PgDn' # Select cells from current cell down to one page in the current
-	   # column or extend the existing selection one page down
-	 'Shft+PgUp' # Select cells from the current cell up to one page in the current
-	   # column or extends the existing selection one page up
-	 'Shft+Tab' # Move backwards through dialog element selection
-	 'Shft+Ctrl+F2' # Move the cursor to the Input line where
-	 'Shft+Ctrl+F4' # Show or Hides the Database explorer
-	 'Shft+Ctrl+F5' # Move the cursor from the Input line to the Sheet area box
+	 'Shft+Home'/'Shft+End' # Select cells from current cell to first or last cell
+	   # of the current row
+	 'Shft+PgUp'/'Shft+PgDn' # Select cells from the current cell up or down one
+	   # page in the current column or extends the selection one page up or down
+	 'Shft+Ctrl+F2' # Move the cursor to the input line
+	 'Shft+Ctrl+F4' # Show or hide the database explorer
+	 'Shft+Ctrl+F5' # Move the cursor from the input line to the sheet area box
 	 'Shft+Ctrl+F11' # Update the templates
-	 'Shft+Ctrl+PgDn' # Add the next sheet to the current selection of sheets
-	 'Shft+Ctrl+PgUp' # Add the previous sheet to the current selection of sheets
+	 'Shft+Ctrl+PgDn'/'Shft+Ctrl+PgUp' # Add the next or previous sheet to the
+	   # current selection of sheets
 
 	DEPENDS ON
 	 ▸ boost-libs # Free peer reviewed portable C++ source runtime libraries
