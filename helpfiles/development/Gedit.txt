@@ -1,6 +1,6 @@
 
-	                    _________________________ .______________
-	                   /  _____/_   ____/______  \|   |__    ___/
+	                    _________________________ _______________
+	                   /  _____/_   ____/__  __  \|   |__    ___/
 	                  /   \__----   __)__|    |   \   | |    |
 	                  \_______  /_______/_________/___| |____|
 	                          )/
@@ -24,23 +24,25 @@
 	 gedit --new-window # Create a new top level window in existing instance
 
 	SHORTCUTS
+	 'Home'/'End' # Go to beginning and end of current line
+	 'Ins' # Toggle insert/overwrite
 	 'F1' # Show help
 	 'F7' # Toggle cursor visibility
 	 'F9' # Toggle side panel
 	 'F10' # Toggle settings menu
 	 'F11' # Toggle fullscreen
-	 'End' # Go to end of current line
-	 'Home' # Go to beginning of current line
-	 'Ins' # Toggle insert/overwrite
+	 'Alt+Left'/'Alt+Rght'  # Move current word left and right
+	 'Alt+Up'/'Alt+Down' # Move current line up and down
+	 'Alt+1...9' # Switch between files 1 to 9
 	 'Ctrl+a' # Select all text
-	 'Ctrl+c' # Copy selected text to clipboard
+	 'Ctrl+c'/'Ctrl+v' # Copy and paste selected text to clipboard
 	 'Ctrl+d' # Delete current line
 	 'Ctrl+f' # Text search
 	 'Ctrl+g' # Find the next match
 	 'Ctrl+h' # Search and replace dialog
 	 'Ctrl+i' # Go to line
 	 'Ctrl+j' # Condense text on selected lines
-	 'Ctrl+l' # Convert selected text to lowercase
+	 'Ctrl+l'/'Ctrl+u' # Convert selected text to lowercase and uppercase
 	 'Ctrl+m' # Comment out selected lines
 	 'Ctrl+n' # Create a file in a new window
 	 'Ctrl+o' # Open a file
@@ -48,22 +50,22 @@
 	 'Ctrl+q' # Quit the application
 	 'Ctrl+s' # Save the file
 	 'Ctrl+t' # Create a file in a new tab
-	 'Ctrl+u' # Convert selected text to uppercase
-	 'Ctrl+v' # Paste text from clipboard
 	 'Ctrl+w' # Close the file
 	 'Ctrl+x' # Cut selected text to clipboard
-	 'Ctrl+z' # Undo last action
-	 'Ctrl+F9' # Toggle bottom panel
-	 'Ctrl+BkSl' # Deselect all text
+	 'Ctrl+z'/'Shft+Ctrl+Z' # Undo and redo last action
+	 'Ctrl+Arrows' # Move around through the text in different directions
 	 'Ctrl+End' # Go to end of file
 	 'Ctrl+Home' # Go to beginning of file
+	 'Ctrl+F9' # Toggle bottom panel
+	 'Ctrl+\\' # Deselect all text
 	 'Ctrl+Alt+N' # Create a file in a new tab group
-	 'Ctrl+Alt+PgDn' # Switch to the next file
-	 'Ctrl+Alt+PgUp' # Switch to the previous file
-	 'Ctrl+Left Ctrl+Rght' # Move left and right through text
-	 'Ctrl+Up Ctrl+Down' # Move up and down through text
+	 'Ctrl+Alt+PgUp'/'Ctrl+Alt+PgDn' # Switch to the next and previous file
+	 'Shft+Left'/'Shft+Rght' # Select next character to left and right
+	 'Shft+Up'/'Shft+Down' # Select text inline with cursor above and below
 	 'Shft+F7' # Check spelling dialog
-	 'Shft+Ctrl+A' # Increment number at cursor
+	 'Shft+Alt+Up'/'Shft+Alt+Down' # Move viewport up and down
+	 'Shft+Alt+Home'/'Shft+Alt+End' # Move viewport to beginning and end of file
+	 'Shft+Ctrl+A'/'Shft+Ctrl+X' # Increment and decrement number at cursor
 	 'Shft+Ctrl+G' # Find last match of string
 	 'Shft+Ctrl+J' # Split line at margin crossover
 	 'Shft+Ctrl+K' # Deselect highlight search matches
@@ -72,24 +74,65 @@
 	 'Shft+Ctrl+S' # Rename or relocate the file
 	 'Shft+Ctrl+T' # Reopen the most recently closed file
 	 'Shft+Ctrl+W' # Close all the files
-	 'Shft+Ctrl+X' # Decrement number at cursor
-	 'Shft+Ctrl+Z' # Redo last action
+	 'Shft+Ctrl+Up'/'Shft+Ctrl+Down' # Select text from cursor to end of next line
+	   # and start of last line
+	 'Shft+Ctrl+Home'/'Shft+Ctrl+End' # Select from cursor to start and end of file
+	 'Shft+Ctrl+Left'/'Shft+Ctrl+Rght' # Select next and last word or special char
 	 'Shft+Ctrl+~' # Invert selected case
-	 'Shft+Ctrl+Down' # Select text from cursor to end of next line
-	 'Shft+Ctrl+End' # Select text from cursor to end of file
-	 'Shft+Ctrl+Home' # Select text from cursor to beginning of file
-	 'Shft+Ctrl+Left' # Select previous word or special character
-	 'Shft+Ctrl+Rght' # Select next word or special character
-	 'Shft+Ctrl+Up' # Select text from cursor to start of previous line
-	 'Shft+Left Shft+Rght' # Select next character left or right
-	 'Shft+Up Shft+Down' # Select text inline with cursor above or below
-	 'Shft+Alt+Down' # Move viewport down
-	 'Shft+Alt+End' # Move viewport to end of file
-	 'Shft+Alt+Home' # Move viewport to beginning of file
-	 'Shft+Alt+Up' # Move viewport up
-	 'Alt+Left Alt+Rght'  # Move current word left or right
-	 'Alt+Up Alt+Down' # Move current line up or down
-	 'Alt+1...9' # Switch between files 1 to 9
+
+	GUI PREFS
+	 > VIEW
+	   > Side Panel: <on> # Display the side panel
+	   > Bottom Panel: <on> # Display the bottom panel
+	   > Highlight Mode: <sh> # Set highlight mode to sh
+	 > PREFERENCES
+	   > VIEW
+		 > Line Numbers: <on> # Display line numbers
+		 > Right Margin: <on> <80> # Display right margin at column
+		 > Display Grid: <on> # Display grid pattern
+		 > Statusbar: <on> # Display statusbar
+		 > Text Wrapping: <on> # Enable text wrapping
+		 > Dont Split Words: <on> # Enable dont split words over two lines
+		 > Highlight Line: <off> # Disable highlight current line
+		 > Highlight Brckt: <on> # Enable highlight matching brackets
+	   > EDITOR
+		 > Tab Width: <4> # Set tab width to 4
+		 > Spaces Instead: <off> # Disable spaces instead of tabs
+		 > Auto Indent: <on> # Auto indentation for quick lists and code 
+		 > Backup On Save: <off> # Disable create backup copy before saving
+		 > Autosave Every: <off> # Disable set autosave files every 30 minutes
+	   > FONTS & COLOURS
+		 > Use System Font: <on> # Use system font
+		 > Editor Font: <secondary> # Set editor font to any secondary font
+		 > Colour Scheme: <Oblivion> # Set Oblivion as the color scheme
+	   > PLUGINS
+		 > Bookmarks: <off> # Disable bookmarks
+		 > Bracket Completion: <off> # Disable bracket completion
+		 > Character Map: <on> # Enable character map
+		 > Code Comment: <on> # Enable code comment
+		 > Color Picker: <on> # Enable colour picker
+		 > Document Stats: <on> # Enable document statistics
+		 > Draw spaces: <off> # Turn on draw spaces when needed
+		 > Embed Terminal: <on> # Enable embedded terminal
+		 > External Tools: <on> # Enable external tools
+		 > File Browser: <on> # Enable file browser panel
+		 > Git: <off> # Disable git
+		 > Ins Date Time: <on> # Enable insert date and time
+		 > Join Splits: <on> # Enable join or split lines
+		 > Modelines: <off> # Disable modelines
+		 > Multi Edit: <off> # Disable multi edit mode
+		 > Open URL Context Menu: <on> # Enable open URl context menu
+		 > Python Console: <on> # Enable python console
+		 > Quick Highlight: <on> # Enable quick highlight
+		 > Quick Open: <on> # Enable quick open
+		 > Restore Minimap: <on> # Enable restore minimap
+		 > Session Saver: <on> # Enable session saver 
+		 > Smart Spaces: <off> # Disable smart spaces
+		 > Snippets: <on> # Enable snippets    
+		 > Sort: <on> # Enable sort
+		 > Spell Checker: <on> # Enable spell checker 
+		 > Text Size: <on> # Enable text size
+		 > Word Completion: <off> # Disable word completion
 
 	DEPENDS ON
 	 ▸ amtk # Devkit for gtk applications
@@ -104,15 +147,15 @@
 	 ▸ gedit-plugins # Collection of plugins
 
 	BINARIES
-	 ▸ '/bin/gedit' # Launch gedit
+	 ▸ '/bin/gedit' # Run gedit
 
 	FILES
 	 ▸ "$HOME/.config/gedit/accels" # User keybindings file
 	 ▸ '/usr/share/gtksourceview-4/styles/<theme.xml>' # Document theme XMLs
 
 	WEBLINKS
-	 ▸ 'https://delightlylinux.wordpress.com/2015/03/25/gedit-themes/' # Themes
+	 ▸ 'https://delightlylinux.wordpress.com/2015/03/25/gedit-themes' # Themes
 	 ▸ 'https://github.com/gmate/gmate/tree/master/styles' # Theme previews
 	 ▸ 'https://github.com/johnfactotum/gedit-restore-minimap' # Restore minimap
 	 ▸ 'https://wiki.gnome.org/Apps/Gedit' # Gnome wiki
-
+	 ▸ 'https://wiki.archlinux.org/title/GNOME/Gedit' # Arch wiki

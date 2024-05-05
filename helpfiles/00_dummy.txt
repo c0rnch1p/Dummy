@@ -43,9 +43,8 @@
 	   # Minor interjection on formatting 
 	 int='notaninteger' # A wild variable 
 	 echo "$int" >> injection.txt # A lowly command
-	 cat inj* | grep -o integ | sed 's/g/grate/g' # A wayward pipe
-	FORMATTING REMINDERS
-	   # Shortcut order 'Alt, Ctrl, Shft', 'letters, numbers (0..9, num1...num9,
+	 cat inj* | grep -o integ | sed 's/g/grate/g' # A wayward pipe, shortcut
+	   # order 'Alt, Ctrl, Shft', 'letters, numbers (0..9, num1...num9,
 	   # F1...F9), symbols', include weblinks 'srcs, wikis, mans, ofcs, repos'
 
 	WEBLINKS
