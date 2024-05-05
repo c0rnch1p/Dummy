@@ -20,7 +20,7 @@
 	 
 	COMMANDS
 	 shotcut --fullscreen # Open shotcut in fullscreen mode
-	 shotcut --noupgrade # Hide upgrade prompt and menu item on startup
+	 shotcut --noupgrade # Hide upgrade prompt and menu timeline on startup
 	 shotcut --qmljsdebugger <port> # Activate the QML JS debugger with a port
 	 shotcut --gpu # Use GPU processing
 	 shotcut --clear-recent # Clear recents on exit
@@ -42,28 +42,28 @@
 	   # can be modified in the actions and shortcuts section of the Shotcut
 	   # help menu, there are also probably a few more shortcuts for Shotcut that
 	   # exist than the ones in this list
-	 'a' # Append item 
-	 'b' # Overwrite item
-	 'c'|'Ctrl+c' # Copy item
+	 'a' # Append timeline 
+	 'b' # Overwrite timeline
+	 'c'|'Ctrl+c' # Copy timeline
 	 'f' # Choose a filter
 	 'i' # Set in or trim clip in
-	 'j' # Rewind item
+	 'j' # Rewind timeline
 	 'k'|'Spce' # Pause and play
 	 'l' # Fast forward
 	 'm' # Add or edit marker at cursor
 	 'o' # Set out or move cursor to the left
 	 'p' # Switch source or project
-	 'r' # Replace item
-	 's' # Split item
-	 'v' # Insert item
+	 'r' # Replace timeline
+	 's' # Split timeline
+	 'v' # Insert timeline
 	 'x'|'Shft+Del' # Ripple delete
 	 'z'|'Del'|'BkSp' # Lift
 	 '0' # Zoom fit
-	 '1...9' # Select item number
+	 '1...9' # Select timeline number
 	 'F2' # Rename clip (properties)
 	 'F3' # Find (recent)
 	 'F4' # Settings proxy use proxy
-	 'F5' # Reload item
+	 'F5' # Reload timeline
 	 'F6' # Settings preview scaling none
 	 'F7' # Settings preview scaling 360p
 	 'F8' # Settings preview scaling 540p
@@ -105,9 +105,9 @@
 	 'Ctrl+s' # File save
 	 'Ctrl+t' # Enter timecode
 	 'Ctrl+u' # Add audio track
-	 'Ctrl+v' # Paste item
+	 'Ctrl+v' # Paste timeline
 	 'Ctrl+w' # File close
-	 'Ctrl+x' # Cut item
+	 'Ctrl+x' # Cut timeline
 	 'Ctrl+y'|'Ctrl+Shft+Z' # Edit redo
 	 'Ctrl+z' # Edit undo
 	 'Ctrl+0' # View jobs
