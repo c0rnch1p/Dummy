@@ -86,52 +86,52 @@
 	   > Highlight Mode: <sh> # Set highlight mode to sh
 	 > PREFERENCES
 	   > VIEW
-		 > Line Numbers: <on> # Display line numbers
-		 > Right Margin: <on> <80> # Display right margin at column
-		 > Display Grid: <on> # Display grid pattern
-		 > Statusbar: <on> # Display statusbar
-		 > Text Wrapping: <on> # Enable text wrapping
-		 > Dont Split Words: <on> # Enable dont split words over two lines
-		 > Highlight Line: <off> # Disable highlight current line
-		 > Highlight Brckt: <on> # Enable highlight matching brackets
+	     > Line Numbers: <on> # Display line numbers
+	     > Right Margin: <on> <80> # Display right margin at column
+	     > Display Grid: <on> # Display grid pattern
+	     > Statusbar: <on> # Display statusbar
+	     Text Wrapping: <on> # Enable text wrapping
+	     > Dont Split Words: <on> # Enable dont split words over two lines
+	     > Highlight Line: <off> # Disable highlight current line
+	     > Highlight Brckt: <on> # Enable highlight matching brackets
 	   > EDITOR
-		 > Tab Width: <4> # Set tab width to 4
-		 > Spaces Instead: <off> # Disable spaces instead of tabs
-		 > Auto Indent: <on> # Auto indentation for quick lists and code 
-		 > Backup On Save: <off> # Disable create backup copy before saving
-		 > Autosave Every: <off> # Disable set autosave files every 30 minutes
+	     > Tab Width: <4> # Set tab width to 4
+	     > Spaces Instead: <off> # Disable spaces instead of tabs
+	     > Auto Indent: <on> # Auto indentation for quick lists and code 
+	     > Backup On Save: <off> # Disable create backup copy before saving
+	     > Autosave Every: <off> # Disable set autosave files every 30 minutes
 	   > FONTS & COLOURS
-		 > Use System Font: <on> # Use system font
-		 > Editor Font: <secondary> # Set editor font to any secondary font
-		 > Colour Scheme: <Oblivion> # Set Oblivion as the color scheme
+	     > Use System Font: <on> # Use system font
+	     > Editor Font: <secondary> # Set editor font to any secondary font
+	     > Colour Scheme: <Oblivion> # Set Oblivion as the color scheme
 	   > PLUGINS
-		 > Bookmarks: <off> # Disable bookmarks
-		 > Bracket Completion: <off> # Disable bracket completion
-		 > Character Map: <on> # Enable character map
-		 > Code Comment: <on> # Enable code comment
-		 > Color Picker: <on> # Enable colour picker
-		 > Document Stats: <on> # Enable document statistics
-		 > Draw spaces: <off> # Turn on draw spaces when needed
-		 > Embed Terminal: <on> # Enable embedded terminal
-		 > External Tools: <on> # Enable external tools
-		 > File Browser: <on> # Enable file browser panel
-		 > Git: <off> # Disable git
-		 > Ins Date Time: <on> # Enable insert date and time
-		 > Join Splits: <on> # Enable join or split lines
-		 > Modelines: <off> # Disable modelines
-		 > Multi Edit: <off> # Disable multi edit mode
-		 > Open URL Context Menu: <on> # Enable open URl context menu
-		 > Python Console: <on> # Enable python console
-		 > Quick Highlight: <on> # Enable quick highlight
-		 > Quick Open: <on> # Enable quick open
-		 > Restore Minimap: <on> # Enable restore minimap
-		 > Session Saver: <on> # Enable session saver 
-		 > Smart Spaces: <off> # Disable smart spaces
-		 > Snippets: <on> # Enable snippets    
-		 > Sort: <on> # Enable sort
-		 > Spell Checker: <on> # Enable spell checker 
-		 > Text Size: <on> # Enable text size
-		 > Word Completion: <off> # Disable word completion
+	     > Bookmarks: <off> # Disable bookmarks
+	     Bracket Completion: <off> # Disable bracket completion
+	     > Character Map: <on> # Enable character map
+	     > Code Comment: <on> # Enable code comment
+	     > Color Picker: <on> # Enable color picker
+	     > Document Stats: <on> # Enable document statistics
+	     > Draw spaces: <off> # Turn on draw spaces when needed
+	     > Embed Terminal: <on> # Enable embedded terminal
+	     > External Tools: <on> # Enable external tools
+	     > File Browser: <on> # Enable file browser panel
+	     > Git: <off> # Disable git
+	     > Ins Date Time: <on> # Enable insert date and time
+	     Join Splits: <on> # Enable join or split lines
+	     > Modelines: <off> # Disable modelines
+	     > Multi Edit: <off> # Disable multi edit mode
+	     > Open URL Context Menu: <on> # Enable open URL context menu
+	     > Python Console: <on> # Enable python console
+	     > Quick Highlight: <on> # Enable quick highlight
+	     > Quick Open: <on> # Enable quick open
+	     > Restore Minimap: <on> # Enable restore minimap
+	     > Session Saver: <on> # Enable session saver 
+	     > Smart Spaces: <off> # Disable smart spaces
+	     > Snippets: <on> # Enable snippets    
+	     > Sort: <on> # Enable sort
+	     > Spell Checker: <on> # Enable spell checker 
+	     > Text Size: <on> # Enable text size
+	     > Word Completion: <off> # Disable word completion
 
 	DEPENDS ON
 	 ▸ bash # GNU Bourne Again shell
@@ -143,14 +143,14 @@
 	 ▸ glibc # GNU C Library
 	 ▸ gobject-introspection-runtime
 	 ▸ gsettings-desktop-schemas # GSchemas for gnome desktop
-	 ▸ gspell # Spell checking library for gtk applications
-	 ▸ gtk3 # GObject-based multi-platform GUI toolkit
+	 ▸ gspell # Spell checking library for GTK applications
+	 ▸ gtk3 # GObject based multi-platform GUI toolkit
 	 ▸ hicolor-icon-theme # Freedesktop.org Hicolor icon theme
 	 ▸ libgedit-amtk # Actions, Menus and Toolbars Kit for GTK applications
 	 ▸ libgedit-gfls # Module dedicated to file loading and saving
 	 ▸ libgedit-gtksourceview # Source code editing widget
 	 ▸ libgedit-tepl # Library that eases the development of text editors and IDEs
-	 ▸ libgirepository # Introspection system for GObject-based runtime libraries
+	 ▸ libgirepository # Introspection system for GObject based runtime libraries
 	 ▸ libpeas # GObject Plugin System
 	 ▸ pango # Library for layout and rendering of text
 	 ▸ python # Python programming language
