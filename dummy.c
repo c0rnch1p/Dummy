@@ -63,6 +63,7 @@ void alphabetSrch(
 void eliminationSrch(int highlight, subMenu subMenus[]);
 void mainmenuScr(const char* uprMenu[], const char* lwrMenu[], subMenu subMenus[]);
 void submenuScr(int highlight, subMenu subMenus[]);
+void toLowerCase(char *str);
 void updateSection(int highlight, subMenu subMenus[]);
 
 int main(){
@@ -611,27 +612,46 @@ void submenuScr(int highlight, subMenu subMenus[]){
 	subWin=NULL;
 }
 
-void updateSection(int highlight, subMenu subMenus[]){
+void toLowerCase(char *str) {
+    for (int i = 0; str[i]; i++) {
+        str[i] = tolower((unsigned char)str[i]);
+    }
+}
+
+void updateSection(int highlight, subMenu subMenus[]) {
     // Ensure the highlight index is within bounds
-    int submenuCount=10; // Adjust according to the actual count of `subMenus`
-    if (highlight < 0 || highlight >= submenuCount){
+    int submenuCount = 10; // Adjust according to the actual count of `subMenus`
+    if (highlight < 0 || highlight >= submenuCount) {
         mvprintw(LINES - 2, 0, "Invalid selection. No files to open.");
-        return;}
+        return;
+    }
+
     // Get the highlighted submenu title and list
-    subMenu selectedSubMenu=subMenus[highlight];
-    const char *categoryName=selectedSubMenu.title;
+    subMenu selectedSubMenu = subMenus[highlight];
+    char categoryName[100]; // Adjust size as needed
+    strncpy(categoryName, selectedSubMenu.title, sizeof(categoryName));
+    categoryName[sizeof(categoryName) - 1] = '\0'; // Ensure null-termination
+
+    // Convert categoryName to lowercase
+    toLowerCase(categoryName);
+
     // Construct the paths for the three files to open
     char filePaths[3][512]; // Array for the three file paths
     snprintf(filePaths[0], sizeof(filePaths[0]), "dummyfiles/readme");
-    snprintf(filePaths[1], sizeof(filePaths[1]), "dummyfiles/all_h3lp.c");
+    snprintf(filePaths[1], sizeof(filePaths[1]), "dummyfiles/allh3lp.c");
     snprintf(filePaths[2], sizeof(filePaths[2]), "dummyfiles/%s/%s.c", categoryName, categoryName);
+
     // Loop through the file paths and open each one with the editor
-    for (int i=0; i < 3; i++){
+    for (int i = 0; i < 3; i++) {
         char command[512]; // Buffer size should be adjusted if necessary
         snprintf(command, sizeof(command), "nano '%s'", filePaths[i]);
+
         // Execute the command to open the file in the editor
-        int result=system(command);
-        if (result != 0){
-            mvprintw(LINES - 2, 0, "Error opening file: %s", filePaths[i]);}}
-    mvprintw(LINES - 2, 0, "Files related to category '%s' opened.", categoryName);
+        int result = system(command);
+        if (result != 0) {
+            mvprintw(LINES - 2, 0, "Error opening file: %s", filePaths[i]);
+        }
+    }
+
+    mvprintw(LINES - 2, 0, "Files related to category '%s' opened.", selectedSubMenu.title);
 }
