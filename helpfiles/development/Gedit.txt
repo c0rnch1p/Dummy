@@ -169,10 +169,12 @@
 
 	WEBLINKS
 	 ▸ 'https://delightlylinux.wordpress.com/2015/03/25/gedit-themes' # Themes
+	 ▸ 'https://en.wikipedia.org/wiki/Gedit' # Wikipedia
 	 ▸ 'https://gedit-technology.github.io/apps/gedit/index.html' # Gedit tech
 	 ▸ 'https://github.com/gmate/gmate/tree/master/styles' # Theme previews
 	 ▸ 'https://github.com/GNOME/gedit' # Git repo
-	 ▸ 'https://github.com/johnfactotum/gedit-restore-minimap' # Restore minimap
+	 ▸ 'https://github.com/johnfactotum/gedit-restore-minimap' # Minimap plugin
 	 ▸ 'https://gitlab.gnome.org/GNOME/gedit' # Core git repo
+	 ▸ 'https://man.archlinux.org/man/gedit.1.en' # Manual
 	 ▸ 'https://wiki.archlinux.org/title/GNOME/Gedit' # Arch wiki
 	 ▸ 'https://wiki.gnome.org/Apps/Gedit' # Gnome wiki
