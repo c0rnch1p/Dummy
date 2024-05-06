@@ -4,8 +4,8 @@
 #define MMWDTH 15
 #define SMLNTH 20
 #define SMWDTH 28
-#define YCNTR (LINES / 2)
-#define XCNTR (COLS / 2)
+#define YCNTR (LINES/2)
+#define XCNTR (COLS/2)
 
 WINDOW *listallWin=NULL;
 WINDOW *menuWin=NULL;
@@ -103,7 +103,7 @@ int main(){
 		use_default_colors();
 		// +1 to skip first submenu title
 		for(int i=0; i < MMSIZE; i++){
-			lwrMenu[i]=subMenus[i + 1].title;}
+			lwrMenu[i]=subMenus[i+1].title;}
 		int colorPairs[CPAIRS][2]={
 			{1, COLOR_BLACK},
 			{2, COLOR_WHITE},
@@ -115,11 +115,17 @@ int main(){
 			{8, COLOR_BLUE}};
 		// -1 as pair value for transparency
 		for(int i=0; i < CPAIRS; i++){
-			init_pair(colorPairs[i][0], colorPairs[i][1], -1);}		
+			init_pair(colorPairs[i][0], colorPairs[i][1], -1);}
 		mainmenuScr(uprMenu, lwrMenu, subMenus);
 		napms(250);}
 	cleanSubmenus();
 	return 0;
+}
+
+// Convert text to lowercase
+void toLowerCase(char *str){
+	for (int i=0; str[i]; i++){
+		str[i]=tolower((unsigned char)str[i]);}
 }
 
 // Check dependencies
@@ -169,13 +175,13 @@ void screenKeys(int ch, int* toggleKeys){
 	if(ch == KEY_F(9)){*toggleKeys=!(*toggleKeys);}
 	if(*toggleKeys){
 		attron(COLOR_PAIR(6));
-		mvprintw(LINES - 1, 1, "<%2s> screen keys", "");
+		mvprintw(LINES-1, 1, "<%2s> screen keys", "");
 		attron(A_BOLD);
-		mvprintw(LINES - 1, 2, "F9");
+		mvprintw(LINES-1, 2, "F9");
 		attroff(A_BOLD);
 		attroff(COLOR_PAIR(6));
 		wclear(keysWin);
-		wrefresh(keysWin);    
+		wrefresh(keysWin);
 	}else{
 		wattron(keysWin, A_BOLD | COLOR_PAIR(8));
 		box(keysWin, 0, 0);
@@ -215,7 +221,7 @@ void fileReader(const char* flPth){
 	char lang[]="/usr/share/Dummy/lang.lua";
 	char theme[]="/usr/share/Dummy/theme.lua";
 	int termCols=COLS;
-	int tabSpc=(COLS >= 200) ? (COLS - 80) / 2 : 4;
+	int tabSpc=(COLS >= 200) ? (COLS-80)/2 : 4;
 	/* The variable above can be broken down as, if screen is larger than 160
 	cols, subtract 80 (file width) and divide the result by 2.offset to centre
 	the page, else tab width is set to 4 to avoid text wrapping */
@@ -228,7 +234,7 @@ void fileReader(const char* flPth){
 	if(pid1 == 0){
 		char highlightCmd[512];
 		snprintf(highlightCmd, sizeof(highlightCmd),
-		    "highlight -O xterm256 -S %s -s %s -l -j3 -t3 -t %d %s", lang, theme, tabSpc, modPath);
+			"highlight -O xterm256 -S %s -s %s -l -j3 -t3 -t %d %s", lang, theme, tabSpc, modPath);
 		int pipefd[2];
 		// Create a pipe
 		if(pipe(pipefd) == -1){
@@ -245,7 +251,7 @@ void fileReader(const char* flPth){
 			dup2(pipefd[1], STDOUT_FILENO);
 			/* Duplicate the file descriptor onto the read (out) end of the pipe
 			to be used as input, the value is stored in STDOUT_FILENO defined in
-			unistd.h, its a constant integer data type */			
+			unistd.h, its a constant integer data type */
 			close(pipefd[1]);
 			execlp("sh", "sh", "-c", highlightCmd, NULL);
 		}else{
@@ -266,7 +272,7 @@ void fileReader(const char* flPth){
 void alphabetSrch(
 	const char* srchChar, int* highlight, int* curSelect,
 	const char* uprMenu[], const char* lwrMenu[]){
-	int matchingIdx=-1; // -1 = no match, else = match
+	int matchingIdx=-1; // -1=no match, else=match
 	// Upper menu matches
 	for(int i=0; i < 1; i++){
 		if(strncasecmp(uprMenu[i], srchChar, 1) == 0){
@@ -275,7 +281,7 @@ void alphabetSrch(
 			break;}}
 	if(matchingIdx == -1){
 		// Lower menu matches
-		for(int i=0; i < MMSIZE - 1; i++){
+		for(int i=0; i < MMSIZE-1; i++){
 			if(strncasecmp(lwrMenu[i], srchChar, 1) == 0){
 				matchingIdx=i;
 				*curSelect=2;
@@ -288,104 +294,104 @@ void alphabetSrch(
 
 // Elimination search
 void eliminationSrch(int highlight, subMenu subMenus[]){
-    char srchInput[50]="";
-    int curSelect=0;
-    int matchCnt=0; // current number of matched files
-    srchWin=newwin(3, 17, 1, 1);
-    keypad(srchWin, TRUE);
-    nodelay(srchWin, TRUE);    
-    while(1){
-        // Search prompt
-        werase(srchWin);
-        wattron(srchWin, A_BOLD | COLOR_PAIR(8));
-        box(srchWin, 0, 0);
-        wattroff(srchWin, A_BOLD | COLOR_PAIR(8));
-        wattron(srchWin, COLOR_PAIR(6));
-        mvwprintw(srchWin, 1, 1, " : ");
-        wattron(srchWin, A_BOLD);
-        mvwprintw(srchWin, 1, 4, "%s", srchInput);
-        wattroff(srchWin, A_BOLD);
-        wattroff(srchWin, COLOR_PAIR(6));
-        wrefresh(srchWin);
-        // Redraw submenu
-        werase(subWin);
-        wattron(subWin, A_BOLD | COLOR_PAIR(8));
-        box(subWin, 0, 0);
-        wattroff(subWin, COLOR_PAIR(8));
-        wattron(subWin, COLOR_PAIR(6));
-        mvwprintw(subWin, 0, 16, "%s", subMenus[highlight].title);
-        wattroff(subWin, A_BOLD);
+	char srchInput[50]="";
+	int curSelect=0;
+	int matchCnt=0; // current number of matched files
+	srchWin=newwin(3, 17, 1, 1);
+	keypad(srchWin, TRUE);
+	nodelay(srchWin, TRUE);
+	while(1){
+		// Search prompt
+		werase(srchWin);
+		wattron(srchWin, A_BOLD | COLOR_PAIR(8));
+		box(srchWin, 0, 0);
+		wattroff(srchWin, A_BOLD | COLOR_PAIR(8));
+		wattron(srchWin, COLOR_PAIR(6));
+		mvwprintw(srchWin, 1, 1, " : ");
+		wattron(srchWin, A_BOLD);
+		mvwprintw(srchWin, 1, 4, "%s", srchInput);
+		wattroff(srchWin, A_BOLD);
+		wattroff(srchWin, COLOR_PAIR(6));
+		wrefresh(srchWin);
+		// Redraw submenu
+		werase(subWin);
+		wattron(subWin, A_BOLD | COLOR_PAIR(8));
+		box(subWin, 0, 0);
+		wattroff(subWin, COLOR_PAIR(8));
+		wattron(subWin, COLOR_PAIR(6));
+		mvwprintw(subWin, 0, 16, "%s", subMenus[highlight].title);
+		wattroff(subWin, A_BOLD);
 		/* This code block performs a process of elimination style search on
 		files in the submenu, redrawing the submenu attributes in the code above
 		allows search match/es to change the highlight below */
-        int matchCnt=0;
-        int selectIdx=-1; // Index of files within the matching list
-        for(int i=0; i < subMenus[highlight].size; i++){
-            if(strcasestr(subMenus[highlight].list[i], srchInput)){
-                matchCnt++;
-                if(matchCnt - 1 == curSelect){
-                    selectIdx = i;
-                    wattron(subWin, A_BOLD);}
+		int matchCnt=0;
+		int selectIdx=-1; // Index of files within the matching list
+		for(int i=0; i < subMenus[highlight].size; i++){
+			if(strcasestr(subMenus[highlight].list[i], srchInput)){
+				matchCnt++;
+				if(matchCnt-1 == curSelect){
+					selectIdx=i;
+					wattron(subWin, A_BOLD);}
 					const char *fullString=subMenus[highlight].list[i];
 					if(subMenus[highlight].title != allh3lpMenu.title){
-						const char *slashPos = strchr(fullString, '/');
+						const char *slashPos=strchr(fullString, '/');
 						if(slashPos){
-							mvwprintw(subWin, i - selectIdx + 1, 2, "%s", slashPos + 1);
+							mvwprintw(subWin, i-selectIdx+1, 2, "%s", slashPos+1);
 						}else{
-							mvwprintw(subWin, i - selectIdx + 1, 2, "%s", fullString);}
+							mvwprintw(subWin, i-selectIdx+1, 2, "%s", fullString);}
 					}else{
-						mvwprintw(subWin, i - selectIdx + 1, 2, "%s", fullString);}                    
-                wattroff(subWin, A_BOLD);}}
-        wrefresh(subWin);
-		// Catch chars        
-        int ch=getch();
-        if(ch == ERR){
-            continue;
-        }else if(ch == 27){
-            srchInput[0]='\0';
-            curSelect=-1;
-            werase(srchWin);
-            wrefresh(srchWin);
-            delwin(srchWin);
-            srchWin=NULL;
-            return;}
-        switch(ch){
-            // Cycle selection
-            case KEY_UP:
-                if(curSelect > 0){
-                    curSelect--;}
-                break;
-            case KEY_DOWN:
-                if(curSelect < matchCnt - 1){
-                    curSelect++;}
-                break;
-            // Select file
-            case KEY_ENTER:
-            case KEY_RIGHT:
-            case '\n':
-                if (selectIdx >= 0){
-                    int wstatus;
-                    fileReader(subMenus[highlight].list[selectIdx]);
-                    wait(&wstatus);
-                    wclear(stdscr);
-                    refresh();}
-                break;
-            // Delete char
-            case KEY_BACKSPACE:
-                if(strlen(srchInput) > 0){
-                    srchInput[strlen(srchInput) - 1]='\0';
-                }else{
-                    matchCnt=0;}
-                break;
-            default:
-                if(isprint(ch)){
-                    if(strlen(srchInput) + 1 < sizeof(srchInput)){
-	                	// Build the query from single chars
-                        strncat(srchInput, (char*)&ch, 1);}}
-                break;}
+						mvwprintw(subWin, i-selectIdx+1, 2, "%s", fullString);}
+				wattroff(subWin, A_BOLD);}}
+		wrefresh(subWin);
+		// Catch chars
+		int ch=getch();
+		if(ch == ERR){
+			continue;
+		}else if(ch == 27){
+			srchInput[0]='\0';
+			curSelect=-1;
+			werase(srchWin);
+			wrefresh(srchWin);
+			delwin(srchWin);
+			srchWin=NULL;
+			return;}
+		switch(ch){
+			// Cycle selection
+			case KEY_UP:
+				if(curSelect > 0){
+					curSelect--;}
+				break;
+			case KEY_DOWN:
+				if(curSelect < matchCnt-1){
+					curSelect++;}
+				break;
+			// Select file
+			case KEY_ENTER:
+			case KEY_RIGHT:
+			case '\n':
+				if (selectIdx >= 0){
+					int wstatus;
+					fileReader(subMenus[highlight].list[selectIdx]);
+					wait(&wstatus);
+					wclear(stdscr);
+					refresh();}
+				break;
+			// Delete char
+			case KEY_BACKSPACE:
+				if(strlen(srchInput) > 0){
+					srchInput[strlen(srchInput)-1]='\0';
+				}else{
+					matchCnt=0;}
+				break;
+			default:
+				if(isprint(ch)){
+					if(strlen(srchInput)+1 < sizeof(srchInput)){
+						// Build the query from single chars
+						strncat(srchInput, (char*)&ch, 1);}}
+				break;}
 		refresh();}
-    delwin(srchWin);
-    srchWin=NULL;
+	delwin(srchWin);
+	srchWin=NULL;
 }
 
 // Main menu
@@ -393,15 +399,15 @@ void mainmenuScr(const char* uprMenu[], const char* lwrMenu[], subMenu subMenus[
 	int ch=0;
 	int highlight=0;
 	int highlightIdx=0;
-	int curSelect=1; // 1 = upper menu, 2 = lower menu
-	int toggleKeys=1; // 1 = screen keys hidden, else = visible
+	int curSelect=1; // 1=upper menu, 2=lower menu
+	int toggleKeys=1; // 1=screen keys hidden, else=visible
 	char srchChar[MMWDTH]="";
 	while(1){
 		wclear(stdscr);
 		refresh();
 		screenKeys(ch, &toggleKeys);
 		// Draw upper menu box
-		listallWin=newwin(3, MMWDTH, YCNTR - 8, XCNTR - 8);
+		listallWin=newwin(3, MMWDTH, YCNTR-8, XCNTR-8);
 		keypad(listallWin, TRUE);
 		werase(listallWin);
 		wattron(listallWin, A_BOLD | COLOR_PAIR(8));
@@ -411,11 +417,11 @@ void mainmenuScr(const char* uprMenu[], const char* lwrMenu[], subMenu subMenus[
 		for(int i=0; i < 1; i++){
 			if(i == highlight && curSelect == 1){
 				wattron(listallWin, A_BOLD);}
-			mvwprintw(listallWin, i + 1, 2, " %s", uprMenu[i]);
+			mvwprintw(listallWin, i+1, 2, " %s", uprMenu[i]);
 			wattroff(listallWin, A_BOLD);}
 		wrefresh(listallWin);
 		// Draw lower menu box
-		menuWin=newwin(11, MMWDTH, YCNTR - 4, XCNTR - 8);
+		menuWin=newwin(11, MMWDTH, YCNTR-4, XCNTR-8);
 		keypad(menuWin, TRUE);
 		werase(menuWin);
 		wattron(menuWin, A_BOLD | COLOR_PAIR(8));
@@ -425,7 +431,7 @@ void mainmenuScr(const char* uprMenu[], const char* lwrMenu[], subMenu subMenus[
 		for(int i=0; i < 9; i++){
 			if(i == highlight && curSelect == 2){
 				wattron(menuWin, A_BOLD);}
-			mvwprintw(menuWin, i + 1, 2, "%s", lwrMenu[i]);
+			mvwprintw(menuWin, i+1, 2, "%s", lwrMenu[i]);
 			wattroff(menuWin, A_BOLD);}
 		wrefresh(menuWin);
 		// Catch chars
@@ -489,9 +495,9 @@ void mainmenuScr(const char* uprMenu[], const char* lwrMenu[], subMenu subMenus[
 				case KEY_F(10):
 					highlightIdx=highlight;
 					highlight += 1;
-			    	updateSection(highlight, subMenus);
-					highlight=highlightIdx;			    	
-		        	break;					
+					updateSection(highlight, subMenus);
+					highlight=highlightIdx;				
+					break;
 				// Quit Dummy
 				case 'q':
 				case 'Q':
@@ -510,7 +516,7 @@ void mainmenuScr(const char* uprMenu[], const char* lwrMenu[], subMenu subMenus[
 void submenuScr(int highlight, subMenu subMenus[]){
 	int ch=0;
 	int srchMode=0;
-	int curSelect=0; // 0 = submenu
+	int curSelect=0; // 0=submenu
 	int toggleKeys=1;
 	int srchLength=0;
 	char srchQuery[50];
@@ -521,7 +527,7 @@ void submenuScr(int highlight, subMenu subMenus[]){
 		refresh();
 		screenKeys(ch, &toggleKeys);
 		// Draw submenu box
-		subWin=newwin(SMLNTH, SMWDTH, YCNTR - 10, XCNTR - 14);
+		subWin=newwin(SMLNTH, SMWDTH, YCNTR-10, XCNTR-14);
 		keypad(subWin, TRUE);
 		werase(subWin);
 		wattron(subWin, A_BOLD | COLOR_PAIR(8));
@@ -532,29 +538,29 @@ void submenuScr(int highlight, subMenu subMenus[]){
 		wattroff(subWin, A_BOLD);
 		// Visible scrolling index
 		int startIdx=curSelect;
-		int endIdx=curSelect + getmaxy(subWin) - 3;
-		if(endIdx >= subMenus[highlight].size - 1){
-			endIdx=subMenus[highlight].size - 1;
-			startIdx=endIdx - getmaxy(subWin) + 3;
+		int endIdx=curSelect+getmaxy(subWin)-3;
+		if(endIdx >= subMenus[highlight].size-1){
+			endIdx=subMenus[highlight].size-1;
+			startIdx=endIdx-getmaxy(subWin)+3;
 			if(startIdx < 0){startIdx=0;}}
-				for(int i = startIdx; i <= endIdx; i++){
+				for(int i=startIdx; i <= endIdx; i++){
 					if(i == curSelect){
 						wattron(subWin, A_BOLD);}
 					const char *fullString=subMenus[highlight].list[i];
 					if(subMenus[highlight].title != allh3lpMenu.title){
-						const char *slashPos = strchr(fullString, '/');
+						const char *slashPos=strchr(fullString, '/');
 						if(slashPos){
-							mvwprintw(subWin, i - startIdx + 1, 2, "%s", slashPos + 1);
+							mvwprintw(subWin, i-startIdx+1, 2, "%s", slashPos+1);
 						}else{
-							mvwprintw(subWin, i - startIdx + 1, 2, "%s", fullString);}
+							mvwprintw(subWin, i-startIdx+1, 2, "%s", fullString);}
 					}else{
-						mvwprintw(subWin, i - startIdx + 1, 2, "%s", fullString);}
+						mvwprintw(subWin, i-startIdx+1, 2, "%s", fullString);}
 					wattroff(subWin, A_BOLD);}
 		/* Without this section any submenu that contains a list of n files
 		exceeding the number of rows in the length of the window box will merge
 		at the bottom edge of the box with the last visble entry, also this is
 		where the path in the list entry gets clipped for each submenu except
-		the all h3lp menu */ 
+		the all h3lp menu */
 		wrefresh(subWin);
 		// Catch chars
 		ch=wgetch(subWin);
@@ -567,13 +573,13 @@ void submenuScr(int highlight, subMenu subMenus[]){
 						startIdx--;
 						endIdx--;}
 				}else{
-					curSelect=subMenus[highlight].size - 1;
-					startIdx=curSelect - getmaxy(subWin) + 2;
+					curSelect=subMenus[highlight].size-1;
+					startIdx=curSelect-getmaxy(subWin)+2;
 					if(startIdx < 0){startIdx=0;}
 						endIdx=curSelect;}
 				break;
 			case KEY_DOWN:
-				if(curSelect < subMenus[highlight].size - 1){
+				if(curSelect < subMenus[highlight].size-1){
 					curSelect++;
 					if(curSelect > endIdx){
 						startIdx++;
@@ -581,7 +587,7 @@ void submenuScr(int highlight, subMenu subMenus[]){
 				}else{
 					curSelect=0;
 					startIdx=0;
-					endIdx=getmaxy(subWin) - 2;}
+					endIdx=getmaxy(subWin)-2;}
 				break;
 			// Text search
 			case '/':
@@ -621,35 +627,28 @@ void submenuScr(int highlight, subMenu subMenus[]){
 	subWin=NULL;
 }
 
-void toLowerCase(char *str){
-    for (int i=0; str[i]; i++){
-        str[i]=tolower((unsigned char)str[i]);}
-}
-
 void updateSection(int highlight, subMenu subMenus[]){
-    int submenuCount=10;
-    // Get highlighted submenu title
-    subMenu selectedSubMenu=subMenus[highlight];
-    char categoryName[100];
-    strncpy(categoryName, selectedSubMenu.title, sizeof(categoryName));
-    categoryName[sizeof(categoryName) - 1]='\0';
-    // Convert categoryName to lowercase
-    toLowerCase(categoryName);
-    // Print debug information
-    //mvprintw(LINES - 2, 0, "Highlight index: %d, Category: %s", highlight, selectedSubMenu.title);
-    // Construct the paths for the three files to open
-    char filePaths[3][512]; // Array for the three file paths
-    snprintf(filePaths[0], sizeof(filePaths[0]), "/usr/share/Dummy/dummyfiles/readme");
-    snprintf(filePaths[1], sizeof(filePaths[1]), "/usr/share/Dummy/dummyfiles/all_h3lp.c");
-    snprintf(filePaths[2], sizeof(filePaths[2]), "/usr/share/Dummy/dummyfiles/%s/%s.c", categoryName, categoryName);
-    // Loop through the file paths
-    for (int i=0; i < 3; i++){
-        char command[512]; // Buffer size can be adjusted
-        snprintf(command, sizeof(command), "sudo nano '%s'", filePaths[i]);
-        // Open the file with nano
-        int result=system(command);
-        if (result != 0){
-            mvprintw(LINES - 2, 0, "⚠ Error opening file: %s ⚠", filePaths[i]);}}
-            sleep(2);
-    mvprintw(LINES - 2, 0, "'%s' files updated", selectedSubMenu.title);
+	int submenuCount=10;
+	subMenu selectedSubMenu=subMenus[highlight];
+	char categoryName[100];
+	strncpy(categoryName, selectedSubMenu.title, sizeof(categoryName));
+	categoryName[sizeof(categoryName)-1]='\0';
+	// Convert categoryName to lowercase
+	toLowerCase(categoryName);
+	// Construct the paths for the three files to open
+	char filePaths[3][512];
+	snprintf(filePaths[0], sizeof(filePaths[0]), "/usr/share/Dummy/dummyfiles/readme");
+	snprintf(filePaths[1], sizeof(filePaths[1]), "/usr/share/Dummy/dummyfiles/all_h3lp.c");
+	snprintf(filePaths[2], sizeof(filePaths[2]), "/usr/share/Dummy/dummyfiles/%s/%s.c", categoryName, categoryName);
+	// Loop through the paths
+	for (int i=0; i < 3; i++){
+		char command[512]; // Buffer size can be adjusted
+		snprintf(command, sizeof(command), "sudo nano '%s'", filePaths[i]);
+		// Open the files with nano
+		int result=system(command);
+		if (result != 0){
+			mvprintw(LINES-2, 0, "⚠ Error opening file: %s ⚠", filePaths[i]);
+			sleep(2);
+			exit(EXIT_FAILURE);}}
+	mvprintw(LINES-2, 0, "'%s' files updated", selectedSubMenu.title);
 }

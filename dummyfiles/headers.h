@@ -1,6 +1,6 @@
 #ifndef HEADERS
 #define HEADERS
-// libraries
+// Libraries
 #include <ctype.h> // character classes
 #include <curses.h> // text-based ui
 #include <errno.h> // error numbers
@@ -21,7 +21,7 @@
 #include <termios.h> // i/o handling
 #include <time.h> // date and time
 #include <unistd.h> // posix osapi
-// files
+// Files
 #include "structs.h"
 #include "all_h3lp.h"
 #include "assets/assets.h"
