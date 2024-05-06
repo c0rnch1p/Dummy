@@ -628,27 +628,28 @@ void toLowerCase(char *str){
 
 void updateSection(int highlight, subMenu subMenus[]){
     int submenuCount=10;
-    // Get the highlighted submenu title and list
-    subMenu selectedSubMenu = subMenus[highlight];
-    char categoryName[100]; // Adjust size as needed
+    // Get highlighted submenu title
+    subMenu selectedSubMenu=subMenus[highlight];
+    char categoryName[100];
     strncpy(categoryName, selectedSubMenu.title, sizeof(categoryName));
-    categoryName[sizeof(categoryName) - 1] = '\0'; // Ensure null-termination
+    categoryName[sizeof(categoryName) - 1]='\0';
     // Convert categoryName to lowercase
     toLowerCase(categoryName);
     // Print debug information
-    mvprintw(LINES - 2, 0, "Highlight index: %d, Category: %s", highlight, selectedSubMenu.title);
+    //mvprintw(LINES - 2, 0, "Highlight index: %d, Category: %s", highlight, selectedSubMenu.title);
     // Construct the paths for the three files to open
     char filePaths[3][512]; // Array for the three file paths
-    snprintf(filePaths[0], sizeof(filePaths[0]), "/usr/share/dummyfiles/readme");
-    snprintf(filePaths[1], sizeof(filePaths[1]), "/usr/share/dummyfiles/all_h3lp.c");
-    snprintf(filePaths[2], sizeof(filePaths[2]), "/usr/share/dummyfiles/%s/%s.c", categoryName, categoryName);
-    // Loop through the file paths and open each one with the editor
-    for (int i = 0; i < 3; i++) {
-        char command[512]; // Buffer size should be adjusted if necessary
+    snprintf(filePaths[0], sizeof(filePaths[0]), "/usr/share/Dummy/dummyfiles/readme");
+    snprintf(filePaths[1], sizeof(filePaths[1]), "/usr/share/Dummy/dummyfiles/all_h3lp.c");
+    snprintf(filePaths[2], sizeof(filePaths[2]), "/usr/share/Dummy/dummyfiles/%s/%s.c", categoryName, categoryName);
+    // Loop through the file paths
+    for (int i=0; i < 3; i++){
+        char command[512]; // Buffer size can be adjusted
         snprintf(command, sizeof(command), "nano '%s'", filePaths[i]);
-        // Execute the command to open the file in the editor
-        int result = system(command);
-        if (result != 0) {
-            mvprintw(LINES - 2, 0, "Error opening file: %s", filePaths[i]);}}
-    mvprintw(LINES - 2, 0, "Files related to category '%s' opened.", selectedSubMenu.title);
+        // Open the file with nano
+        int result=system(command);
+        if (result != 0){
+            mvprintw(LINES - 2, 0, "⚠ Error opening file: %s ⚠", filePaths[i]);}}
+            sleep(2);
+    mvprintw(LINES - 2, 0, "'%s' files updated", selectedSubMenu.title);
 }
