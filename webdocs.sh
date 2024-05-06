@@ -9,7 +9,7 @@ URLS=(
 )
 
 if ! command -v "$BROWSER" "/dev/null" 2>&1; then
-	echo -e "#\n# export the \$BROWSER variable\n#"
+	echo -e "\nExport the \$BROWSER variable\n"
 elif command -v "$BROWSER" --new-window "/dev/null" 2>&1; then
 	"$BROWSER" --new-window "${URLS[0]}"
 	for ((i = 1; i < ${#URLS[@]}; i++)); do
