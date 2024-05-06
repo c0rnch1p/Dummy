@@ -1,4 +1,4 @@
-#include "helpfiles/headers.h"
+#include "dummyfiles/headers.h"
 #define CPAIRS 8
 #define MMSIZE 10
 #define MMWDTH 15
@@ -34,7 +34,7 @@ void initSubmenus(){
 	initUtilities();
 };
 
-/* source data is stored in the .c files in the h3lp/ folder, there is a
+/* Source data is stored in the .c files in the h3lp/ folder, there is a
 source file for each submenu, the file list arrays have been allocated 
 dynamic memory so they need the be initialized and cleaned */
 
@@ -68,7 +68,7 @@ int main(){
 	if(!checkDeps("bat") || !checkDeps("highlight")){
 		fprintf(stderr, "⚠ dependency check failed ⚠\n");
 		exit(EXIT_FAILURE);}
-	// external data
+	// External data
 	initSubmenus();
 	subMenu subMenus[MMSIZE]={
 		{allh3lpMenu.title, allh3lpMenu.list, allh3lpMenu.size},
@@ -84,10 +84,10 @@ int main(){
 	if(subMenus == NULL){
 		fprintf(stderr, "⚠ memory allocation failed ⚠\n");
 		exit(EXIT_FAILURE);}
-	// main menu layout
+	// Main menu layout
 	const char *uprMenu[1]={subMenus[0].title};
 	const char *lwrMenu[MMSIZE];
-	// curses
+	// Curses
 	while(1){
 		initscr();
 		noecho();
@@ -118,7 +118,7 @@ int main(){
 	return 0;
 }
 
-// check dependencies
+// Check dependencies
 int checkDeps(const char* command){
 	char cmd[256];
 	snprintf(cmd, sizeof(cmd),
@@ -126,7 +126,7 @@ int checkDeps(const char* command){
 	return system(cmd) == 0;
 }
 
-// handle cleanup
+// Handle cleanup
 void clearTerminal(){
 	int wstatus;
 	int pid=fork();
@@ -176,12 +176,12 @@ void screenKeys(int ch, int* toggleKeys){
 		box(keysWin, 0, 0);
 		wattroff(keysWin, A_BOLD | COLOR_PAIR(8));
 		wattron(keysWin, COLOR_PAIR(6));
-		mvwprintw(keysWin, 1, 2, "<%3s> search", "");
-		mvwprintw(keysWin, 2, 2, "<%3s> exit search", "");
-		mvwprintw(keysWin, 3, 2, "<%7s> options", "");
-		mvwprintw(keysWin, 4, 2, "<%9s> select", "");
-		mvwprintw(keysWin, 5, 2, "<%10s> back", "");
-		mvwprintw(keysWin, 6, 2, "<%8s> quit", "");
+		mvwprintw(keysWin, 1, 2, "<%3s> Search submenus", "");
+		mvwprintw(keysWin, 2, 2, "<%3s> Exit search", "");
+		mvwprintw(keysWin, 3, 2, "<%7s> Options", "");
+		mvwprintw(keysWin, 4, 2, "<%9s> Select", "");
+		mvwprintw(keysWin, 5, 2, "<%10s> Back", "");
+		mvwprintw(keysWin, 6, 2, "<%8s> Quit", "");
 		wattron(keysWin, A_BOLD);
 		mvwprintw(keysWin, 1, 3, "/|?");
 		mvwprintw(keysWin, 2, 3, "ESC");
@@ -212,7 +212,7 @@ void fileReader(const char* flPth){
 	/* the variable above can be broken down as, if screen is larger than
 	160 cols, subtract 80 (file width) and divide the result by 2.offset to
 	centre the page, else tab width is set to 4 to avoid text wrapping */
-	snprintf(modPath, sizeof(modPath), "/usr/share/Dummy/helpfiles/%s.txt", flPth);
+	snprintf(modPath, sizeof(modPath), "/usr/share/Dummy/dummyfiles/%s.txt", flPth);
 	int pid1=fork();
 	if(pid1 == -1){
 		fprintf(stderr, "⚠ fork failed ⚠\n");
@@ -379,7 +379,7 @@ void eliminationSrch(int highlight, subMenu subMenus[]){
     srchWin=NULL;
 }
 
-// main menu
+// Main menu
 void mainmenuScr(const char* uprMenu[], const char* lwrMenu[], subMenu subMenus[]){
 	int ch=0;
 	int highlight=0;
@@ -391,7 +391,7 @@ void mainmenuScr(const char* uprMenu[], const char* lwrMenu[], subMenu subMenus[
 		wclear(stdscr);
 		refresh();
 		screenKeys(ch, &toggleKeys);
-		// draw upper menu box
+		// Draw upper menu box
 		listallWin=newwin(3, MMWDTH, YCNTR - 8, XCNTR - 8);
 		keypad(listallWin, TRUE);
 		werase(listallWin);
@@ -405,7 +405,7 @@ void mainmenuScr(const char* uprMenu[], const char* lwrMenu[], subMenu subMenus[
 			mvwprintw(listallWin, i + 1, 2, " %s", uprMenu[i]);
 			wattroff(listallWin, A_BOLD);}
 		wrefresh(listallWin);
-		// draw lower menu box
+		// Draw lower menu box
 		menuWin=newwin(11, MMWDTH, YCNTR - 4, XCNTR - 8);
 		keypad(menuWin, TRUE);
 		werase(menuWin);
@@ -419,24 +419,24 @@ void mainmenuScr(const char* uprMenu[], const char* lwrMenu[], subMenu subMenus[
 			mvwprintw(menuWin, i + 1, 2, "%s", lwrMenu[i]);
 			wattroff(menuWin, A_BOLD);}
 		wrefresh(menuWin);
-		// catch chars
+		// Catch chars
 		if(curSelect ==  1){
 			ch=wgetch(listallWin);
 		}else{
 			ch=wgetch(menuWin);}
-		// quick search
+		// Quick search
 		if(ch != ERR){
 			if(isalpha(ch) && tolower(ch) != 'q'){
 				echo();
 				srchChar[0]=ch;
-				/* the main menu only used alphabet search style, a text
-				prompt isnt required for this, the selection will just jump
-				to the letter index position on keystroke */
+				/* The main menu only used alphabet search style, a text prompt
+				isnt required for this, the selection will just jump to the
+				letter index position on keystroke */
 				alphabetSrch(srchChar, &highlight, &curSelect, uprMenu, lwrMenu);
 				refresh();
 				noecho();}}
 			switch(ch){
-				// cycle selection
+				// Cycle selection
 				case KEY_UP:
 					if(curSelect == 1){
 						if(highlight > 0){
@@ -462,7 +462,7 @@ void mainmenuScr(const char* uprMenu[], const char* lwrMenu[], subMenu subMenus[
 							curSelect=1;
 							highlight=0;}}
 					break;
-				// select submenu
+				// Select submenu
 				case KEY_ENTER:
 				case KEY_RIGHT:
 				case '\n':
@@ -476,7 +476,7 @@ void mainmenuScr(const char* uprMenu[], const char* lwrMenu[], subMenu subMenus[
 						wclear(stdscr);
 						refresh();}
 					break;
-				// quit b3tt3rh3lp
+				// Quit Dummy
 				case 'q':
 				case 'Q':
 					sigHandler(SIGINT);
@@ -490,7 +490,7 @@ void mainmenuScr(const char* uprMenu[], const char* lwrMenu[], subMenu subMenus[
 	menuWin=NULL;
 }
 
-// sub menus
+// Sub menus
 void submenuScr(int highlight, subMenu subMenus[]){
 	int ch=0;
 	int srchMode=0;
@@ -504,7 +504,7 @@ void submenuScr(int highlight, subMenu subMenus[]){
 		wclear(stdscr);
 		refresh();
 		screenKeys(ch, &toggleKeys);
-		// draw submenu box
+		// Draw submenu box
 		subWin=newwin(SMLNTH, SMWDTH, YCNTR - 10, XCNTR - 14);
 		keypad(subWin, TRUE);
 		werase(subWin);
@@ -514,7 +514,7 @@ void submenuScr(int highlight, subMenu subMenus[]){
 		wattron(subWin, COLOR_PAIR(6));
 		mvwprintw(subWin, 0, 16, "%s", subMenus[highlight].title);
 		wattroff(subWin, A_BOLD);
-		// visible scrolling index
+		// Visible scrolling index
 		int startIdx=curSelect;
 		int endIdx=curSelect + getmaxy(subWin) - 3;
 		if(endIdx >= subMenus[highlight].size - 1){
@@ -534,16 +534,16 @@ void submenuScr(int highlight, subMenu subMenus[]){
 					}else{
 						mvwprintw(subWin, i - startIdx + 1, 2, "%s", fullString);}
 					wattroff(subWin, A_BOLD);}
-		/* without this section any submenu that contains a list of n files
-		exceeding the number of rows in the length of the window box will
-		merge at the bottom edge of the box with the last visble entry,
-		also this is where the path in the list entry gets clipped for each
-		submenu except the all h3lp menu */ 
+		/* Without this section any submenu that contains a list of n files
+		exceeding the number of rows in the length of the window box will merge
+		at the bottom edge of the box with the last visble entry, also this is
+		where the path in the list entry gets clipped for each submenu except
+		the all h3lp menu */ 
 		wrefresh(subWin);
-		// catch chars
+		// Catch chars
 		ch=wgetch(subWin);
 		switch(ch){
-			// cycle selection
+			// Cycle selection
 			case KEY_UP:
 				if(curSelect > 0){
 					curSelect--;
@@ -567,7 +567,7 @@ void submenuScr(int highlight, subMenu subMenus[]){
 					startIdx=0;
 					endIdx=getmaxy(subWin) - 2;}
 				break;
-			// text search
+			// Text search
 			case '/':
 			case '?':
 				eliminationSrch(highlight, subMenus);
@@ -575,7 +575,7 @@ void submenuScr(int highlight, subMenu subMenus[]){
 				wrefresh(subWin);
 				refresh();
 				break;
-			// return to main menu
+			// Return to main menu
 			case KEY_LEFT:
 			case KEY_BACKSPACE:
 				delwin(subWin);
@@ -584,7 +584,7 @@ void submenuScr(int highlight, subMenu subMenus[]){
 				touchwin(menuWin);
 				refresh();
 				return;
-			// select file
+			// Select file
 			case KEY_ENTER:
 			case KEY_RIGHT:
 			case '\n':
@@ -594,7 +594,7 @@ void submenuScr(int highlight, subMenu subMenus[]){
 				wclear(stdscr);
 				refresh();
 				break;
-			// quit b3tt3rh3lp
+			// Quit Dummy
 			case 'q':
 			case 'Q':
 				sigHandler(SIGINT);
@@ -604,3 +604,35 @@ void submenuScr(int highlight, subMenu subMenus[]){
 	delwin(subWin);
 	subWin=NULL;
 }
+
+
+void openSubMenuFiles(int highlight, subMenu subMenus[]){
+    // Check if the highlight index is within bounds
+    int submenuCount = 10; // Adjust this to the actual count of `subMenus`
+    if (highlight < 0 || highlight >= submenuCount) {
+        mvprintw(LINES - 2, 0, "Invalid selection. No files to open.");
+        return;
+    }
+
+    // Get the selected submenu and its list of files
+    subMenu selectedSubMenu = subMenus[highlight];
+    int fileCount = selectedSubMenu.size;
+
+    // Loop through the submenu's file list and open each file
+    for (int i = 0; i < fileCount; i++) {
+        char command[512]; // Buffer size should be adjusted if necessary
+
+        // Construct the command to open with your preferred editor, e.g., nano or gedit
+        snprintf(command, sizeof(command), "nano '%s'", selectedSubMenu.list[i]);
+
+        // Execute the command to open the file in the editor
+        int result = system(command);
+        if (result != 0) {
+            mvprintw(LINES - 2, 0, "Error opening file: %s", selectedSubMenu.list[i]);
+        }
+    }
+
+    mvprintw(LINES - 2, 0, "Files from submenu '%s' opened.", selectedSubMenu.title);
+}
+
+

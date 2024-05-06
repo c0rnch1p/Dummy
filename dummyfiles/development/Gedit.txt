@@ -170,7 +170,7 @@
 	 ▸ "$HOME/.local/share/gedit/plugins/plugin/name.gschema.xml" # User GSchema
 	 ▸ "$HOME/.local/share/gedit/plugins/plugin/name.plugin" # User plugin file
 	 ▸ "$HOME/.local/share/gedit/plugins/plugin/name.py" # User plugin script
-	 ▸ "$HOME/.local/share/gedit/styles/theme.xml" # User plugin script
+	 ▸ "$HOME/.local/share/gedit/styles/theme.xml" # User theme
 	 ▸ '/usr/share/gtksourceview-3.0/styles/theme.xml' # System theme
 	
 	COMMON USAGE

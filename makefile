@@ -4,18 +4,18 @@ SHARED=/usr/share
 LOCBIN=~/.local/bin
 SRC=\
 	dummy.c \
-	helpfiles/all_h3lp.c \
-	helpfiles/assets/assets.c \
-	helpfiles/development/development.c \
-	helpfiles/gaming/gaming.c \
-	helpfiles/multimedia/multimedia.c \
-	helpfiles/networking/networking.c \
-	helpfiles/packages/packages.c \
-	helpfiles/programming/programming.c \
-	helpfiles/security/security.c \
-	helpfiles/utilities/utilities.c
+	dummyfiles/all_h3lp.c \
+	dummyfiles/assets/assets.c \
+	dummyfiles/development/development.c \
+	dummyfiles/gaming/gaming.c \
+	dummyfiles/multimedia/multimedia.c \
+	dummyfiles/networking/networking.c \
+	dummyfiles/packages/packages.c \
+	dummyfiles/programming/programming.c \
+	dummyfiles/security/security.c \
+	dummyfiles/utilities/utilities.c
 TARGET=dummy
-HEADER=helpfiles/headers.h
+HEADER=dummyfiles/headers.h
 CFLAGS=-lmenu -lncurses -lm
 
 all: $(TARGET)
