@@ -1,25 +1,28 @@
 #include "programming.h"
-#define TOTAL 1
 
-// file list
+
+////////////////////////// UPDATE PROGRAMMING SECTION //////////////////////////
+#define TOTAL 1
 char *programmingFiles[TOTAL]={
 	"programming/Bash"
 };
+////////////////////////////////////////////////////////////////////////////////
 
-// initialize submenu
+
+// Initialize submenu
 struct subMenu programmingMenu={
 	.title="PROGRAMMING",
 	.list=NULL,
 	.size=TOTAL
 };
 
-// allocate lists
+// Allocate lists
 void initProgramming(){
 	programmingMenu.list=(char**)malloc(TOTAL * sizeof(char*));
 	if(programmingMenu.list == NULL){
 		fprintf(stderr, "\n⚠ malloc failed ⚠\n");
 		exit(EXIT_FAILURE);}
-	// duplicate elements
+	// Duplicate elements
 	for(int i = 0; i < TOTAL; i++){
 		programmingMenu.list[i]=strdup(programmingFiles[i]);
 		if(programmingMenu.list[i] == NULL){
@@ -29,7 +32,7 @@ void initProgramming(){
 	}
 };
 
-// free memory
+// Free memory
 void cleanProgramming(){
 	for(int i = 0; i < TOTAL; i++){
 		free(programmingMenu.list[i]);}

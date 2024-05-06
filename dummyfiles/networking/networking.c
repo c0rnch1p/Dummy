@@ -1,25 +1,28 @@
 #include "networking.h"
+
+
+////////////////////////// UPDATE NETWORKING SECTION ///////////////////////////
 #define TOTAL 1
-
-// file list
 char *networkingFiles[TOTAL]={
-	""
+	"",
 };
+////////////////////////////////////////////////////////////////////////////////
 
-// initialize submenu
+
+// Initialize submenu
 struct subMenu networkingMenu={
 	.title="NETWORKING",
 	.list=NULL,
 	.size=TOTAL
 };
 
-// allocate lists
+// Allocate lists
 void initNetworking(){
 	networkingMenu.list=(char**)malloc(TOTAL * sizeof(char*));
 	if(networkingMenu.list == NULL){
 		fprintf(stderr, "\n⚠ malloc failed ⚠\n");
 		exit(EXIT_FAILURE);}
-	// duplicate elements
+	// Duplicate elements
 	for(int i = 0; i < TOTAL; i++){
 		networkingMenu.list[i]=strdup(networkingFiles[i]);
 		if(networkingMenu.list[i] == NULL){
@@ -29,7 +32,7 @@ void initNetworking(){
 	}
 };
 
-// free memory
+// Free memory
 void cleanNetworking(){
 	for(int i = 0; i < TOTAL; i++){
 		free(networkingMenu.list[i]);}
