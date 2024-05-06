@@ -13,7 +13,7 @@
 	 Gedit is only built with support for Unix-like systems.
 
 	COMMANDS
-	 gedit -s # Run Gedit in standalone mode
+	 gedit -s    # Run Gedit in standalone mode
 	 gedit -V # Show application version
 	 gedit -w # Open files and block process (wait until files are closed)
 	 gedit --encoding=<value> # Set character encoding format
