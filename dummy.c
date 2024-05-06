@@ -68,7 +68,8 @@ void updateSection(int highlight, subMenu subMenus[]);
 
 int main(){
 	if(!checkDeps("bat") || !checkDeps("highlight")){
-		fprintf(stderr, "⚠ dependency check failed ⚠\n");
+		fprintf(stderr, "⚠ Dependency check failed ⚠\n");
+		sleep(2);
 		exit(EXIT_FAILURE);}
 	// External data
 	initSubmenus();
@@ -84,7 +85,8 @@ int main(){
 		{securityMenu.title, securityMenu.list, securityMenu.size},
 		{utilitiesMenu.title, utilitiesMenu.list, utilitiesMenu.size}};
 	if(subMenus == NULL){
-		fprintf(stderr, "⚠ memory allocation failed ⚠\n");
+		fprintf(stderr, "⚠ Memory allocation failed ⚠\n");
+		sleep(2);
 		exit(EXIT_FAILURE);}
 	// Main menu layout
 	const char *uprMenu[1]={subMenus[0].title};
@@ -133,7 +135,8 @@ void clearTerminal(){
 	int wstatus;
 	int pid=fork();
 	if(pid == 1){
-		fprintf(stderr, "⚠ pid fork failed ⚠\n");
+		fprintf(stderr, "⚠ PID fork failed ⚠\n");
+		sleep(2);
 		exit(EXIT_FAILURE);
 	}else if(pid == 0){
 		execlp("clear", "clear", NULL);
@@ -219,7 +222,8 @@ void fileReader(const char* flPth){
 	snprintf(modPath, sizeof(modPath), "/usr/share/Dummy/dummyfiles/%s.txt", flPth);
 	int pid1=fork();
 	if(pid1 == -1){
-		fprintf(stderr, "⚠ fork failed ⚠\n");
+		fprintf(stderr, "⚠ Fork failed ⚠\n");
+		sleep(2);
 		exit(EXIT_FAILURE);}
 	if(pid1 == 0){
 		char highlightCmd[512];
@@ -228,11 +232,13 @@ void fileReader(const char* flPth){
 		int pipefd[2];
 		// Create a pipe
 		if(pipe(pipefd) == -1){
-			fprintf(stderr, "⚠ pipe failed ⚠\n");
+			fprintf(stderr, "⚠ Pipe failed ⚠\n");
+			sleep(2);
 			exit(EXIT_FAILURE);}
 		int pid2=fork();
 		if(pid2 == -1){
-			fprintf(stderr, "⚠ fork failed ⚠\n");
+			fprintf(stderr, "⚠ Fork failed ⚠\n");
+			sleep(2);
 			exit(EXIT_FAILURE);}
 		if(pid2 == 0){
 			close(pipefd[0]);
@@ -615,50 +621,34 @@ void submenuScr(int highlight, subMenu subMenus[]){
 	subWin=NULL;
 }
 
-void toLowerCase(char *str) {
-    for (int i = 0; str[i]; i++) {
-        str[i] = tolower((unsigned char)str[i]);
-    }
+void toLowerCase(char *str){
+    for (int i=0; str[i]; i++){
+        str[i]=tolower((unsigned char)str[i]);}
 }
 
-void updateSection(int highlight, subMenu subMenus[]) {
-    int submenuCount = 10; // Adjust according to the actual count of `subMenus`
-
-    // Check if the highlight index is within bounds
-    if (highlight < 0 || highlight >= submenuCount) {
-        mvprintw(LINES - 2, 0, "Invalid selection. Highlight index: %d", highlight);
-        return;
-    }
-
+void updateSection(int highlight, subMenu subMenus[]){
+    int submenuCount=10;
     // Get the highlighted submenu title and list
     subMenu selectedSubMenu = subMenus[highlight];
     char categoryName[100]; // Adjust size as needed
     strncpy(categoryName, selectedSubMenu.title, sizeof(categoryName));
     categoryName[sizeof(categoryName) - 1] = '\0'; // Ensure null-termination
-
     // Convert categoryName to lowercase
     toLowerCase(categoryName);
-
     // Print debug information
     mvprintw(LINES - 2, 0, "Highlight index: %d, Category: %s", highlight, selectedSubMenu.title);
-
     // Construct the paths for the three files to open
     char filePaths[3][512]; // Array for the three file paths
-    snprintf(filePaths[0], sizeof(filePaths[0]), "dummyfiles/readme");
-    snprintf(filePaths[1], sizeof(filePaths[1]), "dummyfiles/all_h3lp.c");
-    snprintf(filePaths[2], sizeof(filePaths[2]), "dummyfiles/%s/%s.c", categoryName, categoryName);
-
+    snprintf(filePaths[0], sizeof(filePaths[0]), "/usr/share/dummyfiles/readme");
+    snprintf(filePaths[1], sizeof(filePaths[1]), "/usr/share/dummyfiles/all_h3lp.c");
+    snprintf(filePaths[2], sizeof(filePaths[2]), "/usr/share/dummyfiles/%s/%s.c", categoryName, categoryName);
     // Loop through the file paths and open each one with the editor
     for (int i = 0; i < 3; i++) {
         char command[512]; // Buffer size should be adjusted if necessary
         snprintf(command, sizeof(command), "nano '%s'", filePaths[i]);
-
         // Execute the command to open the file in the editor
         int result = system(command);
         if (result != 0) {
-            mvprintw(LINES - 2, 0, "Error opening file: %s", filePaths[i]);
-        }
-    }
-
+            mvprintw(LINES - 2, 0, "Error opening file: %s", filePaths[i]);}}
     mvprintw(LINES - 2, 0, "Files related to category '%s' opened.", selectedSubMenu.title);
 }
