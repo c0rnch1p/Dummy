@@ -1,9 +1,8 @@
 #include "gaming.h"
-#define TOTAL 4
+#define TOTAL 3
 
 // file list
 char *gamingFiles[TOTAL]={
-	"Aimlabs",
 	"CS2",
 	"Proton_GE",
 	"Steam",
