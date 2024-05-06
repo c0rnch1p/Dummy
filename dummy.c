@@ -178,11 +178,11 @@ void screenKeys(int ch, int* toggleKeys){
 		wattron(keysWin, COLOR_PAIR(6));
 		mvwprintw(keysWin, 1, 2, "<%3s> Search Submenus", "");
 		mvwprintw(keysWin, 2, 2, "<%3s> Exit Search", "");
-		mvwprintw(keysWin, 3, 2, "<%7s> Options", "");
+		mvwprintw(keysWin, 3, 2, "<%7s> Cycle Options", "");
 		mvwprintw(keysWin, 4, 2, "<%9s> Select Item", "");
 		mvwprintw(keysWin, 5, 2, "<%10s> Main Menu", "");
 		mvwprintw(keysWin, 6, 2, "<%8s> Quit Bat or Dummy", "");
-		mvwprintw(keysWin, 7, 2, "<%8s> Update Section", "");		
+		mvwprintw(keysWin, 7, 2, "<%3s> Update Section", "");
 		wattron(keysWin, A_BOLD);
 		mvwprintw(keysWin, 1, 3, "/|?");
 		mvwprintw(keysWin, 2, 3, "ESC");
@@ -190,7 +190,7 @@ void screenKeys(int ch, int* toggleKeys){
 		mvwprintw(keysWin, 4, 3, "NTER|RGHT");
 		mvwprintw(keysWin, 5, 3, "BKSPC|LEFT");
 		mvwprintw(keysWin, 6, 3, "CTRL+C|Q");
-		mvwprintw(keysWin, 7, 3, "F10");		
+		mvwprintw(keysWin, 7, 3, "F10");
 		wattroff(keysWin, A_BOLD);
 		mvwprintw(keysWin, 1, 4, "|");
 		mvwprintw(keysWin, 3, 5, "|");
