@@ -22,7 +22,7 @@ which is what Dummy aims to provide.
 #### Depends
 • bat: Cat clone with syntax highlighting and git integration  
 • highlight: Fast and flexible CLI source code highlighter  
-• make: GNU utility to maintain groups of programs
+• make: GNU utility to maintain groups of programs  
 • nano: Pico editor clone with enhancements
 #### MacOS & Linux
 Open a terminal, go to the user data directory and clone this repo:
