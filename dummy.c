@@ -481,7 +481,10 @@ void mainmenuScr(const char* uprMenu[], const char* lwrMenu[], subMenu subMenus[
 					break;
 				// Update highlighted section
 				case KEY_F(10):
+					highlightIdx=highlight;
+					highlight += 1;
 			    	updateSection(highlight, subMenus);
+					highlight=highlightIdx;			    	
 		        	break;					
 				// Quit Dummy
 				case 'q':
