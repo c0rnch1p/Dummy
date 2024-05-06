@@ -62,8 +62,8 @@ void alphabetSrch(
 	const char* uprMenu[], const char* lwrMenu[]);
 void eliminationSrch(int highlight, subMenu subMenus[]);
 void mainmenuScr(const char* uprMenu[], const char* lwrMenu[], subMenu subMenus[]);
-void openSubMenuFiles(int highlight, subMenu subMenus[]);
 void submenuScr(int highlight, subMenu subMenus[]);
+void updateSection(int highlight, subMenu subMenus[]);
 
 int main(){
 	if(!checkDeps("bat") || !checkDeps("highlight")){
@@ -480,7 +480,7 @@ void mainmenuScr(const char* uprMenu[], const char* lwrMenu[], subMenu subMenus[
 					break;
 				// Update highlighted section
 				case KEY_F(10):
-			    	openMainMenuFiles(highlight, subMenus);
+			    	updateSection(highlight, subMenus);
 		        	break;					
 				// Quit Dummy
 				case 'q':
@@ -611,7 +611,7 @@ void submenuScr(int highlight, subMenu subMenus[]){
 	subWin=NULL;
 }
 
-void openMainMenuFiles(int highlight, subMenu subMenus[]){
+void updateSection(int highlight, subMenu subMenus[]){
     // Ensure the highlight index is within bounds
     int submenuCount=10; // Adjust according to the actual count of `subMenus`
     if (highlight < 0 || highlight >= submenuCount){
