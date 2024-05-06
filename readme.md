@@ -39,7 +39,7 @@ cd 'Dummy' && ./'install.sh'
 Go grab git bash if not installed 'https://git-scm.com/download/win.'
 Open Git Bash and follow steps for MacOS and Linux.
 #### Uninstalling
-Change to the install directory and uninstall the program with make:
+Change to the system install directory and uninstall the program with make:
 ```shell
 cd '/usr/share/Dummy'
 make clean
