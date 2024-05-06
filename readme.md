@@ -15,7 +15,7 @@ to different programs easier. Its also essentially just a wrapper for highlight 
 which are being used to read the files. To do something with max efficiency, all the
 useful and important data relative to doing the thing can be gathered and studied. When
 gathering information on complex programs it helps to have some easy way of organizing it,
-which is what dummy aims to provide.
+which is what Dummy aims to provide.
 ##
 #### Installation
 ##
