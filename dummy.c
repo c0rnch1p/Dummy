@@ -197,7 +197,6 @@ void screenKeys(int ch, int* toggleKeys){
 		mvwprintw(keysWin, 4, 7, "|");
 		mvwprintw(keysWin, 5, 8, "|");
 		mvwprintw(keysWin, 6, 9, "|");
-		mvwprintw(keysWin, 7, 9, "|");				
 		wattroff(keysWin, COLOR_PAIR(6));
 		wrefresh(keysWin);}
 	delwin(keysWin);
