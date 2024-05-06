@@ -13,7 +13,7 @@ char *allh3lpFiles[TOTAL]={
 	"multimedia/GIMP",
 	"multimedia/Inkscape",
 	"multimedia/Kdenlive",
-	"multimedia/Libre_Office",	
+	"multimedia/Libre_Office",
 	"multimedia/OBS",
 	"multimedia/Reaper",
 	"multimedia/Shotcut",
