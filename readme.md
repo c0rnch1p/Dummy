@@ -58,13 +58,13 @@ Dummy files get sorted into one of the ten categories which each have their own 
 in the 'dummyfiles' directory. Its just a text file thats going to be referenced later on
 after the program is properly updated by being installed with the new input.
 
-Each category has its own '.c' source file which makes the process of referencing dummy
-files a lot cleaner than if it didnt. When a file is added, the category source file, another
+Each section has its own '.c' source file which makes the process of referencing dummy
+files a lot cleaner than if it didnt. When a file is added, the section source file, another
 source file containing the full list as well as the readme are each updated with a new entry.
 
-To update the database, press 'F10' while the main menu category being modified is
+To update the database, press 'F10' while the main menu section being updated is
 focused. This will open the files which need to be updated as root with nano for the
-program and for that category, returning to the main menu when nano is closed.
+program and for that section, returning to the main menu when nano is closed.
 
 For the changes to take effect, the 'install.sh' script needs to be run again, but it will
 be the one in the system data directory '/usr/share/Dummy/install.sh' rather than the one
