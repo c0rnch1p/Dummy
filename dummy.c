@@ -631,7 +631,7 @@ void updateSection(int highlight, subMenu subMenus[]) {
     subMenu selectedSubMenu = subMenus[highlight];
     char categoryName[100]; // Adjust size as needed
     strncpy(categoryName, selectedSubMenu.title, sizeof(categoryName));
-    categoryName[sizeof(categoryName) - 1] = '\0'; // Ensure null-termination
+    categoryName[sizeof(categoryName)] = '\0'; // Ensure null-termination
 
     // Convert categoryName to lowercase
     toLowerCase(categoryName);
