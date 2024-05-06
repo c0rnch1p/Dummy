@@ -1,4 +1,3 @@
-
 	                    _________________________ _______________
 	                   /  _____/_   ____/__  __  \|   |__    ___/
 	                  /   \__----   __)__|    |   \   | |    |
@@ -9,12 +8,12 @@
 	 used to create and edit all kinds of text files. Gedit features a flexible
 	 plugin system which can be used to dynamically add features to itself. It has a
 	 clean and simple interface consistent with the philosophy of the Gnome Project.
-	 It sincludes tools for editing source code and structured text such as markup
+	 It includes tools for editing source code and structured text such as markup
 	 languages. It is free and open source software under the GPLv2, as of 2020
 	 Gedit is only built with support for unix like systems.
 
 	COMMANDS
-	 gedit -s # Run gedit --new-window in standalone mode
+	 gedit -s # Run gedit in standalone mode
 	 gedit -V # Show application version
 	 gedit -w # Open files and block process (wait until files are closed)
 	 gedit --encoding=<value> # Set character encoding format
@@ -75,8 +74,8 @@
 	 'Shft+Ctrl+T' # Reopen the most recently closed file
 	 'Shft+Ctrl+W' # Close all the files
 	 'Shft+Ctrl+Up'/'Shft+Ctrl+Down' # Select text from cursor to end of next line
-	   # and start of last line
-	 'Shft+Ctrl+Home'/'Shft+Ctrl+End' # Select from cursor to start and end of file
+	   # or start of last line
+	 'Shft+Ctrl+Home'/'Shft+Ctrl+End' # Select from cursor to start or end of file
 	 'Shft+Ctrl+Left'/'Shft+Ctrl+Rght' # Select next and last word or special char
 	 'Shft+Ctrl+~' # Invert selected case
 
@@ -135,12 +134,27 @@
 		 > Word Completion: <off> # Disable word completion
 
 	DEPENDS ON
-	 ▸ amtk # Devkit for gtk applications
+	 ▸ bash # GNU Bourne Again shell
+	 ▸ cairo # 2D graphics library with support for multiple output devices
+	 ▸ dconf # Configuration database system
+	 ▸ gcc-libs # Runtime libraries shipped by GCC
+	 ▸ gdk-pixbuf2 # Image loading library
+	 ▸ glib2 # Low level core library
+	 ▸ glibc # GNU C Library
+	 ▸ gobject-introspection-runtime
 	 ▸ gsettings-desktop-schemas # GSchemas for gnome desktop
 	 ▸ gspell # Spell checking library for gtk applications
-	 ▸ libpeas # GObject plugins library
-	 ▸ python-gobject # Python bindings for glib/gobject/gio/gtk
-	 ▸ tepl # Development library for gtksourceview based editors
+	 ▸ gtk3 # GObject-based multi-platform GUI toolkit
+	 ▸ hicolor-icon-theme # Freedesktop.org Hicolor icon theme
+	 ▸ libgedit-amtk # Actions, Menus and Toolbars Kit for GTK applications
+	 ▸ libgedit-gfls # Module dedicated to file loading and saving
+	 ▸ libgedit-gtksourceview # Source code editing widget
+	 ▸ libgedit-tepl # Library that eases the development of text editors and IDEs
+	 ▸ libgirepository # Introspection system for GObject-based runtime libraries
+	 ▸ libpeas # GObject Plugin System
+	 ▸ pango # Library for layout and rendering of text
+	 ▸ python # Python programming language
+	 ▸ python-gobject # Python bindings for GLib, GObject, GIO and GTK
 
 	REQUIRED BY
 	 ▸ gedit-plugin-markdown_preview # Plugin for markdown files
@@ -151,11 +165,14 @@
 
 	FILES
 	 ▸ "$HOME/.config/gedit/accels" # User keybindings file
-	 ▸ '/usr/share/gtksourceview-4/styles/<theme.xml>' # Document theme XMLs
+	 ▸ '/usr/share/gtksourceview-4/styles/theme.xml' # Document theme XMLs
 
 	WEBLINKS
 	 ▸ 'https://delightlylinux.wordpress.com/2015/03/25/gedit-themes' # Themes
+	 ▸ 'https://gedit-technology.github.io/apps/gedit/index.html' # Gedit tech
 	 ▸ 'https://github.com/gmate/gmate/tree/master/styles' # Theme previews
+	 ▸ 'https://github.com/GNOME/gedit' # Git repo
 	 ▸ 'https://github.com/johnfactotum/gedit-restore-minimap' # Restore minimap
-	 ▸ 'https://wiki.gnome.org/Apps/Gedit' # Gnome wiki
+	 ▸ 'https://gitlab.gnome.org/GNOME/gedit' # Core git repo
 	 ▸ 'https://wiki.archlinux.org/title/GNOME/Gedit' # Arch wiki
+	 ▸ 'https://wiki.gnome.org/Apps/Gedit' # Gnome wiki
