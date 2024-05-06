@@ -66,9 +66,9 @@ To update the database, press 'F10' while the main menu section being updated is
 focused. This will open the files which need to be updated as root with nano for the
 program and for that section, returning to the main menu when nano is closed.
 
-For the changes to take effect, the 'install.sh' script needs to be run again, but it will
+For the changes to take effect, the 'install.sh' script needs to be ran again, but it will
 be the one in the system data directory '/usr/share/Dummy/install.sh' rather than the one
-used before to install the whole program in the user data directory:
+used before to install the program to the system in the user data directory:
 ```shell
 cd '/usr/share/Dummy' && ./'install.sh'
 ```
