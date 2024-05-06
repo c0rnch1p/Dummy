@@ -62,6 +62,7 @@ void alphabetSrch(
 	const char* uprMenu[], const char* lwrMenu[]);
 void eliminationSrch(int highlight, subMenu subMenus[]);
 void mainmenuScr(const char* uprMenu[], const char* lwrMenu[], subMenu subMenus[]);
+void openSubMenuFiles(int highlight, subMenu subMenus[]);
 void submenuScr(int highlight, subMenu subMenus[]);
 
 int main(){
