@@ -54,9 +54,9 @@ An example dummy file is included to provide an idea of the suggested formatting
 files. The 'lang.lua' and 'theme.lua' files are read by highlight and allow for the
 customization of things like header keywords, recognized syntax and color schemes.
 #### Adding Dummy Files
-Dummy files get sorted into one of the ten categories which each have their own folder
-in the 'dummyfiles' directory. Its just a text file thats going to be referenced later on
-after the program is properly updated by being installed with the new input.
+Dummy files get sorted into one of ten categories which each have their own folder in the
+'dummyfiles' directory. Its just a text file thats going to be referenced later on after the
+program is properly updated by being installed with the new input.
 
 Each section has its own '.c' source file which makes the process of referencing dummy
 files a lot cleaner than if it didnt. When a file is added, the section source file, another
