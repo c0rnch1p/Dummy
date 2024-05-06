@@ -10,7 +10,7 @@
 	 clean and simple interface consistent with the philosophy of the Gnome Project.
 	 It includes tools for editing source code and structured text such as markup
 	 languages. It is free and open source software under the GPLv2, as of 2020
-	 Gedit is only built with support for unix like systems.
+	 Gedit is only built with support for Unix-like systems.
 
 	COMMANDS
 	 gedit -s # Run Gedit in standalone mode
