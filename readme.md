@@ -55,7 +55,7 @@ files. The 'lang.lua' and 'theme.lua' files are read by highlight and allow for 
 customization of things like header keywords, recognized syntax and color schemes.
 #### Adding Dummy Files
 Dummy files get sorted into one of ten categories which each have their own folder in the
-'dummyfiles' directory. Its just a text file thats going to be referenced later on after the
+'dummyfiles' directory. Theyre just text files thats going to be referenced later on after the
 program is properly updated by being installed with the new input.
 
 Each section has its own '.c' source file which makes the process of referencing dummy
