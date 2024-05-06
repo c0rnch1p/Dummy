@@ -30,7 +30,7 @@
 	 'F9' # Toggle side panel
 	 'F10' # Toggle settings menu
 	 'F11' # Toggle fullscreen
-	 'Alt+Left'/'Alt+Rght'  # Move current word left and right
+	 'Alt+Left'/'Alt+Rght' # Move current word left and right
 	 'Alt+Up'/'Alt+Down' # Move current line up and down
 	 'Alt+1...9' # Switch between files (1-9)
 	 'Ctrl+a' # Select all text
@@ -125,11 +125,11 @@
 	     > Quick Highlight: <on> # Enable quick highlight
 	     > Quick Open: <on> # Enable quick open
 	     > Restore Minimap: <on> # Enable restore minimap
-	     > Session Saver: <on> # Enable session saver 
+	     > Session Saver: <on> # Enable session saver
 	     > Smart Spaces: <off> # Disable smart spaces
-	     > Snippets: <on> # Enable snippets    
+	     > Snippets: <on> # Enable snippets
 	     > Sort: <on> # Enable sort
-	     > Spell Checker: <on> # Enable spell checker 
+	     > Spell Checker: <on> # Enable spell checker
 	     > Text Size: <on> # Enable text size
 	     > Word Completion: <off> # Disable word completion
 
