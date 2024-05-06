@@ -1,13 +1,30 @@
-               ______  ___  _______    ____     _______ ___________                           
-              /   _  \|   |/       \  |    |   /   _   \\__  __   /
-             /   /_\  \   |   \ /   \ |    |__/   /_\   \|    )   \
-             \____|___/___|____|____/ |_______|____|____/_________/
+               _____  ___  _____  ___     _____ ________ ________
+              /  _  \|   |/     \|   |   /  _  \\__ __  /   ____/
+             /  /_\  \   |  \ /  \   |__/  /_\  \|   )  \_____  \
+             \___|___/___/___|___/______/___|___/_______/_______/
 
 DESCRIPTION
-
-COMMANDS
+ Aimlabs is the aim trainer of choice for over 20 million players, from
+ beginners to esports pros. Our unique aim analysis optimizes gameplay, targets
+ weaknesses and builds key skills for any FPS or TPS game. Aimlabs has been
+ developed as a personal trainer to help players get better in more games
+ through curated aim training scenarios, improving core FPS skills including
+ flicking, tracking, speed, perception & cognition through detailed aim analysis
+ feedback which guides players on quick improvements. Aimlabs is regularly
+ updated with new features to support more games modes for players.
 
 SHORTCUTS
+'mouse 2'        : aim
+'mouse 1'        : shoot
+'mouse 5' 'r'    : reload
+'mouse 4' 'x'    : detection
+'left ctrl'      : toggle crouch
+'mouse wheel'    : restart
+'left shft'      : hold sprint or walk
+'space'          : jump
+'v'              : toggle FPV or TPV
+'q'              : lean left
+'e'              : lean right
 
 DEPENDS ON
 
@@ -18,6 +35,11 @@ BINARIES
 COMMON USAGE
 
 WEBLINKS
+ ▸ 'https://aimlab.fandom.com/wiki/Aim_Lab_Wiki' # Fandom wiki
+ ▸ 'https://aimlabs.com' # Official page
+ ▸ 'https://en.wikipedia.org/wiki/Aimlabs' # Wikipedia page
+ ▸ 'https://store.steampowered.com/app/714010/Aimlabs' # Steam page
+ ▸ 'https://www.youtube.com/aimlab' # Youtube channel
 
 
 
@@ -50,36 +72,18 @@ WEBLINKS
 
 
 
-
-
-DESCRIPTION  : Aim Lab is the aim trainer of choice for over 20 million players, from beginners to esports pros. Our
-  unique aim analysis optimizes gameplay, targets weaknesses & builds key skills for any FPS or TPS game, all for free!
-  Time to warm up with unlimited scenarios & rank up in-game! Aim Lab has been developed as a personal trainer to help
-  players get better in more games through curated aim training scenarios, improving core FPS skills including
-  flicking, tracking, speed, perception & cognition through detailed aim analysis feedback which guides p[layers on
-  quick improvements. Aim Lab is regularly updated with new features to support more games and is a must for any
-  players, from beginner to pro, to gain a competitive edge.
-PROCESSOR    : Intel® Core™ 2 Duo E6600, AMD Phenom™ X3 8750
-GRAPHICS     : GTX 560
+DESCRIPTION  : 
+PROCESSOR    : 
+GRAPHICS     : 
 OS           : Windows 7, Windows 8, Windows 10
-ARCHITECTURE : x86_64
-MEMORY       : 4Gb RAM
-STORAGE      : 3Gb
+x86_64
+4Gb RAM
+3Gb
 
-                                           AIM LAB SHORTCUTS
-                                            'mouse 2'        : aim
-                                            'mouse 1'        : shoot
-                                            'mouse 5' 'r'    : reload
-                                            'mouse 4' 'x'    : detection
-                                            'left ctrl'      : toggle crouch
-                                            'mouse wheel'    : restart
-                                            'left shft'      : hold sprint or walk
-                                            'space'          : jump
-                                            'v'              : toggle FPV or TPV
-                                            'q'              : lean left
-                                            'e'              : lean right
+                                           Aimlabs SHORTCUTS
+   
 
-                           AIM LAB GUI SPECS
+                           Aimlabs GUI SPECS
                            > Audio Settings
                              > Change Hit Noise: optional # option to import a file
                            > Graphics Settings
@@ -124,13 +128,13 @@ STORAGE      : 3Gb
 
 LAUNCH OPTIONS # force use glorious eggroll
   mesa_glthread=true %command% # launch options to enable mesa glthread
-AIM LAB ACCOUNT # account sign up
-    # aim lab is kind of shit because it will limit alot of its features based solely upon weather or not the person
-    # playing has an aim lab account
+Aimlabs ACCOUNT # account sign up
+    # Aimlabs is kind of shit because it will limit alot of its features based solely upon weather or not the person
+    # playing has an Aimlabs account
 SAVING ISSUES # visual settings not saving
     # sometimes the custom visual settings wont save, to avoid this ever happening make sure the launch option is
     # entered correctly and the in gui specs have been configured before loading the first training session
-TRAINING ROUTINE # gameplay guide for aim lab
+TRAINING ROUTINE # gameplay guide for Aimlabs
 - Gridshot x 4 # four rounds fo gridshot
 - Microshot x 5 # five rounds of microshot
 - Motionshot x 4 # four rounds of motionshot

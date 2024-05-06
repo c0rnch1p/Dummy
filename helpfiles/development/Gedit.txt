@@ -81,7 +81,7 @@
 	 > VIEW
 	   > Side Panel: <on> # Display the side panel
 	   > Bottom Panel: <on> # Display the bottom panel
-	   > Highlight Mode: <sh> # Set highlight mode to sh
+	   > Highlight Mode: <GtkRC> # Set highlight to GtkRC
 	 > PREFERENCES
 	   > VIEW
 	     > Line Numbers: <on> # Display line numbers
@@ -223,12 +223,12 @@
 	   # comprise a large backend configuration system that has its own syntax
 
 	WEBLINKS
-	 ▸ 'https://en.wikipedia.org/wiki/Gedit' # Wikipedia
+	 ▸ 'https://en.wikipedia.org/wiki/Gedit' # Wikipedia page
 	 ▸ 'https://gedit-technology.github.io/apps/gedit/index.html' # Gedit tech
 	 ▸ 'https://github.com/gmate/gmate' # Gmate plugins and schemes (Gedit3)
-	 ▸ 'https://github.com/GNOME/gedit' # Git repo
+	 ▸ 'https://github.com/GNOME/gedit' # Github repo
 	 ▸ 'https://github.com/johnfactotum/gedit-restore-minimap' # Minimap plugin
-	 ▸ 'https://gitlab.gnome.org/GNOME/gedit' # Core git repo
+	 ▸ 'https://gitlab.gnome.org/GNOME/gedit' # Gitlab repo
 	 ▸ 'https://man.archlinux.org/man/gedit.1.en' # Manual
 	 ▸ 'https://wiki.archlinux.org/title/GNOME/Gedit' # Arch wiki
 	 ▸ 'https://wiki.gnome.org/Apps/Gedit' # Gnome wiki
