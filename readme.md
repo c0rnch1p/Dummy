@@ -35,6 +35,8 @@ Change to the build directory and install the program with the script:
 ```shell
 cd 'Dummy' && ./'install.sh'
 ```
+Binaries are created in "$HOME/.local/bin" and '/bin', then the program directory
+is copied to '/usr/share'.
 #### Windows
 Go grab git bash if not installed 'https://git-scm.com/download/win'.
 Open Git Bash and follow steps for MacOS and Linux.
@@ -73,7 +75,7 @@ one used before to install the program to the system in the user data directory:
 cd '/usr/share/Dummy' && ./'install.sh'
 ```
 The same process is followed when any changes are made to the system source code. Dummy
-files are given the '.txt' extension when named but it isnt required when updating the
+files are given the '.txt' extension when named but it can be omitted when updating the
 arrays. The '.txt' extension as well as the 'dummyfiles/' section of the path are being
 handled from within 'dummy.c'.
 ##
