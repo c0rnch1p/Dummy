@@ -13,14 +13,14 @@ WINDOW *subWin=NULL;
 WINDOW *keysWin=NULL;
 WINDOW *srchWin=NULL;
 
-// initialize submenus
+// Initialize submenus
 typedef struct{
 	const char* title;
 	char** list;
 	int size;
 }subMenu;
 
-// initlialize lists
+// Initlialize lists
 void initSubmenus(){
 	initAllh3lp();
 	initMultimedia();
@@ -34,11 +34,11 @@ void initSubmenus(){
 	initUtilities();
 };
 
-/* Source data is stored in the .c files in the h3lp/ folder, there is a
-source file for each submenu, the file list arrays have been allocated 
-dynamic memory so they need the be initialized and cleaned */
+/* Source data is stored in the .c files in the dummyfiles/ folder, there is a
+source file for each submenu, the file list arrays have been allocated dynamic
+memory so they need to be initialized and cleaned */
 
-// clean lists
+// Clean lists
 void cleanSubmenus(){
 	cleanAllh3lp();
 	cleanMultimedia();
@@ -140,11 +140,11 @@ void clearTerminal(){
 	system("clear");
 }
 
-/* relating to the functions above and below theres issues with an
-occasional leftover charset when ctrl+c is used to exit while bat and
-highlight are active, q and ctrl+z work fine */
+/* Relating to the functions above and below theres issues with an occasional
+leftover charset when ctrl+c is used to exit while bat and highlight are active,
+q and ctrl+z work fine */
 
-// exit gracefully
+// Exit gracefully
 void sigHandler(int sig){
 	clear();
 	keypad(stdscr, FALSE);
@@ -155,12 +155,12 @@ void sigHandler(int sig){
 	exit(EXIT_SUCCESS);
 }
 
-// keyboard info
+// Keyboard info
 void screenKeys(int ch, int* toggleKeys){
 	keysWin=newwin(8, 22, LINES -8, 0);
-	/* the order of args for window creation is win height, win width, row
-	start and col start, the curses library, includes the LINES and COLS
-	macros containing the total values for the current terminal screen */
+	/* The order of args for window creation is win height, win width, row start
+	and col start, the curses library, includes the LINES and COLS macros
+	containing the total values for the current terminal screen */
 	if(ch == KEY_F(9)){*toggleKeys=!(*toggleKeys);}
 	if(*toggleKeys){
 		attron(COLOR_PAIR(6));
@@ -176,12 +176,13 @@ void screenKeys(int ch, int* toggleKeys){
 		box(keysWin, 0, 0);
 		wattroff(keysWin, A_BOLD | COLOR_PAIR(8));
 		wattron(keysWin, COLOR_PAIR(6));
-		mvwprintw(keysWin, 1, 2, "<%3s> Search submenus", "");
-		mvwprintw(keysWin, 2, 2, "<%3s> Exit search", "");
+		mvwprintw(keysWin, 1, 2, "<%3s> Search Submenus", "");
+		mvwprintw(keysWin, 2, 2, "<%3s> Exit Search", "");
 		mvwprintw(keysWin, 3, 2, "<%7s> Options", "");
-		mvwprintw(keysWin, 4, 2, "<%9s> Select", "");
-		mvwprintw(keysWin, 5, 2, "<%10s> Back", "");
-		mvwprintw(keysWin, 6, 2, "<%8s> Quit", "");
+		mvwprintw(keysWin, 4, 2, "<%9s> Select Item", "");
+		mvwprintw(keysWin, 5, 2, "<%10s> Main Menu", "");
+		mvwprintw(keysWin, 6, 2, "<%8s> Quit Bat or Dummy", "");
+		mvwprintw(keysWin, 7, 2, "<%8s> Update Section", "");		
 		wattron(keysWin, A_BOLD);
 		mvwprintw(keysWin, 1, 3, "/|?");
 		mvwprintw(keysWin, 2, 3, "ESC");
@@ -189,12 +190,14 @@ void screenKeys(int ch, int* toggleKeys){
 		mvwprintw(keysWin, 4, 3, "NTER|RGHT");
 		mvwprintw(keysWin, 5, 3, "BKSPC|LEFT");
 		mvwprintw(keysWin, 6, 3, "CTRL+C|Q");
+		mvwprintw(keysWin, 7, 3, "F10");		
 		wattroff(keysWin, A_BOLD);
 		mvwprintw(keysWin, 1, 4, "|");
 		mvwprintw(keysWin, 3, 5, "|");
 		mvwprintw(keysWin, 4, 7, "|");
 		mvwprintw(keysWin, 5, 8, "|");
-		mvwprintw(keysWin, 6, 9, "|");		
+		mvwprintw(keysWin, 6, 9, "|");
+		mvwprintw(keysWin, 7, 9, "|");				
 		wattroff(keysWin, COLOR_PAIR(6));
 		wrefresh(keysWin);}
 	delwin(keysWin);
@@ -202,16 +205,16 @@ void screenKeys(int ch, int* toggleKeys){
 	refresh();
 }
 
-// highlight and bat
+// Highlight and bat
 void fileReader(const char* flPth){
 	char modPath[255];
 	char lang[]="/usr/share/Dummy/lang.lua";
 	char theme[]="/usr/share/Dummy/theme.lua";
 	int termCols=COLS;
 	int tabSpc=(COLS >= 200) ? (COLS - 80) / 2 : 4;
-	/* the variable above can be broken down as, if screen is larger than
-	160 cols, subtract 80 (file width) and divide the result by 2.offset to
-	centre the page, else tab width is set to 4 to avoid text wrapping */
+	/* The variable above can be broken down as, if screen is larger than 160
+	cols, subtract 80 (file width) and divide the result by 2.offset to centre
+	the page, else tab width is set to 4 to avoid text wrapping */
 	snprintf(modPath, sizeof(modPath), "/usr/share/Dummy/dummyfiles/%s.txt", flPth);
 	int pid1=fork();
 	if(pid1 == -1){
@@ -222,7 +225,7 @@ void fileReader(const char* flPth){
 		snprintf(highlightCmd, sizeof(highlightCmd),
 		    "highlight -O xterm256 -S %s -s %s -l -j3 -t3 -t %d %s", lang, theme, tabSpc, modPath);
 		int pipefd[2];
-		// create a pipe
+		// Create a pipe
 		if(pipe(pipefd) == -1){
 			fprintf(stderr, "⚠ pipe failed ⚠\n");
 			exit(EXIT_FAILURE);}
@@ -233,17 +236,17 @@ void fileReader(const char* flPth){
 		if(pid2 == 0){
 			close(pipefd[0]);
 			dup2(pipefd[1], STDOUT_FILENO);
-			/* duplicate the file descriptor onto the read (out) end of the
-			pipe to be used as input, the value is stored in STDOUT_FILENO
-			defined in unistd.h, its a constant integer data type */			
+			/* Duplicate the file descriptor onto the read (out) end of the pipe
+			to be used as input, the value is stored in STDOUT_FILENO defined in
+			unistd.h, its a constant integer data type */			
 			close(pipefd[1]);
 			execlp("sh", "sh", "-c", highlightCmd, NULL);
 		}else{
 			close(pipefd[1]);
 			dup2(pipefd[0], STDIN_FILENO);
-			/* the corresponding write (in) end of the pipe where the file
-			descriptor is copied again for use by the grandchild process,
-			this process improves readbility and allows for theming */
+			/* The corresponding write (in) end of the pipe where the file
+			descriptor is copied again for use by the grandchild process, this
+			process improves readbility and allows for theming */
 			close(pipefd[0]);
 			execlp("bat", "bat", "--style=grid,header-filename", "--file-name", modPath, NULL);}
 	}else{
@@ -252,31 +255,31 @@ void fileReader(const char* flPth){
 	}
 }
 
-// alphabet search
+// Alphabet search
 void alphabetSrch(
 	const char* srchChar, int* highlight, int* curSelect,
 	const char* uprMenu[], const char* lwrMenu[]){
 	int matchingIdx=-1; // -1 = no match, else = match
-	// upper menu matches
+	// Upper menu matches
 	for(int i=0; i < 1; i++){
 		if(strncasecmp(uprMenu[i], srchChar, 1) == 0){
 			matchingIdx=i;
 			*curSelect=1;
 			break;}}
 	if(matchingIdx == -1){
-		// lower menu matches
+		// Lower menu matches
 		for(int i=0; i < MMSIZE - 1; i++){
 			if(strncasecmp(lwrMenu[i], srchChar, 1) == 0){
 				matchingIdx=i;
 				*curSelect=2;
 				break;}}}
-		// update selection
+		// Update selection
 		if(matchingIdx != -1){
 			*highlight=matchingIdx;
 	}
 }
 
-// elimination search
+// Elimination search
 void eliminationSrch(int highlight, subMenu subMenus[]){
     char srchInput[50]="";
     int curSelect=0;
@@ -285,7 +288,7 @@ void eliminationSrch(int highlight, subMenu subMenus[]){
     keypad(srchWin, TRUE);
     nodelay(srchWin, TRUE);    
     while(1){
-        // search prompt
+        // Search prompt
         werase(srchWin);
         wattron(srchWin, A_BOLD | COLOR_PAIR(8));
         box(srchWin, 0, 0);
@@ -297,7 +300,7 @@ void eliminationSrch(int highlight, subMenu subMenus[]){
         wattroff(srchWin, A_BOLD);
         wattroff(srchWin, COLOR_PAIR(6));
         wrefresh(srchWin);
-        // redraw submenu
+        // Redraw submenu
         werase(subWin);
         wattron(subWin, A_BOLD | COLOR_PAIR(8));
         box(subWin, 0, 0);
@@ -305,11 +308,11 @@ void eliminationSrch(int highlight, subMenu subMenus[]){
         wattron(subWin, COLOR_PAIR(6));
         mvwprintw(subWin, 0, 16, "%s", subMenus[highlight].title);
         wattroff(subWin, A_BOLD);
-		/* this code block performs a process of elimination style search
-		on files in the submenu, redrawing the submenu attributes in the 
-		code above allows search match/es to change the highlight below */        
+		/* This code block performs a process of elimination style search on
+		files in the submenu, redrawing the submenu attributes in the code above
+		allows search match/es to change the highlight below */
         int matchCnt=0;
-        int selectIdx=-1; // index of files within the matching list
+        int selectIdx=-1; // Index of files within the matching list
         for(int i=0; i < subMenus[highlight].size; i++){
             if(strcasestr(subMenus[highlight].list[i], srchInput)){
                 matchCnt++;
@@ -327,7 +330,7 @@ void eliminationSrch(int highlight, subMenu subMenus[]){
 						mvwprintw(subWin, i - selectIdx + 1, 2, "%s", fullString);}                    
                 wattroff(subWin, A_BOLD);}}
         wrefresh(subWin);
-		// catch chars        
+		// Catch chars        
         int ch=getch();
         if(ch == ERR){
             continue;
@@ -340,7 +343,7 @@ void eliminationSrch(int highlight, subMenu subMenus[]){
             srchWin=NULL;
             return;}
         switch(ch){
-            // cycle selection
+            // Cycle selection
             case KEY_UP:
                 if(curSelect > 0){
                     curSelect--;}
@@ -349,19 +352,18 @@ void eliminationSrch(int highlight, subMenu subMenus[]){
                 if(curSelect < matchCnt - 1){
                     curSelect++;}
                 break;
-            // select file
+            // Select file
             case KEY_ENTER:
             case KEY_RIGHT:
             case '\n':
-                if (selectIdx >= 0) {
+                if (selectIdx >= 0){
                     int wstatus;
                     fileReader(subMenus[highlight].list[selectIdx]);
                     wait(&wstatus);
                     wclear(stdscr);
-                    refresh();
-                }
+                    refresh();}
                 break;
-            // delete char
+            // Delete char
             case KEY_BACKSPACE:
                 if(strlen(srchInput) > 0){
                     srchInput[strlen(srchInput) - 1]='\0';
@@ -371,7 +373,7 @@ void eliminationSrch(int highlight, subMenu subMenus[]){
             default:
                 if(isprint(ch)){
                     if(strlen(srchInput) + 1 < sizeof(srchInput)){
-	                	// build the query from single chars
+	                	// Build the query from single chars
                         strncat(srchInput, (char*)&ch, 1);}}
                 break;}
 		refresh();}
