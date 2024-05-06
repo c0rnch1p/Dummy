@@ -35,8 +35,8 @@ Change to the build directory and install the program with the script:
 ```shell
 cd 'Dummy' && ./'install.sh'
 ```
-Binaries are made in "$HOME/.local/bin" and '/bin', then the folder is copied to
-'/usr/share'.
+Binaries are placed in "$HOME/.local/bin" and '/bin', then the program folder is
+copied to '/usr/share'.
 #### Windows
 Go grab git bash if not installed 'https://git-scm.com/download/win'.
 Open Git Bash and follow steps for MacOS and Linux.
