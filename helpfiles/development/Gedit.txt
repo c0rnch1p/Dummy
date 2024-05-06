@@ -194,26 +194,26 @@
 	   # using 'dconf-editor' or by putting them in a GSchemas script and running it
 	 gsettings set org.gnome.gedit.plugins.filebrowser open-at-first-doc false
 	   # Disable opening at first document in filebrowser
-	 gsettings set org.gnome.gedit.plugins.time custom-format '%d/%m/%y'
-	   # Set the custom time and date format
+	 gsettings set org.gnome.gedit.plugins.time custom-format '%d/%m/%y' # Set
+	   #  the custom time and date format
 	 gsettings set org.gnome.gedit.preferences.editor display-right-margin true
 	   # Display the right margin at the set number of columns
 	 gsettings set org.gnome.gedit.preferences.editor highlight-current-line false
 	   # Disable highlight current line
-	 gsettings set org.gnome.gedit.preferences.editor scheme 'Oblivion'
-	   # Set color scheme to Oblivion
-	 gsettings set org.gnome.gedit.preferences.editor tabs-size 4
-	   # Set the amount of spaces in tabs to 4
+	 gsettings set org.gnome.gedit.preferences.editor scheme 'Oblivion' # Set color
+	   # scheme to Oblivion
+	 gsettings set org.gnome.gedit.preferences.editor tabs-size 4 # Set the amount
+	   # of spaces in tabs to 4
 	 gsettings set org.gnome.gedit.preferences.editor wrap-last-split-mode 'word'
 	   # Enable splitting at words instead of characters
-	 gsettings set org.gnome.gedit.preferences.editor wrap-mode 'char'
-	   # Enable joining of words at characters instead of whole words
+	 gsettings set org.gnome.gedit.preferences.editor wrap-mode 'char' # Enable
+	   # joining of words at characters instead of whole words
 	 gsettings set org.gnome.gedit.preferences.editor ensure-trailing-newline false
 	   # Hidden schema to remove trailing newlines    
 	 gsettings set org.gnome.gedit.preferences.ui bottom-panel-visible 'true'
 	   # Display the bottom panel
-	 gsettings set org.gnome.gedit.preferences.ui statusbar-visible 'true'
-	   # Display the statusbar
+	 gsettings set org.gnome.gedit.preferences.ui statusbar-visible 'true' # Display
+	   # the statusbar
 	 gsettings set org.gnome.gedit.state.window bottom-panel-active-page \
 	 'GeditTerminalPanel' # Enable the terminal at startup
 	 gsettings set org.gnome.gedit.state.window side-panel-active-page \
@@ -225,10 +225,12 @@
 	WEBLINKS
 	 ▸ 'https://en.wikipedia.org/wiki/Gedit' # Wikipedia
 	 ▸ 'https://gedit-technology.github.io/apps/gedit/index.html' # Gedit tech
-	 ▸ 'https://github.com/gmate/gmate/tree/master/styles' # Theme previews
+	 ▸ 'https://github.com/gmate/gmate' # Gmate plugins and schemes (Gedit3)
 	 ▸ 'https://github.com/GNOME/gedit' # Git repo
 	 ▸ 'https://github.com/johnfactotum/gedit-restore-minimap' # Minimap plugin
 	 ▸ 'https://gitlab.gnome.org/GNOME/gedit' # Core git repo
 	 ▸ 'https://man.archlinux.org/man/gedit.1.en' # Manual
 	 ▸ 'https://wiki.archlinux.org/title/GNOME/Gedit' # Arch wiki
 	 ▸ 'https://wiki.gnome.org/Apps/Gedit' # Gnome wiki
+	 ▸ 'https://www.gnome-look.org/browse?cat=279&ord=latest' # Color schemes
+
