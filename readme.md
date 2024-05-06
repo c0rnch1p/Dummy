@@ -72,11 +72,12 @@ be the one in the system data directory '/usr/share/Dummy/install.sh' rather tha
 used before to install the whole program in the user data directory.
 
 ```shell
-cd '/usr/share/Dummy' && ./'install.sh' # When changes are made to the system source code
+cd '/usr/share/Dummy' && ./'install.sh'
 ```
-Dummy files are given the '.txt' extension when named but it isnt required when updating
-the arrays. The '.txt' extension as well as the 'dummyfiles/' section of the path are
-being handled from within 'dummy.c'.
+The same process is followed when any changes are made to the system source code. Dummy
+files are given the '.txt' extension when named but it isnt required when updating the
+arrays. The '.txt' extension as well as the 'dummyfiles/' section of the path are being
+handled from within 'dummy.c'.
 ##
 #### Notes
 ##
