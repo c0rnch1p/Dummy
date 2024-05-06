@@ -638,7 +638,7 @@ void updateSection(int highlight, subMenu subMenus[]){
 	// Construct the paths for the three files to open
 	char filePaths[3][512];
 	snprintf(filePaths[0], sizeof(filePaths[0]), "/usr/share/Dummy/dummyfiles/readme");
-	snprintf(filePaths[1], sizeof(filePaths[1]), "/usr/share/Dummy/dummyfiles/all_h3lp.c");
+	snprintf(filePaths[1], sizeof(filePaths[1]), "/usr/share/Dummy/dummyfiles/all_h3lp/all_h3lp.c");
 	snprintf(filePaths[2], sizeof(filePaths[2]), "/usr/share/Dummy/dummyfiles/%s/%s.c", categoryName, categoryName);
 	// Loop through the paths
 	for (int i=0; i < 3; i++){

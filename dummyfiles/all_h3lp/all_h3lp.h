@@ -1,7 +1,7 @@
 #ifndef ALL_H3LP_H
 #define ALL_H3LP_H
 
-#include "structs.h"
+#include "../structs.h"
 #include <stddef.h>
 #include <stdio.h>
 #include <stdlib.h>

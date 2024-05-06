@@ -23,7 +23,7 @@
 #include <unistd.h> // posix osapi
 // Files
 #include "structs.h"
-#include "all_h3lp.h"
+#include "all_h3lp/all_h3lp.h"
 #include "assets/assets.h"
 #include "development/development.h"
 #include "gaming/gaming.h"

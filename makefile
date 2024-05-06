@@ -4,7 +4,7 @@ SHARED=/usr/share
 LOCBIN=~/.local/bin
 SRC=\
 	dummy.c \
-	dummyfiles/all_h3lp.c \
+	dummyfiles/all_h3lp/all_h3lp.c \
 	dummyfiles/assets/assets.c \
 	dummyfiles/development/development.c \
 	dummyfiles/gaming/gaming.c \
