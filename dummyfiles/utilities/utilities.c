@@ -2,7 +2,7 @@
 
 
 /////////////////////////// UPDATE UTILITIES SECTION ///////////////////////////
-#define TOTAL 0
+#define TOTAL 1
 char *utilitiesFiles[TOTAL]={
 	"",
 };
