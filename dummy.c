@@ -645,7 +645,7 @@ void updateSection(int highlight, subMenu subMenus[]){
     // Loop through the file paths
     for (int i=0; i < 3; i++){
         char command[512]; // Buffer size can be adjusted
-        snprintf(command, sizeof(command), "nano '%s'", filePaths[i]);
+        snprintf(command, sizeof(command), "sudo nano '%s'", filePaths[i]);
         // Open the file with nano
         int result=system(command);
         if (result != 0){
