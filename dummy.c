@@ -157,7 +157,7 @@ void sigHandler(int sig){
 
 // Keyboard info
 void screenKeys(int ch, int* toggleKeys){
-	keysWin=newwin(9, 50, LINES -9, 0);
+	keysWin=newwin(9, 31, LINES -9, 0);
 	/* The order of args for window creation is win height, win width, row start
 	and col start, the curses library, includes the LINES and COLS macros
 	containing the total values for the current terminal screen */
@@ -181,7 +181,7 @@ void screenKeys(int ch, int* toggleKeys){
 		mvwprintw(keysWin, 3, 2, "<%7s> Cycle Options", "");
 		mvwprintw(keysWin, 4, 2, "<%9s> Select Item", "");
 		mvwprintw(keysWin, 5, 2, "<%10s> Main Menu", "");
-		mvwprintw(keysWin, 6, 2, "<%8s> Quit Bat or Dummy", "");
+		mvwprintw(keysWin, 6, 2, "<%8s> Quit Program", "");
 		mvwprintw(keysWin, 7, 2, "<%3s> Update Section", "");
 		wattron(keysWin, A_BOLD);
 		mvwprintw(keysWin, 1, 3, "/|?");
