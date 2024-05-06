@@ -4,7 +4,7 @@
 #### Details
 • Arch: x86_64  
 • Size: 900K  
-• Vers: v01.02.01
+• Vers: v02.01.01
 #### Weblinks
 • Bat: https://github.com/sharkdp/bat  
 • Highlight: http://www.andre-simon.de/doku/highlight/highlight.html  
