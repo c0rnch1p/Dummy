@@ -167,7 +167,7 @@
 	FILES
 	 ▸ "$HOME/.config/gedit/accels" # User keybindings file
 	 ▸ "$HOME/.config/gedit/saved-sessions.xml" # User saved sessions file	 
-	 ▸ "$HOME/.local/share/gedit/plugins/plugin/name.gschema.xml" # User gschema
+	 ▸ "$HOME/.local/share/gedit/plugins/plugin/name.gschema.xml" # User GSchema
 	 ▸ "$HOME/.local/share/gedit/plugins/plugin/name.plugin" # User plugin file
 	 ▸ "$HOME/.local/share/gedit/plugins/plugin/name.py" # User plugin script
 	 ▸ "$HOME/.local/share/gedit/styles/theme.xml" # User plugin script
