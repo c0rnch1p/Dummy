@@ -623,7 +623,7 @@ void updateSection(int highlight, subMenu subMenus[]){
     // Construct the paths for the three files to open
     char filePaths[3][512]; // Array for the three file paths
     snprintf(filePaths[0], sizeof(filePaths[0]), "dummyfiles/readme");
-    snprintf(filePaths[1], sizeof(filePaths[1]), "dummyfiles/allh3lp.c");
+    snprintf(filePaths[1], sizeof(filePaths[1]), "dummyfiles/all_h3lp.c");
     snprintf(filePaths[2], sizeof(filePaths[2]), "dummyfiles/%s/%s.c", categoryName, categoryName);
     // Loop through the file paths and open each one with the editor
     for (int i=0; i < 3; i++){
