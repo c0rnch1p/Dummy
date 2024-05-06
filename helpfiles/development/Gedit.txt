@@ -32,7 +32,7 @@
 	 'F11' # Toggle fullscreen
 	 'Alt+Left'/'Alt+Rght'  # Move current word left and right
 	 'Alt+Up'/'Alt+Down' # Move current line up and down
-	 'Alt+1...9' # Switch between files 1 to 9
+	 'Alt+1...9' # Switch between files (1-9)
 	 'Ctrl+a' # Select all text
 	 'Ctrl+c'/'Ctrl+v' # Copy and paste selected text to clipboard
 	 'Ctrl+d' # Delete current line
