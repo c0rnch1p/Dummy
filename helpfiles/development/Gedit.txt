@@ -90,7 +90,7 @@
 	     > Right Margin: <on> <80> # Display right margin at column
 	     > Display Grid: <on> # Display grid pattern
 	     > Statusbar: <on> # Display statusbar
-	     Text Wrapping: <on> # Enable text wrapping
+	     > Text Wrapping: <on> # Enable text wrapping
 	     > Dont Split Words: <on> # Enable dont split words over two lines
 	     > Highlight Line: <off> # Disable highlight current line
 	     > Highlight Brckt: <on> # Enable highlight matching brackets
@@ -106,7 +106,7 @@
 	     > Colour Scheme: <Oblivion> # Set Oblivion as the color scheme
 	   > PLUGINS
 	     > Bookmarks: <off> # Disable bookmarks
-	     Bracket Completion: <off> # Disable bracket completion
+	     > Bracket Completion: <off> # Disable bracket completion
 	     > Character Map: <on> # Enable character map
 	     > Code Comment: <on> # Enable code comment
 	     > Color Picker: <on> # Enable color picker
@@ -117,7 +117,7 @@
 	     > File Browser: <on> # Enable file browser panel
 	     > Git: <off> # Disable git
 	     > Ins Date Time: <on> # Enable insert date and time
-	     Join Splits: <on> # Enable join or split lines
+	     > Join Splits: <on> # Enable join or split lines
 	     > Modelines: <off> # Disable modelines
 	     > Multi Edit: <off> # Disable multi edit mode
 	     > Open URL Context Menu: <on> # Enable open URL context menu
