@@ -1,6 +1,6 @@
 #include "dummyfiles/headers.h"
 #define CPAIRS 8
-#define MMSIZE 10
+#define MMSIZE 9
 #define MMWDTH 15
 #define SMLNTH 20
 #define SMWDTH 28
@@ -619,7 +619,7 @@ void toLowerCase(char *str) {
 }
 
 void updateSection(int highlight, subMenu subMenus[]) {
-    int submenuCount = 10; // Adjust according to the actual count of `subMenus`
+    int submenuCount = 9; // Adjust according to the actual count of `subMenus`
 
     // Check if the highlight index is within bounds
     if (highlight < 0 || highlight >= submenuCount) {
@@ -631,7 +631,7 @@ void updateSection(int highlight, subMenu subMenus[]) {
     subMenu selectedSubMenu = subMenus[highlight];
     char categoryName[100]; // Adjust size as needed
     strncpy(categoryName, selectedSubMenu.title, sizeof(categoryName));
-    categoryName[sizeof(categoryName)] = '\0'; // Ensure null-termination
+    categoryName[sizeof(categoryName) - 1] = '\0'; // Ensure null-termination
 
     // Convert categoryName to lowercase
     toLowerCase(categoryName);
