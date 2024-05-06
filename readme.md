@@ -56,7 +56,7 @@ customization of things like header keywords, recognized syntax and color scheme
 #### Adding Dummy Files
 Dummy files get sorted into one of the ten categories which each have their own folder
 in the 'dummyfiles' directory. Its just a text file thats going to be referenced later on
-after the program is properly updated with the new input.
+after the program is properly updated by being installed with the new input.
 
 Each category has its own '.c' source file which makes the process of referencing dummy
 files a lot cleaner than if it didnt. When a file is added, the category source file, another
