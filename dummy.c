@@ -619,10 +619,11 @@ void toLowerCase(char *str) {
 }
 
 void updateSection(int highlight, subMenu subMenus[]) {
-    // Ensure the highlight index is within bounds
     int submenuCount = 10; // Adjust according to the actual count of `subMenus`
+
+    // Check if the highlight index is within bounds
     if (highlight < 0 || highlight >= submenuCount) {
-        mvprintw(LINES - 2, 0, "Invalid selection. No files to open.");
+        mvprintw(LINES - 2, 0, "Invalid selection. Highlight index: %d", highlight);
         return;
     }
 
@@ -634,6 +635,9 @@ void updateSection(int highlight, subMenu subMenus[]) {
 
     // Convert categoryName to lowercase
     toLowerCase(categoryName);
+
+    // Print debug information
+    mvprintw(LINES - 2, 0, "Highlight index: %d, Category: %s", highlight, selectedSubMenu.title);
 
     // Construct the paths for the three files to open
     char filePaths[3][512]; // Array for the three file paths
