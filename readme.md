@@ -69,7 +69,6 @@ program and for that section, returning to the main menu when nano is closed.
 For the changes to take effect, the 'install.sh' script needs to be run again, but it will
 be the one in the system data directory '/usr/share/Dummy/install.sh' rather than the one
 used before to install the whole program in the user data directory:
-
 ```shell
 cd '/usr/share/Dummy' && ./'install.sh'
 ```
