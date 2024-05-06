@@ -33,12 +33,12 @@
 	 'Alt+Left'/'Alt+Rght' # Move current word left and right
 	 'Alt+Up'/'Alt+Down' # Move current line up and down
 	 'Alt+1...9' # Switch between files (1-9)
-	 'Ctrl+a' # Select all text
+	 'Ctrl+a'/'Ctrl+\\' # Select or deselect all text
 	 'Ctrl+c'/'Ctrl+v' # Copy and paste selected text to clipboard
 	 'Ctrl+d' # Delete current line
 	 'Ctrl+f' # Text search
 	 'Ctrl+g' # Find the next match
-	 'Ctrl+h' # Search and replace dialog
+	 'Ctrl+h' # Find and replace dialog
 	 'Ctrl+i' # Go to line
 	 'Ctrl+j' # Condense text on selected lines
 	 'Ctrl+l'/'Ctrl+u' # Convert selected text to lowercase and uppercase
@@ -53,10 +53,8 @@
 	 'Ctrl+x' # Cut selected text to clipboard
 	 'Ctrl+z'/'Shft+Ctrl+Z' # Undo and redo last action
 	 'Ctrl+Arrows' # Move around through the text in different directions
-	 'Ctrl+End' # Go to end of file
-	 'Ctrl+Home' # Go to beginning of file
+	 'Ctrl+Home'/'Ctrl+End' # Go to beginning or end of file
 	 'Ctrl+F9' # Toggle bottom panel
-	 'Ctrl+\\' # Deselect all text
 	 'Ctrl+Alt+N' # Create a file in a new tab group
 	 'Ctrl+Alt+PgUp'/'Ctrl+Alt+PgDn' # Switch to the next and previous file
 	 'Shft+Left'/'Shft+Rght' # Select next character to left and right
