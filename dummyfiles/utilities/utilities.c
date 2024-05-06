@@ -1,24 +1,27 @@
 #include "utilities.h"
-#define TOTAL 0
 
-// file list
+
+/////////////////////////// UPDATE UTILITIES SECTION ///////////////////////////
+#define TOTAL 0
 char *utilitiesFiles[TOTAL]={
 };
+////////////////////////////////////////////////////////////////////////////////
 
-// initialize submenu
+
+// Initialize submenu
 struct subMenu utilitiesMenu={
 	.title="UTILITIES",
 	.list=NULL,
 	.size=TOTAL
 };
 
-// allocate list
+// Allocate list
 void initUtilities(){
 	utilitiesMenu.list=(char**)malloc(TOTAL * sizeof(char*));
 	if(utilitiesMenu.list == NULL){
 		fprintf(stderr, "\n⚠ malloc failed ⚠\n");
 		exit(EXIT_FAILURE);}
-	// duplicate elements
+	// Duplicate elements
 	for(int i = 0; i < TOTAL; i++){
 		utilitiesMenu.list[i]=strdup(utilitiesFiles[i]);
 		if(utilitiesMenu.list[i] == NULL){
@@ -28,7 +31,7 @@ void initUtilities(){
 	}
 };
 
-// free memory
+// Free memory
 void cleanUtilities(){
 	for(int i = 0; i < TOTAL; i++){
 		free(utilitiesMenu.list[i]);}

@@ -1,33 +1,36 @@
 #include "multimedia.h"
-#define TOTAL 9
 
-// file list
+
+////////////////////////// UPDATE MULTIMEDIA SECTION ///////////////////////////
+#define TOTAL 9
 char *multimediaFiles[TOTAL]={
 	"multimedia/Ardour",
-	"multimedia/Blender",	
+	"multimedia/Blender",
 	"multimedia/GIMP",
 	"multimedia/Inkscape",
 	"multimedia/Kdenlive",
-	"multimedia/Libre_Office",	
-	"multimedia/OBS",	
+	"multimedia/Libre_Office",
+	"multimedia/OBS",
 	"multimedia/Reaper",
 	"multimedia/Shotcut",
 };
+////////////////////////////////////////////////////////////////////////////////
 
-// initialize submenu
+
+// Initialize submenu
 struct subMenu multimediaMenu={
 	.title="MULTIMEDIA",
 	.list=NULL,
 	.size=TOTAL
 };
 
-// allocate lists
+// Allocate lists
 void initMultimedia(){
 	multimediaMenu.list=(char**)malloc(TOTAL * sizeof(char*));
 	if(multimediaMenu.list == NULL){
 		fprintf(stderr, "\n⚠ malloc failed ⚠\n");
 		exit(EXIT_FAILURE);}
-	// duplicate elements
+	// Duplicate elements
 	for(int i = 0; i < TOTAL; i++){
 		multimediaMenu.list[i]=strdup(multimediaFiles[i]);
 		if(multimediaMenu.list[i] == NULL){
@@ -37,7 +40,7 @@ void initMultimedia(){
 	}
 };
 
-// free memory
+// Free memory
 void cleanMultimedia(){
 	for(int i = 0; i < TOTAL; i++){
 		free(multimediaMenu.list[i]);}

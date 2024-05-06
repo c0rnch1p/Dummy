@@ -1,25 +1,28 @@
 #include "development.h"
-#define TOTAL 1
 
-// file list
+
+///////////////////////// UPDATE DEVELOPMENT SECTION ///////////////////////////
+#define TOTAL 1
 char *developmentFiles[TOTAL]={
 	"development/Gedit"
 };
+////////////////////////////////////////////////////////////////////////////////
 
-// initialize submenu
+
+// Initialize submenu
 struct subMenu developmentMenu={
 	.title="DEVELOPMENT",
 	.list=NULL,
 	.size=TOTAL
 };
 
-// allocate lists
+// Allocate lists
 void initDevelopment(){
 	developmentMenu.list=(char**)malloc(TOTAL * sizeof(char*));
 	if(developmentMenu.list == NULL){
 		fprintf(stderr, "\n⚠ malloc failed ⚠\n");
 		exit(EXIT_FAILURE);}
-	// duplicate elements
+	// Duplicate elements
 	for(int i = 0; i < TOTAL; i++){
 		developmentMenu.list[i]=strdup(developmentFiles[i]);
 		if(developmentMenu.list[i] == NULL){
@@ -29,7 +32,7 @@ void initDevelopment(){
 	}
 };
 
-// free memory
+// Free memory
 void cleanDevelopment(){
 	for(int i = 0; i < TOTAL; i++){
 		free(developmentMenu.list[i]);}

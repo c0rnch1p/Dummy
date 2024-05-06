@@ -1,25 +1,27 @@
 #include "assets.h"
+
+
+//////////////////////////// UPDATE ASSETS SECTION /////////////////////////////
 #define TOTAL 1
-
-// file list
 char *assetsFiles[TOTAL]={
-	""
 };
+////////////////////////////////////////////////////////////////////////////////
 
-// initialize submenu
+
+// Initialize submenu
 struct subMenu assetsMenu={
 	.title="ASSETS",
 	.list=NULL,
 	.size=TOTAL
 };
 
-// allocate lists
+// Allocate lists
 void initAssets(){
 	assetsMenu.list=(char**)malloc(TOTAL * sizeof(char*));
 	if(assetsMenu.list == NULL){
 		fprintf(stderr, "\n⚠ malloc failed ⚠\n");
 		exit(EXIT_FAILURE);}
-	// duplicate elements
+	// Duplicate elements
 	for(int i = 0; i < TOTAL; i++){
 		assetsMenu.list[i]=strdup(assetsFiles[i]);
 		if(assetsMenu.list[i] == NULL){
@@ -29,7 +31,7 @@ void initAssets(){
 	}
 };
 
-// free memory
+// Free memory
 void cleanAssets(){
 	for(int i = 0; i < TOTAL; i++){
 		free(assetsMenu.list[i]);}
