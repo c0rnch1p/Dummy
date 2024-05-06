@@ -13,7 +13,7 @@
 	 Gedit is only built with support for unix like systems.
 
 	COMMANDS
-	 gedit -s # Run gedit in standalone mode
+	 gedit -s # Run Gedit in standalone mode
 	 gedit -V # Show application version
 	 gedit -w # Open files and block process (wait until files are closed)
 	 gedit --encoding=<value> # Set character encoding format
@@ -142,7 +142,7 @@
 	 ▸ glib2 # Low level core library
 	 ▸ glibc # GNU C Library
 	 ▸ gobject-introspection-runtime
-	 ▸ gsettings-desktop-schemas # GSchemas for gnome desktop
+	 ▸ gsettings-desktop-schemas # GSchemas for Gnome desktop
 	 ▸ gspell # Spell checking library for GTK applications
 	 ▸ gtk3 # GObject based multi-platform GUI toolkit
 	 ▸ hicolor-icon-theme # Freedesktop.org Hicolor icon theme
@@ -161,7 +161,7 @@
 	 ▸ gedit-plugins # Collection of plugins
 
 	BINARIES
-	 ▸ '/bin/gedit' # Run gedit
+	 ▸ '/bin/gedit' # Run Gedit
 
 	FILES
 	 ▸ "$HOME/.config/gedit/accels" # User keybindings file
