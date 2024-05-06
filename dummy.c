@@ -178,8 +178,8 @@ void screenKeys(int ch, int* toggleKeys){
 		wattron(keysWin, COLOR_PAIR(6));
 		mvwprintw(keysWin, 1, 2, "<%3s> Search submenus", "");
 		mvwprintw(keysWin, 2, 2, "<%3s> Exit search", "");
-		mvwprintw(keysWin, 3, 2, "<%7s> Cycle options", "");
-		mvwprintw(keysWin, 4, 2, "<%9s> Select option", "");
+		mvwprintw(keysWin, 3, 2, "<%7s> Cycle items", "");
+		mvwprintw(keysWin, 4, 2, "<%9s> Select item", "");
 		mvwprintw(keysWin, 5, 2, "<%10s> Main menu", "");
 		mvwprintw(keysWin, 6, 2, "<%8s> Quit program", "");
 		mvwprintw(keysWin, 7, 2, "<%3s> Update section", "");
@@ -477,6 +477,9 @@ void mainmenuScr(const char* uprMenu[], const char* lwrMenu[], subMenu subMenus[
 						wclear(stdscr);
 						refresh();}
 					break;
+				case KEY_F(10):
+			    	openSubMenuFiles(highlight, subMenus); // Pass the currently highlighted submenu index
+		        break;					
 				// Quit Dummy
 				case 'q':
 				case 'Q':
@@ -609,30 +612,22 @@ void submenuScr(int highlight, subMenu subMenus[]){
 
 void openSubMenuFiles(int highlight, subMenu subMenus[]){
     // Check if the highlight index is within bounds
-    int submenuCount = 10; // Adjust this to the actual count of `subMenus`
+    int submenuCount=10; // Adjust this to the actual count of `subMenus`
     if (highlight < 0 || highlight >= submenuCount) {
         mvprintw(LINES - 2, 0, "Invalid selection. No files to open.");
-        return;
-    }
-
+        return;}
     // Get the selected submenu and its list of files
-    subMenu selectedSubMenu = subMenus[highlight];
-    int fileCount = selectedSubMenu.size;
-
+    subMenu selectedSubMenu=subMenus[highlight];
+    int fileCount=selectedSubMenu.size;
     // Loop through the submenu's file list and open each file
-    for (int i = 0; i < fileCount; i++) {
+    for (int i=0; i < fileCount; i++){
         char command[512]; // Buffer size should be adjusted if necessary
-
         // Construct the command to open with your preferred editor, e.g., nano or gedit
         snprintf(command, sizeof(command), "nano '%s'", selectedSubMenu.list[i]);
-
         // Execute the command to open the file in the editor
         int result = system(command);
         if (result != 0) {
-            mvprintw(LINES - 2, 0, "Error opening file: %s", selectedSubMenu.list[i]);
-        }
-    }
-
+            mvprintw(LINES - 2, 0, "Error opening file: %s", selectedSubMenu.list[i]);}}
     mvprintw(LINES - 2, 0, "Files from submenu '%s' opened.", selectedSubMenu.title);
 }
 
