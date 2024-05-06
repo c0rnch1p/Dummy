@@ -41,8 +41,7 @@ Open Git Bash and follow steps for MacOS and Linux.
 #### Uninstalling
 Change to the system install directory and uninstall the program with make:
 ```shell
-cd '/usr/share/Dummy'
-make clean
+cd '/usr/share/Dummy' && make clean
 ```
 ##
 #### Usage
@@ -51,17 +50,17 @@ make clean
 dummy
 ```
 #### Writing Dummy Files
-A dummy dummy file is included to provide an example of the suggested formatting for dummy
+An example dummy file is included to provide an idea of the suggested formatting for dummy
 files. The 'lang.lua' and 'theme.lua' files are read by highlight and allow for the
 customization of things like header keywords, recognized syntax and color schemes.
 #### Adding Dummy Files
-Dummy files get sorted into one of the nine categories, each of which has its own folder
+Dummy files get sorted into one of the nine categories which each have their own folder
 in the 'dummyfiles' directory. Its just a text file thats going to be referenced later on
 after the program is properly updated with the new input.
 
-Each category has its own source file which makes the process of referencing dummy files a
-lot cleaner than if it didnt. When a file is added, the file list in the category source
-file, the 'all_h3lp.c' (complete list) file and the readme are each updated with an entry.
+Each category has its own source ('.c') file which makes the process of referencing dummy
+files a lot cleaner than if it didnt. When a file is added, the file list in the category
+source file, the 'all_h3lp.c' (full list) file and the readme are each updated with an entry.
 
 To update the database, press 'F10' while the main menu category being modified is
 focused. This will open the files which need to be updated as root with nano for the
