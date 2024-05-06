@@ -233,4 +233,3 @@
 	 ▸ 'https://wiki.archlinux.org/title/GNOME/Gedit' # Arch wiki
 	 ▸ 'https://wiki.gnome.org/Apps/Gedit' # Gnome wiki
 	 ▸ 'https://www.gnome-look.org/browse?cat=279&ord=latest' # Color schemes
-
