@@ -478,9 +478,10 @@ void mainmenuScr(const char* uprMenu[], const char* lwrMenu[], subMenu subMenus[
 						wclear(stdscr);
 						refresh();}
 					break;
+				// Update highlighted section
 				case KEY_F(10):
-			    	openSubMenuFiles(highlight, subMenus); // Pass the currently highlighted submenu index
-		        break;					
+			    	openMainMenuFiles(highlight, subMenus);
+		        	break;					
 				// Quit Dummy
 				case 'q':
 				case 'Q':
@@ -610,26 +611,27 @@ void submenuScr(int highlight, subMenu subMenus[]){
 	subWin=NULL;
 }
 
-
-void openSubMenuFiles(int highlight, subMenu subMenus[]){
-    // Check if the highlight index is within bounds
-    int submenuCount=10; // Adjust this to the actual count of `subMenus`
-    if (highlight < 0 || highlight >= submenuCount) {
+void openMainMenuFiles(int highlight, subMenu subMenus[]){
+    // Ensure the highlight index is within bounds
+    int submenuCount=10; // Adjust according to the actual count of `subMenus`
+    if (highlight < 0 || highlight >= submenuCount){
         mvprintw(LINES - 2, 0, "Invalid selection. No files to open.");
         return;}
-    // Get the selected submenu and its list of files
+    // Get the highlighted submenu title and list
     subMenu selectedSubMenu=subMenus[highlight];
-    int fileCount=selectedSubMenu.size;
-    // Loop through the submenu's file list and open each file
-    for (int i=0; i < fileCount; i++){
+    const char *categoryName=selectedSubMenu.title;
+    // Construct the paths for the three files to open
+    char filePaths[3][512]; // Array for the three file paths
+    snprintf(filePaths[0], sizeof(filePaths[0]), "dummyfiles/readme");
+    snprintf(filePaths[1], sizeof(filePaths[1]), "dummyfiles/allh3lp.c");
+    snprintf(filePaths[2], sizeof(filePaths[2]), "dummyfiles/%s/%s.c", categoryName, categoryName);
+    // Loop through the file paths and open each one with the editor
+    for (int i=0; i < 3; i++){
         char command[512]; // Buffer size should be adjusted if necessary
-        // Construct the command to open with your preferred editor, e.g., nano or gedit
-        snprintf(command, sizeof(command), "nano '%s'", selectedSubMenu.list[i]);
+        snprintf(command, sizeof(command), "nano '%s'", filePaths[i]);
         // Execute the command to open the file in the editor
-        int result = system(command);
-        if (result != 0) {
-            mvprintw(LINES - 2, 0, "Error opening file: %s", selectedSubMenu.list[i]);}}
-    mvprintw(LINES - 2, 0, "Files from submenu '%s' opened.", selectedSubMenu.title);
+        int result=system(command);
+        if (result != 0){
+            mvprintw(LINES - 2, 0, "Error opening file: %s", filePaths[i]);}}
+    mvprintw(LINES - 2, 0, "Files related to category '%s' opened.", categoryName);
 }
-
-
