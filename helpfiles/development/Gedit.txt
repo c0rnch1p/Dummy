@@ -158,15 +158,71 @@
 	 ▸ gedit-plugin-markdown_preview # Plugin for markdown files
 	 ▸ gedit-plugins # Collection of plugins
 
+	ADDITIONAL
+	 ▸ gedit-open-uri-context-menu-git # Plugin that adds open URL context menu item
+
 	BINARIES
 	 ▸ '/bin/gedit' # Run Gedit
 
 	FILES
 	 ▸ "$HOME/.config/gedit/accels" # User keybindings file
-	 ▸ '/usr/share/gtksourceview-4/styles/theme.xml' # Document theme XMLs
+	 ▸ "$HOME/.config/gedit/saved-sessions.xml" # User saved sessions file	 
+	 ▸ "$HOME/.local/share/gedit/plugins/plugin/name.gschema.xml" # User gschema
+	 ▸ "$HOME/.local/share/gedit/plugins/plugin/name.plugin" # User plugin file
+	 ▸ "$HOME/.local/share/gedit/plugins/plugin/name.py" # User plugin script
+	 ▸ "$HOME/.local/share/gedit/styles/theme.xml" # User plugin script
+	 ▸ '/usr/share/gtksourceview-3.0/styles/theme.xml' # System theme
+	
+	COMMON USAGE
+	RESTORE MNIMAP
+	   # Below is a short script to install or reinstall a plugin that restores
+	   # the minimap from Gedit2
+	 test -d "$HOME/.local/share/gedit/plugins/restore-minimap" # Check if installed
+	     sudo rm -r "$HOME/.local/share/gedit/plugins/restore-minimap" # Remove the
+	   # plugin files if they are already installed to update with new ones
+	 ! test -d && mkdir -p "$HOME/.local/share/gedit/plugins/" # Make if needed
+	 cd "$HOME/.local/share/gedit/plugins/" # Go to plugins directory
+	 git clone 'https://github.com/johnfactotum/gedit-restore-minimap.git' \
+	 restore-minimap # Run the install command for the restore minimap plugin, note
+	   # that the recommended installation process for different Gedit plugins may
+	   # differ, and not all will come with an executable file, plugins for older
+	   # versions of Gedit can also cause issues with other plugins written for
+	   # the current running version
+	GSCHEMAS
+	   # Gedit is easy to configure with GSchemas which can help save time when
+	   # reinstalling the program on a new system, these can either be modified
+	   # using 'dconf-editor' or by putting them in a GSchemas script and running it
+	 gsettings set org.gnome.gedit.plugins.filebrowser open-at-first-doc false
+	   # Disable opening at first document in filebrowser
+	 gsettings set org.gnome.gedit.plugins.time custom-format '%d/%m/%y'
+	   # Set the custom time and date format
+	 gsettings set org.gnome.gedit.preferences.editor display-right-margin true
+	   # Display the right margin at the set number of columns
+	 gsettings set org.gnome.gedit.preferences.editor highlight-current-line false
+	   # Disable highlight current line
+	 gsettings set org.gnome.gedit.preferences.editor scheme 'Oblivion'
+	   # Set color scheme to Oblivion
+	 gsettings set org.gnome.gedit.preferences.editor tabs-size 4
+	   # Set the amount of spaces in tabs to 4
+	 gsettings set org.gnome.gedit.preferences.editor wrap-last-split-mode 'word'
+	   # Enable splitting at words instead of characters
+	 gsettings set org.gnome.gedit.preferences.editor wrap-mode 'char'
+	   # Enable joining of words at characters instead of whole words
+	 gsettings set org.gnome.gedit.preferences.editor ensure-trailing-newline false
+	   # Hidden schema to remove trailing newlines    
+	 gsettings set org.gnome.gedit.preferences.ui bottom-panel-visible 'true'
+	   # Display the bottom panel
+	 gsettings set org.gnome.gedit.preferences.ui statusbar-visible 'true'
+	   # Display the statusbar
+	 gsettings set org.gnome.gedit.state.window bottom-panel-active-page \
+	 'GeditTerminalPanel' # Enable the terminal at startup
+	 gsettings set org.gnome.gedit.state.window side-panel-active-page \
+	 'GeditFileBrowserPanel' # Enable the file browser at startup, the easiest
+	   # way would be to use 'dconf-editor', there are other settings in the editor
+	   # which are not listed here that may be useful. GSchemas, Gconf and Dconf
+	   # comprise a large backend configuration system that has its own syntax
 
 	WEBLINKS
-	 ▸ 'https://delightlylinux.wordpress.com/2015/03/25/gedit-themes' # Themes
 	 ▸ 'https://en.wikipedia.org/wiki/Gedit' # Wikipedia
 	 ▸ 'https://gedit-technology.github.io/apps/gedit/index.html' # Gedit tech
 	 ▸ 'https://github.com/gmate/gmate/tree/master/styles' # Theme previews
