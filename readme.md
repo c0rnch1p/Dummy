@@ -36,7 +36,7 @@ Change to the build directory and install the program with the script:
 cd 'Dummy' && ./'install.sh'
 ```
 #### Windows
-Go grab git bash if not installed 'https://git-scm.com/download/win.'
+Go grab git bash if not installed 'https://git-scm.com/download/win'.
 Open Git Bash and follow steps for MacOS and Linux.
 #### Uninstalling
 Change to the system install directory and uninstall the program with make:
