@@ -14,7 +14,7 @@ DESCRIPTION
  updated with new features to support more games modes for players.
 
 SHORTCUTS
-'mouse 2'        : aim
+'mouse 2': aim
 'mouse 1'        : shoot
 'mouse 5' 'r'    : reload
 'mouse 4' 'x'    : detection
