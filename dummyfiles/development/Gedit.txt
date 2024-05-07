@@ -174,7 +174,7 @@
 	 ▸ '/usr/share/gtksourceview-3.0/styles/theme.xml' # System theme
 	
 	COMMON USAGE
-	RESTORE MNIMAP
+	RESTORE MINIMAP
 	   # Below is a short script to install or reinstall a plugin that restores
 	   # the minimap from Gedit2
 	 test -d "$HOME/.local/share/gedit/plugins/restore-minimap" # Check if installed
