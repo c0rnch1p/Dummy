@@ -2,13 +2,13 @@
 #### General
 ##
 #### Details
-~ Arch: x86_64  
-~ Size: 900K  
-~ Vers: v02.01.01
+- Arch: x86_64  
+- Size: 900K  
+- Vers: v02.01.01
 #### Weblinks
-~ Bat: https://github.com/sharkdp/bat  
-~ Highlight: http://www.andre-simon.de/doku/highlight/highlight.html  
-~ Nano: https://www.nano-editor.org
+- Bat: https://github.com/sharkdp/bat  
+- Highlight: http://www.andre-simon.de/doku/highlight/highlight.html  
+- Nano: https://www.nano-editor.org
 #### Description
 This is a curses based program designed to make managing helpfiles and cheatsheets related
 to different programs easier. Its also essentially just a wrapper for highlight and bat
@@ -20,10 +20,10 @@ which is what Dummy aims to provide.
 #### Installation
 ##
 #### Depends
-~ bat: Cat clone with syntax highlighting and git integration  
-~ highlight: Fast and flexible CLI source code highlighter  
-~ make: GNU utility to maintain groups of programs  
-~ nano: Pico editor clone with enhancements
+- bat: Cat clone with syntax highlighting and git integration  
+- highlight: Fast and flexible CLI source code highlighter  
+- make: GNU utility to maintain groups of programs  
+- nano: Pico editor clone with enhancements
 #### MacOS & Linux
 Open a terminal, go to the user data directory and clone this repo:
 ```shell
