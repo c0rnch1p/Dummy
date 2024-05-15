@@ -127,6 +127,7 @@
 	 'Del' # Remove the currently selected abrupt step
 	 'Nter' # Finalize the current node path
 	 'Tab' # Move to the next element in the current dialog box
+	 '%' # Toggle snapping on or off	 
 	 '*' # Draw a star object on the current document
 	 'Ctrl+b' # Disable the scrollbars in the current document
 	 'Ctrl+c' # Copy the color of an object and place its RGB value in the clipboard
