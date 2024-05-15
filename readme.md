@@ -64,7 +64,7 @@ Each section has its own '.c' source file which makes the process of referencing
 files cleaner and easier. When a file is added, the section source file, another source file
 containing the full list as well as the readme are each updated with a new entry.
 
-To update the database, press 'F10' while the main menu section being updated is
+To update the database, press 'F10' while the main menu section to be updated is
 focused. This will open the files which need to be updated as root with nano for the
 program and for that section, returning to the main menu when nano is closed.
 
