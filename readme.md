@@ -61,8 +61,8 @@ Dummy files get sorted into one of ten categories which each have their own fold
 the program is properly updated by being installed with the new input.
 
 Each section has its own '.c' source file which makes the process of referencing dummy
-files a lot cleaner than if it didnt. When a file is added, the section source file, another
-source file containing the full list as well as the readme are each updated with a new entry.
+files cleaner and easier. When a file is added, the section source file, another source file
+containing the full list as well as the readme are each updated with a new entry.
 
 To update the database, press 'F10' while the main menu section being updated is
 focused. This will open the files which need to be updated as root with nano for the
