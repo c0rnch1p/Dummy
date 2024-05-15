@@ -83,6 +83,6 @@ handled from within 'dummy.c'.
 ##
 #### No Terminal Resize
 The program will crash if the terminal is resized at any point during runtime. Some
-dimensions are supported by curses but they need to be set beforehand. Files that
-are only around 50 lines wont open at terminal sizes smaller than the default.
+alternative dimensions are supported by curses but they need to be set beforehand. Files
+that are only around 50 lines wont open at terminal sizes smaller than the default.
 ##
