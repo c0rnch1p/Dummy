@@ -77,7 +77,7 @@ cd '/usr/share/Dummy' && ./'install.sh'
 The same process is followed when any changes are made to the system source code. Dummy
 files are given the '.txt' extension when named but it can be omitted when updating the
 arrays. The '.txt' extension as well as the 'dummyfiles/' section of the path are being
-handled from within 'dummy.c'.
+handled from within the mai source file.
 ##
 #### Notes
 ##
