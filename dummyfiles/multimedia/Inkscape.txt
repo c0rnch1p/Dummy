@@ -88,7 +88,7 @@
 	 inkscape -Y # Y coordinate of drawing or object (used with --query-id)
 
 	SHORTCUTS
-	   # There are more shortcuts for reaper that exist than are listed here which
+	   # There are more shortcuts for Inkscape that exist than are listed here which
 	   # are related to mouse controls
 	 'a' # Toggle the freehand spraypaint tool
 	 'b' # Toggle the point to point Pen tool
