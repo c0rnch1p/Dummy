@@ -279,6 +279,7 @@
 
 	FILES
 	 ▸ '/home/$USER/.config/inkscape/preferences.xml' # Config file
+	 ▸ '/usr/share/inkscape/palettes/<palette>.gpl' # Palette file 
 
 	COMMON USAGE
 	TOOL STYLES
