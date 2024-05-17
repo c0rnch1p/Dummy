@@ -108,6 +108,7 @@
 	 'z' # Zoom in on the currently active document
 	 'F10' # Toggle Inkscapes Menu Bar
 	 'F11' # Switch the current display to fullscreen mode
+	 'F12' # Close all dialog dialog boxes 
 	 'Home' # Reduce the width of the spray radius to its minimum size or set the
 	   # current brush width to its minimum size
 	 'End' # Increase the width of the spray radius to its maximum size or set the
@@ -141,7 +142,6 @@
 	 'Ctrl+q' # Close the currently open document
 	 'Ctrl+s' # Save the currently open Inkscape document
 	 'Ctrl+u' # Remove the group of the currently selected object
-	 'Ctrl+w' # Close the currently open dialog box
 	 'Ctrl+y' # Redo the last undo made on the currently selected object
 	 'Ctrl+z' # Undo the last change made on the currently selected object
 	 'Ctrl+F11' # Toggle display of all toolbars and switch display to fullscreen
@@ -245,7 +245,8 @@
 	       > <tool> # Select the desired tool
 	         > Take from selection # Remember the current style settings, the style
 	   # is now locked to that tool and can only be changed again using the above 
-	   # method unless its switched back to 'Last used style'
+	   # method unless its switched back to 'Last used style' (its also broken, it
+	   # perpetually thinks the last used style is the one taken from the selection)
 
 	WEBLINKS
 	 ▸ 'https://inkscape.org' # Official page
