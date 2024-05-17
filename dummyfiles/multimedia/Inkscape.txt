@@ -290,10 +290,10 @@
 	     > Tools # # Navigate to the tools section
 	       > <tool> # Select the desired tool
 	         > Take from selection # Remember the current style settings, the style
-	   # is now locked to that tool and can only be changed again using the above 
-	   # method unless its switched back to 'Last used style'. (its also broken, it
-	   # perpetually thinks the last used style is the one taken from the selection)
-	   # A working fix for this issue is to reset the user preferences
+	   # is then locked to that tool and can only be changed again using the above
+	   # method even if the mode is changed back to 'Last used style' (its broken,
+	   # it perpetually thinks the last used style is the one from the selection).
+	   # A working fix for this issue is to reset the preferences
 	 > Edit # Open the edit menu
 	   > Preferences # Select the preferences option
 	     > System # Open the system section
