@@ -297,8 +297,8 @@
 	 > Edit # Open the edit menu
 	   > Preferences # Select the preferences option
 	     > System # Open the system section
-	       > Reset Preferences # Reset the user preferences, the tools should be
-	   # back to their default black color after restarting Inkscape
+	       > Reset Preferences # Reset the user preferences, the tools will return
+	   # to their default black color after restarting Inkscape
 
 	WEBLINKS
 	 ▸ 'http://wiki.inkscape.org/wiki/index.php/Using_the_Command_Line' # Guide
