@@ -176,6 +176,8 @@
 	 'Ctrl+Alt+t' # Horizontally center the currently selected group
 	 'Ctrl+Alt+v' # Paste the object from the system clipboard on the original copy
 	 'Ctrl+Alt+Shft+S' # Create duplicate of the currently open file within location
+	 'Ctrl+Alt+Num1' # Align selected objects vertically to page
+	 'Ctrl+Alt+Num7' # Align selected objects horizontally to page
 	 'Shft+D' # Highlight the original object
 	 'Shft+E' # Enable the Eraser tool on the current document
 	 'Shft+J' # Place the copied object anywhere inside spray paints spray radius
