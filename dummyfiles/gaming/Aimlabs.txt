@@ -15,7 +15,7 @@
 
 	SHORTCUTS
 	   # Not all of these shortcuts are the default keybindings for Aimlabs, they
-	   # can be modified in the keybinding section of the game settings		
+	   # can be modified in the keybinding section of the game settings
 	 'Mouse 1' # Shoot
 	 'Mouse 2' # Aim
 	 'Mouse 3' # Restart (wheel)
