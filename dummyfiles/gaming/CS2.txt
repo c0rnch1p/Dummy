@@ -189,7 +189,7 @@
 	 ~ Jumping # Crouchjump to extend jump length
 	 ~ Jumpshots # Knifejump switch for big jumpshots
 	 ~ Ladders # Forwardstrafe ladders to climb faster
-   	 ~ Loadouts # Set up loadouts for autobuys
+	 ~ Loadouts # Set up loadouts for autobuys
 	 ~ Peeking # Jigglepeek to subvert expectations
 	 ~ Reloading # Strafe reload when have to reload in combat
 	 ~ Speed # Knife or equipment out for speed
