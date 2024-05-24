@@ -68,108 +68,108 @@
 	GUI PREFS
 	   # Not all of these settings are the default settings for CS2, any other 
 	   # in-game settings not in this list have been left out because theyre
-	   # unrelated, solely preferential or without need for explanation
+	   # unrelated, solely preferential, or without need for explanation
 	 > VIDEO | ADVANCED
-	   > Brightness: <max> 
-	   > Aspect ratio: <widescreen 16:9>
-	   > Resolution: <1920x1080>
-	   > Display mode: <Fullscreen>
-	   > Refresh rate: <max>
-	   > Player contrast: <enabled>
-	   > Vertical sync: <enabled>
-	   > Video preset: <custom>
-	   > Anti aliasing: <cmaa2>
-	   > Shadow quality: <medium>
-	   > Texture detail: <low>
-	   > Filtering mode: <bilinear>
-	   > Shader detail: <low>
-	   > Particle detail: <medium>
-	   > Ambience: <disabled>
-	   > High dyn range: <performance>
-	   > Fidelityfx: <balanced>
+	   > Brightness: <Max> # Set brightness to maximum
+	   > Aspect Ratio: <Widescreen 16:9> # Set aspect ratio to widescreen 16:9
+	   > Resolution: <1920x1080> # Set resolution to 1920x1080
+	   > Display Mode: <Fullscreen> # Set display mode to fullscreen
+	   > Refresh Rate: <Max> # Set refresh rate to maximum
+	   > Player Contrast: <Enabled> # Enable player contrast
+	   > Vertical Sync: <Enabled> # Enable vertical sync
+	   > Video Preset: <Custom> # Set video preset to custom
+	   > Anti Aliasing: <CMAA2> # Set anti aliasing to CMAA2
+	   > Shadow Quality: <Medium> # Set shadow quality to medium
+	   > Texture Detail: <Low> # Set texture detail to low
+	   > Filtering Mode: <Bilinear> # Set filtering mode to bilinear
+	   > Shader Detail: <Low> # Set shader detail to low
+	   > Particle Detail: <Medium> # Set particle detail to medium
+	   > Ambience: <Disabled> # Disable ambience
+	   > High Dyn Range: <Performance> # Set high dynamic range to performance
+	   > Fidelityfx: <Balanced> # Set Fidelityfx to balanced
 	 > AUDIO | MUSIC
-	   > EQ profile: <natural>
-	   > Perspective correct: <on>
-	   > Enable voice: <press to use mic>
-	   > Mute fake mvps: <on>
+	   > EQ Profile: <Natural> # Set EQ profile to natural
+	   > Perspective Correct: <On> # Enable perspective correction
+	   > Enable Voice: <Press To Use Mic> # Enable voice on press to use mic
+	   > Mute Fake Mvps: <On> # Mute fake MVPs
 	 > GAME | HUD
-	   > Matchmaking ping: <150>
-	   > Traffic bandwidth: <unrestricted>
-	   > Developer console: <on>
-	   > Workshop tools: <on>
-	   > Hud scale: <0.90>
-	   > Hud color: <red>
-	   > Large player count: <off>
+	   > Matchmaking Ping: <150> # Set matchmaking ping to 150
+	   > Traffic Bandwidth: <Unrestricted> # Set traffic bandwidth to unrestricted
+	   > Developer Console: <On> # Enable developer console
+	   > Workshop Tools: <On> # Enable workshop tools
+	   > Hud Scale: <0.90> # Set HUD scale to 0.90
+	   > Hud Color: <Red> # Set HUD color to red
+	   > Large Player Count: <Off> # Disable large player count
 	 > TEAM | COMMUNICATION
-	   > Show positions: <location and equipment>
-	   > Teammate colors: <show colors>
-	   > Colors in id: <on>
-	   > Default permission: <all friends can join>
-	   > Looking to play: <remember last state>
-	   > Player pings: <disabled>
-	   > Mute enemy team: <off>
-	   > Mute all but friends: <off>
-	   > Animated avatars: <on>
-	   > Hide avatar images: <show all>
-	   > Clean player names: <off>
+	   > Show Positions: <Location And Equipment> # Show location and equipment
+	   > Teammate Colors: <Show Colors> # Show teammate colors
+	   > Colors In Id: <On> # Enable colors in ID
+	   > Default Permission: <All Friends Can Join> # Set to all friends can join
+	   > Looking To Play: <Remember Last State> # Keep last looking to play state
+	   > Player Pings: <Disabled> # Disable player pings
+	   > Mute Enemy Team: <Off> # Do not mute enemy team
+	   > Mute All But Friends: <Off> # Do not mute all but friends
+	   > Animated Avatars: <On> # Enable animated avatars
+	   > Hide Avatar Images: <Show All> # Show all avatar images
+	   > Clean Player Names: <Off> # Disable clean player names
 	 > SPECTATOR | SCOREBOARD
-	   > Selection method: <use number keys>
-	   > Mouse toggle score: <secondary fire>
-	   > Survivors always on: <on>
-	   > Smooth camera: <on>
-	   > Smooth camera speed: <0.27>
+	   > Selection Method: <Use Number Keys> # Use number keys for selection method
+	   > Mouse Toggle Score: <Secondary Fire> # Set mouse toggle to secondary fire
+	   > Survivors Always On: <On> # Always show survivors
+	   > Smooth Camera: <On> # Enable smooth camera
+	   > Smooth Camera Speed: <0.27> # Set smooth camera speed to 0.27
 	 > ITEMS | RADAR | CROSSHAIR
-	   > Quick graffiti: <on>
-	   > Delay unscope: <off>
-	   > Auto rezoom: <on>
-	   > Detatch silencer: <secondary fire>
-	   > Viewmodel pos: <desktop>
-	   > Always show inv: <on>
-	   > Use key buy menu: <off>
-	   > Donation key: <left alt>
-	   > Rader centers player: <on>
-	   > Rotating radar: <on> 
-	   > Radar hud size: <1.00>
-	   > Radar map zoom: <0.70>
-	   > Toggle shape: <on>
-	   > Style: <classic static>
-	   > Recticle warning: <always on>
-	   > Gollow recoil: <on>
-	   > Centre dot: <on>
-	   > T style: <on>
-	   > Weapon gap: <off>
-	   > Player crosshairs: <everyone>
-	   > When bot spectating: <never>
+	   > Quick Graffiti: <On> # Enable quick graffiti
+	   > Delay Unscope: <Off> # Disable delay unscope
+	   > Auto Rezoom: <On> # Enable auto rezoom
+	   > Detach Silencer: <Secondary Fire> # Set detach silencer to secondary fire
+	   > Viewmodel Pos: <Desktop> # Set viewmodel position to desktop
+	   > Always Show Inv: <On> # Always show inventory
+	   > Use Key Buy Menu: <Off> # Disable use key buy menu
+	   > Donation Key: <Left Alt> # Set donation key to left alt
+	   > Radar Centers Player: <On> # Enable radar centers player
+	   > Rotating Radar: <On> # Enable rotating radar
+	   > Radar Hud Size: <1.00> # Set radar HUD size to 1.00
+	   > Radar Map Zoom: <0.70> # Set radar map zoom to 0.70
+	   > Toggle Shape: <On> # Enable toggle shape
+	   > Style: <Classic Static> # Set style to classic static
+	   > Reticle Warning: <Always On> # Always show reticle warning
+	   > Follow Recoil: <On> # Enable follow recoil
+	   > Centre Dot: <On> # Enable center dot
+	   > T Style: <On> # Enable T style
+	   > Weapon Gap: <Off> # Disable weapon gap
+	   > Player Crosshairs: <Everyone> # Show player crosshairs for everyone
+	   > When Bot Spectating: <Never> # Never show crosshairs when bot spectating
 	 > KEYBINDINGS | CHAT WHEELS
-	   > Reverse mouse: <disabled>
-	   > Duck mode: <toggle>
-	   > Walk mode: <hold>
-	   > Mouse sens: <2.26>
-	   > Zoom sens: <1.00>
-	   > Wheel 1 slot 1: <follow me>
-	   > Wheel 1 slot 2: <spread out>
-	   > Wheel 1 slot 3: <fall back>
-	   > Wheel 1 slot 4: <ping site b>
-	   > Wheel 1 slot 5: <ping middle>
-	   > Wheel 1 slot 6: <ping site a>
-	   > Wheel 1 slot 7: <hold this position>
-	   > Wheel 1 slot 8: <stay together>
-	   > Wheel 2 slot 1: <request a weapon>
-	   > Wheel 2 slot 2: <need backup>
-	   > Wheel 2 slot 3: <need frag grenades>
-	   > Wheel 2 slot 4: <need flashbangs>
-	   > Wheel 2 slot 5: <ping bomb>
-	   > Wheel 2 slot 6: <need molotovs>
-	   > Wheel 2 slot 7: <need smokes>
-	   > Wheel 2 slot 8: <area clear>
-	   > Wheel 3 slot 1: <nice>
-	   > Wheel 3 slot 2: <no>
-	   > Wheel 3 slot 3: <cheer>
-	   > Wheel 3 slot 4: <sorry>
-	   > Wheel 3 slot 5: <pep talk>
-	   > Wheel 3 slot 6: <go go go!>
-	   > Wheel 3 slot 7: <thanks!>
-	   > Wheel 3 slot 8: <yes>
+	   > Reverse Mouse: <Disabled> # Disable reverse mouse
+	   > Duck Mode: <Toggle> # Set duck mode to toggle
+	   > Walk Mode: <Hold> # Set walk mode to hold
+	   > Mouse Sens: <2.26> # Set mouse sensitivity to 2.26
+	   > Zoom Sens: <1.00> # Set zoom sensitivity to 1.00
+	   > Wheel 1 Slot 1: <Follow Me> # Set wheel 1 slot 1 to follow me
+	   > Wheel 1 Slot 2: <Spread Out> # Set wheel 1 slot 2 to spread out
+	   > Wheel 1 Slot 3: <Fall Back> # Set wheel 1 slot 3 to fall back
+	   > Wheel 1 Slot 4: <Ping Site B> # Set wheel 1 slot 4 to ping site B
+	   > Wheel 1 Slot 5: <Ping Middle> # Set wheel 1 slot 5 to ping middle
+	   > Wheel 1 Slot 6: <Ping Site A> # Set wheel 1 slot 6 to ping site A
+	   > Wheel 1 Slot 7: <Hold This Position> # Set wheel 1 slot 7 to hold position
+	   > Wheel 1 Slot 8: <Stay Together> # Set wheel 1 slot 8 to stay together
+	   > Wheel 2 Slot 1: <Request A Weapon> # Set wheel 2 slot 1 to request a weapon
+	   > Wheel 2 Slot 2: <Need Backup> # Set wheel 2 slot 2 to need backup
+	   > Wheel 2 Slot 3: <Need Frag Grenades> # Set wheel 2 slot 3 to need frags
+	   > Wheel 2 Slot 4: <Need Flashbangs> # Set wheel 2 slot 4 to need flashbangs
+	   > Wheel 2 Slot 5: <Ping Bomb> # Set wheel 2 slot 5 to ping bomb
+	   > Wheel 2 Slot 6: <Need Molotovs> # Set wheel 2 slot 6 to need molotovs
+	   > Wheel 2 Slot 7: <Need Smokes> # Set wheel 2 slot 7 to need smokes
+	   > Wheel 2 Slot 8: <Area Clear> # Set wheel 2 slot 8 to area clear
+	   > Wheel 3 Slot 1: <Nice> # Set wheel 3 slot 1 to nice
+	   > Wheel 3 Slot 2: <No> # Set wheel 3 slot 2 to no
+	   > Wheel 3 Slot 3: <Cheer> # Set wheel 3 slot 3 to cheer
+	   > Wheel 3 Slot 4: <Sorry> # Set wheel 3 slot 4 to sorry
+	   > Wheel 3 Slot 5: <Pep Talk> # Set wheel 3 slot 5 to pep talk
+	   > Wheel 3 Slot 6: <Go Go Go!> # Set wheel 3 slot 6 to go go go!
+	   > Wheel 3 Slot 7: <Thanks!> # Set wheel 3 slot 7 to thanks!
+	   > Wheel 3 Slot 8: <Yes> # Set wheel 3 slot 8 to yes
 	
 	FILES
 	 ~ "$HOME/.local/share/Steam/steamapps/common/Counter-Strike\ Global\ 

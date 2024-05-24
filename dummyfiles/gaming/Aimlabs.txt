@@ -28,51 +28,51 @@
 	 'Left Shft' # Hold sprint or walk
 	 'Space' # Jump
 
-	GUI SPECS
+	GUI PREFS
 	   # Not all of these settings are the default settings for Aimlabs, any other 
 	   # in-game settings not in this list have been left out because theyre
-	   # unrelated, solely preferential or without need for explanation
+	   # unrelated, solely preferential, or without need for explanation
 	 > Audio Settings
-	   > Change Hit Noise: <optional>
+	   > Change Hit Noise: <Optional> # Change the hit noise if desired
 	 > Graphics Settings
-	   > Display Mode: <Fullscreen Exclusive>
-	   > Selected Display: <N/A>
-	   > Display Reso: <1080p>
-	   > Display Rf/Rt: <1080p>
-	   > Stretch Ratio: <16:9>
-	   > Mx Qd Frames: <3>
-	   > Frame Limiter: <off>
-	   > Graphics Qual: <Fastest>
-	   > Post Process: <on>
-	   > Muzzle Flash: <off>
-	   > Shell Casing: <on>
-	   > Bullet Impact: <off>
-	   > Player Damage: <on>
-	   > Target Destroy: <off>
+	   > Display Mode: <Fullscreen Exclusive> # Set display mode to fullscreen
+	   > Selected Display: <N/A> # No display selected
+	   > Display Reso: <1080p> # Set display resolution to 1080p
+	   > Display Rf/Rt: <1080p> # Set display refresh rate to 1080p
+	   > Stretch Ratio: <16:9> # Set stretch ratio to 16:9
+	   > Mx Qd Frames: <3> # Set max queued frames to 3
+	   > Frame Limiter: <Off> # Disable frame limiter
+	   > Graphics Qual: <Fastest> # Set graphics quality to fastest
+	   > Post Process: <On> # Enable post processing
+	   > Muzzle Flash: <Off> # Disable muzzle flash
+	   > Shell Casing: <On> # Enable shell casing
+	   > Bullet Impact: <Off> # Disable bullet impact
+	   > Player Damage: <On> # Enable player damage
+	   > Target Destroy: <Off> # Disable target destruction
 	 > Control Settings
-	   > Game Profile: <Aimlab>
-	   > 360 Distance: <22.6>
-	   > Sensitivity: <1>
-	   > Field Of View: <90>
-	   > ADS 360 Dist: <22.6>
-	   > ADS Sensitivity: <1>
-	   > ADS FOV: <50>
-	   > Sens Randomizer: <off>
-	   > Hipfire Scaling: <off>
-	   > ADS Scaling: <off>
-	   > Mouse CPI: <800>
-	   > Y-Axis Sens Rt: <Use Game Settings>
-	   > Y-Axis Sens Gn: <1>
-	   > Y-Axis Invert: <off>
+	   > Game Profile: <Aimlab> # Set game profile to Aimlab
+	   > 360 Distance: <22.6> # Set 360 distance to 22.6
+	   > Sensitivity: <1> # Set sensitivity to 1
+	   > Field Of View: <90> # Set field of view to 90
+	   > ADS 360 Dist: <22.6> # Set ADS 360 distance to 22.6
+	   > ADS Sensitivity: <1> # Set ADS sensitivity to 1
+	   > ADS FOV: <50> # Set ADS field of view to 50
+	   > Sens Randomizer: <Off> # Disable sensitivity randomizer
+	   > Hipfire Scaling: <Off> # Disable hipfire scaling
+	   > ADS Scaling: <Off> # Disable ADS scaling
+	   > Mouse CPI: <800> # Set mouse CPI to 800
+	   > Y-Axis Sens Rt: <Use Game Settings> # Use game settings for Y-axis sens
+	   > Y-Axis Sens Gn: <1> # Set Y-axis sensitivity gain to 1
+	   > Y-Axis Invert: <Off> # Disable Y-axis inversion
 	 > Game Settings
-	   > Player Avatar: <Original>
-	   > Appearance: <Normal>
-	   > Metallic: <mid low>
-	   > Smoothness: <low>
+	   > Player Avatar: <Original> # Set player avatar to original
+	   > Appearance: <Normal> # Set appearance to normal
+	   > Metallic: <Mid Low> # Set metallic to mid low
+	   > Smoothness: <Low> # Set smoothness to low
 	 > Keybinding Settings
-	   > Zoom Bind Mode: <Hold>
-	   > Crouch Bind Mode: <Toggle>
-	   > Lean Bind Mode: <Hold>
+	   > Zoom Bind Mode: <Hold> # Set zoom bind mode to hold
+	   > Crouch Bind Mode: <Toggle> # Set crouch bind mode to toggle
+	   > Lean Bind Mode: <Hold> # Set lean bind mode to hold
 
 	WEBLINKS
 	 ~ 'https://aimlab.fandom.com/wiki/Aim_Lab_Wiki' # Fandom wiki

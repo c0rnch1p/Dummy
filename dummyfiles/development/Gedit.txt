@@ -78,58 +78,61 @@
 	 'Shft+Ctrl+~' # Invert selected case
 
 	GUI PREFS
+	   # Not all of these settings are the default settings for Gedit, any other 
+	   # in-app settings not in this list have been left out because theyre
+	   # unrelated, solely preferential, or without need for explanation
 	 > VIEW
-	   > Side Panel: <on> # Display the side panel
-	   > Bottom Panel: <on> # Display the bottom panel
+	   > Side Panel: <On> # Display the side panel
+	   > Bottom Panel: <On> # Display the bottom panel
 	   > Highlight Mode: <GtkRC> # Set highlight to GtkRC
 	 > PREFERENCES
 	   > VIEW
-	     > Line Numbers: <on> # Display line numbers
-	     > Right Margin: <on> <80> # Display right margin at column
-	     > Display Grid: <on> # Display grid pattern
-	     > Statusbar: <on> # Display statusbar
-	     > Text Wrapping: <on> # Enable text wrapping
-	     > Dont Split Words: <on> # Enable dont split words over two lines
-	     > Highlight Line: <off> # Disable highlight current line
-	     > Highlight Brckt: <on> # Enable highlight matching brackets
+		 > Line Numbers: <On> # Display line numbers
+		 > Right Margin: <On> <80> # Display right margin at column
+		 > Display Grid: <On> # Display grid pattern
+		 > Statusbar: <On> # Display statusbar
+		 > Text Wrapping: <On> # Enable text wrapping
+		 > Don't Split Words: <On> # Enable don't split words over two lines
+		 > Highlight Line: <Off> # Disable highlight current line
+		 > Highlight Brckt: <On> # Enable highlight matching brackets
 	   > EDITOR
-	     > Tab Width: <4> # Set tab width to 4
-	     > Spaces Instead: <off> # Disable spaces instead of tabs
-	     > Auto Indent: <on> # Auto indentation for quick lists and code 
-	     > Backup On Save: <off> # Disable create backup copy before saving
-	     > Autosave Every: <off> # Disable set autosave files every 30 minutes
+		 > Tab Width: <4> # Set tab width to 4
+		 > Spaces Instead: <Off> # Disable spaces instead of tabs
+		 > Auto Indent: <On> # Auto indentation for quick lists and code 
+		 > Backup On Save: <Off> # Disable create backup copy before saving
+		 > Autosave Every: <Off> # Disable set autosave files every 30 minutes
 	   > FONTS & COLOURS
-	     > Use System Font: <on> # Use system font
-	     > Editor Font: <secondary> # Set editor font to any secondary font
-	     > Colour Scheme: <Oblivion> # Set Oblivion as the color scheme
+		 > Use System Font: <On> # Use system font
+		 > Editor Font: <Secondary> # Set editor font to any secondary font
+		 > Colour Scheme: <Oblivion> # Set Oblivion as the color scheme
 	   > PLUGINS
-	     > Bookmarks: <off> # Disable bookmarks
-	     > Bracket Completion: <off> # Disable bracket completion
-	     > Character Map: <on> # Enable character map
-	     > Code Comment: <on> # Enable code comment
-	     > Color Picker: <on> # Enable color picker
-	     > Document Stats: <on> # Enable document statistics
-	     > Draw spaces: <off> # Turn on draw spaces when needed
-	     > Embed Terminal: <on> # Enable embedded terminal
-	     > External Tools: <on> # Enable external tools
-	     > File Browser: <on> # Enable file browser panel
-	     > Git: <off> # Disable git
-	     > Ins Date Time: <on> # Enable insert date and time
-	     > Join Splits: <on> # Enable join or split lines
-	     > Modelines: <off> # Disable modelines
-	     > Multi Edit: <off> # Disable multi edit mode
-	     > Open URL Context Menu: <on> # Enable open URL context menu
-	     > Python Console: <on> # Enable python console
-	     > Quick Highlight: <on> # Enable quick highlight
-	     > Quick Open: <on> # Enable quick open
-	     > Restore Minimap: <on> # Enable restore minimap
-	     > Session Saver: <on> # Enable session saver
-	     > Smart Spaces: <off> # Disable smart spaces
-	     > Snippets: <on> # Enable snippets
-	     > Sort: <on> # Enable sort
-	     > Spell Checker: <on> # Enable spell checker
-	     > Text Size: <on> # Enable text size
-	     > Word Completion: <off> # Disable word completion
+		 > Bookmarks: <Off> # Disable bookmarks
+		 > Bracket Completion: <Off> # Disable bracket completion
+		 > Character Map: <On> # Enable character map
+		 > Code Comment: <On> # Enable code comment
+		 > Color Picker: <On> # Enable color picker
+		 > Document Stats: <On> # Enable document statistics
+		 > Draw Spaces: <Off> # Turn on draw spaces when needed
+		 > Embed Terminal: <On> # Enable embedded terminal
+		 > External Tools: <On> # Enable external tools
+		 > File Browser: <On> # Enable file browser panel
+		 > Git: <Off> # Disable git
+		 > Ins Date Time: <On> # Enable insert date and time
+		 > Join Splits: <On> # Enable join or split lines
+		 > Modelines: <Off> # Disable modelines
+		 > Multi Edit: <Off> # Disable multi edit mode
+		 > Open URL Context Menu: <On> # Enable open URL context menu
+		 > Python Console: <On> # Enable python console
+		 > Quick Highlight: <On> # Enable quick highlight
+		 > Quick Open: <On> # Enable quick open
+		 > Restore Minimap: <On> # Enable restore minimap
+		 > Session Saver: <On> # Enable session saver
+		 > Smart Spaces: <Off> # Disable smart spaces
+		 > Snippets: <On> # Enable snippets
+		 > Sort: <On> # Enable sort
+		 > Spell Checker: <On> # Enable spell checker
+		 > Text Size: <On> # Enable text size
+		 > Word Completion: <Off> # Disable word completion
 
 	DEPENDS ON
 	 ~ bash # GNU Bourne Again shell
