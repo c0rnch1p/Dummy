@@ -2,8 +2,9 @@
 
 
 //////////////////////////// UPDATE GAMING SECTION /////////////////////////////
-#define TOTAL 3
+#define TOTAL 4
 char *gamingFiles[TOTAL]={
+	"gaming/Aimlabs",
 	"gaming/CS2",
 	"gaming/Proton_GE",
 	"gaming/Steam",
