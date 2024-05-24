@@ -170,12 +170,12 @@
 	   > Wheel 3 Slot 6: <Go Go Go!> # Set wheel 3 slot 6 to go go go!
 	   > Wheel 3 Slot 7: <Thanks!> # Set wheel 3 slot 7 to thanks!
 	   > Wheel 3 Slot 8: <Yes> # Set wheel 3 slot 8 to yes
-	
+
 	FILES
 	 ~ "$HOME/.local/share/Steam/steamapps/common/Counter-Strike\ Global\ 
 	   Offensive/game/csgo/cfg/example.cfg" # File to store custom configs for
 	   # practice games and server hosting
-	
+
 	COMMON USAGE
 	PLAY TIPS
 	 ~ Autoswitch # Autoswitch to secondary when out of ammo
@@ -220,7 +220,7 @@
 	   # <practice.cfg>. To run the config, load into a game and open the dev
 	   # console, then enter the following command
 	 exec <practice> # The filename in the command doesnt need the extension
-	  
+
 	WEBLINKS
 	 ~ 'https://counterstrike.fandom.com/wiki/Counter-Strike_2' # Fandom
 	 ~ 'https://developer.valvesoftware.com/wiki/Counter-Strike_2' # Valve wiki
