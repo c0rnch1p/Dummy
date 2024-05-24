@@ -1,142 +1,82 @@
-               _____  ___  _____  ___     _____ ________ ________
-              /  _  \|   |/     \|   |   /  _  \\__ __  /   ____/
-             /  /_\  \   |  \ /  \   |__/  /_\  \|   )  \_____  \
-             \___|___/___/___|___/______/___|___/_______/_______/
+		           _____  ___  _____  ___     _____ ________ ________
+		          /  _  \|   |/     \|   |   /  _  \\__ __  /   ____/
+		         /  /_\  \   |  \ /  \   |__/  /_\  \|   )  \_____  \
+		         \___|___/___/___|___/______/___|___/_______/_______/
 
-DESCRIPTION
- Aimlabs is the aim trainer of choice for over 20 million players, from
- beginners to esports pros. Our unique aim analysis optimizes gameplay, targets
- weaknesses and builds key skills for any FPS or TPS game. Aimlabs has been
- developed as a personal trainer to help players get better in more games
- through curated aim training scenarios, improving core FPS skills including
- flicking, tracking, speed, perception & cognition through detailed aim analysis
- feedback which guides players on quick improvements. Aimlabs is regularly
- updated with new features to support more games modes for players.
+	DESCRIPTION
+	 Aimlabs is the aim trainer of choice for over 20 million players, from
+	 beginners to esports pros. Our unique aim analysis optimizes gameplay, targets
+	 weaknesses and builds key skills for any FPS or TPS game. Aimlabs has been
+	 developed as a personal trainer to help players get better in more games
+	 through curated aim training scenarios, improving core FPS skills including
+	 flicking, tracking, speed, perception and cognition through detailed aim analysis
+	 feedback which guides players on quick improvements. Aimlabs is regularly
+	 updated with new features to support more games modes for players.
 
-SHORTCUTS
-'mouse 2': aim
-'mouse 1'        : shoot
-'mouse 5' 'r'    : reload
-'mouse 4' 'x'    : detection
-'left ctrl'      : toggle crouch
-'mouse wheel'    : restart
-'left shft'      : hold sprint or walk
-'space'          : jump
-'v'              : toggle FPV or TPV
-'q'              : lean left
-'e'              : lean right
+	SHORTCUTS
+	   # Not all of these shortcuts are the default keybindings for Aimlabs, they
+	   # can be modified in the keybinding section of the game settings		
+	 'Mouse 1' # Shoot
+	 'Mouse 2' # Aim
+	 'Mouse 3' # Restart (wheel)
+	 'Mouse 4' 'x' # Detection
+	 'Mouse 5' 'r' # Reload
+	 'e' # Lean right
+	 'q' # Lean left
+	 'v' # Toggle FPV or TPV
+	 'Left Ctrl' # Toggle crouch
+	 'Left Shft' # Hold sprint or walk
+	 'Space' # Jump
 
-DEPENDS ON
+	GUI SPECS
+	   # Not all of these settings are the default settings for Aimlabs, any other 
+	   # in-game settings not in this list have been left out because theyre
+	   # unrelated, solely preferential or without need for explanation
+	 > Audio Settings
+	   > Change Hit Noise: <optional>
+	 > Graphics Settings
+	   > Display Mode: <Fullscreen Exclusive>
+	   > Selected Display: <N/A>
+	   > Display Reso: <1080p>
+	   > Display Rf/Rt: <1080p>
+	   > Stretch Ratio: <16:9>
+	   > Mx Qd Frames: <3>
+	   > Frame Limiter: <off>
+	   > Graphics Qual: <Fastest>
+	   > Post Process: <on>
+	   > Muzzle Flash: <off>
+	   > Shell Casing: <on>
+	   > Bullet Impact: <off>
+	   > Player Damage: <on>
+	   > Target Destroy: <off>
+	 > Control Settings
+	   > Game Profile: <Aimlab>
+	   > 360 Distance: <22.6>
+	   > Sensitivity: <1>
+	   > Field Of View: <90>
+	   > ADS 360 Dist: <22.6>
+	   > ADS Sensitivity: <1>
+	   > ADS FOV: <50>
+	   > Sens Randomizer: <off>
+	   > Hipfire Scaling: <off>
+	   > ADS Scaling: <off>
+	   > Mouse CPI: <800>
+	   > Y-Axis Sens Rt: <Use Game Settings>
+	   > Y-Axis Sens Gn: <1>
+	   > Y-Axis Invert: <off>
+	 > Game Settings
+	   > Player Avatar: <Original>
+	   > Appearance: <Normal>
+	   > Metallic: <mid low>
+	   > Smoothness: <low>
+	 > Keybinding Settings
+	   > Zoom Bind Mode: <Hold>
+	   > Crouch Bind Mode: <Toggle>
+	   > Lean Bind Mode: <Hold>
 
-FILES
-
-BINARIES
-
-COMMON USAGE
-
-WEBLINKS
- ▸ 'https://aimlab.fandom.com/wiki/Aim_Lab_Wiki' # Fandom wiki
- ▸ 'https://aimlabs.com' # Official page
- ▸ 'https://en.wikipedia.org/wiki/Aimlabs' # Wikipedia page
- ▸ 'https://store.steampowered.com/app/714010/Aimlabs' # Steam page
- ▸ 'https://www.youtube.com/aimlab' # Youtube channel
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-DESCRIPTION  : 
-PROCESSOR    : 
-GRAPHICS     : 
-OS           : Windows 7, Windows 8, Windows 10
-x86_64
-4Gb RAM
-3Gb
-
-                                           Aimlabs SHORTCUTS
-   
-
-                           Aimlabs GUI SPECS
-                           > Audio Settings
-                             > Change Hit Noise: optional # option to import a file
-                           > Graphics Settings
-                             > Display Mode    : fullscreen exclusive # same as borderless mode
-                             > Selected Disp   : N/A # default
-                             > Display Reso    : 1080p # default
-                             > Display Rf/Rt   : 1080p # default
-                             > Stretch Ratio   : 16:9 # default
-                             > Mx Qd Frames    : 3 # better performance
-                             > Frame Limiter   : off # dont limit frames
-                             > Graphics Qual   : fastest # for speedy pops
-                             > Post Process    : on # allow fullscreen FX
-                             > Muzzle Flash    : off # too much FX
-                             > Shell Casing    : on # good FX
-                             > Bullet Impact   : off # too much FX
-                             > Player Damage   : on # reinforce childhood trauma
-                             > Target Destroy  : off # too much FX
-                           > Control Settings
-                             > Game Profile    : aimlab # default
-                             > 360 Distance    : 22.6 # mouse travels 22.6 cm for 360
-                             > Sensitivity     : 1 # mouse movement detection
-                             > Field Of View   : 90 # standard for most games
-                             > ADS 360 Dist    : 22.6 # while aiming down sight
-                             > ADS Sensitivity : 1 # while aiming down sight
-                             > ADS FOV         : 50 # while aiming down sight
-                             > Sens Randomizer : off # dont randomise sensitivity settings
-                             > Hipfire Scaling : off # dont scale sensitivity to distance
-                             > ADS Scaling     : off # dont scale aim sensitivity to distance
-                             > Mouse CPI       : 800 # aligned with sensitivity settings
-                             > Y-Axis Sens Rt  : use game settings # default
-                             > Y-Axis Sens Gn  : 1 # default
-                             > Y-Axis Invert   : off # personal preference
-                           > Game Settings
-                             > Player Avatar   : original # original player avatar
-                             > Appearance      : normal # normal appearance no holo gun
-                             > Metallic        : mid low # mid low metallic FX
-                             > Smoothness      : low # set below metallic level
-                           > Keybinding Settings
-                             > Zoom Bind Mode  : hold # hold to zoom
-                             > Crouch Bind Md  : toggle # toggle to crouch
-                             > Lean Bind Mode  : hold # hold to lean
-
-LAUNCH OPTIONS # force use glorious eggroll
-  mesa_glthread=true %command% # launch options to enable mesa glthread
-Aimlabs ACCOUNT # account sign up
-    # Aimlabs is kind of shit because it will limit alot of its features based solely upon weather or not the person
-    # playing has an Aimlabs account
-SAVING ISSUES # visual settings not saving
-    # sometimes the custom visual settings wont save, to avoid this ever happening make sure the launch option is
-    # entered correctly and the in gui specs have been configured before loading the first training session
-TRAINING ROUTINE # gameplay guide for Aimlabs
-- Gridshot x 4 # four rounds fo gridshot
-- Microshot x 5 # five rounds of microshot
-- Motionshot x 4 # four rounds of motionshot
-- Spidershot x 5 # five rounds of spidershot
-- Detection x 4 # four rounds of detection
+	WEBLINKS
+	 ~ 'https://aimlab.fandom.com/wiki/Aim_Lab_Wiki' # Fandom wiki
+	 ~ 'https://aimlabs.com' # Official page
+	 ~ 'https://en.wikipedia.org/wiki/Aimlabs' # Wikipedia page
+	 ~ 'https://store.steampowered.com/app/714010/Aimlabs' # Steam page
+	 ~ 'https://www.youtube.com/aimlab' # Youtube channel

@@ -16,12 +16,6 @@
 	 architecture. In addition, many maps from CSGO were updated to utilize the
 	 features of Source 2, with some maps receiving complete overhauls.
 
-	REQUIRED
-	 ▸ Vulkan Drivers # Graphics drivers
-	 ▸ 8Gb RAM # Random access memory
-	 ▸ 4 CPU Threads # Processing power
-	 ▸ 85Gb Storage # Available space
-	 
 	SHORTCUTS
 	   # Not all of these shortcuts are the default keybindings for CS2, they
 	   # can be modified in the keybinding section of the game settings	
@@ -72,15 +66,14 @@
 	 '`' # Toggle console
 
 	GUI PREFS
-	   # These are not the default settings for CS2, they are custom settings for
-	   # running on low end hardware and Linux operating systems, other in game
-	   # settings not in this list have been left out because theyre unrelated,
-	   # preferential or without need for explanation
+	   # Not all of these settings are the default settings for CS2, any other 
+	   # in-game settings not in this list have been left out because theyre
+	   # unrelated, solely preferential or without need for explanation
 	 > VIDEO | ADVANCED
 	   > Brightness: <max> 
 	   > Aspect ratio: <widescreen 16:9>
 	   > Resolution: <1920x1080>
-	   > Display mode: <fullscreen windowed> # wms
+	   > Display mode: <Fullscreen>
 	   > Refresh rate: <max>
 	   > Player contrast: <enabled>
 	   > Vertical sync: <enabled>
@@ -96,55 +89,55 @@
 	   > Fidelityfx: <balanced>
 	 > AUDIO | MUSIC
 	   > EQ profile: <natural>
-	   > Perspective correct: <yes>
+	   > Perspective correct: <on>
 	   > Enable voice: <press to use mic>
-	   > Mute fake mvps: <yes>
+	   > Mute fake mvps: <on>
 	 > GAME | HUD
 	   > Matchmaking ping: <150>
 	   > Traffic bandwidth: <unrestricted>
-	   > Developer console: <yes>
-	   > Workshop tools: <yes>
+	   > Developer console: <on>
+	   > Workshop tools: <on>
 	   > Hud scale: <0.90>
 	   > Hud color: <red>
-	   > Large player count: <no>
+	   > Large player count: <off>
 	 > TEAM | COMMUNICATION
 	   > Show positions: <location and equipment>
 	   > Teammate colors: <show colors>
-	   > Colors in id: <yes>
+	   > Colors in id: <on>
 	   > Default permission: <all friends can join>
 	   > Looking to play: <remember last state>
 	   > Player pings: <disabled>
-	   > Mute enemy team: <no>
-	   > Mute all but friends: <no>
-	   > Animated avatars: <yes>
+	   > Mute enemy team: <off>
+	   > Mute all but friends: <off>
+	   > Animated avatars: <on>
 	   > Hide avatar images: <show all>
-	   > Clean player names: <no>
+	   > Clean player names: <off>
 	 > SPECTATOR | SCOREBOARD
 	   > Selection method: <use number keys>
 	   > Mouse toggle score: <secondary fire>
-	   > Survivors always on: <yes>
-	   > Smooth camera: <yes>
+	   > Survivors always on: <on>
+	   > Smooth camera: <on>
 	   > Smooth camera speed: <0.27>
 	 > ITEMS | RADAR | CROSSHAIR
-	   > Quick graffiti: <yes>
-	   > Delay unscope: <no>
-	   > Auto rezoom: <yes>
+	   > Quick graffiti: <on>
+	   > Delay unscope: <off>
+	   > Auto rezoom: <on>
 	   > Detatch silencer: <secondary fire>
 	   > Viewmodel pos: <desktop>
-	   > Always show inv: <yes>
-	   > Use key buy menu: <no>
+	   > Always show inv: <on>
+	   > Use key buy menu: <off>
 	   > Donation key: <left alt>
-	   > Rader centers player: <yes>
-	   > Rotating radar: <yes> 
+	   > Rader centers player: <on>
+	   > Rotating radar: <on> 
 	   > Radar hud size: <1.00>
 	   > Radar map zoom: <0.70>
-	   > Toggle shape: <yes>
+	   > Toggle shape: <on>
 	   > Style: <classic static>
 	   > Recticle warning: <always on>
-	   > Gollow recoil: <yes>
-	   > Centre dot: <yes>
-	   > T style: <yes>
-	   > Weapon gap: <no>
+	   > Gollow recoil: <on>
+	   > Centre dot: <on>
+	   > T style: <on>
+	   > Weapon gap: <off>
 	   > Player crosshairs: <everyone>
 	   > When bot spectating: <never>
 	 > KEYBINDINGS | CHAT WHEELS
@@ -179,11 +172,31 @@
 	   > Wheel 3 slot 8: <yes>
 	
 	FILES
-	 ▸ "$HOME/.local/share/Steam/steamapps/common/Counter-Strike\ Global\ 
+	 ~ "$HOME/.local/share/Steam/steamapps/common/Counter-Strike\ Global\ 
 	   Offensive/game/csgo/cfg/example.cfg" # File to store custom configs for
 	   # practice games and server hosting
 	
 	COMMON USAGE
+	PLAY TIPS
+	 ~ Autoswitch # Autoswitch to secondary when out of ammo
+	 ~ Awareness # Stay ready for a fight  at all times
+	 ~ Counterstrafe # Counterstrafer to stop movement
+	 ~ Crouching # Crouch commit only when certain
+	 ~ Footsteps # Shiftwalk for silent footsteps
+	 ~ Headshots # Aim higher to pop heads
+	 ~ Information # Jumpstrafe peek to get more information
+	 ~ Intimidation # Widepeek for the one tap
+	 ~ Jumping # Crouchjump to extend jump length
+	 ~ Jumpshots # Knifejump switch for big jumpshots
+	 ~ Ladders # Forwardstrafe ladders to climb faster
+   	 ~ Loadouts # Set up loadouts for autobuys
+	 ~ Peeking # Jigglepeek to subvert expectations
+	 ~ Reloading # Strafe reload when have to reload in combat
+	 ~ Speed # Knife or equipment out for speed
+	 ~ Spraying # Jigglespray to spray while moving
+	 ~ Surroundings # Quickly check 6 and corners 
+	 ~ Switching # Strafe when switching weapons in combat
+	 ~ WKey # Finger off W in combat
 	CS2 CONFIG SCRIPT
 	   # Using a custom configs to define paramaters for games is necessary for
 	   # practice and hosting servers. In the file commands are entered in the same
@@ -207,31 +220,11 @@
 	   # <practice.cfg>. To run the config, load into a game and open the dev
 	   # console, then enter the following command
 	 exec <practice> # The filename in the command doesnt need the extension
-	PLAY TIPS
-	 ▸ Autoswitch # Autoswitch to secondary when out of ammo
-	 ▸ Awareness # Stay ready for a fight  at all times
-	 ▸ Counterstrafe # Counterstrafer to stop movement
-	 ▸ Crouching # Crouch commit only when certain
-	 ▸ Footsteps # Shiftwalk for silent footsteps
-	 ▸ Headshots # Aim higher to pop heads
-	 ▸ Information # Jumpstrafe peek to get more information
-	 ▸ Intimidation # Widepeek for the one tap
-	 ▸ Jumping # Crouchjump to extend jump length
-	 ▸ Jumpshots # Knifejump switch for big jumpshots
-	 ▸ Ladders # Forwardstrafe ladders to climb faster
-   	 ▸ Loadouts # Set up loadouts for autobuys
-	 ▸ Peeking # Jigglepeek to subvert expectations
-	 ▸ Reloading # Strafe reload when have to reload in combat
-	 ▸ Speed # Knife or equipment out for speed
-	 ▸ Spraying # Jigglespray to spray while moving
-	 ▸ Surroundings # Quickly check 6 and corners 
-	 ▸ Switching # Strafe when switching weapons in combat
-	 ▸ WKey # Finger off W in combat
 	  
 	WEBLINKS
-	 ▸ 'https://counterstrike.fandom.com/wiki/Counter-Strike_2' # Fandom
-	 ▸ 'https://developer.valvesoftware.com/wiki/Counter-Strike_2' # Valve wiki
-	 ▸ 'https://steamcharts.com/app/730' # Steamcharts 
-	 ▸ 'https://store.steampowered.com/app/730/CounterStrike_2/' # Steam store
-	 ▸ 'https://www.counter-strike.net/cs2' # Official
-	 ▸ 'https://www.rockpapershotgun.com/counter-strike-2-console-commands' # Dev
+	 ~ 'https://counterstrike.fandom.com/wiki/Counter-Strike_2' # Fandom
+	 ~ 'https://developer.valvesoftware.com/wiki/Counter-Strike_2' # Valve wiki
+	 ~ 'https://steamcharts.com/app/730' # Steamcharts 
+	 ~ 'https://store.steampowered.com/app/730/CounterStrike_2/' # Steam store
+	 ~ 'https://www.counter-strike.net/cs2' # Official
+	 ~ 'https://www.rockpapershotgun.com/counter-strike-2-console-commands' # Dev
