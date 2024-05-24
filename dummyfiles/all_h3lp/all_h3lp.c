@@ -2,10 +2,11 @@
 
 
 /////////////////////////// UPDATE ALL H3LP SECTION ////////////////////////////
-#define TOTAL 15
+#define TOTAL 16
 char *allh3lpFiles[TOTAL]={
 	"/00_dummy",
 	"development/Gedit",
+	"gaming/Aimlabs",
 	"gaming/CS2",
 	"gaming/Proton_GE",
 	"gaming/Steam",
