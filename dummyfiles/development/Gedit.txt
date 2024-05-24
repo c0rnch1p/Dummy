@@ -132,46 +132,46 @@
 	     > Word Completion: <off> # Disable word completion
 
 	DEPENDS ON
-	 ▸ bash # GNU Bourne Again shell
-	 ▸ cairo # 2D graphics library with support for multiple output devices
-	 ▸ dconf # Configuration database system
-	 ▸ gcc-libs # Runtime libraries shipped by GCC
-	 ▸ gdk-pixbuf2 # Image loading library
-	 ▸ glib2 # Low level core library
-	 ▸ glibc # GNU C Library
-	 ▸ gobject-introspection-runtime
-	 ▸ gsettings-desktop-schemas # GSchemas for Gnome desktop
-	 ▸ gspell # Spell checking library for GTK applications
-	 ▸ gtk3 # GObject based multi-platform GUI toolkit
-	 ▸ hicolor-icon-theme # Freedesktop.org Hicolor icon theme
-	 ▸ libgedit-amtk # Actions, Menus and Toolbars Kit for GTK applications
-	 ▸ libgedit-gfls # Module dedicated to file loading and saving
-	 ▸ libgedit-gtksourceview # Source code editing widget
-	 ▸ libgedit-tepl # Library that eases the development of text editors and IDEs
-	 ▸ libgirepository # Introspection system for GObject based runtime libraries
-	 ▸ libpeas # GObject Plugin System
-	 ▸ pango # Library for layout and rendering of text
-	 ▸ python # Python programming language
-	 ▸ python-gobject # Python bindings for GLib, GObject, GIO and GTK
+	 ~ bash # GNU Bourne Again shell
+	 ~ cairo # 2D graphics library with support for multiple output devices
+	 ~ dconf # Configuration database system
+	 ~ gcc-libs # Runtime libraries shipped by GCC
+	 ~ gdk-pixbuf2 # Image loading library
+	 ~ glib2 # Low level core library
+	 ~ glibc # GNU C Library
+	 ~ gobject-introspection-runtime
+	 ~ gsettings-desktop-schemas # GSchemas for Gnome desktop
+	 ~ gspell # Spell checking library for GTK applications
+	 ~ gtk3 # GObject based multi-platform GUI toolkit
+	 ~ hicolor-icon-theme # Freedesktop.org Hicolor icon theme
+	 ~ libgedit-amtk # Actions, Menus and Toolbars Kit for GTK applications
+	 ~ libgedit-gfls # Module dedicated to file loading and saving
+	 ~ libgedit-gtksourceview # Source code editing widget
+	 ~ libgedit-tepl # Library that eases the development of text editors and IDEs
+	 ~ libgirepository # Introspection system for GObject based runtime libraries
+	 ~ libpeas # GObject Plugin System
+	 ~ pango # Library for layout and rendering of text
+	 ~ python # Python programming language
+	 ~ python-gobject # Python bindings for GLib, GObject, GIO and GTK
 
 	REQUIRED BY
-	 ▸ gedit-plugin-markdown_preview # Plugin for markdown files
-	 ▸ gedit-plugins # Collection of plugins
+	 ~ gedit-plugin-markdown_preview # Plugin for markdown files
+	 ~ gedit-plugins # Collection of plugins
 
 	ADDITIONAL
-	 ▸ gedit-open-uri-context-menu-git # Plugin that adds open URL context menu item
+	 ~ gedit-open-uri-context-menu-git # Plugin that adds open URL context menu item
 
 	BINARIES
-	 ▸ '/bin/gedit' # Run Gedit
+	 ~ '/bin/gedit' # Run Gedit
 
 	FILES
-	 ▸ "$HOME/.config/gedit/accels" # User keybindings file
-	 ▸ "$HOME/.config/gedit/saved-sessions.xml" # User saved sessions file	 
-	 ▸ "$HOME/.local/share/gedit/plugins/plugin/name.gschema.xml" # User GSchema
-	 ▸ "$HOME/.local/share/gedit/plugins/plugin/name.plugin" # User plugin file
-	 ▸ "$HOME/.local/share/gedit/plugins/plugin/name.py" # User plugin script
-	 ▸ "$HOME/.local/share/gedit/styles/theme.xml" # User theme
-	 ▸ '/usr/share/gtksourceview-3.0/styles/theme.xml' # System theme
+	 ~ "$HOME/.config/gedit/accels" # User keybindings file
+	 ~ "$HOME/.config/gedit/saved-sessions.xml" # User saved sessions file	 
+	 ~ "$HOME/.local/share/gedit/plugins/plugin/name.gschema.xml" # User GSchema
+	 ~ "$HOME/.local/share/gedit/plugins/plugin/name.plugin" # User plugin file
+	 ~ "$HOME/.local/share/gedit/plugins/plugin/name.py" # User plugin script
+	 ~ "$HOME/.local/share/gedit/styles/theme.xml" # User theme
+	 ~ '/usr/share/gtksourceview-3.0/styles/theme.xml' # System theme
 	
 	COMMON USAGE
 	RESTORE MINIMAP
@@ -223,13 +223,13 @@
 	   # comprise a large backend configuration system that has its own syntax
 
 	WEBLINKS
-	 ▸ 'https://en.wikipedia.org/wiki/Gedit' # Wikipedia page
-	 ▸ 'https://gedit-technology.github.io/apps/gedit/index.html' # Gedit tech
-	 ▸ 'https://github.com/gmate/gmate' # Gmate plugins and schemes (Gedit3)
-	 ▸ 'https://github.com/GNOME/gedit' # Github repo
-	 ▸ 'https://github.com/johnfactotum/gedit-restore-minimap' # Minimap plugin
-	 ▸ 'https://gitlab.gnome.org/GNOME/gedit' # Gitlab repo
-	 ▸ 'https://man.archlinux.org/man/gedit.1.en' # Manual
-	 ▸ 'https://wiki.archlinux.org/title/GNOME/Gedit' # Arch wiki
-	 ▸ 'https://wiki.gnome.org/Apps/Gedit' # Gnome wiki
-	 ▸ 'https://www.gnome-look.org/browse?cat=279&ord=latest' # Color schemes
+	 ~ 'https://en.wikipedia.org/wiki/Gedit' # Wikipedia page
+	 ~ 'https://gedit-technology.github.io/apps/gedit/index.html' # Gedit tech
+	 ~ 'https://github.com/gmate/gmate' # Gmate plugins and schemes (Gedit3)
+	 ~ 'https://github.com/GNOME/gedit' # Github repo
+	 ~ 'https://github.com/johnfactotum/gedit-restore-minimap' # Minimap plugin
+	 ~ 'https://gitlab.gnome.org/GNOME/gedit' # Gitlab repo
+	 ~ 'https://man.archlinux.org/man/gedit.1.en' # Manual
+	 ~ 'https://wiki.archlinux.org/title/GNOME/Gedit' # Arch wiki
+	 ~ 'https://wiki.gnome.org/Apps/Gedit' # Gnome wiki
+	 ~ 'https://www.gnome-look.org/browse?cat=279&ord=latest' # Color schemes

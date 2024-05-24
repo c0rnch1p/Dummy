@@ -205,83 +205,83 @@
 	 'Alt+Shft+Rght' # Move the currently selected node by ten pixels to the right
 
 	DEPENDS ON
-	 ▸ atkmm # C++ bindings for ATK
-	 ▸ boost-libs # Free portable C++ runtime source libraries
-	 ▸ cairo # 2D graphics library with support for multiple output devices
-	 ▸ cairomm # C++ bindings for cairo
-	 ▸ double-conversion # Binary and decimal routines for IEEE doubles
-	 ▸ fontconfig # Library for configuring and customizing font access
-	 ▸ freetype2 # Font rasterization library
-	 ▸ gc # Garbage collector for C and C++
-	 ▸ gcc-libs # Runtime libraries shipped by GCC
-	 ▸ gdk-pixbuf2 # Image loading library
-	 ▸ glib2 # Low level core library
-	 ▸ glibc # GNU C Library
-	 ▸ glibmm # C++ bindings for GLib
-	 ▸ gobject-introspection-runtime # Runtime introspection system for GObjects
-	 ▸ graphicsmagick # Image processing system
-	 ▸ gsl # (GNU Scientific Library) a modern numerical library for C and C++
-	 ▸ gspell # Spell checking library for GTK applications
-	 ▸ gtk3 # GObject based multi platform GUI toolkit
-	 ▸ gtkmm3 # C++ bindings for GTK+ 3
-	 ▸ harfbuzz # OpenType text shaping engine
-	 ▸ hicolor-icon-theme # Freedesktop.org Hicolor icon theme
-	 ▸ lcms2 # Small-footprint color management engine
-	 ▸ lib2geom # Easy to use 2D geometry library in C++
-	 ▸ libcdr # CorelDraw file format importer library for LibreOffice
-	 ▸ libepoxy # Library handling OpenGL function pointer management
-	 ▸ libjpeg-turbo # JPEG image codec with accelerated baseline compression
-	 ▸ libpng # A collection of routines used to create PNG format graphics files
-	 ▸ librevenge # library for REVerses ENGineered formats filters
-	 ▸ libsigc++ # Callback Framework for C++
-	 ▸ libsoup # HTTP client/server library for GNOME
-	 ▸ libvisio # Library providing ability to interpret and import visio diagrams
-	 ▸ libwpg # Library for importing and converting Corel WordPerfect(tm) images
-	 ▸ libx11 # X11 client-side library
-	 ▸ libxml2 # XML C parser and toolkit
-	 ▸ libxslt # XML stylesheet transformation library
-	 ▸ pango # Library for layout and rendering of text
-	 ▸ pangomm # C++ bindings for Pango
-	 ▸ poppler # PDF rendering library based on xpdf
-	 ▸ poppler-glib # Poppler glib bindings
-	 ▸ potrace # Utility for tracing a bitmap
-	 ▸ python # The Python programming language
-	 ▸ python-appdirs # Python module for determining appropriate platform dirs
-	 ▸ python-beautifulsoup4 # Python HTML/XML parser
-	 ▸ python-cachecontrol # Port of the caching algorithms in httplib2
-	 ▸ python-cairo # Python bindings for the cairo graphics library
-	 ▸ python-certifi # Python package for providing Mozillas CA Bundle
-	 ▸ python-chardet # Python3 module for character encoding auto-detection
-	 ▸ python-coverage # Tool for measuring code coverage of Python programs
-	 ▸ python-cssselect # Python3 library that parses CSS3 Selectors to XPath
-	 ▸ python-filelock # Platform independent file lock
-	 ▸ python-gobject # Python bindings for GLib/GObject/GIO/GTK
-	 ▸ python-idna # Internationalized Domain Names in Applications
-	 ▸ python-lockfile # Platform-independent file locking module
-	 ▸ python-lxml # Python3 binding for the libxml2 and libxslt libraries
-	 ▸ python-msgpack # MessagePack serializer implementation for Python
-	 ▸ python-numpy # Scientific tools for Python
-	 ▸ python-packaging # Core utilities for Python packages
-	 ▸ python-pillow # Python Imaging Library (PIL) fork
-	 ▸ python-pyserial # Multiplatform Serial Port Module for Python
-	 ▸ python-requests # Python HTTP for Humans
-	 ▸ python-six # Python 2 and 3 compatibility utilities
-	 ▸ python-urllib3 # HTTP thread-safe connection pooling and file post support lib
-	 ▸ python-zstandard # Python bindings to the Zstandard (zstd) compression lib
-	 ▸ readline # GNU readline library
-	 ▸ scour # SVG scrubber
-	 ▸ zlib # Compression library implementing the deflate compression method
+	 ~ atkmm # C++ bindings for ATK
+	 ~ boost-libs # Free portable C++ runtime source libraries
+	 ~ cairo # 2D graphics library with support for multiple output devices
+	 ~ cairomm # C++ bindings for cairo
+	 ~ double-conversion # Binary and decimal routines for IEEE doubles
+	 ~ fontconfig # Library for configuring and customizing font access
+	 ~ freetype2 # Font rasterization library
+	 ~ gc # Garbage collector for C and C++
+	 ~ gcc-libs # Runtime libraries shipped by GCC
+	 ~ gdk-pixbuf2 # Image loading library
+	 ~ glib2 # Low level core library
+	 ~ glibc # GNU C Library
+	 ~ glibmm # C++ bindings for GLib
+	 ~ gobject-introspection-runtime # Runtime introspection system for GObjects
+	 ~ graphicsmagick # Image processing system
+	 ~ gsl # (GNU Scientific Library) a modern numerical library for C and C++
+	 ~ gspell # Spell checking library for GTK applications
+	 ~ gtk3 # GObject based multi platform GUI toolkit
+	 ~ gtkmm3 # C++ bindings for GTK+ 3
+	 ~ harfbuzz # OpenType text shaping engine
+	 ~ hicolor-icon-theme # Freedesktop.org Hicolor icon theme
+	 ~ lcms2 # Small-footprint color management engine
+	 ~ lib2geom # Easy to use 2D geometry library in C++
+	 ~ libcdr # CorelDraw file format importer library for LibreOffice
+	 ~ libepoxy # Library handling OpenGL function pointer management
+	 ~ libjpeg-turbo # JPEG image codec with accelerated baseline compression
+	 ~ libpng # A collection of routines used to create PNG format graphics files
+	 ~ librevenge # library for REVerses ENGineered formats filters
+	 ~ libsigc++ # Callback Framework for C++
+	 ~ libsoup # HTTP client/server library for GNOME
+	 ~ libvisio # Library providing ability to interpret and import visio diagrams
+	 ~ libwpg # Library for importing and converting Corel WordPerfect(tm) images
+	 ~ libx11 # X11 client-side library
+	 ~ libxml2 # XML C parser and toolkit
+	 ~ libxslt # XML stylesheet transformation library
+	 ~ pango # Library for layout and rendering of text
+	 ~ pangomm # C++ bindings for Pango
+	 ~ poppler # PDF rendering library based on xpdf
+	 ~ poppler-glib # Poppler glib bindings
+	 ~ potrace # Utility for tracing a bitmap
+	 ~ python # The Python programming language
+	 ~ python-appdirs # Python module for determining appropriate platform dirs
+	 ~ python-beautifulsoup4 # Python HTML/XML parser
+	 ~ python-cachecontrol # Port of the caching algorithms in httplib2
+	 ~ python-cairo # Python bindings for the cairo graphics library
+	 ~ python-certifi # Python package for providing Mozillas CA Bundle
+	 ~ python-chardet # Python3 module for character encoding auto-detection
+	 ~ python-coverage # Tool for measuring code coverage of Python programs
+	 ~ python-cssselect # Python3 library that parses CSS3 Selectors to XPath
+	 ~ python-filelock # Platform independent file lock
+	 ~ python-gobject # Python bindings for GLib/GObject/GIO/GTK
+	 ~ python-idna # Internationalized Domain Names in Applications
+	 ~ python-lockfile # Platform-independent file locking module
+	 ~ python-lxml # Python3 binding for the libxml2 and libxslt libraries
+	 ~ python-msgpack # MessagePack serializer implementation for Python
+	 ~ python-numpy # Scientific tools for Python
+	 ~ python-packaging # Core utilities for Python packages
+	 ~ python-pillow # Python Imaging Library (PIL) fork
+	 ~ python-pyserial # Multiplatform Serial Port Module for Python
+	 ~ python-requests # Python HTTP for Humans
+	 ~ python-six # Python 2 and 3 compatibility utilities
+	 ~ python-urllib3 # HTTP thread-safe connection pooling and file post support lib
+	 ~ python-zstandard # Python bindings to the Zstandard (zstd) compression lib
+	 ~ readline # GNU readline library
+	 ~ scour # SVG scrubber
+	 ~ zlib # Compression library implementing the deflate compression method
 
 	REQUIRED BY
-	 ▸ nextcloud-client-git # Nextcloud client for Linux
-	 ▸ themix-theme-materia-git # Materia theme plugin
+	 ~ nextcloud-client-git # Nextcloud client for Linux
+	 ~ themix-theme-materia-git # Materia theme plugin
 
 	BINARIES
-	 ▸ '/bin/inkscape' # Run Inkscape
+	 ~ '/bin/inkscape' # Run Inkscape
 
 	FILES
-	 ▸ '/home/$USER/.config/inkscape/preferences.xml' # Config file
-	 ▸ '/usr/share/inkscape/palettes/<palette>.gpl' # Palette file 
+	 ~ '/home/$USER/.config/inkscape/preferences.xml' # Config file
+	 ~ '/usr/share/inkscape/palettes/<palette>.gpl' # Palette file 
 
 	COMMON USAGE
 	TOOL STYLES
@@ -303,9 +303,9 @@
 	   # to their default black color after restarting Inkscape
 
 	WEBLINKS
-	 ▸ 'http://wiki.inkscape.org/wiki/index.php/Using_the_Command_Line' # Guide
-	 ▸ 'https://en.wikipedia.org/wiki/Inkscape' # Wikipedia
-	 ▸ 'https://gitlab.com/inkscape/inkscape' # Gitlab repo
-	 ▸ 'https://inkscape.org' # Official page
-	 ▸ 'https://inkscape.org/en-au/doc/keys-1.3.x.html' # Inkscape docs
-	 ▸ 'https://github.com/inkscape/inkscape' # Howto ref images in '.md' file
+	 ~ 'http://wiki.inkscape.org/wiki/index.php/Using_the_Command_Line' # Guide
+	 ~ 'https://en.wikipedia.org/wiki/Inkscape' # Wikipedia
+	 ~ 'https://gitlab.com/inkscape/inkscape' # Gitlab repo
+	 ~ 'https://inkscape.org' # Official page
+	 ~ 'https://inkscape.org/en-au/doc/keys-1.3.x.html' # Inkscape docs
+	 ~ 'https://github.com/inkscape/inkscape' # Howto ref images in '.md' file
