@@ -23,59 +23,60 @@
 	 gedit --new-window # Create a new top level window in existing instance
 
 	SHORTCUTS
-	 'Home'/'End' # Go to beginning and end of current line
-	 'Ins' # Toggle insert/overwrite
-	 'F1' # Show help
-	 'F7' # Toggle cursor visibility
-	 'F9' # Toggle side panel
-	 'F10' # Toggle settings menu
-	 'F11' # Toggle fullscreen
-	 'Alt+Left'/'Alt+Rght' # Move current word left and right
-	 'Alt+Up'/'Alt+Down' # Move current line up and down
-	 'Alt+1...9' # Switch between files (1-9)
+	 'Home'/'End' # Go to the beginning and end of the current line
+	 'Ins' # Toggle between insert and overwrite modes
+	 'F1' # Open the help documentation
+	 'F7' # Toggle the visibility of the cursor
+	 'F9' # Toggle the visibility of the side panel
+	 'F10' # Toggle the settings menu
+	 'F11' # Toggle fullscreen mode
+	 'Alt+Left'/'Alt+Right' # Move the current word left and right
+	 'Alt+Up'/'Alt+Down' # Move the current line up and down
+	 'Alt+1...9' # Switch between open files (1-9)
 	 'Ctrl+a'/'Ctrl+\\' # Select or deselect all text
 	 'Ctrl+c'/'Ctrl+v' # Copy and paste selected text to clipboard
-	 'Ctrl+d' # Delete current line
-	 'Ctrl+f' # Text search
-	 'Ctrl+g' # Find the next match
-	 'Ctrl+h' # Find and replace dialog
-	 'Ctrl+i' # Go to line
-	 'Ctrl+j' # Condense text on selected lines
-	 'Ctrl+l'/'Ctrl+u' # Convert selected text to lowercase and uppercase
-	 'Ctrl+m' # Comment out selected lines
-	 'Ctrl+n' # Create a file in a new window
-	 'Ctrl+o' # Open a file
-	 'Ctrl+p' # Print the file
+	 'Ctrl+d' # Delete the current line
+	 'Ctrl+f' # Open the text search dialog
+	 'Ctrl+g' # Find the next match in the search
+	 'Ctrl+h' # Open the find and replace dialog
+	 'Ctrl+i' # Open the go to line dialog
+	 'Ctrl+j' # Join selected lines into one
+	 'Ctrl+l'/'Ctrl+u' # Convert selected text to lowercase or uppercase
+	 'Ctrl+m' # Comment out the selected lines
+	 'Ctrl+n' # Create a new file in a new window
+	 'Ctrl+o' # Open an existing file
+	 'Ctrl+p' # Print the current file
 	 'Ctrl+q' # Quit the application
-	 'Ctrl+s' # Save the file
-	 'Ctrl+t' # Create a file in a new tab
-	 'Ctrl+w' # Close the file
-	 'Ctrl+x' # Cut selected text to clipboard
-	 'Ctrl+z'/'Shft+Ctrl+Z' # Undo and redo last action
+	 'Ctrl+s' # Save the current file
+	 'Ctrl+t' # Create a new file in a new tab
+	 'Ctrl+w' # Close the current file
+	 'Ctrl+x' # Cut the selected text to clipboard
+	 'Ctrl+z'/'Shift+Ctrl+Z' # Undo and redo the last action
 	 'Ctrl+Arrows' # Move around through the text in different directions
-	 'Ctrl+Home'/'Ctrl+End' # Go to beginning or end of file
-	 'Ctrl+F9' # Toggle bottom panel
-	 'Ctrl+Alt+N' # Create a file in a new tab group
+	 'Ctrl+Home'/'Ctrl+End' # Go to the beginning or end of the file
+	 'Ctrl+F9' # Toggle the visibility of the bottom panel
+	 'Ctrl+Alt+N' # Create a new file in a new tab group
 	 'Ctrl+Alt+PgUp'/'Ctrl+Alt+PgDn' # Switch to the next and previous file
-	 'Shft+Left'/'Shft+Rght' # Select next character to left and right
-	 'Shft+Up'/'Shft+Down' # Select text inline with cursor above and below
-	 'Shft+F7' # Check spelling dialog
-	 'Shft+Alt+Up'/'Shft+Alt+Down' # Move viewport up and down
-	 'Shft+Alt+Home'/'Shft+Alt+End' # Move viewport to beginning and end of file
-	 'Shft+Ctrl+A'/'Shft+Ctrl+X' # Increment and decrement number at cursor
-	 'Shft+Ctrl+G' # Find last match of string
-	 'Shft+Ctrl+J' # Split line at margin crossover
-	 'Shft+Ctrl+K' # Deselect highlight search matches
-	 'Shft+Ctrl+L' # Save all the files
-	 'Shft+Ctrl+M' # Uncomment selected lines
-	 'Shft+Ctrl+S' # Rename or relocate the file
-	 'Shft+Ctrl+T' # Reopen the most recently closed file
-	 'Shft+Ctrl+W' # Close all the files
-	 'Shft+Ctrl+Up'/'Shft+Ctrl+Down' # Select text from cursor to end of next line
-	   # or start of last line
-	 'Shft+Ctrl+Home'/'Shft+Ctrl+End' # Select from cursor to start or end of file
-	 'Shft+Ctrl+Left'/'Shft+Ctrl+Rght' # Select next and last word or special char
-	 'Shft+Ctrl+~' # Invert selected case
+	 'Shift+Left'/'Shift+Right' # Select the next character to the left and right
+	 'Shift+Up'/'Shift+Down' # Select text inline with the cursor above and below
+	 'Shift+F7' # Open the check spelling dialog
+	 'Shift+Alt+Up'/'Shift+Alt+Down' # Move the viewport up and down
+	 'Shift+Alt+Home'/'Shift+Alt+End' # Move viewport to beginning and end of file
+	 'Shift+Ctrl+A'/'Shift+Ctrl+X' # Increment and decrement the number at cursor
+	 'Shift+Ctrl+G' # Find the last match of the string
+	 'Shift+Ctrl+J' # Split the line at the margin crossover
+	 'Shift+Ctrl+K' # Deselect highlighted search matches
+	 'Shift+Ctrl+L' # Save all open files
+	 'Shift+Ctrl+M' # Uncomment the selected lines
+	 'Shift+Ctrl+S' # Rename or relocate the current file
+	 'Shift+Ctrl+T' # Reopen the most recently closed file
+	 'Shift+Ctrl+W' # Close all open files
+	 'Shift+Ctrl+Up'/'Shift+Ctrl+Down' # Select text from the cursor to end of
+	   # next line or start of previous line
+	 'Shift+Ctrl+Home'/'Shift+Ctrl+End' # Select from cursor to start or end of ffile
+	 'Shift+Ctrl+Left'/'Shift+Ctrl+Right' # Select next and last word or char
+	 'Shift+Ctrl+~' # Invert the case of the selected text
+
 
 	GUI PREFS
 	   # Not all of these settings are the default settings for Gedit, any other 

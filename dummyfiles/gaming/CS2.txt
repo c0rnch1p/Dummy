@@ -17,53 +17,53 @@
 	 features of Source 2, with some maps receiving complete overhauls.
 
 	SHORTCUTS
-	   # Not all of these shortcuts are the default keybindings for CS2, they
-	   # can be modified in the keybinding section of the game settings	
-	 'Mouse 1' # Shoot
-	 'Mouse 2' # Aim
-	 'Mouse 5' # Next weapon
-	 'Mouse 4' # Last weapon
-	 'Left Shft' # Walk
-	 'Left Ctrl' # Toggle crouch
-	 'Spce' # Jump
-	 'a' # Strafe left
-	 'b' # Buy menu
-	 'c' # Use mic
-	 'd' # Strafe right
-	 'e' # Inspect weapon
-	 'f' # Use or interact
-	 'g' # Graffiti menu
-	 'i' # Display inventory
-	 'j' # Radio message
-	 'k' # Chat wheel 1
-	 'l' # Chat wheel 2
-	 'm' # Utility items
-	 'o' # Choose team
-	 'p' # Team equipment
-	 'q' # Chat wheel 3
-	 'r' # Reload
-	 's' # Backward
-	 't' # Drop weapon
-	 'u' # Team message
-	 'v' # Call vote
-	 'w' # Forward
-	 'x' # Healthshot
-	 'y' # Chat message
-	 'z' # Radio message
-	 '0' # Molotov
-	 '1' # Primary weapon
-	 '2' # Secondary weapon
-	 '3' # Melee weapon
-	 '4' # Cycle equipment
-	 '5' # Special items
-	 '6' # Frag
-	 '7' # Flash
-	 '8' # Smoke
-	 '9' # Zeus
-	 'F3' # Autobuy
-	 'F4' # Rebuy
-	 'Tab' # Show scoreboard
-	 '`' # Toggle console
+	  # Not all of these shortcuts are the default keybindings for CS2, they
+	  # can be modified in the keybinding section of the game settings
+	 'Mouse 1' # Shoot the weapon
+	 'Mouse 2' # Aim down sights
+	 'Mouse 5' # Switch to the next weapon
+	 'Mouse 4' # Switch to the last used weapon
+	 'Left Shift' # Walk silently
+	 'Left Ctrl' # Toggle crouch position
+	 'Space' # Jump to avoid obstacles
+	 'a' # Strafe to the left
+	 'b' # Open the buy menu
+	 'c' # Use the microphone to speak
+	 'd' # Strafe to the right
+	 'e' # Inspect the current weapon
+	 'f' # Use or interact with objects
+	 'g' # Open the graffiti menu
+	 'i' # Display the inventory
+	 'j' # Send a radio message
+	 'k' # Open chat wheel 1
+	 'l' # Open chat wheel 2
+	 'm' # Use utility items
+	 'o' # Choose a team
+	 'p' # Show team equipment
+	 'q' # Open chat wheel 3
+	 'r' # Reload the current weapon
+	 's' # Move backward
+	 't' # Drop the current weapon
+	 'u' # Send a team message
+	 'v' # Call for a vote
+	 'w' # Move forward
+	 'x' # Use a healthshot
+	 'y' # Send a chat message
+	 'z' # Send a radio message
+	 '0' # Equip a molotov
+	 '1' # Equip the primary weapon
+	 '2' # Equip the secondary weapon
+	 '3' # Equip a melee weapon
+	 '4' # Cycle through equipment
+	 '5' # Use special items
+	 '6' # Equip a frag grenade
+	 '7' # Equip a flashbang
+	 '8' # Equip a smoke grenade
+	 '9' # Equip a Zeus x27
+	 'F3' # Automatically buy equipment
+	 'F4' # Rebuy the last set of equipment
+	 'Tab' # Show the scoreboard
+	 '`' # Toggle the developer console
 
 	GUI PREFS
 	   # Not all of these settings are the default settings for CS2, any other 
