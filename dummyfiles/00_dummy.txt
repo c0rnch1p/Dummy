@@ -25,15 +25,15 @@
 	 'Ctrl+d' # Duplicate dummy selection
 
 	DEPENDS ON
-	 - bat # Cat clone with syntax highlighting
-	 - highlight # CLI source code highlighter
+	 ~ bat # Cat clone with syntax highlighting
+	 ~ highlight # CLI source code highlighter
 
 	FILES
-	 - '/path/dummy.c' # Main source file
-	 - '/path/dummy.txt' # Dummy help file
+	 ~ '/path/dummy.c' # Main source file
+	 ~ '/path/dummy.txt' # Dummy help file
 
 	BINARIES
-	 - '/bin/dummy' # Program to view dummy files
+	 ~ '/bin/dummy' # Program to view dummy files
 
 	COMMON USAGE
 	FORMATTING STYLE
@@ -48,7 +48,7 @@
 	   # F1...F9), symbols', include weblinks 'srcs, wikis, mans, ofcs, repos'
 
 	WEBLINKS
-	 - 'https://www.dummyhub.com' # NSFW dummy vids
-	 - 'https://www.pacifiers.com' # Pacifier addiction stories
-	 - 'http://www.forpuppets.com' # Unknown link
-	 - 'https://www.coolgenerator.com/ascii-text-generator' # ASCII titles
+	 ~ 'https://www.dummyhub.com' # NSFW dummy vids
+	 ~ 'https://www.pacifiers.com' # Pacifier addiction stories
+	 ~ 'http://www.forpuppets.com' # Unknown link
+	 ~ 'https://www.coolgenerator.com/ascii-text-generator' # ASCII titles
