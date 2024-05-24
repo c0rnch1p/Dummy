@@ -92,7 +92,7 @@
 		 > Display Grid: <On> # Display grid pattern
 		 > Statusbar: <On> # Display statusbar
 		 > Text Wrapping: <On> # Enable text wrapping
-		 > Don't Split Words: <On> # Enable don't split words over two lines
+		 > Dont Split Words: <On> # Enable dont split words over two lines
 		 > Highlight Line: <Off> # Disable highlight current line
 		 > Highlight Brckt: <On> # Enable highlight matching brackets
 	   > EDITOR
