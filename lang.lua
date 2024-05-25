@@ -1,5 +1,5 @@
 
--- general
+-- General
 Description="h3lp"
 Categories={"source"}
 IgnoreCase=false
@@ -9,7 +9,7 @@ Strings={Delimiter=[["|']], RawPrefix="R", Interpolation=[[ %\w ]]}
 Digits=[[ (?:0x|0X|0b)[0-9a-fA-F']+|\d*[\.]?\d+(?:[eE][\-\+]\d+)?[lLuU]* ]]
 Operators=[[\(|\)|\[|\]|\{|\}|\,|\;|\.|\:|\&|<|>|\!|=|\/|\*|\%|\+|\-|\~|\||\^|\?]]
 
--- key words
+-- Key Words
 Keywords={
 	{Id=1, List={
 		"DESCRIPTION", "COMMANDS", "SHORTCUTS", "DEPENDS", "ON", "REQUIRED", "BY",
@@ -24,14 +24,14 @@ Keywords={
 	{Id=6, Regex=[[\$\{[^\}]+\$\{.+?\}.+?\}|\$\{.+?\}|\$\(.+?\)]]} -- nested vars '$(...)' '${...}'
 }
 
--- comments
+-- Comments
 Comments={
 	{Block=true, Nested=false, Delimiter={[[\/\*]], [[\*\/]]}}, -- c multiline
 	{Block=false, Delimiter={[[//]]}}, -- c single line
 	{Block=false, Delimiter={[[#]]}}, -- bash single line
 }
 
--- ignore apostrophes
+-- Ignore Apostrophes
 function OnStateChange(oldState, newState, token)
 	if token=="'" and oldState==HL_NUMBER and newState==HL_STRING then
 		return HL_NUMBER
