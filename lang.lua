@@ -5,8 +5,8 @@ Categories={"source"}
 IgnoreCase=false
 EnableIndentation=true
 PreProcessor={Prefix=[[#]], Continuation="\\"}
-Strings={Delimiter=[["|']], RawPrefix="R", Interpolation=[[ %\w ]]}
-Digits=[[ (?:0x|0X|0b)[0-9a-fA-F']+|\d*[\.]?\d+(?:[eE][\-\+]\d+)?[lLuU]* ]]
+Strings={Delimiter=[[\"|\']], RawPrefix="R", Interpolation=[[ %\w ]]}
+Digits=[[ (?:0x|0X|0b)[0-9a-fA-F\']+|\d*[\.]?\d+(?:[eE][\-\+]\d+)?[lLuU]* ]]
 Operators=[[\(|\)|\[|\]|\{|\}|\,|\;|\.|\:|\&|<|>|\!|=|\/|\*|\%|\+|\-|\~|\||\^|\?]]
 
 -- Key Words
@@ -16,7 +16,7 @@ Keywords={
 		"BINARIES", "FILES", "COMMON", "USAGE", "WEBLINKS", "OPERATORS", "BUILTINS",
 		"GUI", "PREFS", "TEAM", "COMMUNICATION", "GAME", "HUD", "VIDEO", "ADVANCED",
 		"AUDIO", "MUSIC", "SPECTATOR", "SCOREBOARD", "ITEMS", "RADAR", "CROSSHAIR",
-		"KEYBINDINGS", "CHAT", "WHEELS"}},
+		"KEYBINDINGS", "CHAT", "WHEELS", "STATUS"}},
 	{Id=2, Regex=[=[\_]=]}, -- underscore chars '_'
 	{Id=3, Regex=[[\<.*?\>]]}, -- in angle brackets '<...>'
 	{Id=4, Regex=[[ [▪▸•] ]]}, -- unicode chars '▪', '▸' and '•'
