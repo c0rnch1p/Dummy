@@ -1,7 +1,7 @@
-	               _____________________________  _______   _______
-	              /   _____/__    ___/_   _____/ /   _   \ /       \
-	              \_____   \ |    |   |    __)__/   /_\   \   \ /   \
-	              /________/ |____|  /_________/_____|____/____|____/
+		       _____________________________  _______   _______
+		      /   _____/__    ___/_   _____/ /   _   \ /       \
+		      \_____   \ |    |   |    __)__/   /_\   \   \ /   \
+		      /________/ |____|  /_________/_____|____/____|____/
 
 	DESCRIPTION
 	 Steam is a video game digital distribution service and storefront by Valve. It
@@ -196,8 +196,11 @@
 	   # this, the Native builds are part of that support to further improve Steam
 	   # functionality on Linux, so its a good idea to use that
 	VPN CONNECTIONS
-	   # Its best to never download anything using Steam while a VPN client is
-	   # active even if the region is set to the correct location. 
+	   # Avoid downloading games on Steam while your VPN is active, even if the
+	   # region is set correctly. If a VPN is required for security, consider using
+	   # split tunneling to improve download speeds. Split tunneling allows Steam to
+	   # use the public network while other processes remain behind the VPN. The
+	   # method of acheiving this will vary depending on the VPN service
 
 	WEBLINKS
 	 - 'https://appuals.com/steam-set-launch-options-and-full-list' # Launch opt
