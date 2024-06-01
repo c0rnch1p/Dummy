@@ -1,16 +1,16 @@
 #!/bin/bash
 
 URLS=(
-	"https://heather.cs.ucdavis.edu/~matloff/UnixAndC/CLanguage/Curses.pdf"
-	"https://www.linux-magazine.com/Issues/2020/232/curses"
-	"https://www.man7.org/linux/man-pages/man3/ncurses.3x.html"
-	"https://invisible-island.net/ncurses/ncurses-intro.html"
-	"https://jbwyatt.com/ncurses.html"
+	'https://heather.cs.ucdavis.edu/~matloff/UnixAndC/CLanguage/Curses.pdf'
+	'https://www.linux-magazine.com/Issues/2020/232/curses'
+	'https://www.man7.org/linux/man-pages/man3/ncurses.3x.html'
+	'https://invisible-island.net/ncurses/ncurses-intro.html'
+	'https://jbwyatt.com/ncurses.html'
 )
 
-if ! command -v "$BROWSER" "/dev/null" 2>&1; then
-	echo -e "\nExport the \$BROWSER variable\n"
-elif command -v "$BROWSER" --new-window '/dev/null' 2>&1; then
+if ! command -v "$BROWSER" &>'/dev/null'; then
+	echo -e '\nExport the \$BROWSER variable\n'
+elif command -v "$BROWSER" --new-window &>'/dev/null'; then
 	"$BROWSER" --new-window "${URLS[0]}"
 	for ((i = 1; i < ${#URLS[@]}; i++)); do
 		"$BROWSER" "${URLS[i]}"
