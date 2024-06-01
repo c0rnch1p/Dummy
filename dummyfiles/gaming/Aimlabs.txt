@@ -75,8 +75,8 @@
 	   > Lean Bind Mode: <Hold> # Set lean bind mode to hold
 
 	WEBLINKS
-	 ~ 'https://aimlab.fandom.com/wiki/Aim_Lab_Wiki' # Fandom wiki
-	 ~ 'https://aimlabs.com' # Official page
-	 ~ 'https://en.wikipedia.org/wiki/Aimlabs' # Wikipedia page
-	 ~ 'https://store.steampowered.com/app/714010/Aimlabs' # Steam page
-	 ~ 'https://www.youtube.com/aimlab' # Youtube channel
+	 - 'https://aimlab.fandom.com/wiki/Aim_Lab_Wiki' # Fandom wiki
+	 - 'https://aimlabs.com' # Official page
+	 - 'https://en.wikipedia.org/wiki/Aimlabs' # Wikipedia page
+	 - 'https://store.steampowered.com/app/714010/Aimlabs' # Steam page
+	 - 'https://www.youtube.com/aimlab' # Youtube channel

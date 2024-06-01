@@ -172,31 +172,31 @@
 	   > Wheel 3 Slot 8: <Yes> # Set wheel 3 slot 8 to yes
 
 	FILES
-	 ~ "$HOME/.local/share/Steam/steamapps/common/Counter-Strike\ Global\ 
+	 - "$HOME/.local/share/Steam/steamapps/common/Counter-Strike\ Global\ 
 	   Offensive/game/csgo/cfg/example.cfg" # File to store custom configs for
 	   # practice games and server hosting
 
 	COMMON USAGE
 	PLAY TIPS
-	 ~ Autoswitch # Autoswitch to secondary when out of ammo
-	 ~ Awareness # Stay ready for a fight  at all times
-	 ~ Counterstrafe # Counterstrafer to stop movement
-	 ~ Crouching # Crouch commit only when certain
-	 ~ Footsteps # Shiftwalk for silent footsteps
-	 ~ Headshots # Aim higher to pop heads
-	 ~ Information # Jumpstrafe peek to get more information
-	 ~ Intimidation # Widepeek for the one tap
-	 ~ Jumping # Crouchjump to extend jump length
-	 ~ Jumpshots # Knifejump switch for big jumpshots
-	 ~ Ladders # Forwardstrafe ladders to climb faster
-	 ~ Loadouts # Set up loadouts for autobuys
-	 ~ Peeking # Jigglepeek to subvert expectations
-	 ~ Reloading # Strafe reload when have to reload in combat
-	 ~ Speed # Knife or equipment out for speed
-	 ~ Spraying # Jigglespray to spray while moving
-	 ~ Surroundings # Quickly check 6 and corners 
-	 ~ Switching # Strafe when switching weapons in combat
-	 ~ WKey # Finger off W in combat
+	 - Autoswitch # Autoswitch to secondary when out of ammo
+	 - Awareness # Stay ready for a fight  at all times
+	 - Counterstrafe # Counterstrafer to stop movement
+	 - Crouching # Crouch commit only when certain
+	 - Footsteps # Shiftwalk for silent footsteps
+	 - Headshots # Aim higher to pop heads
+	 - Information # Jumpstrafe peek to get more information
+	 - Intimidation # Widepeek for the one tap
+	 - Jumping # Crouchjump to extend jump length
+	 - Jumpshots # Knifejump switch for big jumpshots
+	 - Ladders # Forwardstrafe ladders to climb faster
+	 - Loadouts # Set up loadouts for autobuys
+	 - Peeking # Jigglepeek to subvert expectations
+	 - Reloading # Strafe reload when have to reload in combat
+	 - Speed # Knife or equipment out for speed
+	 - Spraying # Jigglespray to spray while moving
+	 - Surroundings # Quickly check 6 and corners 
+	 - Switching # Strafe when switching weapons in combat
+	 - WKey # Finger off W in combat
 	CS2 CONFIG SCRIPT
 	   # Using a custom configs to define paramaters for games is necessary for
 	   # practice and hosting servers. In the file commands are entered in the same
@@ -222,9 +222,9 @@
 	 exec <practice> # The filename in the command doesnt need the extension
 
 	WEBLINKS
-	 ~ 'https://counterstrike.fandom.com/wiki/Counter-Strike_2' # Fandom
-	 ~ 'https://developer.valvesoftware.com/wiki/Counter-Strike_2' # Valve wiki
-	 ~ 'https://steamcharts.com/app/730' # Steamcharts 
-	 ~ 'https://store.steampowered.com/app/730/CounterStrike_2/' # Steam store
-	 ~ 'https://www.counter-strike.net/cs2' # Official
-	 ~ 'https://www.rockpapershotgun.com/counter-strike-2-console-commands' # Dev
+	 - 'https://counterstrike.fandom.com/wiki/Counter-Strike_2' # Fandom
+	 - 'https://developer.valvesoftware.com/wiki/Counter-Strike_2' # Valve wiki
+	 - 'https://steamcharts.com/app/730' # Steamcharts 
+	 - 'https://store.steampowered.com/app/730/CounterStrike_2/' # Steam store
+	 - 'https://www.counter-strike.net/cs2' # Official
+	 - 'https://www.rockpapershotgun.com/counter-strike-2-console-commands' # Dev
