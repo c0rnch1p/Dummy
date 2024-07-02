@@ -272,40 +272,40 @@
 	> PLUGINS
 	  > ADDONS
 	    - Show Open Documents: <on> # Toolbar show list of currently open documents
-	    - Sort Documents by Name: <on> # Sort documents by name
+	    - Sort Documents by Name: <on> # Emable sort documents by name
 	    - Open URI in Editor Menu: <on> # Show an Open URI item in the editor menu
-	    - Tasks in Messages Window: <on> # Show tasks in the message window
-	    - Tasks of All Documents: <on> # Show tasks of all documents
-	    - Search Tokens: <TODO; FIXME> # Set search tokens
+	    - Tasks in Messages Window: <on> # Enable show tasks in the message window
+	    - Tasks of All Documents: <on> # Enable show tasks of all documents
+	    - Search Tokens: <TODO; FIXME> # Set search tokens to TODO and FIXME
 	    - Status Icon in Notification Area: <on> # Show status notification area
 	    - Defined Bookmarks in Sidebar: <off> # Show defined bookmarks in the sidebar
 	    - Double Click Mark All Occurrences of Word: <on> # Mark all occurrences
 	    - Single Click Deselect Previous Highlight: <on> # Deselect last highlight
-	    - Strip Trailing Blank Lines: <on> # Strip trailing blank lines
-	    - XML Tagging for Selection: <on> # XML tagging for selection
+	    - Strip Trailing Blank Lines: <on> # Enable strip trailing blank lines
+	    - XML Tagging for Selection: <on> # Enable XML tagging for selection
 	    - Enclose Selection on Keybindings: <on> # Enclose selection on keybindings
 	    - Enclose Selection Automatically: <off> # Enclose selection automatically
 	    - Show Calltip on Color Value Hover: <on> # Calltip when hovering on color
 	    - Double Click Color Value Open Color Chooser: <on> # Open color chooser
 	  > CODE NAVIGATION
-	    - Show Symbols List: <on> # Show list of symbols
+	    - Show Symbols List: <on> # Enable show list of symbols
 	    - Show Completion List: <on> # Show completion list
 	    - Symbol Completion: <on> # Enable symbol completion
 	    - Auto Activate Symbol Completion: <off> # Automatic symbol completion
 	    - Calltip Symbol Completion: <on> # Show calltips for symbol completion
 	    - Enable Word Completion: <on> # Enable word completion
-	    - Auto Activate Word Completion: <off> # Automatic word completion
+	    - Auto Activate Word Completion: <off> # Disable automatic word completion
 	    - Enable Snippet Completion: <on> # Enable snippet completion
-	    - Show Snippet Completion: <on> # Show snippet completion list
+	    - Show Snippet Completion: <on> # Enable show snippet completion list
 	  > DEBUGGER
-	    - Save Debug Data to Project: <off> # Save debug data to project
+	    - Save Debug Data to Project: <off> # Disable save debug data to project
 	  > DOCUMENTATION GENERATOR
-	    - Save File Before Generating: <on> # Save file then gen docs
+	    - Save File Before Generating: <on> # Enable save file then gen docs
 	    - Indent Inserted Documentation: <on> # Indent inserted documentation
 	    - Documentation Type: <doxygen> # Set documentation type for all languages
 	  > FILE BROWSER
 	    - External Open Command: <nemo "%d"> # Set external open command
-	    - Show Hidden Files: <on> # Show hidden files
+	    - Show Hidden Files: <on> # Enable show hidden files
 	    - Hide File Extensions: <on> # Hide specific file extensions
 	    - Follow Path of Current File: <off> # Follow path of the current file
 	    - Use the Projects basedir: <off> # Use the projects base directory
@@ -324,11 +324,6 @@
 	    - Enable Bazaar: <on> # Enable Bazaar support
 	    - Enable Mercurial: <on> # Enable Mercurial support
 	    - Spellcheck language: <English> # Set spellcheck language to English
-	  > GIT CHANGE BAR
-	    - Monitor Repository for Changes: <on> # Monitor repository for changes
-	    - Added Lines: <green> # Set added lines to green
-	    - Changed Lines: <orange> # Set changed lines to orange
-	    - Removed Lines: <red> # Set removed lines to red
 	  > LATEX
 	    - Use KOMA Script by Default: <off> # Disable use KOMA script by default
 	    - Show Extra Plugin Toolbar: <off> # Disable show extra plugin toolbar
@@ -339,8 +334,8 @@
 	  > LINE OPERATIONS
 	    - Use Collation Based String Compare: <on> # Use collation based compare
 	  > MACROS
-	    - Save Macros When Close Geany: <on> # Save macros when closing Geany
-	    - Ask Before Replacing Existing Macros: <on> # Ask before replacing
+	    - Save Macros When Close Geany: <on> # Enable save macros when closing Geany
+	    - Ask Before Replacing Existing Macros: <on> # Enable ask before replacing
 	  > MARKDOWN
 	    - Position: <Message Window> # Set position to Message Window
 	    - Font: <Serif Regular 12> # Set font to Serif Regular, size 12
@@ -356,56 +351,56 @@
 	    - Awk: <awk -f> # Use awk in file mode
 	    - User: <cat -> # Use cat for user-defined scripts
 	  > SAVE ACTIONS
-	    - Enable save when losing focus: <on> # Automatically save when losing focus
-	    - Enable: <off> # Enable or disable auto save
-	    - Auto save interval: <300 seconds> # Interval for auto save
+	    - Enable save when losing focus: <on> # Enable sutosave save when lose focus
+	    - Enable: <off> # Disable auto save
+	    - Auto save interval: <300 seconds> # Set interval for auto save to 300s
 	    - Print Autosave Status Message: <off> # Print status message for auto save
-	    - Save only current open file: <on> # Save only the current open file
-	    - Save all open files: <off> # Save all open files
+	    - Save only current open file: <on> # Enable save only the current open file
+	    - Save all open files: <off> # Disable save all open files
 	  > SPELL CHECK
 	    - Toolbar Item Toggle Spellcheck: <on> # Show toolbar item for spell check
 	    - Editor Menu Item Sshow Suggestions: <on> # Show editor menu suggestions
-	    - Suggestions in Submenu: <on> # Show suggestions in a sub menu
-	    - Mispelled Words in Message Window: <on> # Print misspelled words
-	    - Toggle spell check: <off> # Toggle spell check
+	    - Suggestions in Submenu: <on> # Enable show suggestions in a sub menu
+	    - Mispelled Words in Message Window: <on> # Enable show misspelled words
+	    - Toggle spell check: <off> # Disable toggle spell check
 	    - Check spelling when opening a document: <off> # Check spelling when opening
 	    - Language to use for the spell check: <en_US> # Language for spell check
-	    - Directory to look for dictionary files: <'/usr/share/hunspell'> # Hunspell
+	    - Directory to look for dictionary files: </usr/share/hunspell> # Hunspell
 	  > TREE BROWSER
-	    - External open command: <xdg-open '%d'> # External open command
-	    - Terminal: <terminator> # Terminal to use
-	    - Toolbar: <Top> # Toolbar position
+	    - External open command: <xdg-open '%d'> # Set open command to xdg default
+	    - Terminal: <terminator> # Set terminal to terminator
+	    - Toolbar: <Top> # Set toolbar position on top
 	    - Show Icons: <Content-type> # Show icons by content type
-	    - Show Hidden Files: <on> # Show hidden files
-	    - Hide Object Files: <on> # Hide object files
-	    - Reverse Filter: <off> # Reverse filter
-	    - Follow Current Document: <on> # Follow current document
-	    - Single Click Open Doc and Focus: <on> # Single click open doc and focus
+	    - Show Hidden Files: <on> # Enable show hidden files
+	    - Hide Object Files: <on> # Enable hide object files
+	    - Reverse Filter: <off> # Disable reverse filter
+	    - Follow Current Document: <on> # Enable follow current document
+	    - Single Click Open Doc and Focus: <off> # Disable (Deprecated)
 	    - Double Click Open Folder: <off> # Double click to open directory
 	    - Close File on Delete: <on> # Close file on delete if opened
 	    - Focus editor on file open: <on> # Focus editor on file open
 	    - Show Tree Lines: <on> # Show tree lines
-	    - Show Bookmarks: <off> # Show bookmarks
-	    - Open New Files: <on> # Open new files
+	    - Show Bookmarks: <off> # Disable show bookmarks
+	    - Open New Files: <on> # Enable open new files
 	  > WEB HELPER
-	    - Browser Position: <message-window> # Browser position
-	    - Browser Autoreload: <on> # Browser auto reload
+	    - Browser Position: <message-window> # Set browser pos to message window
+	    - Browser Autoreload: <on> # Enable browser auto reload
 	    - Secondary Windows Skip Taskbar: <on> # Secondary windows skip task bar
 	    - Secondary Windows are Transient: <on> # Secondary windows are transient
-	    - Secondary Windows Type: <utility> # Secondary windows type
+	    - Secondary Windows Type: <utility> # Set secondary windows type to utility
 	  > XML PRETTYPRINTER
-	    - Put on One Line: <off> # Put comments on one line
-	    - Inline if Possible: <on> # Inline comments if possible
-	    - Alignment: <on> # Align comments
-	    - Concatenation: <on> # Concatenate empty nodes
-	    - Spacing: <on> # Add spacing to empty nodes
-	    - Expansion: <off> # Expand empty nodes
-	    - Put on One Line: <off> # Put text nodes on one line
-	    - Inline if Possible: <on> # Inline text nodes if possible
-	    - Alignment: <on> # Align text nodes
-	    - Put on One Line: <off> # Put CDATA on one line
-	    - Inline if Possible: <on> # Inline CDATA if possible
-	    - Alignment: <on> # Align CDATA
+	    - Put on One Line: <off> # Disable put comments on one line
+	    - Inline if Possible: <on> # Enable inline comments if possible
+	    - Alignment: <on> # Enable align comments
+	    - Concatenation: <on> # Enable concatenate empty nodes
+	    - Spacing: <on> # Enable add spacing to empty nodes
+	    - Expansion: <off> # Disable expand empty nodes
+	    - Put on One Line: <off> # Disable put text nodes on one line
+	    - Inline if Possible: <on> # Enable inline text nodes if possible
+	    - Alignment: <on> # Enable align text nodes
+	    - Put on One Line: <off> # Disable put CDATA on one line
+	    - Inline if Possible: <on> # Enable inline CDATA if possible
+	    - Alignment: <on> # Enable align CDATA
 	    - Indentation: <Space 4> # Indentation style and size
 	    - Line break: <\r\n> # Line break style
 

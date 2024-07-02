@@ -149,19 +149,19 @@
 	 - gitg # Gnome client to view git repositories
 
 	FILES:
-	 - $HOME/.gitconfig # User-specific Git configuration file
-	 - /etc/gitconfig # System-wide Git configuration file
+	 - "$HOME/.gitconfig" # User-specific Git configuration file
+	 - '/etc/gitconfig' # System-wide Git configuration file
 
 	BINARIES:
-	 - /usr/bin/git # Main executable for Git commands
-	 - /usr/bin/git-clang-format # Format staged changes with clang-format
-	 - /usr/bin/git-cvsserver # CVS server emulator for Git
-	 - /usr/bin/git-receive-pack # Receive what is pushed into the repository
-	 - /usr/bin/git-shell # Restricted login shell for Git-only SSH access
-	 - /usr/bin/git-upload-archive # Send archive back to git-archive
-	 - /usr/bin/git-upload-pack # Send objects packed back to git-fetch-pack
-	 - /usr/bin/git2 # Secondary Git executable
-	 - /usr/bin/gitk # Git repository browser
+	 - '/usr/bin/git' # Main executable for Git commands
+	 - '/usr/bin/git-clang-format' # Format staged changes with clang-format
+	 - '/usr/bin/git-cvsserver' # CVS server emulator for Git
+	 - '/usr/bin/git-receive-pack' # Receive what is pushed into the repository
+	 - '/usr/bin/git-shell' # Restricted login shell for Git-only SSH access
+	 - '/usr/bin/git-upload-archive' # Send archive back to git-archive
+	 - '/usr/bin/git-upload-pack' # Send objects packed back to git-fetch-pack
+	 - '/usr/bin/git2' # Secondary Git executable
+	 - '/usr/bin/gitk' # Git repository browser
 
 	WEBLINKS:
 	 - 'https://en.wikipedia.org/wiki/Git' # Wiki page

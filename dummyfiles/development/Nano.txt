@@ -75,26 +75,26 @@
 	   # Not all of these shortcuts are the defaults for Nano, they can be
 	   # modified in the nanorc config file
 	 'F1' # Show or exit help
-	 'Ctrl+A' # Mark text for selection
-	 'Ctrl+B' | 'Ctrl+F' # Find text
-	 'Ctrl+C' # Copy selected text
-	 'Ctrl+D' # Find previous occurrence of specified text
-	 'Ctrl+E' # Execute command in shell
-	 'Ctrl+G' # Find next occurrence of specified text
-	 'Ctrl+H' # Chop selected word left
-	 'Ctrl+L' # Convert selection to lowercase
-	 'Ctrl+P' # Show cursor position
-	 'Ctrl+Q' # Exit nano
-	 'Ctrl+R' # Replace selected text
-	 'Ctrl+S' # Save file
-	 'Ctrl+U' # Convert selection to uppercase
-	 'Ctrl+V' # Paste copied or cut text
-	 'Ctrl+W' # Write out (save) file
-	 'Ctrl+X' # Cut selceted text
-	 'Ctrl+Y' # Redo unonde action
-	 'Ctrl+Z' # Undo last action
-	 'Alt+M' # Comment or uncomment line
-	 'Alt+Z' # Suspend nano
+	 'Ctrl+a' # Mark text for selection
+	 'Ctrl+b'/'Ctrl+f' # Find text
+	 'Ctrl+c' # Copy selected text
+	 'Ctrl+d' # Find previous occurrence of specified text
+	 'Ctrl+r' # Execute command in shell
+	 'Ctrl+g' # Find next occurrence of specified text
+	 'Ctrl+h' # Chop selected word left
+	 'Ctrl+l' # Convert selection to lowercase
+	 'Ctrl+p' # Show cursor position
+	 'Ctrl+q' # Exit nano
+	 'Ctrl+r' # Replace selected text
+	 'Ctrl+s' # Save file
+	 'Ctrl+u' # Convert selection to uppercase
+	 'Ctrl+v' # Paste copied or cut text
+	 'Ctrl+w' # Write out (save) file
+	 'Ctrl+x' # Cut selceted text
+	 'Ctrl+y' # Redo unonde action
+	 'Ctrl+z' # Undo last action
+	 'Alt+m' # Comment or uncomment line
+	 'Alt+z' # Suspend nano
 
 	DEPENDS ON:
 	 - file # File type identification utility

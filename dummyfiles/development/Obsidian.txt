@@ -207,7 +207,7 @@
 	     - Recently Used Text: <(recently used)> # Set recently used text
 	     - Exclusions: <sh,c,py,go> # Dont look for source files
 	     - File Search Prefix: </> | <ctrl+o> # Set the file search hotkeys
-	 	 - Tag Search Prefix: <#> | <ctrl+t> # Set the tag search hotkeys
+	     - Tag Search Prefix: <#> | <ctrl+t> # Set the tag search hotkeys
 	     - Command Search: <ctrl+p> # Set the command search hotkey
 	     - Suggestion Limit: <1000> # Set suggestion limit to 100
 	     - Hotkey Modifier Style: <Force Mac Hotkeys> # Enable auto detect hotkeys
@@ -406,7 +406,30 @@
 	   # are typically not. Indentation is not required in this simple key-value
 	   # pair structure, but double space indentations are also supported for longer
 	   # lists and nested elements
-
+	 CSS SNIPPETS
+	   # Integrated CSS snippets are a handy way to customize the structure of notes
+	   # in Obsidian. Below is an example of a CSS snippet that ensures code blocks
+	   # and markdown previews do not wrap text (while readable line length is on).
+	  .cm-line { # Applies styles to lines of code in the editor
+	      white-space: pre; # Prevents text from wrapping
+	  } # Close function
+	  .HyperMD-codeblock, .markdown-preview-view pre code { # Function to set styles
+	      white-space: pre; # Prevents text from wrapping
+	  } # Close function
+	   # The snippet prevents lines of code in the editor (.cm-line) from wrapping,
+	   # while ensuring that code blocks within the markdown preview
+	   # (.HyperMD-codeblock, .markdown-preview-view pre code) also dont wrap.
+	   # The method of incorporating the snippet into Obsidian is explained below
+	  mkdir -p "$HOME/.config/obsidian/<vault>/.obsidian/snippets" # Create the
+	   # Obsidian CSS snippets folder if not already created
+	  echo "<code>" >"$HOME/.config/obsidian/<vault>/.obsidian/snippets/nowrap.css"
+	   # Output the CSS code block above into a .css file in the snippets folder
+	   # (the comments will need to be removed or switched to c-style), then open
+	   # up Obsidian to configure the code
+	  > Settings # Open the settings menu
+	    > Appearance # Navigate to the appearance section
+	      > CSS snippets # Locate the CSS snippets option
+	        > nowrap: <on> # Enable the newly created function
 	WEBLINKS:
 	 - 'https://blacksmithgu.github.io/obsidian-dataview' # Dataview reference
 	 - 'https://docs.text-gen.com' # Text-Gen API docs
