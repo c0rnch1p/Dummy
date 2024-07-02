@@ -1,0 +1,121 @@
+	                  _________   _______ _________ _________
+	                  \        \ /   _   \\        \\_  __   \
+	                  /    |    \   /_\   \    |    \    |    \
+	                  \____|____/____|____/____|____/_________/
+
+	DESCRIPTION: Nano is a small, free, and user-friendly text editor designed to
+	 replace Pico, the default editor included in the non-free Pine package. It is
+	 ideal for both new and advanced Unix and Linux users, offering a simple and
+	 straightforward interface. Nano provides an accessible and efficient text
+	 editing experience, making it a popular choice in the Linux community.
+
+	COMMANDS:
+	 nano # Open nano text editor
+	 nano '/path/file' # Open nano with the specified file
+	 nano -A # Enable smart home key
+	 nano -a # When soft-wrapping, do it at whitespace
+	 nano -b # Automatically hard-wrap overlong lines
+	 nano -B # Save backups of existing files
+	 nano -B '/path/file' # Backup the current file before overwriting it
+	 nano -c # Constantly show cursor position
+	 nano -C '/path' # Directory for saving unique backup files
+	 nano -d # Fix backspace delete confusion problem
+	 nano -D # Use bold instead of reverse video text
+	 nano -E # Convert typed tabs to spaces
+	 nano -e # Keep the line below the title bar empty
+	 nano -F # Read a file into a new buffer by default
+	 nano -f '/path/file' # Use only this file for configuring nano
+	 nano -g # Show cursor in file browser & help text
+	 nano -G # Use (vim-style) lock files
+	 nano -H # Save & reload old search/replace strings
+	 nano -h # Show this help text and exit
+	 nano -i # Automatically indent new lines
+	 nano -I # Dont look at nanorc files
+	 nano -j # Scroll per half-screen, not per line
+	 nano -J <val> # Show a guiding bar at this column
+	 nano -k # Cut from cursor to end of line
+	 nano -K # Fix numeric keypad key confusion problem
+	 nano -L # Dont add an automatic newline
+	 nano -l # Show line numbers in front of the text
+	 nano -m # Enable the use of the mouse
+	 nano -M # Trim tail spaces when hard-wrapping
+	 nano -n # Do not read the file (only write it)
+	 nano -N # Dont convert files from DOS/Mac format
+	 nano -O # Leading whitespace means new paragraph
+	 nano -o '/path' # Set operating directory
+	 nano -p # Preserve XON (^Q) and XOFF (^S) keys
+	 nano -P # Save & restore position of the cursor
+	 nano -q # Show a position+portion indicator
+	 nano -Q <regx> # Regular expression to match quoting
+	 nano -R # Restrict access to the filesystem
+	 nano -r <val> # Set width for hard-wrap and justify
+	 nano -S # Display overlong lines on multiple rows
+	 nano -s <prog> # Use this alternative spell checker
+	 nano -t # Save changes on exit, dont prompt
+	 nano -T <val> # Make a tab this number of columns wide
+	 nano -u # Save a file by default in Unix format
+	 nano -U # Wipe status bar upon next keystroke
+	 nano -V # Print version information and exit
+	 nano -v # View mode (read-only)
+	 nano -W # Detect word boundaries more accurately
+	 nano -w # Dont hard-wrap long lines (default)
+	 nano -x # Dont show the two help lines
+	 nano -X 'str' # Which other characters are word parts
+	 nano -y # Make Ctrl+Right stop at word ends
+	 nano -Y <syntax> # Syntax definition to use for coloring
+	 nano -Z # Let Bsp and Del erase a marked region
+	 nano -0 # Hide all bars, use whole terminal
+	 nano --help # Display help information
+	 nano -! # Also try magic to determine syntax
+	 nano -% # Show some states on the title bar
+	 nano -/ # Use better-known key bindings
+	 nano -_ # Show a feedback bar at the bottom
+
+	SHORTCUTS:
+	   # Not all of these shortcuts are the defaults for Nano, they can be
+	   # modified in the nanorc config file
+	 'F1' # Show or exit help
+	 'Ctrl+A' # Mark text for selection
+	 'Ctrl+B' | 'Ctrl+F' # Find text
+	 'Ctrl+C' # Copy selected text
+	 'Ctrl+D' # Find previous occurrence of specified text
+	 'Ctrl+E' # Execute command in shell
+	 'Ctrl+G' # Find next occurrence of specified text
+	 'Ctrl+H' # Chop selected word left
+	 'Ctrl+L' # Convert selection to lowercase
+	 'Ctrl+P' # Show cursor position
+	 'Ctrl+Q' # Exit nano
+	 'Ctrl+R' # Replace selected text
+	 'Ctrl+S' # Save file
+	 'Ctrl+U' # Convert selection to uppercase
+	 'Ctrl+V' # Paste copied or cut text
+	 'Ctrl+W' # Write out (save) file
+	 'Ctrl+X' # Cut selceted text
+	 'Ctrl+Y' # Redo unonde action
+	 'Ctrl+Z' # Undo last action
+	 'Alt+M' # Comment or uncomment line
+	 'Alt+Z' # Suspend nano
+
+	DEPENDS ON:
+	 - file # File type identification utility
+	 - glibc # GNU C Library
+	 - ncurses # Libraries for terminal-based user interfaces
+
+	REQUIRED BY:
+	 - nano-syntax-highlighting # Nano editor syntax highlighting enhancements
+
+	BINARIES:
+	 - '/bin/nano' # Run nano
+
+	FILES:
+	 - "$HOME/.config/nano/nanorc" # User-specific configuration file for nano
+	 - "$HOME/.nanorc" # User-specific configuration file for nano
+	 - '/etc/nanorc' # Global configuration file for nano
+
+	WEBLINKS:
+	 - 'https://en.wikipedia.org/wiki/GNU_nano' # Wiki
+	 - 'https://git.savannah.gnu.org/cgit/nano.git/log' # Commit log
+	 - 'https://git.savannah.gnu.org/git/nano.git' # Git Repo
+	 - 'https://www.nano-editor.org' # Official page
+	 - 'https://www.nano-editor.org/dist/latest/nano.html' # Nano Docs
+	 - 'https://www.nano-editor.org/dist/latest/nanorc.5.html' # Nanorc Docs

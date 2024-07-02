@@ -1,0 +1,175 @@
+	                            ______________________
+	                           /  _____/   |__    ___/
+	                          /   \__---   | |    |
+	                          \________/___| |____|
+
+	DESCRIPTION: Git is a distributed version control system designed to handle
+	 everything from small to very large projects with speed and efficiency. It was
+	 originally created for use in the development of Linux by Linus Torvalds and
+	 others writing the kernel. It is used for tracking changes in a set of files,
+	 usually used for coordinating work among programmers collaboratively working on
+	 source code during the development of software.
+
+	COMMANDS:
+	 git init # Initialize a new Git repository
+	 git init --bare # Initialize a bare Git repository
+	 git status # Show the working tree status
+	 git clone 'https://github.com/test/repo.git' # Clone the test repo
+	 git add <file> # Add file contents to the index (stage changes)
+	 git push <alias> <branch> # Update remote refs along with associated objects
+	 git commit -am <message> # Add staged content and commit with a message
+	 git config --local credential.helper cache # Set credential helper to cache
+	 git config --local credential.helper 'cache --timeout=900' # Set cache timeout
+	 git config -g user.email <email> # Set the global email address
+	 git config -g user.name <name> # Set the global username
+	 git config -l # Display the basic configuration information
+	 git gc --prune=<now> # Garbage collection to clean up unnecessary files
+	 git log -1 # Show the single last commit
+	 git reflog expire --expire=now --all # Expire reflog entries older than now
+	 git remote -v # Display the remote server information
+	 git remote add <name> <url> # Add a new remote repository
+	 git remote get-url <name> # Get the URL of a remote repository
+	 git rm -r --cached . # Remove files from the index (unstage)
+
+	DEPENDS ON:
+	 - curl # Tool to transfer data from or to a server
+	 - expat # XML parser library
+	 - grep # GNU grep, egrep, and fgrep
+	 - openssl # Toolkit for SSL/TLS protocols
+	 - pcre2 # Perl compatible regular expressions library
+	 - perl # Practical Extraction and Report Language
+	 - perl-error # Perl module for error handling
+	 - perl-mailtools # Mail related modules for Perl
+	 - shadow # Shadow utilities (login, passwd etc.)
+	 - zlib # Compression library
+
+	REQUIRED BY:
+	 - ame # AUR package manager for Arch Linux
+	 - anime-games-launcher-bin # Launcher for anime games
+	 - ansible-lint # Best practices checker for Ansible
+	 - archlinux-repro # Reproducible builds for Arch Linux
+	 - arcolinux-app-dev-git # ArcoLinux application for development
+	 - arcolinux-app-git # ArcoLinux application
+	 - arcolinux-app-glade-dev-git # ArcoLinux Glade application
+	 - arcolinux-app-glade-git # ArcoLinux Glade application
+	 - arcolinux-glava-config-git # ArcoLinux GLava configuration
+	 - asdf-vm # Extendable version manager
+	 - aura # A secure, multilingual package manager for Arch Linux
+	 - aura-bin # A secure, multilingual package manager for Arch Linux
+	 - aurpublish # Tool to manage multiple AUR repositories
+	 - aurutils # Helper tools for the AUR
+	 - auth-tarball-from-git # Create authentication tarballs from git repos
+	 - bashbrew # Docker image management tool
+	 - bat-extras # Collection of useful commands for bat
+	 - bcachefs-tools-git # BcacheFS tools
+	 - bit # A modern Git CLI
+	 - blesh-git # Bash Line Editor, a full-featured readline replacement
+	 - cocogitto # Conventional commits tool for managing commit logs
+	 - cozy-stack # Cozy Cloud stack
+	 - crosstool-ng # Tool for building cross-compilers
+	 - devtools # Developer tools for Arch Linux
+	 - espup # ESP-IDF programming framework
+	 - etckeeper # Store /etc in a VCS (version control system)
+	 - flatpak-builder # Tool to build flatpaks from sources
+	 - flavours # Manage dotfiles with ease
+	 - flutter-bin # SDK for building beautiful UIs (obile, web, and desktop)
+	 - forgejo # Self-hosted Git service
+	 - fvm-git # Flutter Version Management
+	 - giggle # A Gtk frontend for Git
+	 - git-annex # Manage files with Git without commiting their contents
+	 - git-branchless # Branchless workflow for Git
+	 - git-bug # Distributed bug tracker embedded in Git
+	 - git-cinnabar # Mercurial bridge for Git
+	 - git-cola # Sleek and powerful Git GUI
+	 - git-credential-manager-core-bin # Git credential storage
+	 - git-crypt # Transparent file encryption in Git
+	 - git-evtag # Verify Git tags using OpenPGP
+	 - git-filter-repo # Quickly rewrite Git repository history
+	 - git-fixup-git # Git fixup commit management
+	 - git-grab # Simple way to clone Git repositories
+	 - git-lfs # Git extension for versioning large files
+	 - git-repair # Fix common issues with Git repositories
+	 - git-revise # Efficiently update Git commits
+	 - git-sizer # Compute various size metrics for a Git repository
+	 - git-smash # Rebase and fixup Git commits in one go
+	 - gitahead # Graphical Git client designed for speed and efficiency
+	 - gitea # Git with a cup of tea, a self-hosted Git service
+	 - github-desktop # Simple collaboration from desktop
+	 - github-desktop-bin # Simple collaboration from desktop
+	 - gitlab # Git repository management
+	 - gitlab-runner # GitLab CI multi-platform runner
+	 - gitlab-shell # GitLab Shell handles Git SSH sessions for GitLab
+	 - gitolite # Access control layer on top of Git
+	 - gitprompt-rs # Fast and customizable Git prompt written in Rust
+	 - gittyup # Git GUI for Linux
+	 - gpgit # Sign Git commits with GPG
+	 - haskell-githash # Obtain Git hashes of files
+	 - hound # Code search for Git repositories
+	 - hub # Git wrapper and GitHub CLI
+	 - kde-development-environment-meta # Meta for KDE devel environment
+	 - lazygit # Simple terminal UI for Git commands
+	 - libpamac-aur # Library for Pamac, AUR support
+	 - lunarvim-git # Neovim configuration
+	 - lxqt-build-tools # Tools required to build LXQt
+	 - lxqt-build-tools-qt5 # Tools required to build LXQt (Qt5 version)
+	 - mastodon # A GNU Social-compatible microblogging server
+	 - metasploit # Penetration testing framework
+	 - openbox-themes-pambudi-git # Collection of Openbox themes by Pambudi
+	 - pakka # CLI tool for managing dotfiles and scripts
+	 - pamac-aur # A Gtk3 frontend for libalpm (AUR support)
+	 - paru # Feature packed AUR helper
+	 - paru-bin # Feature packed AUR helper (pre-built binaries)
+	 - paru-git # Feature packed AUR helper (git version)
+	 - penguins-eggs # Linux livecd with a focus on ease of use
+	 - pikaur-git # AUR helper using Pyalpm
+	 - python-gitdb # Python Git Database implementation
+	 - python-gitpython # Python library to interact with Git repositories
+	 - python-setuptools-git # Setuptools plugin for Git
+	 - qgit # Qt application for viewing GIT repositories
+	 - qmk # Quantum Mechanical Keyboard Firmware
+	 - repo # Google’s tool for managing Git repositories
+	 - shards # Dependency manager for the Crystal programming language
+	 - smartgit # Graphical Git client
+	 - soft-serve # Self-hostable Git server for the command line
+	 - steamtinkerlaunch # A launch wrapper for Steam games
+	 - tig # Text-mode interface for Git
+	 - trizen # Lightweight AUR Package Manager
+	 - trizen-git # Lightweight AUR Package Manager (git version)
+	 - vcsh # Version Control System for $HOME
+	 - vim-coc-git-git # Conquer of Completion extension for vim
+	 - vim-fugitive # A Git wrapper for vim
+	 - vim-gitgutter # Vim plugin for showing a git diff in the sign column
+	 - vim-vital # Vim plugin for vital code
+	 - yadm # Yet Another Dotfiles Manager
+	 - yay # Yet another Yaourt, an AUR helper
+	 - yay-bin # Yet another Yaourt, an AUR helper (pre-built binaries)
+	 - yay-git # Yet another Yaourt, an AUR helper (git version)
+
+	ADDITIONAL:
+	 - gitg # Gnome client to view git repositories
+
+	FILES:
+	 - $HOME/.gitconfig # User-specific Git configuration file
+	 - /etc/gitconfig # System-wide Git configuration file
+
+	BINARIES:
+	 - /usr/bin/git # Main executable for Git commands
+	 - /usr/bin/git-clang-format # Format staged changes with clang-format
+	 - /usr/bin/git-cvsserver # CVS server emulator for Git
+	 - /usr/bin/git-receive-pack # Receive what is pushed into the repository
+	 - /usr/bin/git-shell # Restricted login shell for Git-only SSH access
+	 - /usr/bin/git-upload-archive # Send archive back to git-archive
+	 - /usr/bin/git-upload-pack # Send objects packed back to git-fetch-pack
+	 - /usr/bin/git2 # Secondary Git executable
+	 - /usr/bin/gitk # Git repository browser
+
+	WEBLINKS:
+	 - 'https://en.wikipedia.org/wiki/Git' # Wiki page
+	 - 'https://git-scm.com' # Official page
+	 - 'https://git-scm.com/book/en/v2' # Pro Git book
+	 - 'https://git-scm.com/doc' # Official docs
+	 - 'https://git-scm.com/docs' # Git manual
+	 - 'https://git.kernel.org/pub/scm/git/git.git' # Kernel.org repo
+	 - 'https://git.wiki.kernel.org/index.php/Main_Page' # Kernel.org wiki
+	 - 'https://github.com/git/git' # Git source code repository
+	 - 'https://sourceforge.net/projects/git/' # Git project on SourceForge

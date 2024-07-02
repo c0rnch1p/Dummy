@@ -1,0 +1,45 @@
+	        _______ ___________________  ___ ___  ___ _________________
+	       /   _   \\__  __   \_   ___ \/   |   \|   |   _____/_  __   \
+	      /   /_\   \|       _/    \__\/    -    \   |_____   \    |    \
+	      \____|____/____|____/________/____|____/___|________/_________/
+
+	DESCRIPTION: Archiso is a set of scripts for building Arch Linux Live CD/ISO
+	 images. Its a tool used to create reproducible, effective, and customizable
+	 installation mediums for deploying Arch Linux. Users can generate their own
+	 versions of Arch Linux live environments with additional packages,
+	 configurations, or custom kernels.
+
+	COMMANDS:
+	 archiso -v # Check the version of Archiso
+	 mkarchiso -g # Generate the ISO file with default profile (Vanilla Arch)
+	 mkarchiso -vw '/workdir' -o '/outpath' '/config' # Build ISO with custom
+
+	DEPENDS ON:
+	 - arch-install-scripts # Installation scripts used by Archiso
+	 - bash # The GNU Bourne Again shell
+	 - dosfstools # Utilities for making FAT filesystems
+	 - e2fsprogs # Ext2/3/4 filesystem utilities
+	 - erofs-utils # Utilities for the Enhanced Read-Only File System
+	 - grub # GNU GRand Unified Bootloader (2)
+	 - libarchive # Library for reading and writing streaming archives
+	 - libisoburn # Provides xorriso for generating ISO files
+	 - mtools # Utilities for manipulating MS-DOS files
+	 - squashfs-tools # Tools to create and append to squashfs filesystems
+
+	BINARIES:
+	 - '/usr/bin/mkarchiso' # Main script executable for creating an Arch ISO
+
+	COMMON USAGE:
+	   # The releng profile is the default profile used to generate the official Arch
+	   # Linux install ISO. It includes a comprehensive set of packages and tools
+	 mkarchiso -vw '/workdir' -o '/outpath' '/usr/share/archiso/configs/releng'
+	   # The baseline profile is a minimal profile, for creating a basic environment
+	 mkarchiso -vw '/workdir' -o '/outpath' '/usr/share/archiso/configs/baseline'
+	   # Both profiles can be customized further by editing their configurations
+
+	WEBLINKS:
+	 - 'https://archlinux.org/packages/core/any/archiso/' # Arch linux package page
+	 - 'https://bugs.archlinux.org/index.php?project=6&string=archiso' # Bug tracker
+	 - 'https://gitlab.archlinux.org/archlinux/archiso' # GitLab repository
+	 - 'https://man.archlinux.org/man/mkarchiso.1' # Mkarchiso man page
+	 - 'https://wiki.archlinux.org/title/Archiso' # Official page

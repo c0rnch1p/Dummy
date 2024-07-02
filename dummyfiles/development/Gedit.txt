@@ -1,18 +1,17 @@
-	                    _________________________ _______________
-	                   /  _____/_   ____/__  __  \|   |__    ___/
-	                  /   \__----   __)__|    |   \   | |    |
-	                  \_______  /_______/_________/___| |____|
-	                          )/
-	DESCRIPTION
-	 Gedit is the official text editor of the Gnome desktop environment. It can be
-	 used to create and edit all kinds of text files. Gedit features a flexible
-	 plugin system which can be used to dynamically add features to itself. It has a
-	 clean and simple interface consistent with the philosophy of the Gnome Project.
-	 It includes tools for editing source code and structured text such as markup
-	 languages. It is free and open source software under the GPLv2, as of 2020
-	 Gedit is only built with support for Unix-like systems.
+	                   _________________________ _______________
+	                  /  _____/_   ____/__  __  \|   |__    ___/
+	                 /   \__----   __)__|    |   \   | |    |
+	                 \_________/_______/_________/___| |____|
 
-	COMMANDS
+	DESCRIPTION: Gedit is the official text editor for the GNOME desktop environment,
+	 designed to create and edit various text files. It boasts a flexible plugin
+	 system, allowing users to dynamically enhance its features. Gedits interface is
+	 clean and straightforward, adhering to the GNOME Projects philosophy. The
+	 editor includes tools for editing source code and structured text, such as
+	 markup languages. As free and open-source software licensed under the GPLv2,
+	 Gedit is available exclusively for Unix-like systems as of 2020.
+
+	COMMANDS:
 	 gedit -s # Run Gedit in standalone mode
 	 gedit -V # Show application version
 	 gedit -w # Open files and block process (wait until files are closed)
@@ -22,7 +21,7 @@
 	 gedit --new-document # Create a new document in an existing instance
 	 gedit --new-window # Create a new top level window in existing instance
 
-	SHORTCUTS
+	SHORTCUTS:
 	 'Home'/'End' # Go to the beginning and end of the current line
 	 'Ins' # Toggle between insert and overwrite modes
 	 'F1' # Open the help documentation
@@ -70,71 +69,71 @@
 	 'Shft+Ctrl+M' # Uncomment the selected lines
 	 'Shft+Ctrl+S' # Rename or relocate the current file
 	 'Shft+Ctrl+T' # Reopen the most recently closed file
-	 'Shft+Ctrl+W' # Close all open files
+	 'Shft+Ctrl+W' # Close all open files\t\t
 	 'Shft+Ctrl+Up'/'Shft+Ctrl+Down' # Select text from the cursor to end of
 	   # next line or start of previous line
 	 'Shft+Ctrl+Home'/'Shft+Ctrl+End' # Select from cursor to start or end of ffile
 	 'Shft+Ctrl+Left'/'Shft+Ctrl+Right' # Select next and last word or char
 	 'Shft+Ctrl+~' # Invert the case of the selected text
 
-	GUI PREFS
-	   # Not all of these settings are the default settings for Gedit, any other 
-	   # in-app settings not in this list have been left out because theyre
-	   # unrelated, solely preferential, or without need for explanation
+	GUI PREFS:
+	   # Not all of these settings are the default settings for Gedit, any other
+	   # settings not in this list have been left out because theyre unrelated,
+	   # solely preferential, or without need for explanation
 	 > VIEW
-	   > Side Panel: <On> # Display the side panel
-	   > Bottom Panel: <On> # Display the bottom panel
-	   > Highlight Mode: <GtkRC> # Set highlight to GtkRC
+	   - Side Panel: <On> # Display the side panel
+	   - Bottom Panel: <On> # Display the bottom panel
+	   - Highlight Mode: <GtkRC> # Set highlight to GtkRC
 	 > PREFERENCES
 	   > VIEW
-	     > Line Numbers: <On> # Display line numbers
-	     > Right Margin: <On> <80> # Display right margin at column
-	     > Display Grid: <On> # Display grid pattern
-	     > Statusbar: <On> # Display statusbar
-	     > Text Wrapping: <On> # Enable text wrapping
-	     > Dont Split Words: <On> # Enable dont split words over two lines
-	     > Highlight Line: <Off> # Disable highlight current line
-	     > Highlight Brckt: <On> # Enable highlight matching brackets
+	     - Line Numbers: <On> # Display line numbers
+	     - Right Margin: <On> <80> # Display right margin at column
+	     - Display Grid: <On> # Display grid pattern
+	     - Statusbar: <On> # Display statusbar
+	     - Text Wrapping: <On> # Enable text wrapping
+	     - Dont Split Words: <On> # Enable dont split words over two lines
+	     - Highlight Line: <Off> # Disable highlight current line
+	     - Highlight Brckt: <On> # Enable highlight matching brackets
 	   > EDITOR
-	     > Tab Width: <4> # Set tab width to 4
-	     > Spaces Instead: <Off> # Disable spaces instead of tabs
-	     > Auto Indent: <On> # Auto indentation for quick lists and code 
-	     > Backup On Save: <Off> # Disable create backup copy before saving
-	     > Autosave Every: <Off> # Disable set autosave files every 30 minutes
+	     - Tab Width: <4> # Set tab width to 4
+	     - Spaces Instead: <Off> # Disable spaces instead of tabs
+	     - Auto Indent: <On> # Auto indentation for quick lists and code
+	     - Backup On Save: <Off> # Disable create backup copy before saving
+	     - Autosave Every: <Off> # Disable set autosave files every 30 minutes
 	   > FONTS & COLOURS
-	     > Use System Font: <On> # Use system font
-	     > Editor Font: <Secondary> # Set editor font to any secondary font
-	     > Colour Scheme: <Oblivion> # Set Oblivion as the color scheme
+	     - Use System Font: <On> # Use system font
+	     - Editor Font: <Secondary> # Set editor font to any secondary font
+	     - Colour Scheme: <Oblivion> # Set Oblivion as the color scheme
 	   > PLUGINS
-	     > Bookmarks: <Off> # Disable bookmarks
-	     > Bracket Completion: <Off> # Disable bracket completion
-	     > Character Map: <On> # Enable character map
-	     > Code Comment: <On> # Enable code comment
-	     > Color Picker: <On> # Enable color picker
-	     > Document Stats: <On> # Enable document statistics
-	     > Draw Spaces: <Off> # Turn on draw spaces when needed
-	     > Embed Terminal: <On> # Enable embedded terminal
-	     > External Tools: <On> # Enable external tools
-	     > File Browser: <On> # Enable file browser panel
-	     > Git: <Off> # Disable git
-	     > Ins Date Time: <On> # Enable insert date and time
-	     > Join Splits: <On> # Enable join or split lines
-	     > Modelines: <Off> # Disable modelines
-	     > Multi Edit: <Off> # Disable multi edit mode
-	     > Open URL Context Menu: <On> # Enable open URL context menu
-	     > Python Console: <On> # Enable python console
-	     > Quick Highlight: <On> # Enable quick highlight
-	     > Quick Open: <On> # Enable quick open
-	     > Restore Minimap: <On> # Enable restore minimap
-	     > Session Saver: <On> # Enable session saver
-	     > Smart Spaces: <Off> # Disable smart spaces
-	     > Snippets: <On> # Enable snippets
-	     > Sort: <On> # Enable sort
-	     > Spell Checker: <On> # Enable spell checker
-	     > Text Size: <On> # Enable text size
-	     > Word Completion: <Off> # Disable word completion
+	     - Bookmarks: <Off> # Disable bookmarks
+	     - Bracket Completion: <Off> # Disable bracket completion
+	     - Character Map: <On> # Enable character map
+	     - Code Comment: <On> # Enable code comment
+	     - Color Picker: <On> # Enable color picker
+	     - Document Stats: <On> # Enable document statistics
+	     - Draw Spaces: <Off> # Turn on draw spaces when needed
+	     - Embed Terminal: <On> # Enable embedded terminal
+	     - External Tools: <On> # Enable external tools
+	     - File Browser: <On> # Enable file browser panel
+	     - Git: <Off> # Disable git
+	     - Ins Date Time: <On> # Enable insert date and time
+	     - Join Splits: <On> # Enable join or split lines
+	     - Modelines: <Off> # Disable modelines
+	     - Multi Edit: <Off> # Disable multi edit mode
+	     - Open URL Context Menu: <On> # Enable open URL context menu
+	     - Python Console: <On> # Enable python console
+	     - Quick Highlight: <On> # Enable quick highlight
+	     - Quick Open: <On> # Enable quick open
+	     - Restore Minimap: <On> # Enable restore minimap
+	     - Session Saver: <On> # Enable session saver
+	     - Smart Spaces: <Off> # Disable smart spaces
+	     - Snippets: <On> # Enable snippets
+	     - Sort: <On> # Enable sort
+	     - Spell Checker: <On> # Enable spell checker
+	     - Text Size: <On> # Enable text size
+	     - Word Completion: <Off> # Disable word completion
 
-	DEPENDS ON
+	DEPENDS ON:
 	 - bash # GNU Bourne Again shell
 	 - cairo # 2D graphics library with support for multiple output devices
 	 - dconf # Configuration database system
@@ -157,75 +156,75 @@
 	 - python # Python programming language
 	 - python-gobject # Python bindings for GLib, GObject, GIO and GTK
 
-	REQUIRED BY
+	REQUIRED BY:
 	 - gedit-plugin-markdown_preview # Plugin for markdown files
 	 - gedit-plugins # Collection of plugins
 
-	ADDITIONAL
+	ADDITIONAL:
 	 - gedit-open-uri-context-menu-git # Plugin that adds open URL context menu item
 
-	BINARIES
+	BINARIES:
 	 - '/bin/gedit' # Run Gedit
 
-	FILES
+	FILES:
 	 - "$HOME/.config/gedit/accels" # User keybindings file
-	 - "$HOME/.config/gedit/saved-sessions.xml" # User saved sessions file	 
+	 - "$HOME/.config/gedit/saved-sessions.xml" # User saved sessions file
 	 - "$HOME/.local/share/gedit/plugins/plugin/name.gschema.xml" # User GSchema
 	 - "$HOME/.local/share/gedit/plugins/plugin/name.plugin" # User plugin file
 	 - "$HOME/.local/share/gedit/plugins/plugin/name.py" # User plugin script
 	 - "$HOME/.local/share/gedit/styles/theme.xml" # User theme
 	 - '/usr/share/gtksourceview-3.0/styles/theme.xml' # System theme
-	
-	COMMON USAGE
-	RESTORE MINIMAP
+
+	COMMON USAGE:
+	 RESTORE MINIMAP
 	   # Below is a short script to install or reinstall a plugin that restores
 	   # the minimap from Gedit2
-	 test -d "$HOME/.local/share/gedit/plugins/restore-minimap" # Check if installed
+	  test -d "$HOME/.local/share/gedit/plugins/restore-minimap" # Check if installed
 	     sudo rm -r "$HOME/.local/share/gedit/plugins/restore-minimap" # Remove the
 	   # plugin files if they are already installed to update with new ones
-	 ! test -d && mkdir -p "$HOME/.local/share/gedit/plugins/" # Make if needed
-	 cd "$HOME/.local/share/gedit/plugins/" # Go to plugins directory
-	 git clone 'https://github.com/johnfactotum/gedit-restore-minimap.git' \
-	 restore-minimap # Run the install command for the restore minimap plugin, note
+	  ! test -d && mkdir -p "$HOME/.local/share/gedit/plugins/" # Make if needed
+	  cd "$HOME/.local/share/gedit/plugins/" # Go to plugins directory
+	  git clone 'https://github.com/johnfactotum/gedit-restore-minimap.git' \
+	  restore-minimap # Run the install command for the restore minimap plugin, note
 	   # that the recommended installation process for different Gedit plugins may
 	   # differ, and not all will come with an executable file, plugins for older
 	   # versions of Gedit can also cause issues with other plugins written for
 	   # the current running version
-	GSCHEMAS
+	 GSCHEMAS
 	   # Gedit is easy to configure with GSchemas which can help save time when
 	   # reinstalling the program on a new system, these can either be modified
 	   # using 'dconf-editor' or by putting them in a GSchemas script and running it
-	 gsettings set org.gnome.gedit.plugins.filebrowser open-at-first-doc false
+	  gsettings set org.gnome.gedit.plugins.filebrowser open-at-first-doc false
 	   # Disable opening at first document in filebrowser
-	 gsettings set org.gnome.gedit.plugins.time custom-format '%d/%m/%y' # Set
+	  gsettings set org.gnome.gedit.plugins.time custom-format '%d/%m/%y' # Set
 	   #  the custom time and date format
-	 gsettings set org.gnome.gedit.preferences.editor display-right-margin true
+	  gsettings set org.gnome.gedit.preferences.editor display-right-margin true
 	   # Display the right margin at the set number of columns
-	 gsettings set org.gnome.gedit.preferences.editor highlight-current-line false
+	  gsettings set org.gnome.gedit.preferences.editor highlight-current-line false
 	   # Disable highlight current line
-	 gsettings set org.gnome.gedit.preferences.editor scheme 'Oblivion' # Set color
+	  gsettings set org.gnome.gedit.preferences.editor scheme 'Oblivion' # Set color
 	   # scheme to Oblivion
-	 gsettings set org.gnome.gedit.preferences.editor tabs-size 4 # Set the amount
+	  gsettings set org.gnome.gedit.preferences.editor tabs-size 4 # Set the amount
 	   # of spaces in tabs to 4
-	 gsettings set org.gnome.gedit.preferences.editor wrap-last-split-mode 'word'
+	  gsettings set org.gnome.gedit.preferences.editor wrap-last-split-mode 'word'
 	   # Enable splitting at words instead of characters
-	 gsettings set org.gnome.gedit.preferences.editor wrap-mode 'char' # Enable
+	  gsettings set org.gnome.gedit.preferences.editor wrap-mode 'char' # Enable
 	   # joining of words at characters instead of whole words
-	 gsettings set org.gnome.gedit.preferences.editor ensure-trailing-newline false
-	   # Hidden schema to remove trailing newlines    
-	 gsettings set org.gnome.gedit.preferences.ui bottom-panel-visible 'true'
+	  gsettings set org.gnome.gedit.preferences.editor ensure-trailing-newline false
+	   # Hidden schema to remove trailing newlines
+	  gsettings set org.gnome.gedit.preferences.ui bottom-panel-visible 'true'
 	   # Display the bottom panel
-	 gsettings set org.gnome.gedit.preferences.ui statusbar-visible 'true' # Display
+	  gsettings set org.gnome.gedit.preferences.ui statusbar-visible 'true' # Display
 	   # the statusbar
-	 gsettings set org.gnome.gedit.state.window bottom-panel-active-page \
-	 'GeditTerminalPanel' # Enable the terminal at startup
-	 gsettings set org.gnome.gedit.state.window side-panel-active-page \
-	 'GeditFileBrowserPanel' # Enable the file browser at startup, the easiest
+	  gsettings set org.gnome.gedit.state.window bottom-panel-active-page \
+	  'GeditTerminalPanel' # Enable the terminal at startup
+	  gsettings set org.gnome.gedit.state.window side-panel-active-page \
+	  'GeditFileBrowserPanel' # Enable the file browser at startup, the easiest
 	   # way would be to use 'dconf-editor', there are other settings in the editor
 	   # which are not listed here that may be useful. GSchemas, Gconf and Dconf
 	   # comprise a large backend configuration system that has its own syntax
 
-	WEBLINKS
+	WEBLINKS:
 	 - 'https://en.wikipedia.org/wiki/Gedit' # Wikipedia page
 	 - 'https://gedit-technology.github.io/apps/gedit/index.html' # Gedit tech
 	 - 'https://github.com/gmate/gmate' # Gmate plugins and schemes (Gedit3)

@@ -1,0 +1,452 @@
+	                 __________________ _______ _______ ____ ___
+	                /  _____/_   _____//   _   \\      \\_  |   |
+	               /   \__---|    __)_/   /_\   \   |   \\_     |
+	               \_________/________/____|____/___|___/_______/
+
+	Description: Geany is a lightweight GUI text editor that combines the essentials
+	 of an Integrated Development Environment (IDE) with minimal dependencies. It
+	 supports a wide range of file types and offers features such as syntax
+	 highlighting, code folding, and project management, making it a versatile tool
+	 for developers.
+
+	COMMANDS:
+	 geany # Open Geany without any files
+	 geany '/path/file' # Open Geany with specified file or files
+	 geany --new-instance # Open a new instance of Geany
+	 geany --list-documents # List all documents in session
+	 geany --column=<col> # Set initial column number for first opened file
+	 geany -c # Use alternate configuration directory
+	 geany --ft-names # Print internal filetype names
+	 geany -g # Generate global tags file
+	 geany -P # Don't preprocess C/C++ files when generating tags file
+	 geany --socket-file=<'/path/file'> # Socket file for communication with instance
+	 geany -l # Set initial line number to LINE for the first opened file
+	 geany -m # Don't show message window at startup
+	 geany -n # Don't load auto completion data
+	 geany -p # Don't load plugins
+	 geany --print-prefix # Print Geany's installation prefix
+	 geany -r # Open all FILES in read-only mode
+	 geany -s # Don't load the previous session's files
+	 geany -t # Don't load terminal support
+	 geany --vte-lib=<'/path/file'> # Use FILE as the dynamically-linked VTE library
+	 geany -v # Be verbose
+	 geany -V # Show version and exit
+	 geany --Show=<display> # X Show to use
+
+	SHORTCUTS:
+	   # Not all of these shortcuts are the defaults for Geany, they can be
+	   # modified in the keybinding section of the GUI settings, or in the
+	   # user keybindings config file
+	 'End'/'Home' # Move the cursor to start and end of line
+	 'Tab' # Insert tab or complete a snippet or word part
+	 'F1' # Open the manual
+	 'F4' # Switch to VTE widget
+	 'F5' # Execute the current file in a terminal emulation
+	 'F6' # Switch to scribble widget
+	 'F8' # Compile the current file
+	 'F9' # Build the current file
+	 'F11' # Switch to fullscreen mode
+	 'F12' # Toggle web inspector
+	 'Alt+Home'/'Alt+End' # Move the cursor to the start or end of the Show line
+	 'Alt+Left'/'Alt+Right' # Switch to the next or last location in the doc history
+	 'Alt+Up'/'Alt+Down' # Scroll the view up or down by one line
+	 'Alt+L' # Select the current line under the cursor
+	 'Alt+P' # Select the current paragraph under the cursor
+	 'Alt+W' # Select the current word under the cursor
+	 'Ctrl+a' # Select all text in the current document
+	 'Ctrl+b' # Move the cursor to the matching brace
+	 'Ctrl+c' # Copy the current selection to the clipboard
+	 'Ctrl+d' # Delete the current line (and any lines with a selection)
+	 'Ctrl+e' # Comment or uncomment a line
+	 'Ctrl+f' # Open the Find dialog
+	 'Ctrl+g'/'Shft+Ctrl+G' # Find next or last result
+	 'Ctrl+h' # Open the Replace dialog
+	 'Ctrl+i' # Indent the current line or selection by one tab or with spaces
+	 'Ctrl+j' # Reflow selected multiline text
+	 'Ctrl+l' # Focus the Go to Line entry
+	 'Ctrl+m' # Set or clear a marker on the current line
+	 'Ctrl+n' # Create a new file
+	 'Ctrl+o' # Open a file
+	 'Ctrl+p' # Print the current file
+	 'Ctrl+q' # Quit Geany
+	 'Ctrl+r' # Reload the current file
+	 'Ctrl+s' # Save the current file
+	 'Ctrl+t' # Jump to the definition of the current symbol
+	 'Ctrl+u' # Change the case of the selection
+	 'Ctrl+v' # Paste the clipboard text into the current document
+	 'Ctrl+w' # Close the current file
+	 'Ctrl+x' # Cut the current selection to the clipboard
+	 'Ctrl+z'/'Shft+Ctrl+Z' # Undo or redo last action
+	 'Ctrl+PgUp'/'Ctrl+PgDn' # Switch to the next or last open document
+	 'Ctrl+Spce' # Show the autocompletion list
+	 'Ctrl+Tab' # Switch to the previously shown document
+	 'Ctrl+0' # Reset any previous zoom on the text
+	 'Ctrl+1' # Pass the current selection to a configured external command
+	 'Ctrl+='/'Ctrl+-' # Zoom in and out the text
+	 'Ctrl+.'/'Ctrl+,' # Go to the next or last marker
+	 'Ctrl+\\'/'Ctrl+/' # Go to the next or last part of the current word
+	 'Ctrl+Alt+p' # Open preferences dialog
+	 'Shft+Tab' # Remove one tab or the amount of spaces from the indent
+	 'Shft+F8' # Compile the current file with the Make tool
+	 'Shft+F9' # Build the current file with the Make tool
+	 'Shft+Alt+D' # Insert a customizable date
+	 'Shft+Ctrl+C' # Copy current line (and other selected lines) to clipboard
+	 'Shft+Ctrl+D' # Duplicate the current line or selection
+	 'Shft+Ctrl+F' # Open the Find in files dialog
+	 'Shft+Ctrl+F9' # Build the current file with the Make tool and a given target
+	 'Shft+Ctrl+L' # Scroll the current line into the centre of the view
+	 'Shft+Ctrl+M' # Highlight all matches of the current word selection
+	 'Shft+Ctrl+O' # Open the selected filename
+	 'Shft+Ctrl+S' # Save all open files
+	 'Shft+Ctrl+T' # Jump to the declaration of the current word or selection
+	 'Shft+Ctrl+W' # Close all open files
+	 'Shft+Ctrl+X' # Cut the current line (and any other selected) to the clipboard
+	 'Shft+Ctrl+BkSpc' # Delete from beginning of line to the cursor position
+	 'Shft+Ctrl+Del' # Delete from current cursor position to end of current line
+	 'Shft+Ctrl+PgDn'/'Shft+Ctrl+PgUp' # Change the to document on left or right
+	 'Shft+Ctrl+Spce' # Show a calltip for the current function or method
+
+	GUI PREFS:
+	 > GENERAL
+	   > STARTUP
+	     - Load from Last Session: <on> # Enable load files from last session
+	     - Load Terminal Support: <on> # Enable load virtual terminal support
+	     - Enable Plugin Support: <on> # Enable plugin support
+	     - Save Window Size: <on> # Enable save window size
+	     - Save Window Position: <on> # Enable save window position
+	     - Confirm Exit: <off> # Disable confirm exit
+	     - Startup Path: <"$HOME/Documents"> # Set startup path
+	     - Project Files: <"$HOME/.local/share/geany/geany_projects"> # Set filepath
+	     - Extra Plugin Path: <"$HOME/.config/geany/plugins"> # Set extra plugin path
+	   > MISCELLANEOUS
+	     - Beep on Errors: <on> # Enable beep on errors when compilation has finished
+	     - Switch to Status Message List: <off> # Disable new status message list
+	     - Suppress Status Message List: <off> # Disable suppress status in bar
+	     - Autofocus Widgets: <on> # Enable autofocus widgets (to follow mouse)
+	     - Always Wrap Search: <off> # Disable always wrap search
+	     - Hide Find Dialog: <off> # Disable hide find dialog
+	     - Find Using Word Under Cursor: <on> # Enable use word under cursor for find
+	     - Use Current Folder for Find: <on> # Enable use file directory for find
+	     - Store Project File in Basedir: <on> # Enable store project file in basedir
+	 > INTERFACE
+	   > INTERFACE
+	     - Show Sidebar: <on> # Enable show sidebar
+	     - Show Symbol List: <off> # Disable show symbol list
+	     - Default Sorting Mode: <Name> # Set default sorting mode to name
+	     - Show Documents List: <off> # Disable show documents list
+	     - Position: <Left> # Set position to left
+	     - Position: <Bottom> # Set position to bottom
+	     - Editor: <Nimbus Mono PS Regular 10> # Set font for editor
+	     - Symbol List: <Nimbus Mono PS 9> # Set font for symbol list
+	     - Message Window: <Nimbus Mono PS 9> # Set font for message window
+	     - Show Status Bar: <on> # Enable show status bar
+	   > NOTEBOOK TABS
+	     - Show Editor Tabs: <on> # Enable show editor tabs
+	     - Show Close Buttons: <off> # Disable show close buttons
+	     - Placement of New File Tabs: <Right> # Set placement of new file tabs right
+	     - Next to Current: <off> # Disable next to current
+	     - Double Click Hide All Widgets: <off> # Disable double click hide widgets
+	     - Switch to Last File After Close Tab: <off> # Disable switch to last used
+	     - Tab Label Length: <1000> # Set tab label length to 1000
+	     - Editor Tab Position: <Right> # Set editor tab position to right
+	     - Sidebar Tab Position: <Left> # Set sidebar tab position to left
+	     - Message Window Tab Position: <Left> # Set message window position to left
+	   > TOOLBAR
+	     - Show Toolbar: <on> # Enable show toolbar
+	     - Append Toolbar to Menu: <on> # Enable append toolbar to menu
+	     - Icon Style: <Images only> # Set icon style to images only
+	     - Icon Size: <Very small icons> # Set icon size to very small icons
+	     > CUSTOMIZE TOOLBAR
+	       - Preferences: <on> # Show preferences icon
+	       - New: <on> # Show new file icon
+	       - Open: <on> # Show open file icon
+	       - Save: <on> # Show save file icon
+	       - Save As: <on> # Show save as icon
+	       - Save All: <on> # Show save all icon
+	       - Print: <on> # Show print icon, add separator
+	       - Revert: <on> # Show revert icon
+	       - Close All: <on> # Show close all icon
+	       - Close: <on> # Show close icon, add separator
+	       - Back: <on> # Show back icon
+	       - Forward: <on> # Show forward icon
+	       - Jump to: <on> # Show jump to icon
+	       - Goto Field: <on> # Show goto field icon
+	       - Find and Replace: <on> # Show find and replace icon, add separator
+	       - Compile: <on> # Show compile icon
+	       - Build: <on> # Show build icon
+	       - Execute: <on> # Show execute icon
+	       - Color Chooser: <on> # Show color chooser icon, add separator
+	       - Quit: <on> # Show quit icon
+	 > EDITOR
+	   > FEATURES
+	     - Line Wrapping: <on> # Enable line wrapping
+	     - Smart Home Key: <off> # Disable "smart" home key
+	     - Disable Drag and Drop: <off> # Disable disable drag and drop
+	     - Code Folding: <on> # Enable code folding
+	     - Fold or Unfold Children of Point: <on> # Disable fold unfold children
+	     - Indicators Show Compile Errors: <on> # Enable use error indicators
+	     - Newline Strips Trailing Spaces: <off> # Disable newline strips spaces
+	     - Line Breaking Column: <84> # Set line breaking column to 84
+	     - Comment Toggle Marker: <~> # Set comment toggle marker to ~
+	   > INDENTATION
+	     - Width: <4> # Set indentation width to 4
+	     - Detect Width from File: <off> # Disable detect width from file
+	     - Type: <Tabs> # Set indentation type to tabs
+	     - Spaces: <off> # Disable spaces
+	     - Tabs and Spaces: <off> # Disable tabs and spaces
+	     - Detect Type from File: <off> # Disable detect type from file
+	     - Auto-indent Mode: <Current chars> # Set auto-indent mode to current chars
+	     - Tab Key Indents: <on> # Enable tab key indents
+	     - Backspace Key Unindents: <on> # Enable backspace key unindents
+	   > COMPLETIONS
+	     - Snippet Completion: <on> # Enable snippet completion
+	     - XML/HTML Tag Auto-Closing: <on> # Enable XML/HTML tag auto-closing
+	     - Auto Continue Multiline Comments: <on> # Enable auto continue comments
+	     - Autocomplete Symbols: <on> # Enable autocomplete symbols
+	     - Autocomplete All Words in Document: <off> # Disable autocomplete all words
+	     - Drop Rest of Word on Completion: <off> # Disable drop word on completion
+	     - Chars to Type for Autocompletion: <4> # Set autocompletion chars to 4
+	     - Completion List Height: <10> # Set completion list height to 10
+	     - Max. Symbol Name Suggestions: <30> # Max symbol name suggestions to 30
+	     - Symbol List Update Frequency: <250> # Set symbol list update freq to 250
+	     - Auto-close Quotes and Brackets:
+	     - Parenthesis: <off> # Disable auto-close parenthesis
+	     - Curly Brackets: <off> # Disable auto-close curly brackets
+	     - Square Brackets: <off> # Disable auto-close square brackets
+	     - Single Quotes: <off> # Disable auto-close single quotes
+	     - Double Quotes: <off> # Disable auto-close double quotes
+	   > SHOW
+	     - Invert Syntax Highlighting Colors: <off> # Disable invert syntax colors
+	     - Show Indentation Guides: <on> # Enable show indentation guides
+	     - Show White Space: <on> # Enable show white space
+	     - Show Line Endings: <off> # Disable show line endings
+	     - Show Only Non-default Line Endings: <off> # Disable only custom endings
+	     - Show Line Numbers: <on> # Enable show line numbers
+	     - Show Markers Margin: <off> # Disable show markers margin
+	     - Stop Scrolling at Last Line: <on> # Enable stop scrolling at last line
+	     - Lines Visible Around the Cursor: <0> # Set lines visible near cursor to 0
+	     - Long Line Marker: <Enabled> # Enable long line marker
+	     - Type: <Line> # Set long line marker type to line
+	     - Column: <84> # Set long line marker column to 84
+	     - Color: <FF0000> # Set long line marker color to red (#FF0000)
+	     - Virtual Spaces: <Only for rectangular selections> # Enable virtual spaces
+	     - Show in Markers Margin: <off> # Disable show in markers margin
+	     - Show as Underline Indicators: <off> # Disable show as underline indicators
+	 > FILES
+	   - Open Docs From Cmd: <on> # Enable open from terminal
+	   - Default EOL Char: <Unix (LF)> # Set default end of line char
+	   - Default Encoding: <Unicode (UTF-8)> # Set default encoding
+	   - Use Fixed Encoding: <off> # Disable fixed encoding
+	   - Default Encoding: <Unicode (UTF-8)> # Set default encoding
+	   - Ensure EOF Newline: <off> # Disable ensure new line at file end
+	   - Ensure Consistent EOL: <off> # Disable ensure consistent EOL
+	   - Strip Trailing Spaces: <on> # Enable strip trailing spaces
+	   - Replace Tabs with Spaces: <off> # Disable replace tabs with space
+	   - Recent Files List Length: <10> # Set recent files list length to 10
+	   - Disk Check Timeout: <30> # Set disk check timeout to 30
+	 > TOOLS
+	   - Terminal: <terminator -e "/bin/sh %c"> # Set terminal command to terminator
+	   - Browser: <firefox> # Set browser command to firefox
+	   - Grep: <grep> # Set grep command to grep
+	   - Context action: <empty> # Context action left empty
+	 > PRINTING
+	   - Use Native GTK Printing: <on> # Enable native GTK printing
+	   - Print Line Numbers: <on> # Enable print line numbers
+	   - Print Page Numbers: <on> # Enable print page numbers
+	   - Print Page Header: <on> # Enable print page header
+	   - Use Basename of File: <off> # Disable use basename of file
+	   - Date Format: <%c> # Set date format to %c
+	 > TERMINAL
+	   - Font: <Nimbus Mono PS Regular 10> # Set terminal font
+	   - Foreground Color: <ffffff> # Set terminal foreground color to white
+	   - Background Color: <000000> # Set terminal background color to black
+	   - Scrollback Lines: <500> # Set terminal scrollback lines to 500
+	   - Shell: <'/bin/bash'> # Set terminal shell to /bin/bash
+	   - Scroll on Keystroke: <on> # Enable scroll on keystroke
+	   - Scroll on Output: <on> # Enable scroll on output
+	   - Cursor Blinks: <on> # Enable cursor blinks
+	   - Override Geany Bindings: <off> # Disable override Geany keybindings
+	   - Disable Menu Shortcut Key: <off> # Disable menu shortcut (F10 default)
+	   - Execute Commands Within VTE: <on> # Enable execute commands within VTE
+	   - Dont Use Run Script: <off> # Disable dont use run script
+	> PLUGINS
+	  > ADDONS
+	    - Show Open Documents: <on> # Toolbar show list of currently open documents
+	    - Sort Documents by Name: <on> # Sort documents by name
+	    - Open URI in Editor Menu: <on> # Show an Open URI item in the editor menu
+	    - Tasks in Messages Window: <on> # Show tasks in the message window
+	    - Tasks of All Documents: <on> # Show tasks of all documents
+	    - Search Tokens: <TODO; FIXME> # Set search tokens
+	    - Status Icon in Notification Area: <on> # Show status notification area
+	    - Defined Bookmarks in Sidebar: <off> # Show defined bookmarks in the sidebar
+	    - Double Click Mark All Occurrences of Word: <on> # Mark all occurrences
+	    - Single Click Deselect Previous Highlight: <on> # Deselect last highlight
+	    - Strip Trailing Blank Lines: <on> # Strip trailing blank lines
+	    - XML Tagging for Selection: <on> # XML tagging for selection
+	    - Enclose Selection on Keybindings: <on> # Enclose selection on keybindings
+	    - Enclose Selection Automatically: <off> # Enclose selection automatically
+	    - Show Calltip on Color Value Hover: <on> # Calltip when hovering on color
+	    - Double Click Color Value Open Color Chooser: <on> # Open color chooser
+	  > CODE NAVIGATION
+	    - Show Symbols List: <on> # Show list of symbols
+	    - Show Completion List: <on> # Show completion list
+	    - Symbol Completion: <on> # Enable symbol completion
+	    - Auto Activate Symbol Completion: <off> # Automatic symbol completion
+	    - Calltip Symbol Completion: <on> # Show calltips for symbol completion
+	    - Enable Word Completion: <on> # Enable word completion
+	    - Auto Activate Word Completion: <off> # Automatic word completion
+	    - Enable Snippet Completion: <on> # Enable snippet completion
+	    - Show Snippet Completion: <on> # Show snippet completion list
+	  > DEBUGGER
+	    - Save Debug Data to Project: <off> # Save debug data to project
+	  > DOCUMENTATION GENERATOR
+	    - Save File Before Generating: <on> # Save file then gen docs
+	    - Indent Inserted Documentation: <on> # Indent inserted documentation
+	    - Documentation Type: <doxygen> # Set documentation type for all languages
+	  > FILE BROWSER
+	    - External Open Command: <nemo "%d"> # Set external open command
+	    - Show Hidden Files: <on> # Show hidden files
+	    - Hide File Extensions: <on> # Hide specific file extensions
+	    - Follow Path of Current File: <off> # Follow path of the current file
+	    - Use the Projects basedir: <off> # Use the projects base directory
+	  > GEANYVC
+	    - Set Changed-flag for Created Doc Tabs: <off> # Disable set Changed-flag
+	    - Confirm Add New Files to VCS: <on> # Confirm adding new files to a VCS
+	    - Maximize Commit Dialog: <on> # Maximize the commit dialog
+	    - Use External Diff Viewer: <on> # Use an external diff viewer
+	    - Show VC Entries at Editor Menu: <on> # Show VCS entries in the editor menu
+	    - Attach Menu to Menubar: <on> # Attach the VCS menu to the menubar
+	    - Enable CVS: <on> # Enable CVS support
+	    - Enable GIT: <on> # Enable GIT support
+	    - Enable Fossil: <on> # Enable Fossil support
+	    - Enable SVN: <on> # Enable SVN support
+	    - Enable SVK: <on> # Enable SVK support
+	    - Enable Bazaar: <on> # Enable Bazaar support
+	    - Enable Mercurial: <on> # Enable Mercurial support
+	    - Spellcheck language: <English> # Set spellcheck language to English
+	  > GIT CHANGE BAR
+	    - Monitor Repository for Changes: <on> # Monitor repository for changes
+	    - Added Lines: <green> # Set added lines to green
+	    - Changed Lines: <orange> # Set changed lines to orange
+	    - Removed Lines: <red> # Set removed lines to red
+	  > LATEX
+	    - Use KOMA Script by Default: <off> # Disable use KOMA script by default
+	    - Show Extra Plugin Toolbar: <off> # Disable show extra plugin toolbar
+	    - Capitalize Sentence on Typing: <off> # Disable capitalize sentence typing
+	    - Lower Smallcaps Selection: <off> # Disable lower smallcaps selection
+	    - Add a Wizard Icon to Geanys Main Toolbar: <on> # Add wizard in toolbar
+	    - Modus of Autocompletion: <Always perform autocompletion on LaTeX> # Modus
+	  > LINE OPERATIONS
+	    - Use Collation Based String Compare: <on> # Use collation based compare
+	  > MACROS
+	    - Save Macros When Close Geany: <on> # Save macros when closing Geany
+	    - Ask Before Replacing Existing Macros: <on> # Ask before replacing
+	  > MARKDOWN
+	    - Position: <Message Window> # Set position to Message Window
+	    - Font: <Serif Regular 12> # Set font to Serif Regular, size 12
+	    - Code Font: <None 12> # Set code font to None, size 12
+	    - BG Color: <black> # Set background color to black
+	    - FG Color: <white> # Set foreground color to white
+	    - Template: <template.html> # Use template.html for the template
+	  > MINI SCRIPT
+	    - Shell: <$(SHELL)> # Use the default system shell
+	    - Perl: <perl> # Use Perl interpreter
+	    - Python: <python> # Use Python interpreter
+	    - Sed: <sed -f> # Use sed in file mode
+	    - Awk: <awk -f> # Use awk in file mode
+	    - User: <cat -> # Use cat for user-defined scripts
+	  > SAVE ACTIONS
+	    - Enable save when losing focus: <on> # Automatically save when losing focus
+	    - Enable: <off> # Enable or disable auto save
+	    - Auto save interval: <300 seconds> # Interval for auto save
+	    - Print Autosave Status Message: <off> # Print status message for auto save
+	    - Save only current open file: <on> # Save only the current open file
+	    - Save all open files: <off> # Save all open files
+	  > SPELL CHECK
+	    - Toolbar Item Toggle Spellcheck: <on> # Show toolbar item for spell check
+	    - Editor Menu Item Sshow Suggestions: <on> # Show editor menu suggestions
+	    - Suggestions in Submenu: <on> # Show suggestions in a sub menu
+	    - Mispelled Words in Message Window: <on> # Print misspelled words
+	    - Toggle spell check: <off> # Toggle spell check
+	    - Check spelling when opening a document: <off> # Check spelling when opening
+	    - Language to use for the spell check: <en_US> # Language for spell check
+	    - Directory to look for dictionary files: <'/usr/share/hunspell'> # Hunspell
+	  > TREE BROWSER
+	    - External open command: <xdg-open '%d'> # External open command
+	    - Terminal: <terminator> # Terminal to use
+	    - Toolbar: <Top> # Toolbar position
+	    - Show Icons: <Content-type> # Show icons by content type
+	    - Show Hidden Files: <on> # Show hidden files
+	    - Hide Object Files: <on> # Hide object files
+	    - Reverse Filter: <off> # Reverse filter
+	    - Follow Current Document: <on> # Follow current document
+	    - Single Click Open Doc and Focus: <on> # Single click open doc and focus
+	    - Double Click Open Folder: <off> # Double click to open directory
+	    - Close File on Delete: <on> # Close file on delete if opened
+	    - Focus editor on file open: <on> # Focus editor on file open
+	    - Show Tree Lines: <on> # Show tree lines
+	    - Show Bookmarks: <off> # Show bookmarks
+	    - Open New Files: <on> # Open new files
+	  > WEB HELPER
+	    - Browser Position: <message-window> # Browser position
+	    - Browser Autoreload: <on> # Browser auto reload
+	    - Secondary Windows Skip Taskbar: <on> # Secondary windows skip task bar
+	    - Secondary Windows are Transient: <on> # Secondary windows are transient
+	    - Secondary Windows Type: <utility> # Secondary windows type
+	  > XML PRETTYPRINTER
+	    - Put on One Line: <off> # Put comments on one line
+	    - Inline if Possible: <on> # Inline comments if possible
+	    - Alignment: <on> # Align comments
+	    - Concatenation: <on> # Concatenate empty nodes
+	    - Spacing: <on> # Add spacing to empty nodes
+	    - Expansion: <off> # Expand empty nodes
+	    - Put on One Line: <off> # Put text nodes on one line
+	    - Inline if Possible: <on> # Inline text nodes if possible
+	    - Alignment: <on> # Align text nodes
+	    - Put on One Line: <off> # Put CDATA on one line
+	    - Inline if Possible: <on> # Inline CDATA if possible
+	    - Alignment: <on> # Align CDATA
+	    - Indentation: <Space 4> # Indentation style and size
+	    - Line break: <\r\n> # Line break style
+
+	DEPENDS ON:
+	 - gtk3 # GObject-based multi-platform GUI toolkit
+
+	REQUIRED BY:
+	 - geany-plugin-preview-git # Geany-plugin-preview-git
+	 - geany-plugins # Plugins for Geany
+
+	FILES:
+	 - "$HOME/.config/geany/geany.conf" # User configuration file
+	 - "$HOME/.config/geany/keybindings.conf" # User keybindings config file
+	 - "$HOME/.config/geany/plugins/colorschemes/scheme.conf" # Theme config
+	 - "$HOME/.config/geany/plugins/debugger/debugger.conf" # Debugger config
+	 - "$HOME/.config/geany/plugins/filebrowser/filebrowser.conf" # Filebrowser config
+	 - "$HOME/.config/geany/plugins/geanygendoc/ggd.conf" # Gendoc config
+	 - "$HOME/.config/geany/plugins/git-changebar/git-changebar.conf" # Git config
+	 - "$HOME/.config/geany/plugins/markdown/markdown.conf" # Markdown config
+	 - "$HOME/.config/geany/plugins/markdown/template.html" # Markdown config
+	 - "$HOME/.config/geany/plugins/overview/prefs.conf" # Overview config
+	 - "$HOME/.config/geany/plugins/pohelper/pohelper.conf" # Pohelper config
+	 - "$HOME/.config/geany/plugins/pretty-printer/prefs.conf" # Pretty printer config
+	 - "$HOME/.config/geany/plugins/scope/scope.conf" # Scope config
+	 - "$HOME/.config/geany/plugins/spellcheck/spellcheck.conf" # Spellcheck config
+	 - "$HOME/.config/geany/plugins/treebrowser/treebrowser.conf" # Treebrowser config
+	 - "$HOME/.config/geany/plugins/VC/VC.conf" # Virtual console config
+	 - "$HOME/.config/geany/plugins/web-helper/web-helper.conf" # Web helper config
+	 - "$HOME/.config/geany/session.conf" # User session config file
+	 - "$HOME/.config/geany/ui_toolbar.xml" # Toolbar layout config
+
+	BINARIES:
+	 - '/bin/geany' # Run geany
+
+	WEBLINKS:
+	 - 'https://en.wikipedia.org/wiki/Geany' # Wikipedia page
+	 - 'https://github.com/geany/geany' # Github repo
+	 - 'https://plugins.geany.org' # Official Plugins page
+	 - 'https://sourceforge.net/projects/geany' # SourceForge project
+	 - 'https://wiki.geany.org' # Geany Wiki
+	 - 'https://wiki.geany.org/howtos' # Geany Wiki Howtos
+	 - 'https://www.geany.org' # Official pege
+	 - 'https://www.geany.org/Documentation/Manuals' # Official docs
+	 - 'https://www.geany.org/download/themes' # Geany themes

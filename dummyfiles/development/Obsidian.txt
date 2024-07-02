@@ -1,0 +1,422 @@
+	      ________ __________ ____________________   ___  _______  ________
+	      \_  _   \\__   _   )    _____/   |_   _  \|   |/   _   \ \       \
+	      /   |    \|    |   \____     \   |    |   \   |   /_\   \/   |    \
+	      \________/_________/_________/___|________/___|____|____/____|____/
+
+	DESCRIPTION: Obsidian is a robust knowledge management tool enabling the
+	 composition, structuring, and linking of notes effectively. Its used widely for
+	 its support of biodirectional linking and development of atomic notes, which
+	 are distinct concepts or units of information linkable through references. A
+	 key feature of Obsidian is the graph view, also referred to as the knowledge
+	 graph or second brain. The interface utilizes notes as nodes interconnected
+	 visually, outlining a network of connections within the note database,
+	 otherwise known as a vault. Additionally, Obsidians capabilities can be
+	 extended with various community plugins and unofficial packages including the
+	 Text Generator plugin, which integrates AI powered text generation directly
+	 into Obsidian. This feature can assist in brainstorming, expanding on ideas and
+	 generating content based on prompts within their notes environment.
+
+	SHORTCUTS:
+	   # Not all of these shortcuts are the defaults for Obsidian, they can be
+	   # modified in the hotkeys section of the Obsidian settings, there are
+	   # also more shortcuts for Obsidian than the ones in this list
+	 'F10' 'Shft+F10' # Open home note or change home to current
+	 'Alt+Up' 'Alt+Down' # Move current line up or down
+	 'Ctrl+b' # Bold selected text
+	 'Ctrl+d' # Delete current line or selected text
+	 'Ctrl+e' # Toggle between edit and  preview modes
+	 'Ctrl+f' # Search current file
+	 'Ctrl+g' # Open graph view
+	 'Ctrl+h' # Open search and replace dialog
+	 'Ctrl+i' # Italicize selected text
+	 'Ctrl+j' # Run the Text-Gen plugin
+	 'Ctrl+k' # Insert external link to selected text
+	 'Ctrl+l' # Toggle checkbox status
+	 'Ctrl+n' # Create a new note
+	 'Ctrl+o' # Open better command palette file search
+	 'Ctrl+p' # Open better command palette
+	 'Ctrl+q' # Close Obsidian window
+	 'Ctrl+s' # Save the file while in edit mode
+	 'Ctrl+t' # Open better command palette tag search
+	 'Ctrl+w' # Close current tab
+	 'Ctrl+y' # Toggle fold properties
+	 'Ctrl+CxMn' # Show context menu under cursor
+	 'Ctrl+Left' 'Ctrl+Rght' # Jump word left or right in edit mode
+	 'Ctrl+Nter' # Open link under tab
+	 'Ctrl+Pgdn' # Swtich to next tab
+	 'Ctrl+Pgup' | 'Shft+Ctrl+Tab' # Swtich to last tab
+	 'Ctrl+Tab' # Cycle bullets and checkboxes
+	 'Ctrl+1...9' # Go to tab number
+	 'Ctrl+,' # Open Settings dialog
+	 'Ctrl+-' # Fold all headings and lists
+	 'Ctrl+/' # Toggle comment (Obsidian format)
+	 'Ctrl+;' # Add a file property
+	 'Ctrl+=' # Unfold all headings and lists
+	 'Ctrl+[' 'Shft+Ctrl+[' # Indent or unindent
+	 'Ctrl+\\' 'Shft+Ctrl+|' # Split down or split right
+	 'Ctrl+Alt+f' # Show in system explorer
+	 'Ctrl+Alt+n' # Move current tab to new window
+	 'Ctrl+Alt+t' # Insert a template
+	 'Ctrl+Alt+Left' 'Ctrl+Alt+Rght' # Open or close both left and right panels
+	 'Ctrl+Alt+Nter' # Open link under cursor in right pane
+	 'Shft+Ctrl' 'Click' # Open Note in search panel via link
+	 'Shft+Ctrl+A' # Insert an attatchment
+	 'Shft+Ctrl+B' # Copy Obsidian URL
+	 'Shft+Ctrl+C' # Copy file path
+	 'Shft+Ctrl+D' # Open in default app
+	 'Shft+Ctrl+E' # Export to PDF
+	 'Shft+Ctrl+F' # Search in all files
+	 'Shft+Ctrl+G' # Open local graph
+	 'Shft+Ctrl+H' # Insert a table
+	 'Shft+Ctrl+I' # Toggle right sidebar
+	 'Shft+Ctrl+J' # Insert a code block
+	 'Shft+Ctrl+K' # Add a new tag
+	 'Shft+Ctrl+L' # Add an internal link
+	 'Shft+Ctrl+M' # Add an embedding
+	 'Shft+Ctrl+N' # Create note in right pane
+	 'Shft+Ctrl+P' # Edit file property
+	 'Shft+Ctrl+T' # New tab
+	 'Shft+Ctrl+W' # Close all other tabs
+	 'Shft+Ctrl+Left' 'Shft+Ctrl+Rght' # Select word left or right
+	 'Shft+Ctrl+Up' 'Shft+Ctrl+Down' # Select text before or after cursor
+	 'Shft+F7' # Toggle spellcheck
+	 'Shft+Ctrl++' # Zoom in
+	 'Shft+Ctrl+-' # Zoom out
+	 'Shft+Ctrl+Alt+G' # Start graph animation
+	 'Shft+Ctrl+Alt+N' # Make a copy of the current file
+	 'Shft+Ctrl+Alt+T' # Undo closed tab
+	 'Shft+Ctrl+Alt+Nter' # Open link under cursor in new window
+
+	GUI PREFS:
+	   # Not all of these settings are the default settings for Obsidian, any other
+	   # settings not in this list have been left out because theyre unrelated,
+	   # solely preferential, or without need for explanation
+	 > OPTIONS
+	   > GENERAL
+	     - Automatic Updates: <on> # Enable automatic updates
+	   > EDITOR
+	     - Focus New Tabs: <off> # Disable focusing new tabs
+	     - Default View: <Reading view> # Set default view to reading mode
+	     - Default Edit Mode: <Live Preview> # Set default edit mode to live preview
+	     - Show Edit Mode: <on> # Show edit mode by default
+	     - Readable Line Length: <on> # Enable readable line length
+	     - Strict Line Breaks: <on> # Enable strict line breaks
+	     - Properties In Doc: <Visible> # Show properties in document
+	     - Fold Heading: <on> # Enable folding of headings
+	     - Fold Indent: <on> # Enable folding of indents
+	     - Line Numbers: <on> # Show line numbers
+	     - Indentation Guides: <off> # Disable indentation guides
+	     - RTL: <off> # Disable right-to-left text
+	     - Spellcheck: <on> # Enable spellcheck
+	     - Autopair Brackets: <on> # Enable autopairing of brackets
+	     - Autopair Markdown Syntax: <on> # Enable autopairing of markdown syntax
+	     - Smart Indent Lists: <on> # Enable smart indent lists
+	     - Indent Using Tabs: <off> # Use spaces instead of tabs
+	     - Tab Indent Size: <4> # Set tab indent size to 4 spaces
+	     - Autoconvert HTML: <on> # Enable automatic conversion of HTML
+	     - Vim Bindings: <off> # Disable vim key bindings
+	   > FILES & LINKS
+	     - Confirm Deletion: <on> # Enable deletion confirmation
+	     - Deleted Files: <Move to system trash> # Move deleted files to system trash
+	     - Auto Update Links: <on> # Enable automatic updating of links
+	     - Default Folder: <In the folder specified below> # Set to folder below
+	     - Attatchment Folder: <03_LINKS/attatchments> # Set attatchment folder
+	     - New Link Format: <Shortest path when possible> # Use shortest path
+	     - Use [[Wikilinks]]: <on> # Enable [[wikilinks]]
+	     - Detect All File Extensions: <on> # Detect all file extensions
+	     - Default Attachment Folder: <Vault Folder> # Set default attachment path
+	   > APPEARANCE
+	     - Base Scheme: <Adapt to system> # Adapt base scheme to system
+	     - Themes: <Proper Dark> # Use Proper Dark theme
+	     - Font Size: <min> # Set font size to minimum
+	     - Quick Font Size Adjust: <on> # Enable quick font size adjustment
+	     - Show Inline Title: <off> # Hide inline title
+	     - Tab Title Bar: <on> # Show tab title bar
+	     - Ribbon Menu: <on> # Show ribbon menu
+	     - Zoom Level: <mid> # Set zoom level to mid
+	     - Native Menus: <off> # Disable native menus
+	     - Window Frame Style: <Hidden> # Hide window frame
+	   > CORE PLUGINS
+	     - Backlinks: <off> # Disable backlinks
+	     - Bookmarks: <on> # Enable bookmarks
+	     - Canvas: <on> # Enable canvas
+	     - Command Palette: <on> # Enable command palette
+	     - Daily Notes: <on> # Disable daily notes
+	     - File Recovery: <on> # Enable file recovery
+	     - Files: <on> # Enable files
+	     - Format Converter: <on> # Enable format converter
+	     - Graph View: <on> # Enable graph view
+	     - Note Composer: <on> # Enable note composer
+	     - Outgoing Links: <on> # Enable outgoing links
+	     - Outline: <on> # Enable outline
+	     - Page Preview: <on> # Enable page preview
+	     - Properties View: <on> # Enable properties view
+	     - Publish: <off> # Disable publish
+	     - Quick Switcher: <on> # Enable quick switcher
+	     - Random Note: <on> # Enable random note
+	     - Search: <on> # Enable search
+	     - Slash Commands: <on> # Enable slash commands
+	     - Slides: <off> # Disable slides
+	     - Tags View: <on> # Enable tags view
+	     - Templates: <on> # Enable templates
+	     - Unique Note Creator: <off> # Disable unique note creator
+	     - Word Count: <on> # Enable word count
+	     - Workspaces: <off> # Disable workspaces
+	   > COMMUNITY PLUGINS
+	     - Debug Startup Time: <on> # Enable debug startup time
+	 > CORE PLUGINS
+	   > BACKLINKS
+	     - Backlinks In Document: <on> # Show backlinks in document
+	   > CANVAS
+	     - Canvas Folder: <Vault Folder> # Set canvas path to Vault folder
+	     - Mouse Wheel Behaviour: <Zoom> # Use mouse wheel to zoom
+	     - Control Drag: <Add Card> # Control-drag to add card
+	     - Display Card Label: <Always> # Always display card label
+	     - Snap To Grid: <on> # Enable snap to grid
+	     - Snap To Objects: <on> # Enable snap to objects
+	     - Zoom Thresh: <low> # Set zoom threshold to low
+	   > FILE RECOVERY
+	     - Snapshot Interval: <5> # Set snapshot interval to 5 minutes
+	     - History Length: <5> # Set history length to 5 snapshots
+	   > NOTE COMPOSER
+	     - Text After Extraction: <Link to new file> # Link file after text extraction
+	     - Template Folder: <05_TEMPLATES> # Set template path to 05_TEMPLATES
+	     - Confirm File Merge: <on> # Confirm file merge
+	   > PAGE PREVIEW
+	     - Outgoing Links: <on> # Enable preview outgoing links
+	     - Reading View: <off> # Disable preview reading view
+	     - Editing View: <on> # Enable preview reading view
+	     - Files: <on> # Enable preview files
+	     - Properties View: <on> # Enable preview properties view
+	     - Bookmarks: <off> # Disable preview bookmarks
+	     - Outline: <on> # Enable preview outline
+	     - Graph View: <on> # Enable preview graph view
+	   > QUICK SWITCHER
+	     - Show Existing Only: <off> # Show all notes, not just existing ones
+	     - Show Attachments: <on> # Show attachments
+	     - Show All Filetypes: <off> # Show specific file types
+	   > TEMPLATES
+	     - Templates Folder: <05_TEMPLATES> # Set templates path to 05_TEMPLATES
+	 > COMMUNITY PLUGINS
+	   > BETTER COMMAND PALETTE
+	     - Close on Backspace: <on> # Close palette on backspace keystroke
+	     - Show Plugin Name: <on> # Show plugin name in command palette
+	     - Recent Above Pinned: <on> # Show recent items above pinned items
+	     - Only notes names: <off> # Show full note path
+	     - Hide Extensions: <on> # Hide note file extensions
+	     - Recently Used Text: <(recently used)> # Set recently used text
+	     - Exclusions: <sh,c,py,go> # Dont look for source files
+	     - File Search Prefix: </> | <ctrl+o> # Set the file search hotkeys
+	 	 - Tag Search Prefix: <#> | <ctrl+t> # Set the tag search hotkeys
+	     - Command Search: <ctrl+p> # Set the command search hotkey
+	     - Suggestion Limit: <1000> # Set suggestion limit to 100
+	     - Hotkey Modifier Style: <Force Mac Hotkeys> # Enable auto detect hotkeys
+	   > BETTER WORD COUNT
+	     - Collect Statistics: <off> # Disable collection of statistics
+	     - Dont Count Comments: <off> # Count markdown comments
+	     - Page Word Count: <300> # Set page limit to 300 words
+	     - Vault Stats Path: <.obsidian/vault-stats>
+	     - Statusbar: <Chars in Note>, <Words in Note> # Count chars then words
+	     - Alternative Statusbar: <Total Notes> # Count total notes
+	   > CALENDAR
+	     - Words Per Dot: <250> # Set words per dot
+	     - Start Week On: <Monday> # Start week on Monday
+	     - Confirm New Note: <on> # Enable confirm new note
+	     - Show Week Number: <on> # Enable show week number
+	     - Weekly Format: <gggg-[W]ww> # Set weekly fromat
+	     - Weekly Template: <05_TEMPLATES/notes/weekly> # Set template file
+	     - Weekly Folder: <02_DUMP/weeklys> # Set weekly fodler
+	     - Override Locale: <Same as system> # Set locale
+	   > CHECKLIST
+	     - Show Completed: <off> # Disable show completed
+	     - Show All Todos In File: <on> # Enable show all todos in file
+	     - Group By: <Tag> # Group items by tag
+	     - Item Sort: <A -> Z> # Set item sort alphabetical
+	     - Group Sort: <A -> Z> # Set group sort alphabetical
+	     - Look and Feel: <Compact> # Set look and feel to compact
+	     - Auto Refresh List: <on> # Enable auto refresh list     -
+	   > DAILY NOTES
+	     - Date Format: <MMDDYY> # Set date format
+	     - New File Path: <02_DUMP/dailys> # Set new file location
+	     - Template File: <05_TEMPLATES/notes/daily> # Set template file
+	     - Open on Startup: <off> # Disable open on startup
+	   > DATAVIEW
+	     - Inline Queries: <on> # Enable inline queries
+	     - Javascript Queries: <on> # Enable Javascript queries
+	     - Inline Javascript Queries: <on> # Enable inline Javascript queries
+	     - Inline Field Highlight Reader: <on> # Enable inline field reader highlight
+	     - Inline Field Highlight Live: <on> # Enable inline field highlight live
+	     - DataviewJS Keyword: <dataviewjs> # Set DataviewJS keyword
+	     - Inline Query Prefix: <=> # Set inline query prefix
+	     - JavaScript Query Prefix: <$=> $ Set Javascript inline query prefix
+	     - Codeblock Inline Queries: <on> # Enable codeblock inline queries
+	     - Display Result Count: <on> # Enable display result count
+	     - Warn on Empty Result: <on> # Enable warn on empty result
+	     - Render Null As: <\-> # Set null value delineator
+	     - Auto View Refreshing: <on> # Enable Automatic View Refreshing
+	     - Refresh Interval: <2500> # Set view update refresh interval in (millisec)
+	     - Primary Column Name: <file> # Set primary column name
+	     - Group Column Name: <group> # Set group column name
+	   > FILE TREE ALTERNATIVE
+	     - Ribbon Icon: <on> # Enable ribbon icon
+	     - Open on Start: <on> # Enable open on start
+	     - Bookmarks Event Listener: <off> # Disable bookmarks event listener
+	     - Folder Icons: <Default> # Set folder icons to default
+	     - Show Root Folder: <off> # Disable show root folder
+	     - Folder Count: <on> # Enable folder count
+	     - Folder Count Details: <All Files> # Set folder count details to all files
+	     - Folder Note: <on> # Enable folder note
+	     - Include Files: <on> # Enable include files
+	     - Toggle Button for Include Files: <on> # Enable toggle button include files
+	     - Reveal Active File: <on> # Enable reveal active file
+	     - Search in File List: <on> # Enable search in file list
+	     - All & Tag Search Only Focused: <off> # Tag search only in folder
+	     - Icon Before Name: <on> # Enable icon before name
+	     - Preview File: <off> # Disable preview file on hover
+	     - Fixed Buttons & Headers: <on> # Enable fixed buttons and headers
+	     - Full File Paths: <on> # Enable file names as full paths
+	     - Deleted File Destination: <Move to Obsidian Trash> # Deleted file folder
+	   > HOMEPAGE
+	     - File: <01_CURRENT/home> # Set homepage file
+	     - Open on Startup: <on> # Open homepage on startup
+	     - Open When Empty: <on> # Open homepage when no note active
+	     - Opening Method: <Keep open notes> # Set opening method to keep open notes
+	     - Manual Opening Method: <Keep open notes> # Keep open notes
+	     - Auto-Create: <on> # Create the home note if it doesnt exist
+	     - Pin: <off> # Dont pin the homepage when opening
+	     - Hide Release Notes: <off> # Dont hide release notes
+	     - Homepage View: <Reading View> # Set default homepage view
+	     - Revert View on Close: <on> # Revert to reading view on close
+	     - Auto-Scroll: <off> # Disable auto scroll to bottom
+	   > PASSWORD PROTECTION
+	     - Protected Folder: </> # Set the root folder
+	     - Disable Closing Box: <on> # Dont disable closing box
+	     - Auto-Lock: <60> # Set auto lock to 1 hour
+	     - Enable: <on> # Enable password protection
+	   > TEXT GENERATOR
+	     > ADVANCED SETTINGS
+	       - Streaming: <on> # Enable streaming
+	       - Display Errors: <on> # Enable display errors
+	       - Show status: <on> # Enable show status
+	       - Output to Blockquote: <off> # Disable output to blockquote
+	       - Free Cursor: <off> # Disable free cursor
+	       - Experimental Features: <off> # Disable experimental features
+	       - Templates Path: <05_TEMPLATES/textgenerator> # Set templates path
+	       - Texgenerator Path: <05_TEMPLATES> # Set textgenerator path
+	     > DEFAULT PARAMETERS
+	       - Max tokens: <4000> # Set max tokens to 4000
+	       - Temperature: <1> # Set temperature to 1
+	       - Frequency Pentaly: <0.5> # Set frequency pentalty to 0.5
+	       - Timeout: <300000> # Set timeout to 300000
+	       - Prefix: <\n\n> # Set prefix to \n\n
+	     > AUTO SUGGEST OPTIONS
+	       - Enable/Disable: <on> # Enable auto-suggest options
+	       - Inline Suggestions: <off> # Disable inline suggestions
+	       - Delay Milliseconds: <low> # Set suggestion delay to low
+	       - Num Suggestions: <3> # Show 3 suggestions
+	       - Stop Phrase: <.> # Set stop phrase to period
+	       - Suggest In Newline: <off> # Disable suggest in newline
+	       - Statusbar: <off> # Disable status bar
+	       - Custom Prompt: <on> # Enable custom prompt
+	     > SLASH SUGGEST
+	       - Trigger Phrase: </> # Set trigger phrase to forward slash
+	     > CUSTOM INSTRUCTIONS
+	       - Default Gen Prompt: <on> # Enable default generation prompt
+	       - Generate Title Instruct: <on> # Enable title generation instruction
+	       - Regex Limiter: <^\*\*\*> # Set regex limiter
+	     > TEMPLATE SETTINGS
+	       - Include Clipboard: <on> # Include clipboard in template
+	       - Allow Scripts: <on> # Allow scripts in template
+	     > EXTRACTORS OPTIONS
+	       - PDF Extractor: <on> # Enable PDF extractor
+	       - Web Page Extractor: <on> # Enable web page extractor
+	       - Youtube Extractor: <on> # Enable YouTube extractor
+	       - Audio Extractor: <on> # Enable audio extractor
+	       - Embedded Image Extractor: <on> # Enable embedded image extractor
+	       - Image Extractor: <on> # Enable image extractor
+	     > TEXT GENERATOR OPTIONS
+	       - Keys Encryption: <off> # Disable keys encryption
+	       - Generate Text: <on> # Enable text generation
+	       - Generate Text With Metadata: <off> # Disable text gen with metadata
+	       - Insert Generated: <on> # Enable insertion of generated text
+	       - Create Generated: <on> # Enable creation of generated text
+	       - Search Results Batch: <on> # Enable search results batch
+	       - Insert Text: <on> # Enable text insertion
+	       - Create Text: <on> # Enable text creation
+	       - Show Model: <on> # Show model options
+	       - Open Template As Tool: <on> # Open template as a tool
+	       - Open Playground: <on> # Open playground
+	       - Set Max Tokens: <on> # Enable max tokens setting
+	       - Choose LLM: <on> # Enable choosing LLM
+	       - Package Manager: <on> # Enable package manager
+	       - Create Template: <on> # Enable template creation
+	       - Get Title: <on> # Enable title retrieval
+	       - Generated Text to Clipboard: <on> # Copy generated text to clipboard
+	       - Calculate Tokens: <on> # Enable token calculation
+	       - Calculate Tokens for Template: <on> # Enable token calculation
+	       - Text Extractor Tool: <on> # Enable text extractor tool
+	       - Stop Stream: <on> # Enable stop stream
+	       - Custom Instruct: <on> # Enable custom instructions
+	       - Gen in Right Click Menu: <off> # Disable generate in right-click menu
+	       - Batch Gen in Right Click Menu: <on> # Enable batch gen right click menu
+	       - TG Block Processor: <on> # Enable TG block processor
+	       - Reload: <on> # Enable Text-Gen reload
+
+	DEPENDS ON:
+	 - electron28 # Build cross platform desktop apps with web technologies
+	 - fuse3 # Interface programs to export a filesystem to the Linux kernel
+	 - hicolor-icon-theme # Freedesktop.org Hicolor icon theme
+	 - zlib # Compression library implementing the deflate compression method
+
+	BINARIES:
+	 - /bin/obsidian # Run Obsidian
+
+	COMMON USAGE
+	 DIRECTORY STRUCTURE
+	   # Integrating Obsidian smoothly into a workflow can be overwhelming if the
+	   # fundamental idea behind the usage of the program isnt fully understood.
+	   # Files other than notes created by the user will inevitably end up inside
+	   # the vault because of a setting for a plugin or some other thing. Below is a
+	   # tried and tested obsidian vault structure that will leave no notes lying
+	   # loose in the top level directory and a clean graph view, assuming that
+	   # everything is linked correctly
+	  01_CURRENT # Folder for top priority notes
+	  02_DUMP # Loose notes and ideas
+	  03_LINKS # Folder for storing loose link notes
+	  04_TAGS # Folder for storing tags
+	  05_TEMPLATES # Obsidian templates folder
+	  06_LAYOUTS # Literal directory layouts
+	  07_AUDIO # Folder for audio files
+	  08_VISUAL # Folder for image and video files
+	  09_SOURCE # Source content and external resources folder
+	 YAML FRONT MATTER
+	   # In Obsidian, YAML is natively supported for use within the properties
+	   # section at the top of a note to add metadata that caters to various
+	   # requirements such as searching, categorizing, and plugin functionality. The
+	   # properties section is defined by a '---' at the start and end of a section
+	  --- # YAML delineator
+	  title: "Obsidian" # Create a title property
+	  tags: ["layouts_development_dummyfiles"] # Create a tag property list
+	  todo: ["Yaml usage", "Dataview specs"] # Create a todo list for the file
+	  stat: ["incomplete"] # Give the file a status
+	  aliases: ["ob"] # Create an alias for the file
+	  --- # YAML delineator
+	   # YAML properties should adhere to correct syntax with keys followed by a
+	   # colon and then the value. Strings can be quoted, while numbers and booleans
+	   # are typically not. Indentation is not required in this simple key-value
+	   # pair structure, but double space indentations are also supported for longer
+	   # lists and nested elements
+
+	WEBLINKS:
+	 - 'https://blacksmithgu.github.io/obsidian-dataview' # Dataview reference
+	 - 'https://docs.text-gen.com' # Text-Gen API docs
+	 - 'https://en.wikipedia.org/wiki/Obsidian_(software)' # Wikipedia
+	 - 'https://github.com/ieshreya/Obsidian-Cheat-Sheet' # Ieshrayas cheatsheet
+	 - 'https://github.com/nhaouari/obsidian-textgenerator-plugin' # Text-Gen repo
+	 - 'https://github.com/obsidianmd/obsidian-help' # Documentation repo
+	 - 'https://github.com/obsidianmd/obsidian-releases' # Releases repo
+	 - 'https://github.com/sohanish/obsidian_cheat_sheet' # Sohanish cheatsheet
+	 - 'https://help.obsidian.md/Home' # Documentation
+	 - 'https://obsidian.md' # Official page
+	 - 'https://text-gen.com' # Text-Gen plugin official
+	 - 'https://www.youtube.com/channel/UCRP5KXKq8Ytc6IH06VWRmkQ' # Youtube channel
